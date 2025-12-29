@@ -196,6 +196,13 @@ const Header = () => {
               </div>
 
               <Link
+                to="/blog"
+                className="font-sans text-sm font-medium text-darkgray hover:text-olive transition-colors duration-200 cursor-pointer whitespace-nowrap"
+              >
+                Blog
+              </Link>
+
+              <Link
                 to="/testimonials"
                 className="font-sans text-sm font-medium text-darkgray hover:text-olive transition-colors duration-200 cursor-pointer whitespace-nowrap"
               >
@@ -358,6 +365,16 @@ const Header = () => {
                       )}
                     </AnimatePresence>
                   </div>
+
+                  <Link
+                    to="/blog"
+                    className="block px-4 py-3 rounded-xl font-sans text-sm font-medium text-darkgray hover:bg-olive/5 transition-colors duration-200 cursor-pointer"
+                  >
+                    <span className="flex items-center space-x-2">
+                      <i className="ri-article-line text-olive"></i>
+                      <span>Blog</span>
+                    </span>
+                  </Link>
 
                   <Link
                     to="/testimonials"
