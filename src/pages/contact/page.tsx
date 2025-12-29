@@ -310,14 +310,14 @@ const ContactPage = () => {
                 {/* Map */}
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm w-full h-96">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.8!2d30.7!3d36.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUyJzQ4LjAiTiAzMMKwNDInMDAuMCJF!5e0!3m2!1str!2str!4v1234567890"
+                    src="https://maps.google.com/maps?q=Meltem+Mah.+3850.+Sk.+Belgen+Sitesi+Muratpa%C5%9Fa+Antalya&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Arges Psikoloji Konum - Antalya"
+                    title="Arges Psikoloji Konum - Meltem Mah. Muratpaşa/Antalya"
                   ></iframe>
                 </div>
 
