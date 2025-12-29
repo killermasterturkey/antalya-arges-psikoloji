@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
-import CallBanner from '../../components/feature/CallBanner';
 import CallBanner from '../../../components/feature/CallBanner';
 import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 import { Link } from 'react-router-dom';
@@ -82,11 +81,14 @@ const AntalyaPsikologPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-mental-health-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Profesyonel Psikolojik Destek</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&q=80"
+                    alt="Antalya Psikolog - Profesyonel Psikolojik Danışmanlık"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>

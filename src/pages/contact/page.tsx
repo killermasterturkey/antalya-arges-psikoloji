@@ -4,6 +4,7 @@ import Header from '../../components/feature/Header';
 import Footer from '../../components/feature/Footer';
 import CallBanner from '../../components/feature/CallBanner';
 import WhatsAppButton from '../../components/feature/WhatsAppButton';
+import { trackPhoneClick, trackWhatsAppClick } from '../../utils/analytics';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -139,6 +140,9 @@ const ContactPage = () => {
                         href={info.link}
                         target={info.link.startsWith('http') ? '_blank' : undefined}
                         rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        onClick={() => {
+                          if (info.link?.startsWith('tel:')) trackPhoneClick('contact_info_card');
+                        }}
                         className="font-sans text-base text-darkgray hover:text-olive transition-colors duration-200 cursor-pointer"
                       >
                         {info.content}
@@ -362,6 +366,7 @@ const ContactPage = () => {
                     href="https://wa.me/905403251525"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick('contact_quick_contact')}
                     className="inline-flex items-center space-x-2 bg-white text-darkgray px-6 py-3 rounded-full font-sans text-sm font-medium hover:bg-cream transition-all duration-300 cursor-pointer whitespace-nowrap"
                   >
                     <i className="ri-whatsapp-line text-lg"></i>

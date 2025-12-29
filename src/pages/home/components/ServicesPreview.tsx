@@ -29,6 +29,8 @@ const ServicesPreview = () => {
               <img
                 src="https://readdy.ai/api/search-image?query=professional%20therapy%20session%20in%20modern%20counseling%20office%2C%20psychologist%20and%20client%20in%20comfortable%20setting%2C%20warm%20lighting%2C%20plants%2C%20books%20on%20shelves%2C%20creating%20atmosphere%20of%20trust%20and%20professionalism%20with%20neutral%20calming%20colors&width=800&height=900&seq=therapy-session-professional&orientation=portrait"
                 alt="Psikolojik Danışmanlık Hizmetleri"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-top"
               />
             </div>

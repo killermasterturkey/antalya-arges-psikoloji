@@ -60,6 +60,15 @@ const BusraDemirbasPage = lazy(() => import('../pages/team/busra-demirbas/page')
 // Hizli Randevu
 const HizliRandevuPage = lazy(() => import('../pages/hizli-randevu/page'));
 
+// Tesekkur Sayfasi
+const TesekkurlerPage = lazy(() => import('../pages/tesekkurler/page'));
+
+// Landing Pages (Google Ads)
+const LPAntalyaPsikolog = lazy(() => import('../pages/lp/antalya-psikolog/page'));
+const LPCocukPsikolojisi = lazy(() => import('../pages/lp/cocuk-psikolojisi/page'));
+const LPCiftTerapisi = lazy(() => import('../pages/lp/cift-terapisi/page'));
+const LPCinselTerapi = lazy(() => import('../pages/lp/cinsel-terapi/page'));
+
 const routes: RouteObject[] = [
   // Ana Sayfalar
   {
@@ -97,6 +106,10 @@ const routes: RouteObject[] = [
   {
     path: '/hizli-randevu',
     element: <HizliRandevuPage />,
+  },
+  {
+    path: '/tesekkurler',
+    element: <TesekkurlerPage />,
   },
 
   // Mevcut Hizmet Sayfalari
@@ -241,6 +254,24 @@ const routes: RouteObject[] = [
   {
     path: '/team/busra-demirbas',
     element: <BusraDemirbasPage />,
+  },
+
+  // Landing Pages (Google Ads)
+  {
+    path: '/lp/antalya-psikolog',
+    element: <LPAntalyaPsikolog />,
+  },
+  {
+    path: '/lp/cocuk-psikolojisi',
+    element: <LPCocukPsikolojisi />,
+  },
+  {
+    path: '/lp/cift-terapisi',
+    element: <LPCiftTerapisi />,
+  },
+  {
+    path: '/lp/cinsel-terapi',
+    element: <LPCinselTerapi />,
   },
 
   // 404

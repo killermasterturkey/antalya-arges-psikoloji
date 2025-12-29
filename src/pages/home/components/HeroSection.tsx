@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
 
 const HeroSection = () => {
   return (
@@ -69,6 +70,7 @@ const HeroSection = () => {
             {/* Phone Number - Prominent */}
             <motion.a
               href="tel:+905403251525"
+              onClick={() => trackPhoneClick('hero_phone_badge')}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -98,6 +100,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:+905403251525"
+                onClick={() => trackPhoneClick('hero_cta_button')}
                 className="bg-olive text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-darkgray transition-all duration-300 shadow-md hover:shadow-lg text-center cursor-pointer whitespace-nowrap flex items-center justify-center space-x-2"
               >
                 <i className="ri-phone-fill"></i>
@@ -107,6 +110,7 @@ const HeroSection = () => {
                 href="https://wa.me/905403251525"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('hero_cta_button')}
                 className="bg-[#25D366] text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-[#128C7E] transition-all duration-300 shadow-md hover:shadow-lg text-center cursor-pointer whitespace-nowrap flex items-center justify-center space-x-2"
               >
                 <i className="ri-whatsapp-fill"></i>
@@ -142,6 +146,8 @@ const HeroSection = () => {
           <img
             src="https://readdy.ai/api/search-image?query=peaceful%20therapy%20room%20with%20comfortable%20seating%2C%20natural%20light%20streaming%20through%20windows%2C%20indoor%20plants%2C%20warm%20and%20calming%20atmosphere%2C%20professional%20counseling%20space%20with%20soft%20neutral%20tones%20and%20minimalist%20design%2C%20creating%20sense%20of%20safety%20and%20tranquility&width=1400&height=600&seq=hero-therapy-room&orientation=landscape"
             alt="Arges Psikoloji Terapi Ortamı"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-top"
           />
         </motion.div>

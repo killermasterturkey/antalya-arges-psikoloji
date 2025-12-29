@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
-import CallBanner from '../../components/feature/CallBanner';
 import CallBanner from '../../../components/feature/CallBanner';
 import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
@@ -65,11 +64,14 @@ const AntalyaErgenTerapisiPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-user-star-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Gençlik Döneminde Destek</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&h=1000&fit=crop&q=80"
+                    alt="Ergen Terapisi - Gençlik Döneminde Profesyonel Destek"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>

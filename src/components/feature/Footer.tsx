@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { trackPhoneClick } from '../../utils/analytics';
 
 const Footer = () => {
   return (
@@ -69,6 +70,7 @@ const Footer = () => {
               <li>
                 <a
                   href="tel:+905403251525"
+                  onClick={() => trackPhoneClick('footer')}
                   className="flex items-center space-x-2 font-sans text-sm text-darkgray/70 hover:text-olive transition-colors duration-200 cursor-pointer"
                 >
                   <i className="ri-phone-line text-lg"></i>

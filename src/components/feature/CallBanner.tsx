@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { trackPhoneClick, trackWhatsAppClick } from '../../utils/analytics';
 
 const CallBanner = () => {
   return (
@@ -13,6 +14,7 @@ const CallBanner = () => {
         <div className="flex items-center justify-between px-4 py-3">
           <a
             href="tel:+905403251525"
+            onClick={() => trackPhoneClick('mobile_call_banner')}
             className="flex-1 flex items-center justify-center space-x-2 bg-white text-darkgray py-3 rounded-full font-sans text-sm font-semibold mr-2"
           >
             <i className="ri-phone-fill text-olive"></i>
@@ -22,6 +24,7 @@ const CallBanner = () => {
             href="https://wa.me/905403251525"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('mobile_call_banner')}
             className="flex-1 flex items-center justify-center space-x-2 bg-[#25D366] text-white py-3 rounded-full font-sans text-sm font-semibold ml-2"
           >
             <i className="ri-whatsapp-fill"></i>
@@ -33,6 +36,7 @@ const CallBanner = () => {
       {/* Desktop Floating Call Button */}
       <motion.a
         href="tel:+905403251525"
+        onClick={() => trackPhoneClick('desktop_floating_button')}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.3, delay: 1.5 }}

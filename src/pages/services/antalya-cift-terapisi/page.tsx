@@ -63,11 +63,14 @@ const AntalyaCiftTerapisiPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-heart-2-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Sağlıklı İlişki İçin</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=1000&fit=crop&q=80"
+                    alt="Çift Terapisi - İlişkinizi Güçlendirin"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>

@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/feature/Header';
 import Footer from '../../components/feature/Footer';
 import WhatsAppButton from '../../components/feature/WhatsAppButton';
+import { trackPhoneClick, trackWhatsAppClick, trackFormSubmit } from '../../utils/analytics';
 
 const HizliRandevuPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', service: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -25,10 +28,9 @@ const HizliRandevuPage = () => {
       if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         await new Promise(resolve => setTimeout(resolve, 1500));
         console.log('Form data (dev mode):', Object.fromEntries(formDataObj));
-        setSubmitStatus('success');
-        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+        trackFormSubmit('hizli_randevu');
         setIsSubmitting(false);
-        setTimeout(() => setSubmitStatus('idle'), 5000);
+        navigate('/tesekkurler');
         return;
       }
 
@@ -40,8 +42,10 @@ const HizliRandevuPage = () => {
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+        trackFormSubmit('hizli_randevu');
+        setIsSubmitting(false);
+        navigate('/tesekkurler');
+        return;
       } else {
         setSubmitStatus('error');
       }
@@ -235,7 +239,15 @@ const HizliRandevuPage = () => {
                       <div>
                         <h3 className="font-sans text-xs font-semibold text-darkgray/60 uppercase">{info.title}</h3>
                         {info.link ? (
-                          <a href={info.link} className="font-sans text-base text-darkgray hover:text-olive">{info.content}</a>
+                          <a
+                            href={info.link}
+                            onClick={() => {
+                              if (info.link?.startsWith('tel:')) trackPhoneClick('hizli_randevu_sidebar');
+                            }}
+                            className="font-sans text-base text-darkgray hover:text-olive"
+                          >
+                            {info.content}
+                          </a>
                         ) : (
                           <p className="font-sans text-base text-darkgray">{info.content}</p>
                         )}
@@ -256,6 +268,7 @@ const HizliRandevuPage = () => {
                     href="https://wa.me/905403251525"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick('hizli_randevu_sidebar')}
                     className="inline-flex items-center space-x-3 bg-white text-[#128C7E] px-6 py-4 rounded-full font-sans text-base font-semibold hover:bg-cream transition-all duration-300"
                   >
                     <i className="ri-whatsapp-line text-xl"></i>

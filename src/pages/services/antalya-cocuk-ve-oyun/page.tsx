@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
-import CallBanner from '../../components/feature/CallBanner';
 import CallBanner from '../../../components/feature/CallBanner';
 import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
@@ -65,11 +64,14 @@ const AntalyaCocukVeOyunPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-gamepad-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Oyun Yoluyla İyileşme</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=1000&fit=crop&q=80"
+                    alt="Çocuk ve Oyun Terapisi - Oyun Yoluyla İyileşme"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>
