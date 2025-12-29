@@ -7,7 +7,7 @@ export const blogPosts = [
     content: 'Stres, modern yaşamın kaçınılmaz bir parçası haline geldi. İş yoğunluğu, aile sorumlulukları, ekonomik kaygılar ve sosyal baskılar günlük hayatımızda sürekli stres kaynaklarıdır. Ancak stresin tamamen kötü olduğunu söylemek yanlış olur. Kısa süreli stres, bizi motive edebilir ve performansımızı artırabilir. Sorun, stresin kronik hale gelmesi ve yaşam kalitemizi olumsuz etkilemesidir.',
     image: 'https://readdy.ai/api/search-image?query=A%20peaceful%20meditation%20scene%20with%20a%20person%20sitting%20cross-legged%20in%20a%20serene%20natural%20environment%20surrounded%20by%20soft%20morning%20light%20and%20gentle%20greenery%20creating%20a%20calming%20atmosphere%20for%20stress%20relief%20and%20mental%20wellness%20in%20minimalist%20photography%20style&width=800&height=500&seq=blog1&orientation=landscape',
     category: 'Ruh Sağlığı',
-    author: 'Dr. Ayşe Yılmaz',
+    author: 'Psk. Nur Deniz Yüksel',
     date: '2025-05-20',
     readTime: '8 dk',
     tags: ['Stres Yönetimi', 'Mindfulness', 'Yaşam Kalitesi']
@@ -20,7 +20,7 @@ export const blogPosts = [
     content: 'Çocukluk çağı anksiyetesi, günümüzde giderek artan bir sorun haline gelmiştir. Pandemi süreci, dijital teknolojinin yaygınlaşması ve akademik baskılar çocukların ruh sağlığını olumsuz etkilemektedir. Ebeveynler olarak, çocuklarımızdaki anksiyete belirtilerini erken fark etmek ve doğru müdahalede bulunmak son derece önemlidir.',
     image: 'https://readdy.ai/api/search-image?query=A%20gentle%20illustration%20of%20a%20child%20feeling%20anxious%20with%20supportive%20parent%20figure%20in%20warm%20comforting%20colors%20showing%20emotional%20support%20and%20understanding%20in%20a%20safe%20home%20environment%20with%20soft%20lighting%20and%20caring%20atmosphere&width=800&height=500&seq=blog2&orientation=landscape',
     category: 'Çocuk Psikolojisi',
-    author: 'Uzm. Psk. Mehmet Kaya',
+    author: 'Psk. Nezihi Ünal',
     date: '2025-05-15',
     readTime: '10 dk',
     tags: ['Çocuk Psikolojisi', 'Anksiyete', 'Ebeveynlik']
@@ -33,7 +33,7 @@ export const blogPosts = [
     content: 'Her ilişkide zaman zaman zorluklar yaşanır. Ancak bazı sorunlar, çiftlerin kendi başlarına çözemeyecekleri kadar karmaşık hale gelebilir. İletişim kopuklukları, güven sorunları, cinsel uyumsuzluklar veya sürekli çatışmalar ilişkinin temellerini sarsabilir. İşte tam bu noktada, profesyonel bir terapistin rehberliği hayati önem taşır.',
     image: 'https://readdy.ai/api/search-image?query=A%20couple%20sitting%20together%20in%20therapy%20session%20with%20warm%20understanding%20atmosphere%20showing%20connection%20and%20communication%20in%20professional%20counseling%20environment%20with%20soft%20natural%20lighting%20and%20hopeful%20mood&width=800&height=500&seq=blog3&orientation=landscape',
     category: 'İlişkiler',
-    author: 'Dr. Zeynep Demir',
+    author: 'Psk. Nur Deniz Yüksel',
     date: '2025-05-10',
     readTime: '7 dk',
     tags: ['Çift Terapisi', 'İlişkiler', 'İletişim']
@@ -46,7 +46,7 @@ export const blogPosts = [
     content: 'Depresyon, dünya genelinde milyonlarca insanı etkileyen ciddi bir ruh sağlığı sorunudur. Dünya Sağlık Örgütü verilerine göre, depresyon küresel çapta en yaygın hastalıklar arasında yer almaktadır. Ancak ne yazık ki, depresyonun belirtileri sıklıkla göz ardı edilir veya yanlış anlaşılır. Birçok kişi, yaşadığı duygu durumunun geçici bir üzüntü olduğunu düşünerek profesyonel yardım almayı erteleyebilir.',
     image: 'https://readdy.ai/api/search-image?query=A%20person%20emerging%20from%20darkness%20into%20light%20symbolizing%20hope%20and%20recovery%20from%20depression%20with%20gentle%20rays%20of%20sunlight%20breaking%20through%20clouds%20creating%20an%20uplifting%20and%20hopeful%20atmosphere%20in%20artistic%20photography%20style&width=800&height=500&seq=blog4&orientation=landscape',
     category: 'Ruh Sağlığı',
-    author: 'Dr. Ayşe Yılmaz',
+    author: 'Psk. Nur Deniz Yüksel',
     date: '2025-05-05',
     readTime: '9 dk',
     tags: ['Depresyon', 'Ruh Sağlığı', 'Tedavi']
@@ -59,7 +59,7 @@ export const blogPosts = [
     content: 'Ergenlik, insan yaşamının en çalkantılı dönemlerinden biridir. Bu dönemde gençler, fiziksel, duygusal ve sosyal açıdan büyük değişimler yaşarlar. Kimlik gelişimi, ergenliğin en önemli psikolojik görevlerinden biridir. Gençler "Ben kimim?", "Neye inanıyorum?", "Hayatta ne yapmak istiyorum?" gibi temel sorulara cevap ararlar.',
     image: 'https://readdy.ai/api/search-image?query=A%20thoughtful%20teenager%20looking%20at%20their%20reflection%20contemplating%20identity%20and%20self-discovery%20in%20warm%20supportive%20lighting%20with%20artistic%20mirror%20effect%20showing%20personal%20growth%20and%20adolescent%20development%20journey&width=800&height=500&seq=blog5&orientation=landscape',
     category: 'Ergen Psikolojisi',
-    author: 'Uzm. Psk. Mehmet Kaya',
+    author: 'Psk. Nezihi Ünal',
     date: '2025-05-28',
     readTime: '11 dk',
     tags: ['Ergenlik', 'Kimlik Gelişimi', 'Aile']
@@ -72,7 +72,7 @@ export const blogPosts = [
     content: 'Mindfulness, yani farkındalık meditasyonu, son yıllarda psikoloji ve psikiyatri alanında büyük ilgi görmektedir. Binlerce bilimsel araştırma, mindfulness pratiğinin stres, anksiyete, depresyon ve birçok fiziksel hastalık üzerinde olumlu etkileri olduğunu göstermiştir. Peki mindfulness nedir ve nasıl uygulanır?',
     image: 'https://readdy.ai/api/search-image?query=A%20serene%20meditation%20practice%20scene%20with%20person%20in%20peaceful%20mindfulness%20pose%20surrounded%20by%20tranquil%20nature%20elements%20and%20soft%20golden%20light%20creating%20zen%20atmosphere%20for%20mental%20wellness%20and%20inner%20peace%20in%20minimalist%20style&width=800&height=500&seq=blog6&orientation=landscape',
     category: 'Ruh Sağlığı',
-    author: 'Dr. Zeynep Demir',
+    author: 'Psk. Nur Deniz Yüksel',
     date: '2025-06-05',
     readTime: '6 dk',
     tags: ['Mindfulness', 'Meditasyon', 'Farkındalık']
