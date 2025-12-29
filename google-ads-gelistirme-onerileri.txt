@@ -1,0 +1,271 @@
+================================================================================
+ARGES PSİKOLOJİ - GOOGLE ADS İÇİN GELİŞTİRME ÖNERİLERİ
+================================================================================
+Tarih: 28 Aralık 2025
+Proje: argespsikoloji.com
+
+================================================================================
+🔴 KRİTİK EKSİKLİKLER (Öncelikli)
+================================================================================
+
+1. GOOGLE ANALYTICS 4 (GA4) VE GOOGLE TAG MANAGER KURULUMU
+   Durum: ❌ Hiç yok
+   Önem: ZORUNLU
+
+   Şu anda sitede hiçbir analitik takip kodu yok. Google Ads dönüşümlerini
+   takip etmek için bu şart:
+   - GA4 kurulumu
+   - Google Tag Manager (GTM) entegrasyonu
+   - Google Ads bağlantısı (linking)
+
+--------------------------------------------------------------------------------
+
+2. TELEFON TIKLAMA DÖNÜŞÜM TAKİBİ
+   Durum: ❌ Yok
+   Önem: ZORUNLU
+
+   Sitede tel:+905403251525 linki var ama tıklamalar takip edilmiyor:
+   - tel: linklerine click event listener eklenmeli
+   - Google Ads'e dönüşüm olarak gönderilmeli
+   - Örnek: gtag('event', 'conversion', {send_to: 'AW-XXXX/XXXX'})
+
+--------------------------------------------------------------------------------
+
+3. WHATSAPP TIKLAMA DÖNÜŞÜM TAKİBİ
+   Durum: ❌ Yok
+   Önem: ÇOK YÜKSEK
+
+   WhatsApp butonu var ama tıklamalar takip edilmiyor:
+   - wa.me/905403251525 linkine event tracking
+   - Secondary conversion olarak Google Ads'e gönderme
+
+--------------------------------------------------------------------------------
+
+4. FORM GÖNDERİM BACKEND'İ VE DÖNÜŞÜM TAKİBİ
+   Durum: ❌ Form simüle edilmiş, gerçek gönderim yok
+   Önem: ÇOK YÜKSEK
+
+   /contact ve /hizli-randevu sayfalarındaki formlar:
+   - Şu anda sadece 1.5 saniye bekleyip "başarılı" mesajı gösteriyor
+   - Gerçek email/veritabanı gönderimi yok
+   - Form dönüşümü takibi yok
+
+   Gerekenler:
+   - Backend entegrasyonu (Firebase/Supabase zaten kurulu)
+   - Email bildirimi (info@argespsikoloji.com'a)
+   - Conversion event tetikleme
+
+--------------------------------------------------------------------------------
+
+5. STRUCTURED DATA (SCHEMA.ORG JSON-LD)
+   Durum: ❌ Hiç yok
+   Önem: YÜKSEK
+
+   Google'ın işletmenizi anlaması ve rich snippets için:
+
+   a) LocalBusiness Schema
+      - İşletme adı, adresi, telefonu
+      - Çalışma saatleri
+      - Hizmet bölgesi (Antalya)
+
+   b) ProfessionalService Schema
+      - Psikoloji/terapi hizmetleri
+      - Uzmanlar listesi
+
+   c) ContactPoint Schema
+      - Telefon numarası
+      - İletişim türü
+
+   d) AggregateRating Schema
+      - Müşteri yorumları için
+      - Yıldız puanlama
+
+================================================================================
+🟡 SEO VE İÇERİK SORUNLARI
+================================================================================
+
+6. LOKASYON TUTARSIZLIĞI: İSTANBUL VS ANTALYA
+   Durum: ⚠️ Karışık
+   Önem: YÜKSEK
+
+   - index.html meta etiketlerinde İstanbul yazıyor
+   - Gerçek adres Antalya/Muratpaşa
+   - Geo etiketleri İstanbul koordinatları gösteriyor
+
+   Düzeltilmesi gerekenler:
+   - Title: "Antalya Profesyonel Psikolojik Danışmanlık"
+   - Description: "Antalya" olarak güncellenmeli
+   - Geo tags: Antalya koordinatları (36.88, 30.7)
+
+--------------------------------------------------------------------------------
+
+7. SAYFA BAZLI META ETİKETLER
+   Durum: ⚠️ Eksik
+   Önem: YÜKSEK
+
+   Tüm sayfalar aynı meta etiketleri kullanıyor. Her sayfanın kendine özel
+   olması lazım:
+   - /services/emdr-terapi → EMDR Terapi Antalya
+   - /services/cift-terapisi → Çift Terapisi Antalya
+   - /team/nur-deniz-yuksel → Psikolog Nur Deniz Yüksel
+
+--------------------------------------------------------------------------------
+
+8. ROBOTS.TXT VE SITEMAP.XML
+   Durum: ❓ Kontrol edilmeli
+   Önem: ORTA
+
+   - Sitemap.xml oluşturulmalı
+   - Google Search Console'a gönderilmeli
+
+================================================================================
+🟢 DÖNÜŞÜM OPTİMİZASYONU ÖNERİLERİ
+================================================================================
+
+9. TELEFON NUMARASI GÖRÜNÜRLÜĞÜ ARTIRMA
+   Durum: İyileştirilebilir
+   Önem: YÜKSEK
+
+   - Header'da sabit telefon numarası gösterimi
+   - Mobilde "Hemen Ara" butonu (sticky)
+   - Servis sayfalarında telefon CTA'sı
+
+--------------------------------------------------------------------------------
+
+10. CALL EXTENSION İÇİN ÖZEL LANDING PAGE
+    Durum: Yok
+    Önem: ORTA-YÜKSEK
+
+    Google Ads telefon uzantıları için optimize edilmiş:
+    - /ara veya /telefon sayfası
+    - Sadece telefon odaklı CTA
+    - Minimum distraction
+
+--------------------------------------------------------------------------------
+
+11. CLICK-TO-CALL BUTTON OPTİMİZASYONU
+    Durum: İyileştirilebilir
+    Önem: YÜKSEK
+
+    Mevcut WhatsApp butonu gibi:
+    - Sabit "Hemen Ara" butonu (telefon için)
+    - Sol alt veya sağ alt köşede
+    - Mobilde özellikle önemli
+
+--------------------------------------------------------------------------------
+
+12. THANK YOU PAGE (TEŞEKKÜR SAYFASI)
+    Durum: ❌ Yok
+    Önem: YÜKSEK
+
+    Form gönderimi sonrası:
+    - /tesekkurler sayfasına yönlendirme
+    - Bu sayfada conversion pixel tetikleme
+    - Google Ads destination URL olarak kullanılabilir
+
+--------------------------------------------------------------------------------
+
+13. HIZ OPTİMİZASYONU
+    Durum: Kontrol edilmeli
+    Önem: ORTA
+
+    Google Ads Quality Score için:
+    - Lighthouse performans testi
+    - Core Web Vitals optimizasyonu
+    - Image lazy loading
+
+================================================================================
+🔵 GELİŞMİŞ ÖNERİLER
+================================================================================
+
+14. GOOGLE ADS CALL REPORTING ENTEGRASYONU
+    Önem: YÜKSEK
+
+    - Google forwarding number kullanımı
+    - Arama süresi takibi
+    - Kaçırılan arama bildirimi
+
+--------------------------------------------------------------------------------
+
+15. REMARKETING PIXEL KURULUMU
+    Önem: ORTA-YÜKSEK
+
+    - Site ziyaretçilerine yeniden pazarlama
+    - Google Ads remarketing listesi
+    - Facebook Pixel (opsiyonel)
+
+--------------------------------------------------------------------------------
+
+16. UTM PARAMETRE DESTEĞİ
+    Önem: ORTA
+
+    - Kampanya bazlı takip
+    - URL parametrelerini form'a otomatik ekleme
+    - Hangi reklamdan geldiğini bilme
+
+--------------------------------------------------------------------------------
+
+17. MOBİL DENEYİM OPTİMİZASYONU
+    Önem: YÜKSEK
+
+    - Telefon aramaları %70+ mobil olacak
+    - Tek dokunuşla arama
+    - Form alanlarının mobil uyumluluğu
+
+--------------------------------------------------------------------------------
+
+18. A/B TEST ALTYAPISI
+    Önem: DÜŞÜK-ORTA
+
+    - Farklı CTA metinleri test etme
+    - Buton renkleri/konumları
+    - Google Optimize veya alternatif
+
+================================================================================
+📋 ÖNCELİK SIRASI ÖNERİSİ
+================================================================================
+
+Sıra | Geliştirme                              | Zorluk | Etki
+-----|----------------------------------------|--------|-------------
+1    | GA4 + GTM Kurulumu                     | Kolay  | Çok Yüksek
+2    | Telefon/WhatsApp Click Tracking        | Kolay  | Çok Yüksek
+3    | Lokasyon Düzeltmesi (İstanbul→Antalya) | Kolay  | Yüksek
+4    | Form Backend + Conversion              | Orta   | Çok Yüksek
+5    | Structured Data (JSON-LD)              | Orta   | Yüksek
+6    | Sayfa Bazlı Meta Tags                  | Orta   | Yüksek
+7    | Thank You Page                         | Kolay  | Yüksek
+8    | Sticky Call Button                     | Kolay  | Orta-Yüksek
+9    | Sitemap.xml                            | Kolay  | Orta
+10   | Remarketing Pixel                      | Kolay  | Orta
+
+================================================================================
+📞 MEVCUT TELEFON DURUMU
+================================================================================
+
+Kullanılan Numara: 0540 325 15 25 (+905403251525)
+
+Bulunduğu Yerler:
+- Footer (tüm sayfalar)
+- Contact sayfası
+- Hızlı Randevu sayfası
+- SAS sayfaları
+- WhatsApp butonu (tüm sayfalar)
+
+================================================================================
+DOSYA KONUMLARI
+================================================================================
+
+Ana Yapılandırma:
+- /index.html - Ana HTML ve SEO etiketleri
+- /src/router/config.tsx - Tüm route tanımları
+- /src/App.tsx - Router kurulumu
+- /vite.config.ts - Build yapılandırması
+- /netlify.toml - Deployment yapılandırması
+
+İletişim Bileşenleri:
+- /src/components/feature/WhatsAppButton.tsx - WhatsApp butonu
+- /src/components/feature/Footer.tsx - Footer iletişim bilgileri
+- /src/pages/contact/page.tsx - İletişim sayfası
+- /src/pages/hizli-randevu/page.tsx - Hızlı randevu sayfası
+
+================================================================================

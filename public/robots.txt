@@ -1,0 +1,20 @@
+# Arges Psikoloji - Antalya Psikolog
+# https://antalyaargespsikoloji.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://antalyaargespsikoloji.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow unnecessary paths
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /assets/
+
+# Allow important resources
+Allow: /logo-icon.webp
+Allow: /og-image.jpg
