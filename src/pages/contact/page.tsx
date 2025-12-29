@@ -56,8 +56,8 @@ const ContactPage = () => {
     {
       icon: 'ri-mail-line',
       title: 'E-posta',
-      content: 'info@antalyaargespsikoloji.com',
-      link: 'mailto:info@antalyaargespsikoloji.com',
+      content: 'info@argespsikoloji.com',
+      link: 'mailto:info@argespsikoloji.com',
     },
     {
       icon: 'ri-map-pin-line',

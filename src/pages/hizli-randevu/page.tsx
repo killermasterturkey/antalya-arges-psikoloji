@@ -23,7 +23,7 @@ const HizliRandevuPage = () => {
 
   const contactInfo = [
     { icon: 'ri-phone-line', title: 'Telefon', content: '0540 325 15 25', link: 'tel:+905403251525' },
-    { icon: 'ri-mail-line', title: 'E-posta', content: 'info@antalyaargespsikoloji.com', link: 'mailto:info@antalyaargespsikoloji.com' },
+    { icon: 'ri-mail-line', title: 'E-posta', content: 'info@argespsikoloji.com', link: 'mailto:info@argespsikoloji.com' },
     { icon: 'ri-map-pin-line', title: 'Adres', content: 'Meltem Mah. 3850. Sk. Belgen Sitesi Muratpaşa/Antalya', link: null },
   ];
 

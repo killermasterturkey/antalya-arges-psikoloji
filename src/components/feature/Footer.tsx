@@ -77,11 +77,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@antalyaargespsikoloji.com"
+                  href="mailto:info@argespsikoloji.com"
                   className="flex items-center space-x-2 font-sans text-sm text-darkgray/70 hover:text-olive transition-colors duration-200 cursor-pointer"
                 >
                   <i className="ri-mail-line text-lg"></i>
-                  <span>info@antalyaargespsikoloji.com</span>
+                  <span>info@argespsikoloji.com</span>
                 </a>
               </li>
               <li>
