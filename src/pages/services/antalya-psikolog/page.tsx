@@ -83,7 +83,7 @@ const AntalyaPsikologPage = () => {
               >
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&q=80"
+                    src="/images/services/psikolog-hero.png"
                     alt="Antalya Psikolog - Profesyonel Psikolojik Danışmanlık"
                     loading="lazy"
                     decoding="async"
