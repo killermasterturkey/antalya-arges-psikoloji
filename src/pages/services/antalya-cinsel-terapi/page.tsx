@@ -6,9 +6,9 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 const AntalyaCinselTerapiPage = () => {
   const topics = [
     { icon: 'ri-heart-pulse-line', title: 'Cinsel İstek Sorunları', description: 'Düşük libido ve cinsel isteksizlik.' },
-    { icon: 'ri-shield-user-line', title: 'Performans Kaygısı', description: 'Cinsel performans ve özgüven.' },
+    { icon: 'ri-shield-user-line', title: 'Erken Boşalma', description: 'Cinsel performans ve özgüven.' },
     { icon: 'ri-heart-2-line', title: 'İlişki İçi Yakınlık', description: 'Duygusal ve fiziksel yakınlık sorunları.' },
-    { icon: 'ri-mental-health-line', title: 'Cinsel Travma', description: 'Geçmiş travmaların iyileşmesi.' },
+    { icon: 'ri-mental-health-line', title: 'Vajinismus', description: 'Cinsel ilişkiye girememe.' },
   ];
 
   return (
