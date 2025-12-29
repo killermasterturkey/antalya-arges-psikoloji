@@ -33,6 +33,11 @@ const Header = () => {
     { name: 'Çift Terapisi', icon: 'ri-heart-2-line', path: '/services/antalya-cift-terapisi', desc: 'İlişki ve evlilik danışmanlığı' },
     { name: 'Cinsel Terapi', icon: 'ri-hearts-line', path: '/services/antalya-cinsel-terapi', desc: 'Cinsel sağlık danışmanlığı' },
     { name: 'EMDR Terapisi', icon: 'ri-eye-line', path: '/services/antalya-emdr', desc: 'Travma odaklı terapi' },
+    { name: 'SAS Nedir?', icon: 'ri-lightbulb-line', path: '/sas/sas-nedir', desc: 'SAS metodunu keşfet' },
+    { name: 'SAS Smart', icon: 'ri-rocket-line', path: '/sas/sas-smart', desc: 'Akıllı öğrenme teknikleri' },
+    { name: 'SAS Life', icon: 'ri-heart-pulse-line', path: '/sas/sas-life', desc: 'Yaşam kalitesi artırma' },
+    { name: 'SAS Boost', icon: 'ri-flashlight-line', path: '/sas/sas-boost', desc: 'Performans geliştirme' },
+    { name: 'SAS Balance', icon: 'ri-scales-line', path: '/sas/sas-balance', desc: 'Denge ve uyum' },
   ];
 
   const dikkatGelistirme = [
@@ -41,15 +46,6 @@ const Header = () => {
     { name: 'Yetişkinler İçin MOXO', icon: 'ri-user-line', path: '/dikkat-gelistirme/yetiskinler-icin-moxo', desc: 'Yetişkin dikkat testi' },
     { name: 'BBMP Programı', icon: 'ri-brain-line', path: '/dikkat-gelistirme/bbmp', desc: 'Beyin geliştirme programı' },
   ];
-
-  const sasMetodu = [
-    { name: 'SAS Nedir?', icon: 'ri-lightbulb-line', path: '/sas/sas-nedir', desc: 'SAS metodunu keşfet' },
-    { name: 'SAS Smart', icon: 'ri-rocket-line', path: '/sas/sas-smart', desc: 'Akıllı öğrenme teknikleri' },
-    { name: 'SAS Life', icon: 'ri-heart-pulse-line', path: '/sas/sas-life', desc: 'Yaşam kalitesi artırma' },
-    { name: 'SAS Boost', icon: 'ri-flashlight-line', path: '/sas/sas-boost', desc: 'Performans geliştirme' },
-    { name: 'SAS Balance', icon: 'ri-scales-line', path: '/sas/sas-balance', desc: 'Denge ve uyum' },
-  ];
-
 
   const handleMouseEnter = (menu: string) => {
     if (window.innerWidth >= 1024) {
@@ -120,9 +116,9 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-white rounded-2xl shadow-2xl p-5"
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[620px] bg-white rounded-2xl shadow-2xl p-5"
                     >
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {services.map((item, idx) => (
                           <Link
                             key={idx}
@@ -187,50 +183,6 @@ const Header = () => {
                             </div>
                             <div>
                               <span className="font-sans text-sm font-medium text-darkgray group-hover:text-olive transition-colors duration-200 block">
-                                {item.name}
-                              </span>
-                              <span className="font-sans text-xs text-darkgray/60">{item.desc}</span>
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              {/* SAS Metodu Dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleMouseEnter('sas')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <button className="font-sans text-sm font-medium text-darkgray hover:text-gold transition-colors duration-200 flex items-center space-x-1 cursor-pointer whitespace-nowrap">
-                  <span>SAS Metodu</span>
-                  <i className={`ri-arrow-down-s-line transition-transform duration-200 ${activeDropdown === 'sas' ? 'rotate-180' : ''}`}></i>
-                </button>
-
-                <AnimatePresence>
-                  {activeDropdown === 'sas' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-white rounded-2xl shadow-2xl p-4"
-                    >
-                      <div className="space-y-1">
-                        {sasMetodu.map((item, idx) => (
-                          <Link
-                            key={idx}
-                            to={item.path}
-                            className="flex items-start space-x-3 p-3 rounded-xl hover:bg-gold/5 transition-colors duration-200 cursor-pointer group"
-                          >
-                            <div className="w-9 h-9 bg-gold/10 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-200 flex-shrink-0">
-                              <i className={`${item.icon} text-gold text-lg`}></i>
-                            </div>
-                            <div>
-                              <span className="font-sans text-sm font-medium text-darkgray group-hover:text-gold transition-colors duration-200 block">
                                 {item.name}
                               </span>
                               <span className="font-sans text-xs text-darkgray/60">{item.desc}</span>
@@ -398,44 +350,6 @@ const Header = () => {
                                 className="flex items-center space-x-3 px-4 py-2.5 rounded-lg hover:bg-olive/5 transition-colors duration-200 cursor-pointer"
                               >
                                 <i className={`${item.icon} text-olive text-base`}></i>
-                                <span className="font-sans text-sm text-darkgray">{item.name}</span>
-                              </Link>
-                            ))}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-
-                  {/* Mobile SAS Metodu Dropdown */}
-                  <div>
-                    <button
-                      onClick={() => setActiveMobileSubmenu(activeMobileSubmenu === 'sas' ? null : 'sas')}
-                      className="w-full flex items-center justify-between px-4 py-3 rounded-xl font-sans text-sm font-medium text-darkgray hover:bg-gold/5 transition-colors duration-200 cursor-pointer"
-                    >
-                      <span className="flex items-center space-x-2">
-                        <i className="ri-star-line text-gold"></i>
-                        <span>SAS Metodu</span>
-                      </span>
-                      <i className={`ri-arrow-down-s-line transition-transform duration-200 ${activeMobileSubmenu === 'sas' ? 'rotate-180' : ''}`}></i>
-                    </button>
-                    <AnimatePresence>
-                      {activeMobileSubmenu === 'sas' && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div className="pl-4 pt-2 space-y-1">
-                            {sasMetodu.map((item, idx) => (
-                              <Link
-                                key={idx}
-                                to={item.path}
-                                className="flex items-center space-x-3 px-4 py-2.5 rounded-lg hover:bg-gold/5 transition-colors duration-200 cursor-pointer"
-                              >
-                                <i className={`${item.icon} text-gold text-base`}></i>
                                 <span className="font-sans text-sm text-darkgray">{item.name}</span>
                               </Link>
                             ))}
