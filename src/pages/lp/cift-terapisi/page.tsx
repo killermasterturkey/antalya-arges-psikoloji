@@ -5,7 +5,6 @@ import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
 
 const LPCiftTerapisi = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [showUrgency, setShowUrgency] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -34,12 +33,12 @@ const LPCiftTerapisi = () => {
   ];
 
   const issues = [
-    { icon: 'ri-chat-delete-line', text: 'İletişim Kopukluğu', color: 'from-rose-500 to-pink-500' },
-    { icon: 'ri-shield-cross-line', text: 'Güven Sorunları', color: 'from-purple-500 to-indigo-500' },
-    { icon: 'ri-emotion-sad-line', text: 'Duygusal Uzaklaşma', color: 'from-amber-500 to-orange-500' },
-    { icon: 'ri-discuss-line', text: 'Sürekli Tartışmalar', color: 'from-red-500 to-rose-500' },
-    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Onarım', color: 'from-teal-500 to-cyan-500' },
-    { icon: 'ri-calendar-heart-line', text: 'Evlilik Öncesi Danışmanlık', color: 'from-pink-500 to-rose-500' },
+    { icon: 'ri-chat-delete-line', text: 'İletişim Kopukluğu', color: 'from-teal-500 to-cyan-500' },
+    { icon: 'ri-shield-cross-line', text: 'Güven Sorunları', color: 'from-slate-500 to-gray-500' },
+    { icon: 'ri-emotion-sad-line', text: 'Duygusal Uzaklaşma', color: 'from-cyan-500 to-teal-500' },
+    { icon: 'ri-discuss-line', text: 'Sürekli Tartışmalar', color: 'from-slate-600 to-slate-500' },
+    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Onarım', color: 'from-teal-600 to-teal-500' },
+    { icon: 'ri-calendar-heart-line', text: 'Evlilik Öncesi Danışmanlık', color: 'from-cyan-600 to-cyan-500' },
   ];
 
   const benefits = [
@@ -49,8 +48,8 @@ const LPCiftTerapisi = () => {
     { icon: 'ri-refresh-line', text: 'İlişki Onarımı', desc: 'Kanıtlanmış yöntemler' },
   ];
 
-  // Floating hearts
-  const floatingHearts = ['❤️', '💕', '💑', '💞', '💗', '🤍'];
+  // Floating elements - soft and calming
+  const floatingElements = ['🌿', '✨', '🫂', '💫', '🌸', '☁️'];
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -60,20 +59,14 @@ const LPCiftTerapisi = () => {
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  // Show urgency message after 3 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setShowUrgency(true), 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 via-pink-50 to-cream overflow-hidden">
-      {/* Floating Hearts Background */}
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-teal-50/30 to-white overflow-hidden">
+      {/* Floating Elements Background - Soft and Calming */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {floatingHearts.map((heart, i) => (
+        {floatingElements.map((element, i) => (
           <motion.div
             key={i}
-            className="absolute text-3xl opacity-20"
+            className="absolute text-3xl opacity-15"
             initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
               y: (typeof window !== 'undefined' ? window.innerHeight : 800) + 50,
@@ -83,21 +76,21 @@ const LPCiftTerapisi = () => {
               x: `+=${Math.sin(i) * 100}`,
             }}
             transition={{
-              duration: 12 + Math.random() * 8,
+              duration: 15 + Math.random() * 10,
               repeat: Infinity,
               delay: i * 2,
               ease: "linear",
             }}
           >
-            {heart}
+            {element}
           </motion.div>
         ))}
       </div>
 
-      {/* Animated Background Circles */}
+      {/* Animated Background Circles - Soft Teal/Sage Tones */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <motion.div
-          className="absolute -top-40 -right-40 w-96 h-96 bg-rose-200/30 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 90, 0],
@@ -105,7 +98,7 @@ const LPCiftTerapisi = () => {
           transition={{ duration: 20, repeat: Infinity }}
         />
         <motion.div
-          className="absolute top-1/2 -left-40 w-80 h-80 bg-pink-200/30 rounded-full blur-3xl"
+          className="absolute top-1/2 -left-40 w-80 h-80 bg-cyan-200/20 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             rotate: [90, 0, 90],
@@ -113,7 +106,7 @@ const LPCiftTerapisi = () => {
           transition={{ duration: 15, repeat: Infinity }}
         />
         <motion.div
-          className="absolute -bottom-20 right-1/3 w-72 h-72 bg-purple-200/20 rounded-full blur-3xl"
+          className="absolute -bottom-20 right-1/3 w-72 h-72 bg-slate-200/15 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.3, 1],
           }}
@@ -126,23 +119,23 @@ const LPCiftTerapisi = () => {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="font-serif text-xl font-bold text-darkgray flex items-center space-x-2">
             <motion.span
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 3, repeat: Infinity }}
             >
-              💕
+              🌿
             </motion.span>
             <span>Arges Psikoloji</span>
           </Link>
           <motion.a
             href="tel:+905403251525"
             onClick={() => trackPhoneClick('lp_header_cift')}
-            className="flex items-center space-x-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg"
+            className="flex items-center space-x-2 bg-gradient-to-r from-teal-600 to-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <motion.span
               animate={{ rotate: [0, 10, -10, 0] }}
-              transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
+              transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
             >
               <i className="ri-phone-fill"></i>
             </motion.span>
@@ -156,7 +149,7 @@ const LPCiftTerapisi = () => {
         <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
           {/* Background Image with Parallax */}
           <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
-            <div className="absolute inset-0 bg-gradient-to-r from-rose-900/80 via-pink-900/60 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 via-teal-900/60 to-transparent z-10" />
             <img
               src="/images/lp/couple-romantic.jpg"
               alt="Mutlu Çift"
@@ -167,26 +160,7 @@ const LPCiftTerapisi = () => {
           <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-            {/* Urgency Banner */}
-            <AnimatePresence>
-              {showUrgency && (
-                <motion.div
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-6 py-3 rounded-full inline-flex items-center space-x-2 shadow-lg"
-                >
-                  <motion.span
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                  >
-                    💕
-                  </motion.span>
-                  <span className="text-sm font-medium">Bu hafta 3 çift danışmanlık aldı</span>
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            {/* Heart Animation */}
+            {/* Couple Icon */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -195,10 +169,10 @@ const LPCiftTerapisi = () => {
             >
               <motion.div
                 animate={{
-                  scale: [1, 1.15, 1],
+                  scale: [1, 1.08, 1],
                 }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-                className="text-7xl"
+                transition={{ duration: 3, repeat: Infinity }}
+                className="text-6xl"
               >
                 💑
               </motion.div>
@@ -211,15 +185,15 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.2 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              İlişkinizi
+              İlişkinizde
               <motion.span
-                className="bg-gradient-to-r from-rose-300 to-pink-300 bg-clip-text text-transparent block"
+                className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent block"
                 animate={{
                   backgroundPosition: ['0%', '100%', '0%'],
                 }}
-                transition={{ duration: 5, repeat: Infinity }}
+                transition={{ duration: 8, repeat: Infinity }}
               >
-                Yeniden Keşfedin
+                Huzuru Bulun
               </motion.span>
             </motion.h1>
 
@@ -230,8 +204,8 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.3 }}
               className="text-lg sm:text-xl text-white/80 max-w-lg"
             >
-              İlişkinizde yaşadığınız sorunları <span className="font-semibold text-rose-300">birlikte çözmek</span> için
-              profesyonel çift terapisi desteği. Gizlilik garantili, uzman yaklaşım.
+              İlişkinizde yaşadığınız zorlukları <span className="font-semibold text-teal-300">profesyonel destek</span> ile aşın.
+              Güvenli ve gizli bir ortamda, uzman çift terapisi.
             </motion.p>
 
             {/* Stats Row */}
@@ -286,32 +260,26 @@ const LPCiftTerapisi = () => {
               <motion.a
                 href="tel:+905403251525"
                 onClick={() => trackPhoneClick('lp_hero_cift')}
-                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white px-12 py-5 rounded-full text-xl font-semibold shadow-2xl overflow-hidden group"
-                whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(244, 63, 94, 0.5)" }}
+                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-teal-600 to-teal-500 text-white px-12 py-5 rounded-full text-xl font-semibold shadow-2xl overflow-hidden group"
+                whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(20, 184, 166, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
               >
                 {/* Shimmer effect */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                   animate={{ x: ['-100%', '100%'] }}
-                  transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+                  transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
                 />
                 <motion.span
-                  animate={{ rotate: [0, 15, -15, 0] }}
-                  transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
+                  animate={{ rotate: [0, 10, -10, 0] }}
+                  transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 4 }}
                 >
                   <i className="ri-phone-fill text-2xl"></i>
                 </motion.span>
                 <span className="relative z-10">0540 325 15 25</span>
               </motion.a>
-              <p className="text-sm text-darkgray/60">
-                <motion.span
-                  animate={{ opacity: [1, 0.5, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  💕
-                </motion.span>
-                {' '}Ücretsiz ön görüşme için birlikte arayın
+              <p className="text-sm text-white/60">
+                Randevu almak için birlikte arayın
               </p>
             </motion.div>
 
@@ -344,17 +312,17 @@ const LPCiftTerapisi = () => {
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-rose-100"
+                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-teal-100"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7 + index * 0.1 }}
-                  whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(244, 63, 94, 0.2)" }}
+                  whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(20, 184, 166, 0.15)" }}
                 >
                   <motion.div
-                    className="w-12 h-12 bg-gradient-to-br from-rose-100 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    className="w-12 h-12 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-xl flex items-center justify-center mx-auto mb-3"
                     whileHover={{ rotate: 10 }}
                   >
-                    <i className={`${benefit.icon} text-2xl text-rose-500`}></i>
+                    <i className={`${benefit.icon} text-2xl text-teal-600`}></i>
                   </motion.div>
                   <p className="text-sm font-semibold text-darkgray">{benefit.text}</p>
                   <p className="text-xs text-darkgray/60 mt-1">{benefit.desc}</p>
@@ -372,8 +340,8 @@ const LPCiftTerapisi = () => {
               >
                 <motion.div
                   className="relative"
-                  animate={{ y: [0, -15, 0] }}
-                  transition={{ duration: 5, repeat: Infinity }}
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 6, repeat: Infinity }}
                 >
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
@@ -381,7 +349,7 @@ const LPCiftTerapisi = () => {
                       alt="Çift Terapisi"
                       className="w-full h-[500px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
 
                     {/* Floating Card */}
                     <motion.div
@@ -391,7 +359,7 @@ const LPCiftTerapisi = () => {
                       transition={{ delay: 0.8 }}
                     >
                       <div className="flex items-center space-x-4">
-                        <div className="text-4xl">💑</div>
+                        <div className="text-4xl">🤝</div>
                         <div>
                           <p className="font-semibold text-darkgray">Mutlu Çiftler</p>
                           <div className="flex items-center space-x-1">
@@ -407,11 +375,11 @@ const LPCiftTerapisi = () => {
 
                   {/* Floating Badges */}
                   <motion.div
-                    className="absolute -top-4 -right-4 bg-gradient-to-br from-rose-500 to-pink-500 text-white px-5 py-3 rounded-2xl shadow-xl"
-                    animate={{ rotate: [0, 5, -5, 0] }}
-                    transition={{ duration: 4, repeat: Infinity }}
+                    className="absolute -top-4 -right-4 bg-gradient-to-br from-teal-600 to-teal-500 text-white px-5 py-3 rounded-2xl shadow-xl"
+                    animate={{ rotate: [0, 3, -3, 0] }}
+                    transition={{ duration: 5, repeat: Infinity }}
                   >
-                    <p className="text-2xl">💕</p>
+                    <p className="text-2xl">✨</p>
                     <p className="text-xs">%92 Başarı</p>
                   </motion.div>
                 </motion.div>
@@ -430,7 +398,7 @@ const LPCiftTerapisi = () => {
         </section>
 
         {/* Image Gallery Section */}
-        <section className="py-16 px-6 lg:px-12 bg-gradient-to-b from-rose-50 to-pink-50">
+        <section className="py-16 px-6 lg:px-12 bg-gradient-to-b from-slate-50 to-teal-50/30">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -457,9 +425,9 @@ const LPCiftTerapisi = () => {
                   alt="Çift Terapisi Seansı"
                   className="w-full h-72 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent flex items-end p-6">
                   <div className="text-white">
-                    <p className="text-2xl mb-1">💑</p>
+                    <p className="text-2xl mb-1">🤝</p>
                     <p className="font-semibold">Çift Terapisi Seansı</p>
                   </div>
                 </div>
@@ -477,9 +445,9 @@ const LPCiftTerapisi = () => {
                   alt="Mutlu Çift"
                   className="w-full h-72 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-900/60 to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent flex items-end p-6">
                   <div className="text-white">
-                    <p className="text-2xl mb-1">❤️</p>
+                    <p className="text-2xl mb-1">🌿</p>
                     <p className="font-semibold">Mutlu İlişkiler</p>
                   </div>
                 </div>
@@ -497,12 +465,12 @@ const LPCiftTerapisi = () => {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <span className="text-4xl mb-4 block">💔</span>
+              <span className="text-4xl mb-4 block">🌱</span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-darkgray mb-4">
-                Bu Sorunları Birlikte Çözebiliriz
+                Bu Konularda Destek Sağlıyoruz
               </h2>
               <p className="text-darkgray/60 max-w-2xl mx-auto">
-                Her ilişkide zorluklar yaşanabilir. Önemli olan doğru destek almaktır.
+                Her ilişkide zorluklar yaşanabilir. Profesyonel destek ile bu süreçleri birlikte aşabilirsiniz.
               </p>
             </motion.div>
 
@@ -510,12 +478,12 @@ const LPCiftTerapisi = () => {
               {issues.map((issue, i) => (
                 <motion.div
                   key={i}
-                  className="relative overflow-hidden bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-5 border border-rose-100"
+                  className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-teal-50/50 rounded-2xl p-5 border border-teal-100"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  whileHover={{ scale: 1.02, boxShadow: "0 15px 30px -10px rgba(244, 63, 94, 0.15)" }}
+                  whileHover={{ scale: 1.02, boxShadow: "0 15px 30px -10px rgba(20, 184, 166, 0.1)" }}
                 >
                   <div className={`w-10 h-10 bg-gradient-to-br ${issue.color} rounded-lg flex items-center justify-center mb-3`}>
                     <i className={`${issue.icon} text-xl text-white`}></i>
@@ -528,7 +496,7 @@ const LPCiftTerapisi = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 px-6 lg:px-12">
+        <section className="py-16 px-6 lg:px-12 bg-slate-50/50">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -536,20 +504,20 @@ const LPCiftTerapisi = () => {
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <span className="text-4xl mb-4 block">💕</span>
+              <span className="text-4xl mb-4 block">✨</span>
               <h2 className="font-serif text-3xl font-bold text-darkgray">
-                Mutlu Çiftlerimiz
+                Danışan Deneyimleri
               </h2>
             </motion.div>
 
             <motion.div
-              className="relative bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-rose-100"
+              className="relative bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-teal-100"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="text-4xl">💑</span>
+                <span className="text-4xl">🤝</span>
               </div>
 
               <AnimatePresence mode="wait">
@@ -579,7 +547,7 @@ const LPCiftTerapisi = () => {
                   <p className="text-lg sm:text-xl text-darkgray/80 italic mb-6">
                     "{testimonials[activeTestimonial].text}"
                   </p>
-                  <p className="font-semibold text-rose-500">
+                  <p className="font-semibold text-teal-600">
                     {testimonials[activeTestimonial].author}
                   </p>
                 </motion.div>
@@ -593,8 +561,8 @@ const LPCiftTerapisi = () => {
                     onClick={() => setActiveTestimonial(i)}
                     className={`w-3 h-3 rounded-full transition-all ${
                       i === activeTestimonial
-                        ? 'bg-rose-500 w-8'
-                        : 'bg-rose-200 hover:bg-rose-300'
+                        ? 'bg-teal-500 w-8'
+                        : 'bg-teal-200 hover:bg-teal-300'
                     }`}
                   />
                 ))}
@@ -611,21 +579,21 @@ const LPCiftTerapisi = () => {
                 className="flex items-center space-x-2 text-darkgray/60"
                 whileHover={{ scale: 1.05 }}
               >
-                <i className="ri-shield-check-fill text-2xl text-rose-500"></i>
+                <i className="ri-shield-check-fill text-2xl text-teal-600"></i>
                 <span className="text-sm font-medium">Gizlilik Garantili</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-darkgray/60"
                 whileHover={{ scale: 1.05 }}
               >
-                <i className="ri-award-fill text-2xl text-rose-500"></i>
+                <i className="ri-award-fill text-2xl text-teal-600"></i>
                 <span className="text-sm font-medium">Uzman Psikologlar</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-darkgray/60"
                 whileHover={{ scale: 1.05 }}
               >
-                <i className="ri-map-pin-fill text-2xl text-rose-500"></i>
+                <i className="ri-map-pin-fill text-2xl text-teal-600"></i>
                 <span className="text-sm font-medium">Antalya Merkez</span>
               </motion.div>
             </div>
@@ -633,8 +601,8 @@ const LPCiftTerapisi = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 px-6 lg:px-12 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center relative overflow-hidden">
-          {/* Animated hearts background */}
+        <section className="py-20 px-6 lg:px-12 bg-gradient-to-r from-teal-600 to-teal-500 text-white text-center relative overflow-hidden">
+          {/* Animated background elements */}
           <div className="absolute inset-0 overflow-hidden">
             {[...Array(6)].map((_, i) => (
               <motion.div
@@ -645,16 +613,16 @@ const LPCiftTerapisi = () => {
                   top: `${Math.random() * 100}%`,
                 }}
                 animate={{
-                  y: [0, -20, 0],
-                  rotate: [0, 10, -10, 0],
+                  y: [0, -15, 0],
+                  rotate: [0, 5, -5, 0],
                 }}
                 transition={{
-                  duration: 4 + Math.random() * 2,
+                  duration: 6 + Math.random() * 2,
                   repeat: Infinity,
                   delay: i * 0.5,
                 }}
               >
-                💕
+                ✨
               </motion.div>
             ))}
           </div>
@@ -666,7 +634,7 @@ const LPCiftTerapisi = () => {
               viewport={{ once: true }}
               className="text-5xl mb-4"
             >
-              💑
+              🫂
             </motion.div>
             <motion.h2
               className="font-serif text-3xl sm:text-4xl font-bold"
@@ -674,7 +642,7 @@ const LPCiftTerapisi = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              İlişkinize Değer Verin
+              İlişkinizde Yeni Bir Başlangıç
             </motion.h2>
             <motion.p
               className="text-white/80 text-lg"
@@ -683,12 +651,12 @@ const LPCiftTerapisi = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Profesyonel destek için birlikte arayın. İlk adımı atın.
+              Profesyonel destek ile ilişkinizi güçlendirin. İlk adımı birlikte atın.
             </motion.p>
             <motion.a
               href="tel:+905403251525"
               onClick={() => trackPhoneClick('lp_footer_cift')}
-              className="inline-flex items-center space-x-3 bg-white text-rose-500 px-12 py-5 rounded-full text-xl font-bold hover:bg-cream transition-all duration-300 shadow-2xl"
+              className="inline-flex items-center space-x-3 bg-white text-teal-600 px-12 py-5 rounded-full text-xl font-bold hover:bg-slate-50 transition-all duration-300 shadow-2xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
@@ -697,8 +665,8 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.2 }}
             >
               <motion.span
-                animate={{ rotate: [0, 15, -15, 0] }}
-                transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
               >
                 <i className="ri-phone-fill text-2xl"></i>
               </motion.span>
@@ -716,7 +684,7 @@ const LPCiftTerapisi = () => {
 
       {/* Mobile Sticky CTA */}
       <motion.div
-        className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-r from-rose-500 to-pink-500 p-4 safe-area-bottom"
+        className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-r from-teal-600 to-teal-500 p-4 safe-area-bottom"
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", delay: 1 }}
@@ -724,16 +692,16 @@ const LPCiftTerapisi = () => {
         <motion.a
           href="tel:+905403251525"
           onClick={() => trackPhoneClick('lp_sticky_cift')}
-          className="flex items-center justify-center space-x-2 bg-white text-rose-500 py-4 rounded-full font-bold text-lg shadow-lg"
+          className="flex items-center justify-center space-x-2 bg-white text-teal-600 py-4 rounded-full font-bold text-lg shadow-lg"
           whileTap={{ scale: 0.95 }}
         >
           <motion.span
             animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
+            transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 4 }}
           >
             <i className="ri-phone-fill"></i>
           </motion.span>
-          <span>Birlikte Arayın: 0540 325 15 25</span>
+          <span>Randevu: 0540 325 15 25</span>
         </motion.a>
       </motion.div>
     </div>
