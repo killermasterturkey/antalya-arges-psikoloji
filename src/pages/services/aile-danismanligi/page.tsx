@@ -65,7 +65,7 @@ const AileDanismanligiPage = () => {
               >
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?w=800&h=1000&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80"
                     alt="Aile Danışmanlığı - Mutlu Aile Terapisi"
                     loading="lazy"
                     decoding="async"
