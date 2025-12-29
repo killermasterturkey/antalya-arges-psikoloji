@@ -32,11 +32,11 @@ const HizliRandevuPage = () => {
         return;
       }
 
-      // Production - Netlify Forms
-      const response = await fetch('/', {
+      // Production - Formspree (direkt info@argespsikoloji.com'a email gönderir)
+      const response = await fetch('https://formspree.io/f/mregrzbg', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formDataObj as any).toString(),
+        headers: { 'Accept': 'application/json' },
+        body: formDataObj,
       });
 
       if (response.ok) {
@@ -109,15 +109,9 @@ const HizliRandevuPage = () => {
                 <h2 className="font-serif text-3xl font-bold text-darkgray">Randevu Formu</h2>
 
                 <form
-                  name="randevu"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
                   onSubmit={handleSubmit}
                   className="space-y-6"
                 >
-                  <input type="hidden" name="form-name" value="randevu" />
-                  <input type="hidden" name="bot-field" />
 
                   <div>
                     <label className="block font-sans text-sm font-medium text-darkgray mb-2">Ad Soyad *</label>
