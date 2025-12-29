@@ -100,9 +100,9 @@ const SasNedirPage = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
-                  <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-gold text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-gold/90 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer whitespace-nowrap">
-                    <i className="ri-calendar-check-line"></i>
-                    <span>Ücretsiz Değerlendirme</span>
+                  <a href="tel:+905403251525" className="inline-flex items-center space-x-2 bg-gold text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-gold/90 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer whitespace-nowrap">
+                    <i className="ri-phone-line"></i>
+                    <span>Bilgi ve Randevu Al</span>
                   </a>
                   <a href="#programs" className="inline-flex items-center space-x-2 bg-white text-darkgray px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-cream transition-all duration-300 border border-darkgray/20 cursor-pointer whitespace-nowrap">
                     <span>Programları İncele</span>

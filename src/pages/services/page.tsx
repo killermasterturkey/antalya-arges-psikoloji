@@ -200,13 +200,11 @@ const ServicesPage = () => {
                 Uzman psikologlarımız size en uygun terapi yöntemini belirlemek için ücretsiz ön görüşme yapabilir.
               </p>
               <a
-                href="https://wa.me/905403251525"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+905403251525"
                 className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-olive transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer whitespace-nowrap"
               >
-                <span>Ücretsiz Ön Görüşme</span>
-                <i className="ri-arrow-right-line"></i>
+                <i className="ri-phone-line"></i>
+                <span>Bilgi ve Randevu Al</span>
               </a>
             </motion.div>
           </div>
