@@ -215,6 +215,15 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 
+    <!-- Netlify Forms - Hidden form for build detection -->
+    <form name="randevu" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="service" />
+      <textarea name="message"></textarea>
+    </form>
+
     <!-- Google Tag Manager (noscript) - Add your GTM ID when ready -->
     <noscript>
       <iframe src="about:blank" height="0" width="0" style="display:none;visibility:hidden"></iframe>

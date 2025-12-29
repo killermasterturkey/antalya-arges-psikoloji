@@ -6,9 +6,39 @@ import WhatsAppButton from '../../components/feature/WhatsAppButton';
 
 const HizliRandevuPage = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', service: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const form = e.currentTarget;
+      const formDataObj = new FormData(form);
+
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataObj as any).toString(),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    }
+
+    setIsSubmitting(false);
+    setTimeout(() => setSubmitStatus('idle'), 5000);
   };
 
   const services = [
@@ -66,7 +96,17 @@ const HizliRandevuPage = () => {
               >
                 <h2 className="font-serif text-3xl font-bold text-darkgray">Randevu Formu</h2>
 
-                <form className="space-y-6">
+                <form
+                  name="randevu"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="randevu" />
+                  <input type="hidden" name="bot-field" />
+
                   <div>
                     <label className="block font-sans text-sm font-medium text-darkgray mb-2">Ad Soyad *</label>
                     <input
@@ -74,6 +114,7 @@ const HizliRandevuPage = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
+                      required
                       className="w-full px-5 py-4 bg-cream border border-darkgray/10 rounded-xl font-sans text-sm"
                       placeholder="Adınız ve soyadınız"
                     />
@@ -87,6 +128,7 @@ const HizliRandevuPage = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        required
                         className="w-full px-5 py-4 bg-cream border border-darkgray/10 rounded-xl font-sans text-sm"
                         placeholder="5XX XXX XX XX"
                       />
@@ -110,6 +152,7 @@ const HizliRandevuPage = () => {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
+                      required
                       className="w-full px-5 py-4 bg-cream border border-darkgray/10 rounded-xl font-sans text-sm"
                     >
                       <option value="">Hizmet seçiniz</option>
@@ -133,10 +176,40 @@ const HizliRandevuPage = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-darkgray text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-olive transition-all duration-300"
+                    disabled={isSubmitting}
+                    className="w-full bg-darkgray text-white px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-olive transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Randevu Talebini Gönder
+                    {isSubmitting ? (
+                      <span className="flex items-center justify-center space-x-2">
+                        <i className="ri-loader-4-line animate-spin"></i>
+                        <span>Gönderiliyor...</span>
+                      </span>
+                    ) : (
+                      'Randevu Talebini Gönder'
+                    )}
                   </button>
+
+                  {submitStatus === 'success' && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="flex items-center space-x-2 bg-olive/10 text-olive px-4 py-3 rounded-xl"
+                    >
+                      <i className="ri-checkbox-circle-line text-xl"></i>
+                      <span className="font-sans text-sm">Randevu talebiniz başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.</span>
+                    </motion.div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="flex items-center space-x-2 bg-red-100 text-red-600 px-4 py-3 rounded-xl"
+                    >
+                      <i className="ri-error-warning-line text-xl"></i>
+                      <span className="font-sans text-sm">Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.</span>
+                    </motion.div>
+                  )}
                 </form>
               </motion.div>
 
