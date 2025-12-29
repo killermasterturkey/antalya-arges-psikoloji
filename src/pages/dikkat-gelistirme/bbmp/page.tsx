@@ -58,11 +58,12 @@ const BbmpPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-brain-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Beyin ve Beden Uyumu</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=800&h=600&fit=crop"
+                    alt="BBMP - Beyin ve Beden Motor Programı"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>

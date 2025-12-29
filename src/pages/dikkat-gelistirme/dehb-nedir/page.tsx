@@ -63,11 +63,12 @@ const DehbNedirPage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-olive/10 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <i className="ri-brain-line text-8xl text-olive/40"></i>
-                    <p className="font-sans text-darkgray/60">Dikkat ve Odaklanma</p>
-                  </div>
+                <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=600&fit=crop"
+                    alt="DEHB Nedir - Dikkat Eksikliği ve Hiperaktivite Bozukluğu"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>
