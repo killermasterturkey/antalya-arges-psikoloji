@@ -21,47 +21,48 @@ const BlogPage = () => {
       <WhatsAppButton />
 
       <main>
-        {/* Hero Section */}
-        <section className="pt-32 pb-16 px-6 lg:px-12 bg-gradient-to-b from-olive/5 to-transparent">
-          <div className="max-w-7xl mx-auto text-center">
+        {/* Hero Section with Integrated Categories */}
+        <section className="pt-32 pb-12 px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
+              className="text-center mb-12"
             >
               <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
                 <span className="text-darkgray">Blog & </span>
                 <span className="text-olive">Haberler</span>
               </h1>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Ruh sagligi, psikoloji ve kisisel gelisim hakkinda guncel yazilar, uzman gorusleri ve bilimsel arastirmalar
+                Ruh sağlığı, psikoloji ve kişisel gelişim hakkında güncel yazılar, uzman görüşleri ve bilimsel araştırmalar
               </p>
             </motion.div>
-          </div>
-        </section>
 
-        {/* Category Filter */}
-        <section className="py-8 px-6 lg:px-12 sticky top-20 bg-cream/95 backdrop-blur-md z-10 border-b border-darkgray/10">
-          <div className="max-w-7xl mx-auto">
+            {/* Category Filter - Modern Horizontal Scroll */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex flex-wrap gap-3 justify-center"
+              className="relative"
             >
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap cursor-pointer ${
-                    selectedCategory === category
-                      ? 'bg-olive text-white shadow-md'
-                      : 'bg-white text-darkgray hover:bg-olive/10'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+              <div className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide justify-start lg:justify-center">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`px-5 py-2 rounded-xl font-sans text-sm font-medium transition-all duration-300 whitespace-nowrap cursor-pointer flex-shrink-0 ${
+                      selectedCategory === category
+                        ? 'bg-darkgray text-white shadow-lg'
+                        : 'bg-white text-darkgray/70 hover:bg-olive/10 hover:text-darkgray border border-darkgray/10'
+                    }`}
+                  >
+                    {category === 'Tumu' ? 'Tümü' : category}
+                  </button>
+                ))}
+              </div>
+              {/* Gradient fade for scroll indication on mobile */}
+              <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-cream to-transparent pointer-events-none lg:hidden"></div>
             </motion.div>
           </div>
         </section>
