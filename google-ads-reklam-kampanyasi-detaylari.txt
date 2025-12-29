@@ -1,0 +1,815 @@
+================================================================================
+                    ARGES PSİKOLOJİ - GOOGLE ADS REKLAM KAMPANYASI
+                              KAPSAMLI STRATEJİ DOKÜMANI
+================================================================================
+
+Hazırlanma Tarihi: 29 Aralık 2025
+Web Sitesi: argespsikoloji.com
+Konum: Meltem Mah. 3850. Sk. Belgen Sitesi Muratpaşa/Antalya
+Telefon: 0540 325 15 25
+E-posta: info@argespsikoloji.com
+
+================================================================================
+                            BÖLÜM 1: WEB SİTESİ ANALİZİ
+================================================================================
+
+1.1 HİZMET PORTFÖYÜ ANALİZİ
+---------------------------
+
+Ana Hizmetler:
+- Bireysel Terapi (Depresyon, anksiyete, stres, travma)
+- Çift Terapisi (İletişim sorunları, güven, cinsel uyum)
+- Aile Terapisi (Aile içi iletişim, ebeveyn-çocuk)
+- Çocuk Psikolojisi (3-12 yaş, oyun terapisi)
+- Ergen Danışmanlığı (13-18 yaş)
+- EMDR Terapisi (Travma tedavisi)
+- Cinsel Terapi (Vajinismus, erken boşalma, isteksizlik)
+- Kariyer Danışmanlığı
+- SAS Metodu (Kişisel gelişim programları)
+- DEHB/Dikkat Geliştirme (MOXO testi)
+
+1.2 UZMAN KADRO
+---------------
+- Psk. Nur Deniz Yüksel: Şema Terapi, BDT, EMDR, Cinsel Terapi
+- Psk. Nezihi Ünal: Çocuk/Ergen, Oyun Terapisi, EMDR
+- Psk. Büşra Demirbaş: BDT, Oyun Terapisi, Dikkat Testi (MOXO)
+
+1.3 REKABET AVANTAJLARI
+-----------------------
+- Antalya merkezde kolay ulaşım
+- 3 uzman psikolog kadrosu
+- %100 gizlilik garantisi
+- Bilimsel temelli yaklaşımlar
+- Ücretsiz ön görüşme imkanı
+- WhatsApp ile hızlı iletişim
+- Online terapi seçeneği
+
+================================================================================
+                      BÖLÜM 2: HEDEF KİTLE SEGMENTASYONU
+================================================================================
+
+>>> KULLANICI TARAFINDAN BELİRLENEN ANA HEDEF KİTLE <<<
+-------------------------------------------------------
+Konum: ANTALYA (Şehir bazlı hedefleme)
+Yaş Aralığı: 25-50 YAŞ
+Ana Segment: Yetişkinler + Çocuklu Aileler
+
+Google Ads Demografik Hedefleme Ayarları:
+- Konum: Antalya (tüm ilçeler)
+- Yaş: 25-34, 35-44, 45-54 (seçili)
+- Ebeveynlik Durumu: "Ebeveyn" segmenti aktif
+- Cinsiyet: Tümü (her iki cinsiyet hedeflenecek)
+
+2.1 BİRİNCİL HEDEF KİTLELER (Yüksek Dönüşüm Potansiyeli)
+--------------------------------------------------------
+
+Segment A: Depresyon/Anksiyete Yaşayan Yetişkinler
+- Yaş: 25-50 (kullanıcı tarafından belirlenen aralık)
+- Cinsiyet: %60 Kadın, %40 Erkek
+- Durum: İş stresi, ilişki sorunları, yaşam değişiklikleri
+- Arama Niyeti: Acil yardım, profesyonel destek
+- Dönüşüm Olasılığı: ÇOK YÜKSEK
+
+Segment B: Çocuğu İçin Destek Arayan Ebeveynler (EN ÖNCELİKLİ)
+- Yaş: 25-50 (kullanıcı tarafından belirlenen aralık)
+- Cinsiyet: %75 Kadın (anneler)
+- Durum: Çocuğun davranış sorunları, okul başarısızlığı, DEHB şüphesi
+- Arama Niyeti: Çözüm odaklı, acil
+- Dönüşüm Olasılığı: ÇOK YÜKSEK
+- NOT: "Ebeveyn" demografik hedeflemesi kullanılmalı!
+
+Segment C: İlişki Sorunları Yaşayan Çiftler
+- Yaş: 25-50
+- Durum: İletişim kopukluğu, aldatma, boşanma eşiği
+- Arama Niyeti: İlişkiyi kurtarma
+- Dönüşüm Olasılığı: YÜKSEK
+
+Segment D: Cinsel Sorunlar Yaşayan Bireyler/Çiftler
+- Yaş: 25-50
+- Durum: Vajinismus, erken boşalma, cinsel isteksizlik
+- Arama Niyeti: Gizli, utangaç, acil çözüm arayan
+- Dönüşüm Olasılığı: ÇOK YÜKSEK (Hassas konu, telefon tercihi)
+
+2.2 İKİNCİL HEDEF KİTLELER
+--------------------------
+- Ergen çocuğu olan aileler (25-50 yaş ebeveynler)
+- Kariyer değişikliği düşünenler
+- Travma yaşamış bireyler
+- EMDR arayan kişiler
+
+2.3 GOOGLE ADS DEMOGRAFİK AYARLARI (ADIM ADIM)
+----------------------------------------------
+1. Kampanyayı oluşturduktan sonra "Kitleler" sekmesine gidin
+2. "Düzenleme" butonuna tıklayın
+3. "Demografik Bilgiler" bölümünü açın
+4. Yaş: 25-34, 35-44, 45-54 seçin (18-24 ve 55+ İŞARETLEMEYİN)
+5. "Ebeveynlik Durumu" için "Ebeveynler" seçin
+6. Konum: Antalya şehrini seçin
+
+NEDEN BU HEDEFLEME?
+-------------------
+- 25-50 yaş aralığı hem bireysel terapi hem de çocuk
+  psikolojisi için ideal müşteri profilidir
+- Çocuklu aileler özellikle çocuk psikolojisi ve aile
+  terapisi kampanyaları için yüksek dönüşüm sağlar
+- Antalya lokasyonu, kliniğin fiziksel konumuyla uyumludur
+
+================================================================================
+                    BÖLÜM 3: ANAHTAR KELİME STRATEJİSİ
+================================================================================
+
+3.1 YÜKSEK NİYETLİ ANAHTAR KELİMELER (Telefon Dönüşümü Odaklı)
+--------------------------------------------------------------
+
+>>> LOKASYON BAZLI (EN ÖNCELİKLİ) <<<
+
+Birincil Anahtar Kelimeler:
+- "antalya psikolog" (Yüksek hacim, yüksek rekabet)
+- "antalya psikolog telefon" (Direkt dönüşüm)
+- "antalyada psikolog" (Yerel arama)
+- "muratpaşa psikolog" (Hyper-local)
+- "antalya psikoloji kliniği" (Kurumsal arama)
+
+Sebep: Lokasyon bazlı aramalar, acil yardım arayanların ilk tercihidir.
+Telefon dönüşümü için en değerli kelimelerdir.
+
+>>> HİZMET BAZLI ANAHTAR KELİMELER <<<
+
+Çocuk Psikolojisi (Yüksek Dönüşüm):
+- "antalya çocuk psikoloğu"
+- "antalya pedagog"
+- "antalya çocuk terapisi"
+- "antalya oyun terapisi"
+- "çocuk psikolog antalya"
+
+Sebep: Ebeveynler çocukları için hızlı çözüm ararlar ve
+telefon ile randevu almayı tercih ederler.
+
+Çift Terapisi (Yüksek Dönüşüm):
+- "antalya çift terapisi"
+- "antalya evlilik danışmanlığı"
+- "antalya evlilik terapisi"
+- "çift terapisi antalya"
+
+Sebep: İlişki sorunları acil müdahale gerektirir,
+çiftler telefon ile detaylı bilgi almak ister.
+
+Cinsel Terapi (EN YÜKSEK DÖNÜŞÜM):
+- "antalya cinsel terapi"
+- "antalya cinsel terapist"
+- "vajinismus tedavisi antalya"
+- "erken boşalma tedavisi antalya"
+- "cinsel terapi antalya"
+
+Sebep: Hassas konu olduğu için kullanıcılar:
+1. Form doldurmak istemezler (gizlilik kaygısı)
+2. Telefon ile gizli görüşme tercih ederler
+3. WhatsApp ile yazışmayı tercih edebilirler
+
+DEHB/Dikkat Eksikliği:
+- "antalya dehb testi"
+- "moxo testi antalya"
+- "dikkat eksikliği testi antalya"
+- "çocuklarda dikkat eksikliği antalya"
+
+Sebep: Test için randevu gerektiren spesifik arama.
+
+EMDR Terapisi:
+- "emdr terapisi antalya"
+- "emdr antalya"
+- "travma terapisi antalya"
+
+Sebep: Spesifik terapi yöntemi arayanlar bilgili kullanıcılardır.
+
+3.2 NEGATIF ANAHTAR KELİMELER
+-----------------------------
+- ücretsiz
+- bedava
+- online test
+- pdf
+- kitap
+- makale
+- nedir (bilgi amaçlı)
+- nasıl yapılır
+- istanbul
+- ankara
+- izmir
+- [diğer şehirler]
+
+Sebep: Ücretsiz hizmet arayanları ve bilgi amaçlı aramaları
+filtreleyerek bütçe israfını önler.
+
+================================================================================
+                    BÖLÜM 4: KAMPANYA YAPILANDIRMASI
+================================================================================
+
+4.1 KAMPANYA HİYERARŞİSİ
+------------------------
+
+KAMPANYA 1: [TELEFON] Antalya Psikolog - Marka
+├── Reklam Grubu 1.1: Antalya Psikolog Genel
+├── Reklam Grubu 1.2: Muratpaşa Psikolog
+└── Reklam Grubu 1.3: Marka Aramaları (Arges)
+
+KAMPANYA 2: [TELEFON] Çocuk Psikolojisi
+├── Reklam Grubu 2.1: Çocuk Psikolog
+├── Reklam Grubu 2.2: Pedagog Antalya
+├── Reklam Grubu 2.3: Oyun Terapisi
+└── Reklam Grubu 2.4: DEHB/Dikkat Testi
+
+KAMPANYA 3: [TELEFON] Çift & Aile Terapisi
+├── Reklam Grubu 3.1: Çift Terapisi
+├── Reklam Grubu 3.2: Evlilik Danışmanlığı
+└── Reklam Grubu 3.3: Aile Terapisi
+
+KAMPANYA 4: [TELEFON] Cinsel Terapi
+├── Reklam Grubu 4.1: Cinsel Terapi Genel
+├── Reklam Grubu 4.2: Vajinismus
+├── Reklam Grubu 4.3: Erkek Cinsel Sağlık
+└── Reklam Grubu 4.4: Çift Cinsel Uyum
+
+KAMPANYA 5: [TELEFON] Bireysel Terapi
+├── Reklam Grubu 5.1: Depresyon
+├── Reklam Grubu 5.2: Anksiyete/Kaygı
+├── Reklam Grubu 5.3: Travma/EMDR
+└── Reklam Grubu 5.4: Stres Yönetimi
+
+4.2 BİD STRATEJİSİ
+------------------
+
+Önerilen Strateji: "Dönüşümleri Maksimize Et" veya "Hedef TBM"
+
+Başlangıç Bid'leri (Tahmini):
+- Antalya Psikolog: 15-25 TL
+- Çocuk Psikolog: 12-20 TL
+- Çift Terapisi: 10-18 TL
+- Cinsel Terapi: 8-15 TL (Düşük rekabet)
+- EMDR: 8-12 TL
+
+Sebep: Başlangıçta manuel CPC ile veri toplayın,
+sonra otomatik bid stratejisine geçin.
+
+4.3 BÜTÇE DAĞILIMI (Günlük Örnek: 500 TL)
+-----------------------------------------
+
+Kampanya 1 (Marka/Genel): 150 TL (%30)
+- Sebep: En yüksek hacimli aramalar
+
+Kampanya 2 (Çocuk): 125 TL (%25)
+- Sebep: Yüksek dönüşüm potansiyeli
+
+Kampanya 3 (Çift/Aile): 100 TL (%20)
+- Sebep: Orta-yüksek dönüşüm
+
+Kampanya 4 (Cinsel): 75 TL (%15)
+- Sebep: Düşük hacim ama çok yüksek dönüşüm
+
+Kampanya 5 (Bireysel): 50 TL (%10)
+- Sebep: Genel aramalar, düşük öncelik
+
+================================================================================
+                    BÖLÜM 5: REKLAM METİNLERİ
+================================================================================
+
+>>> TELEFON NUMARASI GÖSTERİMİ İÇİN KRİTİK AYAR <<<
+Google Ads'te "Arama Uzantıları" (Call Extensions) MUTLAKA etkinleştirilmelidir.
+Telefon: +90 540 325 15 25
+
+5.1 KAMPANYA 1: ANTALYA PSİKOLOG (MARKA/GENEL)
+----------------------------------------------
+
+Reklam Başlığı 1 (30 karakter):
+"Antalya Psikolog | 0540 325 15"
+
+Reklam Başlığı 2:
+"Hemen Arayın - Ücretsiz Görüşme"
+
+Reklam Başlığı 3:
+"Uzman Psikolog Kadrosu"
+
+Açıklama 1 (90 karakter):
+"Antalya'da Uzman Psikolog Desteği. İlk Görüşme Ücretsiz.
+Hemen Arayın: 0540 325 15 25"
+
+Açıklama 2:
+"3 Uzman Psikolog. Bireysel, Çift, Aile Terapisi.
+Muratpaşa Merkez Konum. Randevu İçin Arayın."
+
+SEBEP:
+- Başlıkta telefon numarasının bir kısmını göstermek
+  "click-to-call" davranışını tetikler
+- "Hemen Arayın" call-to-action telefon dönüşümünü artırır
+- "Ücretsiz Görüşme" güçlü bir teşvik unsurudur
+
+5.2 KAMPANYA 2: ÇOCUK PSİKOLOJİSİ
+---------------------------------
+
+Reklam Başlığı 1:
+"Antalya Çocuk Psikoloğu"
+
+Reklam Başlığı 2:
+"Oyun Terapisi Uzmanı"
+
+Reklam Başlığı 3:
+"0540 325 15 25 - Hemen Arayın"
+
+Açıklama 1:
+"Çocuğunuzun Davranış Sorunlarına Çözüm. Oyun Terapisi ile
+Güvenli Destek. Ücretsiz Ön Değerlendirme İçin Arayın."
+
+Açıklama 2:
+"3-12 Yaş Çocuklar İçin Uzman Destek. Dikkat Eksikliği,
+Kaygı, Okul Sorunları. Muratpaşa'da Hizmet."
+
+SEBEP:
+- Ebeveynler çocukları için hızlı çözüm ister
+- "Oyun Terapisi" güvenli ve çocuk dostu imaj yaratır
+- Yaş aralığı belirtmek hedeflemeyi netleştirir
+
+5.3 KAMPANYA 3: ÇİFT TERAPİSİ
+-----------------------------
+
+Reklam Başlığı 1:
+"Antalya Çift Terapisi"
+
+Reklam Başlığı 2:
+"İlişkinizi Kurtarın"
+
+Reklam Başlığı 3:
+"Uzman Desteği İçin Arayın"
+
+Açıklama 1:
+"İlişkinizde Sorunlar mı Var? Uzman Çift Terapistlerimiz
+Yanınızda. Gizlilik Garantisi. Hemen Arayın: 0540 325 15 25"
+
+Açıklama 2:
+"İletişim Sorunları, Güven Problemleri, Cinsel Uyumsuzluk
+için Profesyonel Destek. İlk Seans %50 İndirimli."
+
+SEBEP:
+- "İlişkinizi Kurtarın" duygusal tetikleyici
+- Gizlilik vurgusu çiftler için kritik
+- Spesifik sorunları listelemek ilgiyi artırır
+
+5.4 KAMPANYA 4: CİNSEL TERAPİ
+-----------------------------
+
+Reklam Başlığı 1:
+"Cinsel Terapi Antalya"
+
+Reklam Başlığı 2:
+"Gizli ve Profesyonel Destek"
+
+Reklam Başlığı 3:
+"Uzman Terapist - Arayın"
+
+Açıklama 1:
+"Cinsel Yaşam Sorunlarına Profesyonel Çözüm. %100 Gizlilik
+Garantisi. Bireysel veya Çift Olarak. Hemen Arayın."
+
+Açıklama 2:
+"Vajinismus, Cinsel İsteksizlik, Uyumsuzluk için Uzman
+Destek. Güvenli Ortamda Tedavi. Randevu: 0540 325 15 25"
+
+SEBEP:
+- Bu segment için GİZLİLİK en önemli faktördür
+- Form doldurmak istemezler, telefon tercih ederler
+- WhatsApp numarası da eklenebilir
+- Açık ve profesyonel dil utangaçlığı azaltır
+
+5.5 KAMPANYA 5: BİREYSEL TERAPİ / DEPRESYON
+-------------------------------------------
+
+Reklam Başlığı 1:
+"Depresyonla Mücadele"
+
+Reklam Başlığı 2:
+"Antalya Uzman Psikolog"
+
+Reklam Başlığı 3:
+"Bugün Arayın - Destek Alın"
+
+Açıklama 1:
+"Depresyon, Kaygı, Stres ile Başa Çıkmanıza Yardımcı
+Oluyoruz. Uzman Psikolog Desteği. İlk Görüşme Ücretsiz."
+
+Açıklama 2:
+"Kendinizi Yalnız Hissetmeyin. Profesyonel Psikolojik
+Destek Bir Telefon Kadar Yakın. 0540 325 15 25"
+
+SEBEP:
+- Depresyon yaşayan kişiler için "yalnız değilsiniz" mesajı
+  güçlü bir bağ kurar
+- Aciliyet hissi yaratmak önemli
+- Engel kaldırıcı mesajlar (ücretsiz görüşme) etkili
+
+================================================================================
+                    BÖLÜM 6: UZANTILAR (EXTENSIONS)
+================================================================================
+
+6.1 ARAMA UZANTISI (CALL EXTENSION) - EN KRİTİK
+-----------------------------------------------
+
+Telefon Numarası: +90 540 325 15 25
+Gösterim Saatleri: 09:00 - 20:00 (Çalışma saatleri)
+
+SEBEP: Bu uzantı, reklamınızın yanında direkt "Ara" butonu
+gösterir. Mobil cihazlarda tek tıkla arama yapılabilir.
+Telefon dönüşümü için ZORUNLUDUR.
+
+6.2 YER UZANTISI (LOCATION EXTENSION)
+-------------------------------------
+
+Adres: Meltem Mah. 3850. Sk. Belgen Sitesi D:7 Blok
+       K:4 D:10 Muratpaşa/Antalya
+
+Google Business Profile ile entegre edilmeli.
+
+SEBEP: Yerel aramalarda "Yakınımda" sonuçlarında görünürlük
+sağlar. Güven oluşturur.
+
+6.3 AÇIKLAMA UZANTILARI (CALLOUT EXTENSIONS)
+--------------------------------------------
+
+- "Ücretsiz İlk Görüşme"
+- "3 Uzman Psikolog"
+- "Gizlilik Garantisi"
+- "Hafta Sonu Açık"
+- "WhatsApp İletişim"
+- "Muratpaşa Merkez"
+
+SEBEP: Ekstra bilgi vererek reklamın görünürlüğünü artırır.
+
+6.4 YAPI UZANTILARI (STRUCTURED SNIPPETS)
+-----------------------------------------
+
+Başlık: Hizmetler
+Değerler: Bireysel Terapi, Çift Terapisi, Çocuk Psikolojisi,
+          EMDR, Cinsel Terapi, Aile Terapisi
+
+SEBEP: Hizmet çeşitliliğini tek bakışta gösterir.
+
+6.5 SİTE BAĞLANTISI UZANTILARI (SITELINK EXTENSIONS)
+---------------------------------------------------
+
+Sitelink 1: "Hizmetlerimiz" -> /services
+Sitelink 2: "Ekibimiz" -> /team
+Sitelink 3: "Hızlı Randevu" -> /hizli-randevu
+Sitelink 4: "İletişim" -> /contact
+
+SEBEP: Kullanıcıları direkt ilgili sayfalara yönlendirir.
+
+================================================================================
+                    BÖLÜM 7: TELEFON DÖNÜŞÜMÜ OPTİMİZASYONU
+================================================================================
+
+7.1 DÖNÜŞÜM TAKİBİ KURULUMU
+---------------------------
+
+A) Google Ads Arama Dönüşümü:
+   - Google Ads panelinde "Arama Uzantısı" dönüşümü
+     otomatik izlenir
+   - Minimum süre: 60 saniye (kaliteli arama için)
+
+B) Web Sitesi Tıkla-Ara Dönüşümü:
+   - Web sitesindeki "tel:" linklerine event tracking ekleyin
+   - GTM (Google Tag Manager) ile kurulum önerilir
+
+   Kod örneği:
+   <a href="tel:+905403251525"
+      onclick="gtag('event', 'conversion', {
+        'send_to': 'AW-XXXXXXXXX/YYYYYYY'
+      });">
+
+C) WhatsApp Tıklama Dönüşümü:
+   - WhatsApp linklerine de event tracking ekleyin
+
+7.2 ARAMA DÖNÜŞÜMÜ ARTIRMA TAKTİKLERİ
+-------------------------------------
+
+1. Mobil Öncelikli Hedefleme:
+   - Mobil cihaz bid'lerini %20-30 artırın
+   - Sebep: Mobilde "Ara" butonu çok daha etkili
+
+2. Saat Bazlı Optimizasyon:
+   - 09:00-12:00: Normal bid
+   - 12:00-14:00: %10 artış (öğle arası aramalar)
+   - 14:00-18:00: Normal bid
+   - 18:00-20:00: %20 artış (iş çıkışı aramalar)
+   - 20:00-09:00: Reklamları durdur veya düşük bid
+
+3. Gün Bazlı Optimizasyon:
+   - Pazartesi-Cuma: Normal bid
+   - Cumartesi: %15 artış (hafta sonu randevu aramaları)
+   - Pazar: Düşük bid veya durdur
+
+7.3 REKLAM AÇILIŞ SAYFASI OPTİMİZASYONU
+---------------------------------------
+
+Mevcut Durum: Sitenizde CallBanner komponenti mevcut (mobile
+sticky bar + desktop floating button). BU ÇOK İYİ!
+
+Ek Öneriler:
+1. Landing page'lerin üstüne büyük "HEP ARAYIN" butonu ekleyin
+2. Formun yanına "Hemen arayın: 0540 325 15 25" yazısı koyun
+3. WhatsApp butonu zaten mevcut, iyi konumlandırılmış
+
+================================================================================
+                    BÖLÜM 8: BÜTÇE VE ROI HESAPLAMALARI
+================================================================================
+
+8.1 TAHMİNİ MALİYETLER
+----------------------
+
+Ortalama CPC (Tıklama Başı Maliyet): 15 TL
+Ortalama Dönüşüm Oranı (Arama): %5-8
+Ortalama Müşteri Değeri: 2000-5000 TL (8-12 seans)
+
+Hesaplama:
+- 100 tıklama x 15 TL = 1500 TL reklam harcaması
+- 100 tıklama x %6 dönüşüm = 6 telefon araması
+- 6 arama x %50 randevu = 3 yeni danışan
+- 3 danışan x 3000 TL ortalama = 9000 TL gelir
+- ROI: (9000-1500)/1500 = %500
+
+8.2 BAŞLANGIÇ BÜTÇESİ ÖNERİSİ
+-----------------------------
+
+Minimum Test Bütçesi: Günlük 200-300 TL (Aylık 6000-9000 TL)
+Optimum Bütçe: Günlük 500 TL (Aylık 15000 TL)
+Agresif Büyüme: Günlük 1000+ TL
+
+Sebep: İlk 2-4 hafta veri toplama süreci gereklidir.
+Düşük bütçe ile başlayıp, performansa göre artırın.
+
+================================================================================
+                    BÖLÜM 9: ADIM ADIM KURULUM KILAVUZU
+================================================================================
+
+ADIM 1: Google Ads Hesabı Oluşturma
+-----------------------------------
+1. ads.google.com adresine gidin
+2. Google hesabınızla giriş yapın
+3. Yeni reklam hesabı oluşturun
+4. Fatura bilgilerinizi girin
+5. Para birimi: TRY (Türk Lirası)
+6. Zaman dilimi: Türkiye (GMT+3)
+
+ADIM 2: Dönüşüm Takibi Kurulumu
+-------------------------------
+1. Araçlar > Ölçüm > Dönüşümler
+2. + Dönüşüm Ekle
+3. "Telefon aramaları" seçin
+4. "Reklamlardaki arama uzantısından veya sadece arama
+   reklamlarından gelen aramalar" seçin
+5. Dönüşüm adı: "Telefon Araması"
+6. Değer: 500 TL (tahmini)
+7. Sayma: Her arama
+8. Arama süresi: 60 saniye
+
+ADIM 3: Arama Uzantısı Ekleme
+-----------------------------
+1. Reklamlar ve uzantılar > Uzantılar
+2. + Uzantı ekle > Arama uzantısı
+3. Telefon numarası: +90 540 325 15 25
+4. Gösterim programı: 09:00-20:00
+
+ADIM 4: İlk Kampanyayı Oluşturma
+--------------------------------
+1. + Yeni kampanya
+2. Hedef: "Satış" veya "Müşteri adayları"
+3. Kampanya türü: "Arama"
+4. "Telefon aramaları" kutusunu işaretleyin
+5. Kampanya adı: "[TELEFON] Antalya Psikolog - Marka"
+6. Ağlar: Yalnızca Arama Ağı (Display kapalı)
+7. Konumlar: Antalya (şehir)
+8. Diller: Türkçe
+9. Bütçe: 150 TL/gün
+10. Teklif stratejisi: Manuel CPC (başlangıç için)
+
+ADIM 5: Reklam Grubu ve Anahtar Kelimeler
+-----------------------------------------
+1. Reklam grubu adı: "Antalya Psikolog Genel"
+2. Varsayılan teklif: 15 TL
+3. Anahtar kelimeler:
+   - [antalya psikolog] (exact match)
+   - "antalya psikolog" (phrase match)
+   - antalya +psikolog (broad match modifier)
+   - [antalya psikoloji] (exact match)
+
+ADIM 6: Reklam Metinleri Oluşturma
+----------------------------------
+1. Duyarlı arama reklamı oluşturun
+2. 15 başlık ekleyin (yukarıdaki örneklerden)
+3. 4 açıklama ekleyin
+4. Son URL: https://argespsikoloji.com
+5. Görüntüleme yolu: argespsikoloji.com/antalya-psikolog
+
+ADIM 7: Diğer Kampanyaları Oluşturma
+------------------------------------
+ADIM 4-6'yı her kampanya için tekrarlayın:
+- Çocuk Psikolojisi
+- Çift Terapisi
+- Cinsel Terapi
+- Bireysel Terapi
+
+ADIM 8: Negatif Anahtar Kelime Listesi
+--------------------------------------
+1. Araçlar > Paylaşılan kitaplık > Negatif anahtar kelime listeleri
+2. + Liste oluştur
+3. Liste adı: "Genel Negatif Kelimeler"
+4. Kelimeleri ekleyin (Bölüm 3.2'deki liste)
+5. Listeyi tüm kampanyalara uygulayın
+
+ADIM 9: Lansman Öncesi Kontrol Listesi
+--------------------------------------
+[ ] Dönüşüm takibi kuruldu mu?
+[ ] Arama uzantısı eklendi mi?
+[ ] Yer uzantısı eklendi mi?
+[ ] Callout uzantıları eklendi mi?
+[ ] Sitelink uzantıları eklendi mi?
+[ ] Negatif anahtar kelimeler eklendi mi?
+[ ] Bütçeler doğru ayarlandı mi?
+[ ] Konum hedefleme doğru mu?
+[ ] Reklam metinleri onaylandı mı?
+
+ADIM 10: Lansman ve İzleme
+--------------------------
+1. Kampanyaları etkinleştirin
+2. İlk 24 saat: Her 4 saatte bir kontrol
+3. İlk hafta: Günlük kontrol
+4. Sonrası: Haftalık optimizasyon
+
+================================================================================
+                    BÖLÜM 10: OPTİMİZASYON TAKVİMİ
+================================================================================
+
+HAFTA 1-2: Öğrenme Dönemi
+-------------------------
+- Günlük performans kontrolü
+- Hangi anahtar kelimelerin dönüşüm sağladığını izleyin
+- Kötü performans gösteren kelimeleri not alın
+- Henüz büyük değişiklik yapmayın
+
+HAFTA 3-4: İlk Optimizasyon
+---------------------------
+- Dönüşüm sağlamayan kelimeleri duraklatın
+- İyi performans gösteren kelimelere bid artırın
+- Yeni anahtar kelime fikirleri ekleyin
+- Reklam metinlerini A/B test edin
+
+AY 2: Ölçeklendirme
+-------------------
+- Başarılı kampanyalara bütçe artırın
+- Yeni reklam grupları ekleyin
+- Remarketing kampanyası başlatın
+- Display Network test edin
+
+AY 3+: Sürdürülebilir Büyüme
+----------------------------
+- Otomatik bid stratejisine geçin
+- Sezonsal optimizasyonlar yapın
+- Rakip analizi ve strateji güncelleme
+- Yeni hizmetler için kampanya ekleyin
+
+================================================================================
+                    BÖLÜM 11: SIKÇA YAPILAN HATALAR VE ÖNLEMLERİ
+================================================================================
+
+HATA 1: Çok Geniş Hedefleme
+---------------------------
+Problem: "psikolog" gibi tek kelime kullanmak
+Çözüm: Lokasyon + hizmet kombinasyonları kullanın
+
+HATA 2: Display Network Açık Bırakmak
+-------------------------------------
+Problem: Arama kampanyasında Display açıksa bütçe israfı
+Çözüm: Arama kampanyalarında Display'i KAPATIN
+
+HATA 3: Dönüşüm Takibi Olmadan Başlamak
+---------------------------------------
+Problem: Hangi kelimelerin işe yaradığını bilemezsiniz
+Çözüm: MUTLAKA arama dönüşümü takibi kurun
+
+HATA 4: Mobil Optimizasyon Yapmamak
+-----------------------------------
+Problem: Aramaların %70'i mobilden gelir
+Çözüm: Mobil bid ayarlaması yapın, mobil deneyimi test edin
+
+HATA 5: Arama Uzantısı Kullanmamak
+----------------------------------
+Problem: Telefon dönüşümü potansiyelini kaybedersiniz
+Çözüm: ARAMA UZANTISI MUTLAKA etkinleştirin
+
+HATA 6: Tek Reklam Metni Kullanmak
+----------------------------------
+Problem: Optimizasyon için veri yetersiz
+Çözüm: Her reklam grubunda en az 3 farklı reklam test edin
+
+HATA 7: Negatif Anahtar Kelime Kullanmamak
+------------------------------------------
+Problem: İlgisiz aramalara para harcarsınız
+Çözüm: Düzenli olarak arama terimlerini kontrol edin ve
+       ilgisiz olanları negatif listeye ekleyin
+
+================================================================================
+                    BÖLÜM 12: İLERİ SEVİYE STRATEJİLER
+================================================================================
+
+12.1 REMARKETING KAMPANYASI
+---------------------------
+Ziyaretçileri yeniden hedeflemek için:
+1. Google Ads remarketing etiketi kurun
+2. Site ziyaretçileri listesi oluşturun
+3. Display veya YouTube remarketing kampanyası başlatın
+
+Hedef Kitle Segmentleri:
+- Hizmetler sayfasını ziyaret edenler
+- İletişim sayfasına ulaşıp form doldurmamış olanlar
+- 3+ sayfa görüntüleyenler
+
+12.2 YOUTUBE REKLAMLARI
+-----------------------
+Psikoloji kliniği için video reklamlar güçlü olabilir:
+- Klinik tanıtım videosu
+- Uzman psikolog röportajları
+- Terapi süreci hakkında bilgilendirme
+
+12.3 YEREL HİZMET REKLAMLARI (Local Services Ads)
+-------------------------------------------------
+Google'ın yeni formatı, sağlık hizmetleri için uygundur.
+"Google Garantili" rozeti güven oluşturur.
+
+================================================================================
+                    BÖLÜM 13: ÖNEMLİ METRIKLER VE KPI'LAR
+================================================================================
+
+Takip Edilmesi Gereken Metrikler:
+---------------------------------
+1. Gösterim Sayısı (Impressions): Reklamın görünme sayısı
+2. Tıklama Sayısı (Clicks): Reklama tıklama sayısı
+3. CTR (Click-Through Rate): Tıklama oranı (Hedef: %3-5+)
+4. CPC (Cost Per Click): Tıklama başı maliyet
+5. Dönüşüm Sayısı: Telefon araması sayısı
+6. Dönüşüm Oranı: Tıklama başına arama oranı (Hedef: %5+)
+7. CPA (Cost Per Acquisition): Arama başı maliyet
+8. Arama Kalitesi: 60 saniye+ arama sayısı
+9. Kalite Puanı (Quality Score): Google'ın reklam kalite notu
+
+Hedef KPI'lar:
+--------------
+- CTR: %3-5+
+- Kalite Puanı: 7+
+- Dönüşüm Oranı: %5-8+
+- CPA: 150-250 TL (telefon araması başına)
+- ROI: %300+
+
+================================================================================
+                    BÖLÜM 14: YASAL VE ETİK NOTLAR
+================================================================================
+
+Google Ads Sağlık Politikaları:
+-------------------------------
+- Psikoloji hizmetleri reklamları Google tarafından kabul edilir
+- Tıbbi teşhis veya tedavi vaadi içermemelidir
+- "Kesin çözüm", "garantili tedavi" gibi ifadelerden kaçının
+- Müşteri yorumlarında kişisel sağlık bilgisi kullanmayın
+
+Önerilen Dil:
+- "Profesyonel destek" ✓
+- "Uzman eşliğinde terapi" ✓
+- "Psikolojik danışmanlık" ✓
+- "Kesin tedavi" ✗
+- "Garantili iyileşme" ✗
+
+================================================================================
+                    BÖLÜM 15: İLETİŞİM VE DESTEK
+================================================================================
+
+Bu kampanya planı, Arges Psikoloji web sitesinin kapsamlı
+analizine dayanılarak hazırlanmıştır.
+
+Kampanya Özeti:
+- 5 ana kampanya
+- 15+ reklam grubu
+- 50+ anahtar kelime
+- Telefon dönüşümü odaklı strateji
+- Lokasyon bazlı hedefleme (Antalya)
+
+Başarı İçin Kritik Faktörler:
+1. ARAMA UZANTISI MUTLAKA AKTİF OLMALI
+2. Dönüşüm takibi doğru kurulmalı
+3. İlk 4 hafta sabırlı olunmalı
+4. Düzenli optimizasyon yapılmalı
+5. Telefon yanıt kalitesi yüksek olmalı
+
+================================================================================
+                              SON
+================================================================================
+
+Bu doküman, Arges Psikoloji'nin Google Ads kampanyası için
+kapsamlı bir rehber niteliğindedir. Kampanya performansına
+göre güncellenmelidir.
+
+Hazırlayan: Claude AI
+Tarih: 29 Aralık 2025

@@ -8,7 +8,6 @@ const AileDanismanligiPage = () => {
   const topics = [
     { icon: 'ri-chat-3-line', title: 'İletişim Sorunları', description: 'Aile içi iletişimi güçlendirme ve sağlıklı diyalog kurma.' },
     { icon: 'ri-emotion-unhappy-line', title: 'Çatışma Çözümü', description: 'Aile içi anlaşmazlıkları yapıcı şekilde çözme.' },
-    { icon: 'ri-parent-line', title: 'Ebeveynlik', description: 'Etkili ebeveynlik becerileri geliştirme.' },
     { icon: 'ri-heart-line', title: 'İlişki Güçlükleri', description: 'Aile bağları ve ilişkileri onarma.' },
   ];
 
@@ -92,7 +91,7 @@ const AileDanismanligiPage = () => {
               </h2>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {topics.map((topic, index) => (
                 <motion.div
                   key={index}
