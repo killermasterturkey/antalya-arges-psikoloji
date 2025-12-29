@@ -66,7 +66,7 @@ const AntalyaPedagogPage = () => {
               >
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80"
+                    src="/images/services/pedagog-hero.png"
                     alt="Antalya Pedagog - Çocuk Eğitim ve Gelişim Desteği"
                     loading="lazy"
                     decoding="async"
