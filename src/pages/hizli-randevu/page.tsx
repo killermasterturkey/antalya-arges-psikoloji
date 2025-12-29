@@ -21,6 +21,18 @@ const HizliRandevuPage = () => {
       const form = e.currentTarget;
       const formDataObj = new FormData(form);
 
+      // Development mode simulation
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        console.log('Form data (dev mode):', Object.fromEntries(formDataObj));
+        setSubmitStatus('success');
+        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+        setIsSubmitting(false);
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+        return;
+      }
+
+      // Production - Netlify Forms
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
