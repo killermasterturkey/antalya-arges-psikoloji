@@ -1,0 +1,822 @@
+# ARGES PSİKOLOJİ - GOOGLE ADS KAMPANYA REHBERİ
+
+**Hazırlanma Tarihi:** 30 Aralık 2025
+**Domain:** antalyaargespsikoloji.com
+**Hedef:** Telefon araması dönüşümü
+**Hedef Kitle:** Antalya, 25-50 yaş, Kadın ve Erkek
+
+---
+
+## HESAP BİLGİLERİ
+
+```
+Google Ads ID: AW-16583205926
+Google Analytics: G-WBFBMBKJ7L
+Google Tag Manager: GTM-PKXPNRV4
+```
+
+---
+
+## KAMPANYA YAPISI
+
+```
+Hesap: Arges Psikoloji
+│
+├── Kampanya 1: Antalya Psikolog (Genel)
+│   ├── Reklam Grubu: Psikolog Genel
+│   └── Reklam Grubu: Psikolojik Danışman
+│
+├── Kampanya 2: Çocuk Psikolojisi
+│   ├── Reklam Grubu: Çocuk Psikolog
+│   └── Reklam Grubu: Oyun Terapisi
+│
+├── Kampanya 3: Çift Terapisi
+│   ├── Reklam Grubu: Çift Terapi
+│   └── Reklam Grubu: Evlilik Danışmanlığı
+│
+└── Kampanya 4: Cinsel Terapi
+    └── Reklam Grubu: Cinsel Terapi
+```
+
+---
+
+# KAMPANYA 1: ANTALYA PSİKOLOG (GENEL)
+
+## Kampanya Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Kampanya Adı | Antalya Psikolog - Arama |
+| Kampanya Türü | Arama |
+| Hedef | Potansiyel müşteriler |
+| Ağlar | Sadece Google Arama (Display KAPALI) |
+| Konum | Antalya, Türkiye |
+| Konum Hedefleme | Bu konumdaki kişiler |
+| Dil | Türkçe |
+| Günlük Bütçe | 150 TL |
+| Teklif Stratejisi | Dönüşümleri en üst düzeye çıkar |
+
+## Kitle Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Yaş | 25-34, 35-44, 45-54 |
+| Cinsiyet | Tümü |
+| Gelir Düzeyi | Üst %50 (opsiyonel) |
+
+---
+
+### REKLAM GRUBU 1.1: Psikolog Genel
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/antalya-psikolog
+
+#### Anahtar Kelimeler (Tam Eşleme ve Sıralı Eşleme)
+
+```
+[antalya psikolog]
+[psikolog antalya]
+[antalya psikoloji]
+[antalyada psikolog]
+"antalya psikolog"
+"psikolog antalya"
+"antalya en iyi psikolog"
+"antalya psikolog tavsiye"
+"antalya psikolog önerisi"
+"antalya güvenilir psikolog"
+"antalya uzman psikolog"
+"antalya psikolog merkezi"
+"antalya psikoloji merkezi"
+"antalya psikolog kliniği"
+"muratpaşa psikolog"
+"konyaaltı psikolog"
+"lara psikolog"
+"kepez psikolog"
+```
+
+#### Geniş Eşleme Anahtar Kelimeler
+
+```
+antalya psikolog randevu
+antalya psikolog fiyat
+antalya psikolog iletişim
+antalyada iyi psikolog
+antalya psikolog numarası
+```
+
+#### Negatif Anahtar Kelimeler
+
+```
+-ücretsiz
+-online
+-istanbul
+-ankara
+-izmir
+-bursa
+-bedava
+-parasız
+-staj
+-iş ilanı
+-maaş
+-nasıl olunur
+-üniversite
+-bölümü
+-pdf
+-kitap
+-makale
+-tez
+-forum
+```
+
+#### Reklam Metni 1
+
+**Başlıklar (15 adet - her biri max 30 karakter):**
+
+```
+1. Antalya Psikolog
+2. Arges Psikoloji Merkezi
+3. Uzman Psikolog Antalya
+4. Hemen Randevu Alın
+5. 0540 325 15 25
+6. Profesyonel Terapi
+7. Gizlilik Garantisi
+8. 10+ Yıl Deneyim
+9. Ücretsiz Ön Görüşme
+10. Antalya Muratpaşa
+11. Bugün Arayın
+12. Online Randevu
+13. Hafta Sonu Açık
+14. Bireysel Terapi
+15. Güvenilir Psikolog
+```
+
+**Açıklamalar (4 adet - her biri max 90 karakter):**
+
+```
+1. Antalya'da uzman psikolog kadrosuyla profesyonel terapi. Hemen arayın: 0540 325 15 25
+
+2. Depresyon, anksiyete, stres için uzman desteği. Gizli ve güvenli ortam. Randevu alın!
+
+3. Arges Psikoloji ile hayatınıza yeni bir sayfa açın. İlk görüşme ücretsiz. Muratpaşa.
+
+4. 10 yılı aşkın deneyim. Bireysel terapi, çift terapisi, aile danışmanlığı. Bugün arayın!
+```
+
+**Son URL:** https://antalyaargespsikoloji.com/lp/antalya-psikolog
+
+**Görüntülenen Yol:** antalyaargespsikoloji.com/psikolog
+
+---
+
+### REKLAM GRUBU 1.2: Psikolojik Danışman
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/antalya-psikolog
+
+#### Anahtar Kelimeler
+
+```
+[antalya psikolojik danışman]
+[psikolojik danışman antalya]
+[antalya terapist]
+[terapist antalya]
+"antalya psikolojik danışmanlık"
+"antalya terapi merkezi"
+"antalya psikoterapi"
+"antalya psikoterapist"
+"antalya ruh sağlığı"
+"antalya mental sağlık"
+```
+
+#### Reklam Metni 2
+
+**Başlıklar:**
+
+```
+1. Psikolojik Danışmanlık
+2. Antalya Terapist
+3. Profesyonel Destek
+4. Arges Psikoloji
+5. 0540 325 15 25
+6. Uzman Terapist
+7. Randevu Alın
+8. Gizlilik Esastır
+9. Antalya Muratpaşa
+10. Terapi Merkezi
+```
+
+**Açıklamalar:**
+
+```
+1. Antalya'da profesyonel psikolojik danışmanlık hizmeti. Uzman kadro. 0540 325 15 25
+
+2. Hayatınızdaki zorlukları birlikte aşalım. Güvenli terapi ortamı. Hemen randevu alın!
+```
+
+---
+
+# KAMPANYA 2: ÇOCUK PSİKOLOJİSİ
+
+## Kampanya Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Kampanya Adı | Çocuk Psikolojisi - Arama |
+| Kampanya Türü | Arama |
+| Hedef | Potansiyel müşteriler |
+| Ağlar | Sadece Google Arama |
+| Konum | Antalya, Türkiye |
+| Dil | Türkçe |
+| Günlük Bütçe | 100 TL |
+| Teklif Stratejisi | Dönüşümleri en üst düzeye çıkar |
+
+## Kitle Ayarları (Ebeveynler)
+
+| Ayar | Değer |
+|------|-------|
+| Yaş | 25-34, 35-44, 45-54 |
+| Ebeveyn Durumu | Ebeveyn (varsa) |
+
+---
+
+### REKLAM GRUBU 2.1: Çocuk Psikolog
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/cocuk-psikolojisi
+
+#### Anahtar Kelimeler
+
+```
+[antalya çocuk psikoloğu]
+[çocuk psikoloğu antalya]
+[antalya çocuk psikolog]
+[çocuk psikolog antalya]
+"antalya çocuk psikolojisi"
+"antalya çocuk terapisi"
+"antalya çocuk danışmanı"
+"antalya çocuk terapisti"
+"antalyada çocuk psikoloğu"
+"antalya çocuk ruh sağlığı"
+"antalya çocuk gelişim uzmanı"
+"antalya pedagog"
+"pedagog antalya"
+"antalya çocuk pedagog"
+```
+
+#### Negatif Anahtar Kelimeler
+
+```
+-ücretsiz
+-online
+-istanbul
+-ankara
+-oyuncak
+-kitap
+-film
+-okul öncesi eğitim
+-kreş
+-anaokulu
+```
+
+#### Reklam Metni
+
+**Başlıklar:**
+
+```
+1. Antalya Çocuk Psikoloğu
+2. Çocuk Terapisi Uzmanı
+3. Oyun Terapisi Antalya
+4. 0540 325 15 25
+5. Çocuğunuz İçin Destek
+6. Pedagog Antalya
+7. Arges Psikoloji
+8. Hemen Randevu Alın
+9. Davranış Sorunları
+10. Çocuk Gelişim Uzmanı
+11. Okul Başarısızlığı
+12. Güvenli Terapi Ortamı
+13. Uzman Çocuk Psikolog
+14. Antalya Muratpaşa
+15. Aile Desteği
+```
+
+**Açıklamalar:**
+
+```
+1. Antalya'da uzman çocuk psikoloğu. Oyun terapisi, davranış sorunları. 0540 325 15 25
+
+2. Çocuğunuzun mutluluğu için profesyonel destek. Korku, öfke, okul sorunları. Arayın!
+
+3. Çocuk gelişim uzmanı kadrosuyla güvenli terapi. İlk görüşmede aile danışmanlığı dahil.
+
+4. Dikkat eksikliği, hiperaktivite, sosyal uyum sorunları için uzman desteği. Randevu alın!
+```
+
+**Son URL:** https://antalyaargespsikoloji.com/lp/cocuk-psikolojisi
+
+**Görüntülenen Yol:** antalyaargespsikoloji.com/cocuk-psikolog
+
+---
+
+### REKLAM GRUBU 2.2: Oyun Terapisi
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/cocuk-psikolojisi
+
+#### Anahtar Kelimeler
+
+```
+[antalya oyun terapisi]
+[oyun terapisi antalya]
+"antalya oyun terapisti"
+"çocuk oyun terapisi antalya"
+"antalya çocuk oyun terapi"
+```
+
+#### Reklam Metni
+
+**Başlıklar:**
+
+```
+1. Oyun Terapisi Antalya
+2. Çocuk Oyun Terapisti
+3. Uzman Oyun Terapisi
+4. 0540 325 15 25
+5. Arges Psikoloji
+6. Çocuğunuz İçin
+```
+
+**Açıklamalar:**
+
+```
+1. Oyun terapisi ile çocuğunuzun duygusal gelişimini destekleyin. Uzman kadro. Arayın!
+
+2. Antalya'da profesyonel oyun terapisi. Travma, korku, sosyal beceri. 0540 325 15 25
+```
+
+---
+
+# KAMPANYA 3: ÇİFT TERAPİSİ
+
+## Kampanya Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Kampanya Adı | Çift Terapisi - Arama |
+| Kampanya Türü | Arama |
+| Hedef | Potansiyel müşteriler |
+| Ağlar | Sadece Google Arama |
+| Konum | Antalya, Türkiye |
+| Dil | Türkçe |
+| Günlük Bütçe | 100 TL |
+| Teklif Stratejisi | Dönüşümleri en üst düzeye çıkar |
+
+## Kitle Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Yaş | 25-34, 35-44, 45-54 |
+| Medeni Durum | Evli veya ilişkide (varsa) |
+
+---
+
+### REKLAM GRUBU 3.1: Çift Terapi
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/cift-terapisi
+
+#### Anahtar Kelimeler
+
+```
+[antalya çift terapisi]
+[çift terapisi antalya]
+[antalya çift terapi]
+[çift terapi antalya]
+"antalya ilişki terapisi"
+"antalya ilişki danışmanı"
+"antalya çift danışmanı"
+"antalyada çift terapisi"
+"antalya ilişki psikoloğu"
+"antalya partner terapisi"
+"antalya çift psikolog"
+```
+
+#### Negatif Anahtar Kelimeler
+
+```
+-ücretsiz
+-online
+-istanbul
+-ankara
+-kitap
+-film
+-dizi
+-test
+-soru
+```
+
+#### Reklam Metni
+
+**Başlıklar:**
+
+```
+1. Antalya Çift Terapisi
+2. İlişki Danışmanlığı
+3. Çift Terapisti Antalya
+4. 0540 325 15 25
+5. İlişkinizi Kurtarın
+6. Arges Psikoloji
+7. Uzman Çift Terapisti
+8. Gizlilik Garantisi
+9. Hemen Randevu Alın
+10. İletişim Sorunları
+11. Güven Problemi
+12. Profesyonel Destek
+13. Antalya Muratpaşa
+14. Mutlu İlişki
+15. Birlikte Çözüm
+```
+
+**Açıklamalar:**
+
+```
+1. Antalya'da uzman çift terapisi. İletişim sorunları, güven problemi. 0540 325 15 25
+
+2. İlişkinize yeni bir şans verin. Profesyonel çift danışmanlığı. Gizlilik garantisi!
+
+3. Evliliğinizi kurtarmak için profesyonel destek. 10+ yıl deneyim. Hemen arayın!
+
+4. Çift terapisinde uzman kadro. Aldatma, kıskançlık, iletişimsizlik. Randevu alın!
+```
+
+**Son URL:** https://antalyaargespsikoloji.com/lp/cift-terapisi
+
+**Görüntülenen Yol:** antalyaargespsikoloji.com/cift-terapisi
+
+---
+
+### REKLAM GRUBU 3.2: Evlilik Danışmanlığı
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/cift-terapisi
+
+#### Anahtar Kelimeler
+
+```
+[antalya evlilik danışmanı]
+[evlilik danışmanı antalya]
+[antalya evlilik terapisi]
+[evlilik terapisi antalya]
+"antalya evlilik danışmanlığı"
+"antalya aile danışmanı"
+"antalya aile terapisi"
+"antalya evlilik psikoloğu"
+"antalya evlilik sorunları"
+"antalyada evlilik danışmanı"
+```
+
+#### Reklam Metni
+
+**Başlıklar:**
+
+```
+1. Evlilik Danışmanlığı
+2. Antalya Aile Danışmanı
+3. Evlilik Terapisi
+4. 0540 325 15 25
+5. Evliliğinizi Kurtarın
+6. Arges Psikoloji
+7. Uzman Aile Danışmanı
+8. Gizli Görüşme
+```
+
+**Açıklamalar:**
+
+```
+1. Evlilik sorunlarınıza profesyonel çözüm. Uzman aile danışmanı. 0540 325 15 25
+
+2. Antalya'da evlilik danışmanlığı. Boşanma öncesi terapi, iletişim eğitimi. Arayın!
+```
+
+---
+
+# KAMPANYA 4: CİNSEL TERAPİ
+
+## Kampanya Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Kampanya Adı | Cinsel Terapi - Arama |
+| Kampanya Türü | Arama |
+| Hedef | Potansiyel müşteriler |
+| Ağlar | Sadece Google Arama |
+| Konum | Antalya, Türkiye |
+| Dil | Türkçe |
+| Günlük Bütçe | 75 TL |
+| Teklif Stratejisi | Dönüşümleri en üst düzeye çıkar |
+
+## Kitle Ayarları
+
+| Ayar | Değer |
+|------|-------|
+| Yaş | 25-34, 35-44, 45-54 |
+| Cinsiyet | Tümü |
+
+---
+
+### REKLAM GRUBU 4.1: Cinsel Terapi
+
+**Hedef URL:** https://antalyaargespsikoloji.com/lp/cinsel-terapi
+
+#### Anahtar Kelimeler
+
+```
+[antalya cinsel terapi]
+[cinsel terapi antalya]
+[antalya cinsel terapist]
+[cinsel terapist antalya]
+"antalya cinsel danışman"
+"antalya cinsel sorunlar"
+"antalya cinsel terapi uzmanı"
+"antalyada cinsel terapist"
+"antalya cinsel işlev bozukluğu"
+"antalya cinsel sağlık danışmanı"
+"antalya cinsel terapi merkezi"
+```
+
+#### Negatif Anahtar Kelimeler
+
+```
+-ücretsiz
+-online
+-istanbul
+-ankara
+-video
+-film
+-ilaç
+-hap
+-eczane
+-bitkisel
+-doğal
+-porno
+```
+
+#### Reklam Metni
+
+**Başlıklar:**
+
+```
+1. Cinsel Terapi Antalya
+2. Cinsel Terapist Uzmanı
+3. Gizlilik Garantisi
+4. 0540 325 15 25
+5. Profesyonel Destek
+6. Arges Psikoloji
+7. Uzman Cinsel Terapist
+8. Güvenli Ortam
+9. Hemen Randevu Alın
+10. Çözüm Odaklı Terapi
+11. Antalya Muratpaşa
+12. %100 Gizli Görüşme
+```
+
+**Açıklamalar:**
+
+```
+1. Antalya'da uzman cinsel terapist. %100 gizlilik garantisi. Hemen arayın: 0540 325 15 25
+
+2. Cinsel sorunlarınıza profesyonel çözüm. Güvenli ve gizli ortamda terapi. Randevu alın!
+
+3. Cinsel işlev bozuklukları için uzman desteği. Bilimsel yaklaşım. Arges Psikoloji.
+
+4. Utanmayın, yardım alın. Cinsel terapide 10+ yıl deneyim. Gizli görüşme için arayın!
+```
+
+**Son URL:** https://antalyaargespsikoloji.com/lp/cinsel-terapi
+
+**Görüntülenen Yol:** antalyaargespsikoloji.com/cinsel-terapi
+
+---
+
+# REKLAM UZANTILARI (TÜM KAMPANYALAR İÇİN)
+
+## 1. Arama Uzantısı (Call Extension)
+
+```
+Telefon: +90 540 325 15 25
+Görüntülenme: Her zaman
+```
+
+## 2. Site Bağlantısı Uzantıları (Sitelink Extensions)
+
+| Bağlantı Metni | URL | Açıklama 1 | Açıklama 2 |
+|----------------|-----|------------|------------|
+| Bireysel Terapi | /services/individual-therapy | Kişisel sorunlarınız için | Uzman psikolog desteği |
+| Çift Terapisi | /services/couple-therapy | İlişki danışmanlığı | Evlilik terapisi |
+| Çocuk Psikolojisi | /services/child-psychology | Çocuk terapisi | Oyun terapisi |
+| Hakkımızda | /about | Uzman kadromuz | 10+ yıl deneyim |
+| İletişim | /contact | Adres ve yol tarifi | Randevu bilgileri |
+| Hızlı Randevu | /hizli-randevu | Online randevu formu | Hemen doldurun |
+
+## 3. Açıklama Metni Uzantıları (Callout Extensions)
+
+```
+- Ücretsiz Ön Görüşme
+- 10+ Yıl Deneyim
+- Gizlilik Garantisi
+- Hafta Sonu Açık
+- Uzman Kadro
+- Muratpaşa Merkez
+- Online Randevu
+- Kolay Ulaşım
+```
+
+## 4. Yapılandırılmış Snippet Uzantıları (Structured Snippets)
+
+**Başlık:** Hizmetler
+
+```
+Bireysel Terapi, Çift Terapisi, Aile Danışmanlığı, Çocuk Psikolojisi, Ergen Terapisi, EMDR, Cinsel Terapi
+```
+
+## 5. Konum Uzantısı (Location Extension)
+
+```
+İşletme Adı: Arges Psikoloji
+Adres: Meltem Mah. 3850. Sk. Belgen Sitesi D:7 Blok K:4 D:10
+İlçe: Muratpaşa
+Şehir: Antalya
+```
+
+## 6. Fiyat Uzantısı (Price Extension) - Opsiyonel
+
+| Hizmet | Fiyat | Açıklama |
+|--------|-------|----------|
+| Bireysel Seans | 800 TL'den başlayan | 50 dakika |
+| Çift Terapisi | 1.200 TL'den başlayan | 60-90 dakika |
+| Çocuk Terapisi | 800 TL'den başlayan | 45-50 dakika |
+
+---
+
+# DÖNÜŞÜM AYARLARI
+
+## Oluşturulacak Dönüşümler
+
+### 1. Telefon Tıklama Dönüşümü
+
+```
+Dönüşüm Adı: Telefon Tıklama
+Kategori: İletişim
+Kaynak: Web sitesi
+Değer: 200 TL (her dönüşümde aynı)
+Sayma: Her dönüşüm
+Tıklama dönüşüm süresi: 30 gün
+Görüntüleme dönüşüm süresi: 1 gün
+İlişkilendirme modeli: Veriye dayalı
+```
+
+### 2. WhatsApp Tıklama Dönüşümü
+
+```
+Dönüşüm Adı: WhatsApp Tıklama
+Kategori: İletişim
+Kaynak: Web sitesi
+Değer: 150 TL
+Sayma: Her dönüşüm
+```
+
+### 3. Form Gönderimi Dönüşümü
+
+```
+Dönüşüm Adı: Randevu Formu
+Kategori: Form gönderimleri
+Kaynak: Web sitesi
+Değer: 300 TL
+Sayma: Bir dönüşüm
+```
+
+---
+
+# BÜTÇE ÖZETİ
+
+| Kampanya | Günlük Bütçe | Aylık Tahmini |
+|----------|--------------|---------------|
+| Antalya Psikolog | 150 TL | 4.500 TL |
+| Çocuk Psikolojisi | 100 TL | 3.000 TL |
+| Çift Terapisi | 100 TL | 3.000 TL |
+| Cinsel Terapi | 75 TL | 2.250 TL |
+| **TOPLAM** | **425 TL** | **12.750 TL** |
+
+**Not:** Başlangıç için daha düşük bütçeyle başlayıp performansa göre artırabilirsiniz.
+
+**Alternatif Başlangıç Bütçesi:**
+
+| Kampanya | Günlük Bütçe | Aylık Tahmini |
+|----------|--------------|---------------|
+| Antalya Psikolog | 75 TL | 2.250 TL |
+| Çocuk Psikolojisi | 50 TL | 1.500 TL |
+| Çift Terapisi | 50 TL | 1.500 TL |
+| Cinsel Terapi | 50 TL | 1.500 TL |
+| **TOPLAM** | **225 TL** | **6.750 TL** |
+
+---
+
+# REKLAM ZAMANLAMA
+
+## Önerilen Gösterim Saatleri
+
+```
+Pazartesi - Cuma: 08:00 - 21:00
+Cumartesi: 09:00 - 18:00
+Pazar: 10:00 - 18:00
+```
+
+## Teklif Ayarlamaları
+
+| Zaman Dilimi | Teklif Ayarı |
+|--------------|--------------|
+| 09:00 - 12:00 | +20% |
+| 12:00 - 14:00 | Normal |
+| 14:00 - 18:00 | +15% |
+| 18:00 - 21:00 | +25% |
+| Gece (21:00 - 08:00) | -50% |
+
+---
+
+# PERFORMANS HEDEFLERİ
+
+## İlk Ay Beklentileri
+
+| Metrik | Hedef |
+|--------|-------|
+| Gösterim | 10.000+ |
+| Tıklama | 300-500 |
+| TO (Tıklama Oranı) | %3-5 |
+| Ortalama TBM | 3-8 TL |
+| Dönüşüm | 20-40 |
+| Dönüşüm Oranı | %5-10 |
+| Maliyet/Dönüşüm | 50-150 TL |
+
+---
+
+# OPTİMİZASYON NOTLARI
+
+## Haftalık Yapılacaklar
+
+1. **Arama Terimleri Raporu** kontrol et
+   - Alakasız terimleri negatif listeye ekle
+   - İyi performans gösteren yeni terimleri ekle
+
+2. **Reklam Performansı** kontrol et
+   - Düşük TO'lu reklamları düzenle
+   - A/B test için yeni varyasyonlar ekle
+
+3. **Teklif Ayarlamaları**
+   - Yüksek dönüşümlü saatlerde teklif artır
+   - Düşük performanslı saatlerde azalt
+
+## Aylık Yapılacaklar
+
+1. **Bütçe Optimizasyonu**
+   - İyi kampanyalara bütçe aktar
+   - Düşük performanslıları durdur veya düzenle
+
+2. **Yeni Anahtar Kelimeler**
+   - Arama terimleri raporundan yeni fikirler
+   - Rakip analizi
+
+3. **Landing Page Testi**
+   - Farklı CTA'lar dene
+   - Form vs. telefon karşılaştır
+
+---
+
+# HIZLI BAŞLANGIÇ CHECKLIST
+
+## Google Ads'te Yapılacaklar
+
+- [ ] Hesaba giriş yap (ads.google.com)
+- [ ] Dönüşüm takibi oluştur (3 adet)
+- [ ] Kampanya 1 oluştur (Antalya Psikolog)
+- [ ] Kampanya 2 oluştur (Çocuk Psikolojisi)
+- [ ] Kampanya 3 oluştur (Çift Terapisi)
+- [ ] Kampanya 4 oluştur (Cinsel Terapi)
+- [ ] Reklam uzantıları ekle
+- [ ] Ödeme bilgilerini gir
+- [ ] Kampanyaları yayınla
+
+## Projede Yapılacaklar (Dönüşüm kodları aldıktan sonra)
+
+- [ ] Conversion Label değerlerini al
+- [ ] analytics.ts dosyasını güncelle
+- [ ] GitHub'a push et
+- [ ] Siteyi yeniden deploy et
+
+---
+
+# ÖNEMLİ NOTLAR
+
+1. **İlk 2 hafta** veri toplama dönemidir, hemen sonuç beklemeyin
+2. **Kalite Puanı** için landing page hızı ve içerik kalitesi önemli
+3. **Negatif anahtar kelimeler** bütçe tasarrufu için kritik
+4. **Mobil uyumluluk** Antalya'da aramaların %70'i mobilden
+5. **Konum hedefleme** sadece Antalya'dakileri hedefleyin, ilgilenenleri değil
+
+---
+
+*Bu rehber 30 Aralık 2025 tarihinde hazırlanmıştır.*
+*Google Ads arayüzü güncellenebilir, temel mantık aynı kalacaktır.*
