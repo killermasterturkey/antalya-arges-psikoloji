@@ -5,59 +5,52 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 import { Link } from 'react-router-dom';
 
 const SasLifePage = () => {
-  const modules = [
+  const supportAreas = [
+    { icon: 'ri-heart-pulse-line', title: 'Beyin Felci', description: 'Felç rehabilitasyonu' },
+    { icon: 'ri-emotion-line', title: 'Duygudurum Bozuklukları', description: 'Depresyon, kaygı, panik atak' },
+    { icon: 'ri-brain-line', title: 'Bilişsel Bozukluklar', description: 'Demans, Alzheimer' },
+  ];
+
+  const cognitiveDisorders = [
     {
-      icon: 'ri-compass-3-line',
-      title: 'Hedef Belirleme ve Yaşam Tasarımı',
-      description: 'Değerlerinizi keşfedin, anlamlı hedefler belirleyin ve hayalinizdeki yaşamı tasarlayın.',
-      topics: ['Değer analizi', 'Vizyon oluşturma', 'SMART hedefler', 'Eylem planlaması']
+      icon: 'ri-mental-health-line',
+      title: 'Demans',
+      description: 'Halk arasında bunama olarak bilinen demans, 80 yaşındaki her 5 kişiden 1\'inde görülür.',
+      detail: 'Demans hafıza başta olmak üzere; duygu, düşünme, motivasyon ve dil yeteneklerde bozulma olarak kendini göstererek kişinin edinmiş olduğu günlük becerilerinde ve sosyal hayatında zorluklar yaşamasına neden olan; beynin işlevini kaybetmesi halidir. Normal bir yaşlanma sürecinde beyin hücreleri ve hücreler arası bağlantılarda bozulmalar ve kayıplar görülür. Ancak bu bozulma miktarının artması ile beyin, fonksiyonlarını yerine getirmez hale gelir ve demans oluşur.'
     },
     {
-      icon: 'ri-heart-pulse-line',
-      title: 'Duygusal Zeka Geliştirme',
-      description: 'Duygularınızı tanıyın, yönetin ve duygusal zekanızı güçlendirin.',
-      topics: ['Duygu farkındalığı', 'Öz düzenleme', 'Empati geliştirme', 'Sosyal beceriler']
+      icon: 'ri-brain-line',
+      title: 'Alzheimer',
+      description: 'Demans hastalığının en yaygın çeşidi olarak tanımlanan alzheimer, bireyin ilk olarak hafızasını etkiler.',
+      detail: '65 yaş üstü bireylerde 100 kişiden 8\'inde görülen alzheimer\'ın, 85 yaş üstü kişilerde görülme sıklığı %20\'dir. Kişiler en çok hafıza konusunda problem yaşasa da zamanla giyinme, yeme-içme, zaman ve yön tayini, idrar tutma gibi günlük işlerde davranışsal ve bilişsel bozulmalar yaşayabilir. Alzheimer hastalığının oluşumunda senil amioid plaklar, nörofibriler yumak oluşumu, sinaps-nöron kaybı ve beyinde küçülme gözlemlenir.'
     },
     {
-      icon: 'ri-team-line',
-      title: 'Sağlıklı İlişki Becerileri',
-      description: 'Doyurucu ve sağlıklı ilişkiler kurma ve sürdürme becerilerini geliştirin.',
-      topics: ['Etkili iletişim', 'Sınır koyma', 'Çatışma çözümü', 'Güven inşası']
-    },
-    {
-      icon: 'ri-shield-check-line',
-      title: 'Özgüven ve Benlik Saygısı',
-      description: 'Kendinize olan inancınızı güçlendirin ve sağlıklı bir benlik algısı geliştirin.',
-      topics: ['İç eleştirmen yönetimi', 'Güçlü yönler keşfi', 'Olumlu benlik konuşması', 'Başarı kutlama']
+      icon: 'ri-psychotherapy-line',
+      title: 'Hafif Kognitif Bozukluk',
+      description: 'Demans hastalığının önceki aşamaları olarak değerlendirilen hafif kognitif bozukluk yaşlanmaya bağlı olarak yaşanan bilişsel aktivitelerdeki azalmadır.',
+      detail: 'Belirtileri olarak hafıza, dil ve karar verme gibi mekanizmalarda yavaşlama ya da kayıplar gözlenebilir olsa da bu azalmalar günlük hayatı etkileyecek şiddette değildir. Başlıca belirtiler: isimleri ve kelimeleri hatırlamada zorluk yaşama, randevuları unutma, özellikle film, kitap ve konuşmalardaki olay örgüsünü hatırlayamama, yol bulmada güçlük çekme.'
     },
   ];
 
-  const benefits = [
-    { icon: 'ri-heart-3-line', title: 'Daha Doyurucu İlişkiler', description: 'Aile, arkadaşlık ve romantik ilişkilerinizde derinlik ve anlam kazanın.' },
-    { icon: 'ri-mental-health-line', title: 'Duygusal Denge', description: 'Duygularınızla sağlıklı bir ilişki kurarak iç huzura ulaşın.' },
-    { icon: 'ri-focus-3-line', title: 'Net Yaşam Yönü', description: 'Değerlerinize uygun hedeflerle anlamlı bir yaşam sürün.' },
-    { icon: 'ri-user-star-line', title: 'Güçlü Özgüven', description: 'Kendinize güvenin ve potansiyelinizi tam olarak ortaya koyun.' },
-    { icon: 'ri-speak-line', title: 'Etkili İletişim', description: 'Düşüncelerinizi net ifade edin, başkalarını daha iyi anlayın.' },
-    { icon: 'ri-door-open-line', title: 'Kişisel Sınırlar', description: 'Sağlıklı sınırlar koyarak kendinizi ve ilişkilerinizi koruyun.' },
-  ];
+  const moodDisorders = {
+    icon: 'ri-emotion-line',
+    title: 'Duygudurum Bozuklukları',
+    description: 'Duygusal bozukluklar neticesinde işlevini yitiren bazı beyin bölümlerini yeniden harekete geçirebilmeyi amaçlar.',
+    detail: 'Program kulaklıklar aracılığıyla dinletiler şeklinde gerçekleşir ve düşünme, mantık, planlama, konuşma, davranış ve beden kontrolü gibi merkezleri uyararak sağ ve sol beyin iletişimini güçlendirir, beynin bütün olarak çalışmasını destekler. Depresyon, kaygı bozukluğu, panik atak, travma sonrası stres bozukluğu gibi durumlarda kişinin yaşam kalitesini artırmayı hedefler.'
+  };
 
-  const weeklyPlan = [
-    { week: '1-2', title: 'Keşif Aşaması', content: 'Değerlerinizi, güçlü yönlerinizi ve gelişim alanlarınızı keşfedin. Mevcut yaşam durumunuzun kapsamlı bir değerlendirmesini yapın.' },
-    { week: '3-4', title: 'Hedef Belirleme', content: 'Değerlerinize uygun, gerçekçi ve motive edici hedefler belirleyin. Kısa, orta ve uzun vadeli hedef haritanızı oluşturun.' },
-    { week: '5-6', title: 'Beceri Geliştirme', content: 'Duygusal zeka, iletişim ve ilişki becerilerinizi geliştirin. Günlük uygulamalarla yeni alışkanlıklar kazanın.' },
-    { week: '7-8', title: 'Entegrasyon', content: 'Öğrendiklerinizi yaşamınıza entegre edin. Sürdürülebilir değişim için stratejiler geliştirin.' },
-  ];
+  const strokeInfo = {
+    title: 'Beyin Felci',
+    intro: 'Felç ya da beyin işlev bozukluğunda tekrar konuşmayı ve fiziksel gelişimi sağlar. Felç (inme), beyni besleyen kan damarlarındaki akışın durmasıyla oluşan beyin hasarıdır.',
+    leftHemisphere: 'Felç, beynin sol yarı küresini etkilerse, bireyde konuşamama, konuşulanı anlayamama, anlamlandıramama gibi dil ve konuşma bozuklukları, bellek sorunları, okuma ve yazma güçlükleri gibi günlük hayatını olumsuz yönde etkileyecek durumlar ortaya çıkabilir.',
+    rightHemisphere: 'Felç, beynin sağ yarı küresini etkilerse, mekânı algılamada güçlük, motor beceriler ve denge koordinasyon merkezine bağlı hareket sorunları, konuşmaya duyguyu verememe, mekanik konuşma ve duygusal güçlük gibi yine günlük hayatı etkileyecek durumlar görülür.',
+    neuroplasticity: 'Beynin nöroplastisite özelliği sayesinde, beyin kendini yenileme ve yeniden yapılandırma yetisine sahiptir. Nöroplastisite çalışmaları beynin bu özelliği üzerinde durarak felç sonrası kaybedilen yetilerin doğru ve güvenilir çalışmalar ile hızla geri kazanılabildiğini ortaya koymuştur.'
+  };
 
-  const testimonials = [
-    { name: 'Ayşe K.', text: 'SAS Life programı ile ilişkilerimde dönüşüm yaşadım. Artık kendimi daha iyi ifade edebiliyorum.', rating: 5 },
-    { name: 'Mehmet T.', text: 'Hedef belirleme modülü hayatıma yön verdi. Şimdi ne istediğimi biliyorum.', rating: 5 },
-    { name: 'Zeynep A.', text: 'Duygusal zeka çalışmaları sayesinde iş ve özel hayatımda çok daha dengeli hissediyorum.', rating: 5 },
-  ];
-
-  const faqs = [
-    { question: 'SAS Life kimler için uygundur?', answer: 'Yaşam kalitesini artırmak, ilişkilerini güçlendirmek ve kişisel gelişimini desteklemek isteyen tüm yetişkinler için uygundur. Kariyer geçişi, ilişki zorlukları veya kendini keşfetme sürecindeki kişiler özellikle fayda görür.' },
-    { question: 'Program online mı yoksa yüz yüze mi?', answer: 'Her iki seçenek de mevcuttur. Tercihinize göre yüz yüze veya online seanslar düzenlenebilir. Hibrit bir yaklaşım da tercih edilebilir.' },
-    { question: 'Programın süresi ne kadar?', answer: 'Standart program 8 hafta sürmektedir. Haftada bir 50 dakikalık seans yapılır. İhtiyaca göre program süresi uzatılabilir veya yoğunlaştırılabilir.' },
+  const rehabilitationServices = [
+    'Fizik Tedavi (hareket, denge ve koordinasyon gibi)',
+    'Konuşma Terapisi',
+    'İş ve Uğraş Terapisi (bireyin kendi temel ihtiyaçlarını yeniden öğrenmesi)',
   ];
 
   return (
@@ -86,28 +79,29 @@ const SasLifePage = () => {
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Yaşamınızı <span className="text-gold">Dönüştürün</span>
+                  SAS-Life <span className="text-gold">Yaşlılar İçin</span>
                 </h1>
 
-                <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
-                  Yaşam Kalitesini Artırmak İçin
+                <p className="font-sans text-base text-darkgray/70 leading-relaxed">
+                  SAS-Life Dinleti Programı, yaşın ilerlemesiyle ortaya çıkan Bilişsel Bozukluklar, Unutkanlık, Beyin Felci gibi durumlarda uygulanır. Her bir program danışanın ihtiyacına göre tasarlanır.
                 </p>
+
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  SAS Life, yaşam becerilerinizi geliştirmek için tasarlanmış bir programdır. Kişisel değerler, hedefler, ilişki becerileri ve yaşam yönetimi konularında farkındalık kazanırsınız.
+                  Uygulama seans saatleri ve günleri bireyin durumuna göre belirlenir.
                 </p>
 
                 <div className="flex items-center space-x-6 pt-2">
                   <div className="flex items-center space-x-2">
-                    <i className="ri-time-line text-gold"></i>
-                    <span className="font-sans text-sm text-darkgray/70">8 Hafta</span>
+                    <i className="ri-user-heart-line text-gold"></i>
+                    <span className="font-sans text-sm text-darkgray/70">Yaşlılar İçin</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <i className="ri-calendar-line text-gold"></i>
-                    <span className="font-sans text-sm text-darkgray/70">Haftalık Seanslar</span>
+                    <span className="font-sans text-sm text-darkgray/70">Kişiye Özel</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <i className="ri-video-line text-gold"></i>
-                    <span className="font-sans text-sm text-darkgray/70">Online/Yüz Yüze</span>
+                    <i className="ri-headphone-line text-gold"></i>
+                    <span className="font-sans text-sm text-darkgray/70">Dinleti Programı</span>
                   </div>
                 </div>
 
@@ -132,7 +126,7 @@ const SasLifePage = () => {
                 <div className="w-full h-[550px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="/images/sas/sas-5.png"
-                    alt="SAS Life - Yaşam Becerileri"
+                    alt="SAS Life - Yaşlılar İçin"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -142,8 +136,8 @@ const SasLifePage = () => {
                       <i className="ri-heart-pulse-line text-2xl text-gold"></i>
                     </div>
                     <div>
-                      <p className="font-serif text-2xl font-bold text-darkgray">4</p>
-                      <p className="font-sans text-sm text-darkgray/60">Ana Modül</p>
+                      <p className="font-serif text-2xl font-bold text-darkgray">Yaşlılar</p>
+                      <p className="font-sans text-sm text-darkgray/60">Özel Program</p>
                     </div>
                   </div>
                 </div>
@@ -152,7 +146,48 @@ const SasLifePage = () => {
           </div>
         </section>
 
-        {/* Modules Section */}
+        {/* Support Areas */}
+        <section className="py-16 px-6 lg:px-12 bg-gradient-to-r from-cream via-white to-cream relative overflow-hidden">
+          <div className="absolute top-0 left-1/4 w-32 h-32 bg-gold/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-40 h-40 bg-olive/10 rounded-full blur-2xl"></div>
+          <div className="max-w-7xl mx-auto relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center space-y-4 mb-12"
+            >
+              <h2 className="font-serif text-3xl lg:text-4xl font-bold text-darkgray">
+                SAS-Life Dinleti Programının Destek Sağladığı Alanlar
+              </h2>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              {supportAreas.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="relative group"
+                >
+                  <div className="bg-white rounded-2xl p-6 lg:p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-gold/60 via-gold to-gold/60 rounded-full group-hover:w-20 transition-all duration-300"></div>
+                    <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 transition-all duration-300">
+                      <i className={`${item.icon} text-2xl text-gold`}></i>
+                    </div>
+                    <h3 className="font-sans font-semibold text-lg text-darkgray">{item.title}</h3>
+                    <p className="font-sans text-sm text-darkgray/70 mt-1">{item.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cognitive Disorders Section */}
         <section className="py-20 px-6 lg:px-12 bg-white">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -163,15 +198,15 @@ const SasLifePage = () => {
               className="text-center space-y-4 mb-16"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Program Modülleri
+                Bilişsel Bozukluklar
               </h2>
-              <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Dört kapsamlı modül ile yaşamınızın her alanında gelişim sağlayın.
+              <p className="font-sans text-lg text-darkgray/70 max-w-4xl mx-auto">
+                Yaşın ilerlemesiyle beraber beyin yapısında oluşan değişikliklerle çeşitli işlevsel bozukluklar ortaya çıkar. Bu işlev bozuklukları kişilerin hayatında sıkça rastlanan demans, alzheimer, hafif kognitif bozukluk olarak kendini gösterebilir.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {modules.map((module, index) => (
+            <div className="space-y-8">
+              {cognitiveDisorders.map((disorder, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
@@ -182,18 +217,12 @@ const SasLifePage = () => {
                 >
                   <div className="flex items-start space-x-6">
                     <div className="w-16 h-16 bg-gold/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <i className={`${module.icon} text-3xl text-gold`}></i>
+                      <i className={`${disorder.icon} text-3xl text-gold`}></i>
                     </div>
                     <div className="space-y-4">
-                      <h3 className="font-serif text-xl font-bold text-darkgray">{module.title}</h3>
-                      <p className="font-sans text-base text-darkgray/70">{module.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {module.topics.map((topic, i) => (
-                          <span key={i} className="bg-gold/20 text-darkgray px-3 py-1 rounded-full font-sans text-xs">
-                            {topic}
-                          </span>
-                        ))}
-                      </div>
+                      <h3 className="font-serif text-xl font-bold text-darkgray">{disorder.title}</h3>
+                      <p className="font-sans text-base text-darkgray/80">{disorder.description}</p>
+                      <p className="font-sans text-sm text-darkgray/60 leading-relaxed">{disorder.detail}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -202,8 +231,32 @@ const SasLifePage = () => {
           </div>
         </section>
 
-        {/* Benefits Section */}
+        {/* Mood Disorders Section */}
         <section className="py-20 px-6 lg:px-12 bg-cream">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-white rounded-3xl p-8 lg:p-12 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-start space-x-6">
+                <div className="w-20 h-20 bg-gold/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <i className={`${moodDisorders.icon} text-4xl text-gold`}></i>
+                </div>
+                <div className="space-y-4">
+                  <h2 className="font-serif text-3xl font-bold text-darkgray">{moodDisorders.title}</h2>
+                  <p className="font-sans text-lg text-darkgray/80">{moodDisorders.description}</p>
+                  <p className="font-sans text-base text-darkgray/60 leading-relaxed">{moodDisorders.detail}</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Stroke Section */}
+        <section className="py-20 px-6 lg:px-12 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -211,36 +264,13 @@ const SasLifePage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="space-y-8"
               >
-                <div className="space-y-4">
-                  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                    Programın Faydaları
-                  </h2>
-                  <p className="font-sans text-lg text-darkgray/70">
-                    SAS Life programı ile yaşamınızın her alanında somut ve kalıcı iyileşmeler yaşayın.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {benefits.map((benefit, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                      className="bg-white rounded-2xl p-5 flex items-start space-x-4 hover:shadow-lg transition-all duration-300"
-                    >
-                      <div className="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <i className={`${benefit.icon} text-xl text-gold`}></i>
-                      </div>
-                      <div>
-                        <h4 className="font-sans text-base font-semibold text-darkgray">{benefit.title}</h4>
-                        <p className="font-sans text-sm text-darkgray/60 mt-1">{benefit.description}</p>
-                      </div>
-                    </motion.div>
-                  ))}
+                <div className="relative">
+                  <img
+                    src="/images/sas/sas-6.png"
+                    alt="Beyin Felci Rehabilitasyonu"
+                    className="w-full h-[600px] object-cover rounded-3xl shadow-xl"
+                  />
                 </div>
               </motion.div>
 
@@ -249,126 +279,73 @@ const SasLifePage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
+                className="space-y-6"
               >
-                <div className="relative">
-                  <img
-                    src="/images/sas/sas-6.png"
-                    alt="SAS Life Faydaları"
-                    className="w-full h-[600px] object-cover rounded-3xl shadow-xl"
-                  />
+                <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
+                  {strokeInfo.title}
+                </h2>
+                <p className="font-sans text-lg text-darkgray/80 leading-relaxed">
+                  {strokeInfo.intro}
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-cream rounded-2xl p-5">
+                    <h4 className="font-sans text-base font-semibold text-darkgray flex items-center mb-2">
+                      <i className="ri-arrow-left-line text-gold mr-2"></i>
+                      Sol Yarı Küre Etkisi
+                    </h4>
+                    <p className="font-sans text-sm text-darkgray/70">{strokeInfo.leftHemisphere}</p>
+                  </div>
+
+                  <div className="bg-cream rounded-2xl p-5">
+                    <h4 className="font-sans text-base font-semibold text-darkgray flex items-center mb-2">
+                      <i className="ri-arrow-right-line text-gold mr-2"></i>
+                      Sağ Yarı Küre Etkisi
+                    </h4>
+                    <p className="font-sans text-sm text-darkgray/70">{strokeInfo.rightHemisphere}</p>
+                  </div>
                 </div>
+
+                <p className="font-sans text-base text-darkgray/70 leading-relaxed">
+                  {strokeInfo.neuroplasticity}
+                </p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Weekly Plan Section */}
-        <section className="py-20 px-6 lg:px-12 bg-white">
-          <div className="max-w-7xl mx-auto">
+        {/* Rehabilitation Section */}
+        <section className="py-20 px-6 lg:px-12 bg-cream">
+          <div className="max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-center space-y-4 mb-16"
+              className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                8 Haftalık Program Akışı
+                Rehabilitasyon Hizmetleri
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Sistematik bir yaklaşımla adım adım gelişiminizi destekliyoruz.
+                Felç sonrasında uygulanacak tıbbi tedavinin yanında, rehabilitasyon sürecinin de doğru ve düzenli bir şekilde uygulanması, felçli bireylerin gelişimini olumlu yönde etkilemektedir.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {weeklyPlan.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-cream rounded-3xl p-8 h-full space-y-4 hover:shadow-xl transition-all duration-300 relative"
-                >
-                  <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full font-sans text-xs font-medium">
-                    Hafta {item.week}
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-darkgray pt-4">{item.title}</h3>
-                  <p className="font-sans text-sm text-darkgray/70 leading-relaxed">{item.content}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section className="py-20 px-6 lg:px-12 bg-cream">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center space-y-4 mb-12"
-            >
-              <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Katılımcı Deneyimleri
-              </h2>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white rounded-3xl p-8 space-y-4 hover:shadow-xl transition-all duration-300"
-                >
-                  <div className="flex space-x-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <i key={i} className="ri-star-fill text-gold"></i>
-                    ))}
-                  </div>
-                  <p className="font-sans text-base text-darkgray/80 italic">"{testimonial.text}"</p>
-                  <p className="font-sans text-sm font-semibold text-darkgray">{testimonial.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-20 px-6 lg:px-12 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center space-y-4 mb-12"
-            >
-              <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Sıkça Sorulan Sorular
-              </h2>
-            </motion.div>
-
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {rehabilitationServices.map((service, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-cream rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="bg-white rounded-2xl p-6 flex items-center space-x-4 hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="font-serif text-lg font-bold text-darkgray mb-3 flex items-start">
-                    <i className="ri-question-line text-gold mr-3 mt-1"></i>
-                    {faq.question}
-                  </h3>
-                  <p className="font-sans text-base text-darkgray/70 pl-8">{faq.answer}</p>
+                  <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i className="ri-check-line text-gold text-xl"></i>
+                  </div>
+                  <span className="font-sans text-sm text-darkgray">{service}</span>
                 </motion.div>
               ))}
             </div>
@@ -389,7 +366,7 @@ const SasLifePage = () => {
                 Yaşam Kalitenizi Artırmaya Hazır mısınız?
               </h2>
               <p className="font-sans text-xl text-white/90">
-                SAS Life programı ile hayatınıza yön verin. İlk görüşme ücretsizdir.
+                SAS-Life programı ile sevdiklerinizin yaşam kalitesini artırın. İlk değerlendirme görüşmesi ücretsizdir.
               </p>
               <div className="flex flex-wrap justify-center gap-4 pt-4">
                 <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-white text-gold px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-cream transition-all duration-300 shadow-lg">

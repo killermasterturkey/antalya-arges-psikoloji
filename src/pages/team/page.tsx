@@ -8,7 +8,7 @@ const TeamPage = () => {
     {
       name: 'Psk. Nur Deniz Yüksel',
       title: 'Psikolog',
-      specialties: ['Bireysel Terapi', 'Çift Terapisi', 'Cinsel Terapi', 'EMDR', 'Ergen Danışmanlığı'],
+      specialties: ['Bireysel Terapi', 'Çift Terapisi', 'Cinsel Terapi', 'EMDR', 'Şema Terapi', 'Bilişsel Terapi'],
       education: 'Nuh Naci Yazgan Üniversitesi Psikoloji Bölümü',
       experience: '2019\'dan beri',
       description: 'Psikoterapi sürecinde ağırlıklı olarak Şema Terapi, Bilişsel Davranışçı Terapi, EMDR Terapisi; cinsel terapi süreçlerinde Seksofonksiyonel Cinsel Terapi ekollerini kullanmaktadır. Halihazırda terapi eğitimlerine ve süpervizyonlara devam etmektedir.',
@@ -26,7 +26,7 @@ const TeamPage = () => {
     {
       name: 'Psk. Büşra Demirbaş',
       title: 'Psikolog',
-      specialties: ['Çocuk Terapisi', 'Ergen Terapisi', 'Yetişkin Terapisi', 'Bilişsel Davranışçı Terapi', 'Oyun Terapisi', 'Dikkat Testi ve Geliştirme'],
+      specialties: ['Çocuk Terapisi', 'Çocuk Merkezli Terapi'],
       education: 'Akdeniz Üniversitesi Psikoloji Bölümü (Onur Derecesi)',
       experience: 'Aktif olarak çalışmakta',
       description: 'Bilişsel Davranışçı Terapi eğitim sürecini Prof. Dr. Hakan Türkçapar ile tamamlamıştır. Çocuk Merkezli Oyun Terapisi eğitimini Klinik Psikolog Mehmet Teber ile almıştır. MOXO Dikkat Testi ve Attentioner Dikkat Geliştirme Uygulayıcı sertifikalarına sahiptir.',
