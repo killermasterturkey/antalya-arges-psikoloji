@@ -1,9 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
 import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const AntalyaCinselTerapiPage = () => {
+  const [expandedId, setExpandedId] = useState<number | null>(null);
+
   const testimonials = [
     {
       id: 1,
@@ -139,126 +142,118 @@ const AntalyaCinselTerapiPage = () => {
           </div>
         </section>
 
-        {/* Danışan Yorumları Section */}
-        <section className="py-20 bg-white overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Danışan Yorumları Section - Accordion Style */}
+        <section className="py-20 px-6 lg:px-12 bg-gradient-to-b from-white to-cream/50">
+          <div className="max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              className="text-center mb-12"
             >
-              <div className="inline-flex items-center space-x-2 bg-olive/10 px-6 py-3 rounded-full mb-4">
-                <i className="ri-heart-3-fill text-olive text-xl"></i>
+              <div className="inline-flex items-center space-x-2 bg-olive/10 border border-olive/20 px-5 py-2.5 rounded-full mb-6">
+                <i className="ri-chat-heart-line text-olive text-lg"></i>
                 <span className="font-sans text-sm font-medium text-darkgray">Danışan Deneyimleri</span>
               </div>
-              <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray mb-4">
-                Cinsel Terapi Yorumları
+              <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray mb-5">
+                Gerçek Başarı Hikayeleri
               </h2>
-              <p className="font-sans text-lg text-darkgray/70 max-w-2xl mx-auto">
-                Cinsel terapi sürecinden geçen danışanlarımızın gerçek hikayeleri
+              <p className="font-sans text-lg text-darkgray/60 max-w-2xl mx-auto">
+                Cinsel terapi sürecinden geçen danışanlarımızın samimi paylaşımları
               </p>
             </motion.div>
-          </div>
 
-          {/* Marquee Container */}
-          <div className="relative">
-            <style>{`
-              @keyframes marquee {
-                0% {
-                  transform: translateX(0);
-                }
-                100% {
-                  transform: translateX(-50%);
-                }
-              }
-              .animate-marquee {
-                animation: marquee 60s linear infinite;
-              }
-              .animate-marquee:hover {
-                animation-play-state: paused;
-              }
-            `}</style>
-
-            <div className="flex animate-marquee">
-              {/* İlk set */}
+            {/* Testimonials Accordion */}
+            <div className="space-y-4">
               {testimonials.map((testimonial, index) => (
-                <div
-                  key={`first-${testimonial.id}`}
-                  className="flex-shrink-0 w-[500px] mx-4"
+                <motion.div
+                  key={testimonial.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <div className="bg-cream rounded-3xl p-8 space-y-6 h-full shadow-lg">
-                    <div className="flex items-start justify-between">
+                  <div
+                    className={`bg-white rounded-2xl overflow-hidden border transition-all duration-500 ${
+                      expandedId === testimonial.id
+                        ? 'border-olive/30 shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)]'
+                        : 'border-darkgray/10 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:border-olive/20'
+                    }`}
+                  >
+                    {/* Header - Tıklanabilir Alan */}
+                    <button
+                      onClick={() => setExpandedId(expandedId === testimonial.id ? null : testimonial.id)}
+                      className="w-full p-6 flex items-center justify-between cursor-pointer group"
+                    >
                       <div className="flex items-center space-x-4">
-                        <div className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          ['bg-olive/80', 'bg-gold/80', 'bg-darkgray/70', 'bg-olive/60', 'bg-gold/60'][index % 5]
+                        <div className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-105 ${
+                          ['bg-gradient-to-br from-olive to-olive/80',
+                           'bg-gradient-to-br from-gold to-gold/80',
+                           'bg-gradient-to-br from-darkgray to-darkgray/80',
+                           'bg-gradient-to-br from-olive/90 to-gold/70',
+                           'bg-gradient-to-br from-gold/90 to-olive/70'][index % 5]
                         }`}>
-                          <span className="text-white font-bold text-lg">
+                          <span className="text-white font-bold text-xl">
                             {testimonial.name.split(' ')[0][0]}
                           </span>
                         </div>
-                        <div>
-                          <h3 className="font-sans text-base font-semibold text-darkgray">
+                        <div className="text-left">
+                          <h3 className="font-sans text-lg font-semibold text-darkgray">
                             {testimonial.name}
                           </h3>
-                          <p className="font-sans text-sm text-darkgray/60">
-                            Cinsel Terapi
-                          </p>
+                          <div className="flex items-center space-x-3 mt-1">
+                            <div className="flex items-center space-x-0.5">
+                              {[1, 2, 3, 4, 5].map((star) => (
+                                <i key={star} className="ri-star-fill text-gold text-sm"></i>
+                              ))}
+                            </div>
+                            <span className="text-xs text-darkgray/40">•</span>
+                            <span className="inline-flex items-center text-xs text-olive font-medium">
+                              <i className="ri-verified-badge-fill mr-1"></i>
+                              Doğrulanmış
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="flex items-center space-x-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <i key={star} className="ri-star-fill text-gold"></i>
-                      ))}
-                    </div>
-
-                    <p className="font-sans text-sm text-darkgray/80 leading-relaxed">
-                      "{testimonial.text}"
-                    </p>
-                  </div>
-                </div>
-              ))}
-              {/* İkinci set (sonsuz döngü için) */}
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={`second-${testimonial.id}`}
-                  className="flex-shrink-0 w-[500px] mx-4"
-                >
-                  <div className="bg-cream rounded-3xl p-8 space-y-6 h-full shadow-lg">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center space-x-4">
-                        <div className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          ['bg-olive/80', 'bg-gold/80', 'bg-darkgray/70', 'bg-olive/60', 'bg-gold/60'][index % 5]
+                      <div className="flex items-center space-x-3">
+                        <span className="hidden sm:inline-flex items-center px-3 py-1.5 rounded-full bg-olive/10 text-olive text-xs font-medium">
+                          <i className="ri-heart-pulse-line mr-1.5"></i>
+                          Cinsel Terapi
+                        </span>
+                        <div className={`w-10 h-10 rounded-full bg-cream flex items-center justify-center transition-all duration-300 ${
+                          expandedId === testimonial.id ? 'bg-olive text-white rotate-180' : 'text-darkgray/50 group-hover:bg-olive/10 group-hover:text-olive'
                         }`}>
-                          <span className="text-white font-bold text-lg">
-                            {testimonial.name.split(' ')[0][0]}
-                          </span>
-                        </div>
-                        <div>
-                          <h3 className="font-sans text-base font-semibold text-darkgray">
-                            {testimonial.name}
-                          </h3>
-                          <p className="font-sans text-sm text-darkgray/60">
-                            Cinsel Terapi
-                          </p>
+                          <i className="ri-arrow-down-s-line text-xl"></i>
                         </div>
                       </div>
-                    </div>
+                    </button>
 
-                    <div className="flex items-center space-x-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <i key={star} className="ri-star-fill text-gold"></i>
-                      ))}
-                    </div>
-
-                    <p className="font-sans text-sm text-darkgray/80 leading-relaxed">
-                      "{testimonial.text}"
-                    </p>
+                    {/* Content - Açılır Alan */}
+                    <AnimatePresence>
+                      {expandedId === testimonial.id && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: 'easeInOut' }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-6">
+                            <div className="pt-4 border-t border-darkgray/10">
+                              <div className="relative">
+                                <i className="ri-double-quotes-l text-5xl text-olive/10 absolute -top-2 -left-2"></i>
+                                <p className="font-sans text-base text-darkgray/75 leading-relaxed pl-8">
+                                  {testimonial.text}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
