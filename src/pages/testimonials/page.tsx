@@ -875,6 +875,9 @@ const TestimonialsPage = () => {
                         </div>
                       </div>
                       <div className="flex items-center space-x-3">
+                        <span className="sm:hidden inline-flex items-center px-3 py-1.5 rounded-full bg-olive/10 text-olive text-xs font-medium">
+                          Oku
+                        </span>
                         <span className="hidden sm:inline-flex items-center px-3 py-1.5 rounded-full bg-olive/10 text-olive text-xs font-medium">
                           {testimonial.service}
                         </span>
