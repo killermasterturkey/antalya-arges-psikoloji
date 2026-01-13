@@ -1,0 +1,139 @@
+# Arges Psikoloji - Kapsamlı Google Ads ve Dijital Pazarlama Rehberi
+
+Bu rehber, https://antalyaargespsikoloji.com/ projenizin kod yapısı, mevcut içerikleri ve "müşteri kazanma" hedefi doğrultusunda **özel olarak** hazırlanmıştır.
+
+## 1. Hazırlık ve Teknik Kurulum (Kritik Aşama)
+
+Web siteniz React (Single Page Application) yapısında olduğu için standart izleme kodları bazen hatalı çalışabilir. Sitenizde halihazırda `src/utils/analytics.ts` dosyasında `trackPhoneClick` ve `trackWhatsAppClick` fonksiyonlarının olması çok büyük avantaj. Google Ads'in başarısı için bunları Google Ads'e bağlamamız şart.
+
+### A. Google Tag Manager (GTM) Kurulumu
+1. **GTM Hesabı:** Google Tag Manager hesabı oluşturun.
+2. **Kodu Ekleyin:** Size verilen GTM kodunu (GTM-XXXXX) `index.html` dosyanızın `<head>` ve `<body>` etiketlerine ekleyin.
+3. **Trigger (Tetikleyici) Oluşturma:**
+   - Sitenizdeki "Hemen Ara" ve "WhatsApp" butonlarına tıklandığında çalışan `trackPhoneClick` gibi fonksiyonlarınız var.
+   - GTM'de bu tıklamaları yakalamak için "Click - All Elements" türünde tetikleyiciler oluşturun.
+   - **Önemli:** Butonlarınızdaki ID veya Class'ları hedefleyin. Kodlarınızda `trackPhoneClick` fonksiyonu çağrılıyor, bu yüzden GTM'de "Custom Event" (Özel Etkinlik) kurmak en temizidir. Yazılımcınızdan bu fonksiyonların `dataLayer.push({'event': 'contact_click', 'method': 'phone'})` şeklinde bir veri göndermesini isteyin veya mevcut yapıyı GTM ile dinleyin.
+
+### B. Dönüşüm (Conversion) Takibi
+Reklam parasının boşa gitmemesi için neyin "başarı" sayıldığını Google'a öğretmeliyiz.
+
+1. **Google Ads Paneli > Hedefler > Dönüşümler** sekmesine gidin.
+2. **Yeni Dönüşüm İşlemi:** "Telefon Aramaları" ve "Web Sitesi" seçeneklerini kullanın.
+3. **Takip Edilecek Eylemler:**
+   - **Telefondan Arama Butonu Tıklaması:** (Sitenizdeki "0540 325 15 25" butonları)
+   - **WhatsApp Tıklaması:** (En çok dönüş getirecek eylemlerden biri)
+   - **İletişim Formu Gönderimi:** (`src/pages/contact/page.tsx` içindeki form)
+4. **Dönüşüm Değeri:** Her bir telefon görüşmesine tahmini bir parasal değer atayın (Örn: 100 TL). Bu, Google'ın "ROAS" (Reklam Harcaması Getirisi) odaklı çalışmasını sağlar.
+
+---
+
+## 2. Kampanya Stratejisi (Silo Yapısı)
+
+Tek bir kampanya açıp her şeyi içine atmak yerine, hizmetlerinizi gruplandırarak (Silo Yapısı) kalite puanını artıracak ve tıklama başı maliyetleri (TBM) düşüreceksiniz.
+
+### Kampanya 1: Genel Psikoloji & Marka (Yüksek Trafik)
+*Bu kampanya, "psikolog arıyorum", "antalya psikolog" gibi genel aramaları hedefler.*
+
+*   **Hedef Sayfa (Landing Page):** `https://antalyaargespsikoloji.com/lp/antalya-psikolog`
+    *   *Neden?* Analiz ettiğim `src/pages/lp/antalya-psikolog/page.tsx` sayfası tam bir "satış sayfası" olarak tasarlanmış. Geri sayım sayacı, güçlü başlıklar ve sosyal kanıtlar var. Ana sayfadan çok daha iyi dönüşüm verecektir.
+*   **Anahtar Kelimeler:**
+    *   "antalya psikolog"
+    *   "en iyi psikolog antalya"
+    *   "antalya psikolojik danışmanlık"
+    *   "muratpaşa psikolog"
+    *   "psikolog fiyatları antalya"
+*   **Reklam Metni (Örnek):**
+    *   **Başlık 1:** Antalya Uzman Psikolog - Arges Psikoloji
+    *   **Başlık 2:** Ücretsiz Ön Görüşme İmkanı
+    *   **Başlık 3:** 1000+ Mutlu Danışan
+    *   **Açıklama 1:** Kaygı, depresyon ve ilişki sorunlarınızda yanınızdayız. Gizlilik garantili profesyonel terapi.
+    *   **Açıklama 2:** Antalya Muratpaşa'da hizmetinizdeyiz. Hemen arayın veya WhatsApp'tan yazın.
+
+### Kampanya 2: EMDR & Travma (Yüksek Katma Değer)
+*EMDR, spesifik ve acil çözüm arayan, ödeme gücü daha yüksek bir kitleye hitap eder.*
+
+*   **Hedef Sayfa:** `https://antalyaargespsikoloji.com/services/antalya-emdr`
+*   **Anahtar Kelimeler:**
+    *   "antalya emdr terapisi"
+    *   "emdr tedavisi yapanlar"
+    *   "travma terapisi antalya"
+    *   "panik atak tedavisi antalya"
+*   **Reklam Metni (Örnek):**
+    *   **Başlık 1:** Antalya EMDR Terapisi
+    *   **Başlık 2:** Travmadan Özgürleşin
+    *   **Açıklama:** Geçmişin yüklerinden bilimsel yöntemlerle kurtulun. Sertifikalı EMDR terapistimiz ile görüşün.
+
+### Kampanya 3: Pedagog & Çocuk/Ergen (Ebeveyn Hedefli)
+*Ebeveynler çocukları için hızlı çözüm ararlar.*
+
+*   **Hedef Sayfa:** `https://antalyaargespsikoloji.com/services/antalya-pedagog`
+*   **Anahtar Kelimeler:**
+    *   "antalya pedagog"
+    *   "çocuk psikoloğu antalya"
+    *   "oyun terapisi antalya"
+    *   "dikkat eksikliği tedavisi"
+    *   "sınav kaygısı antalya"
+*   **Reklam Metni (Örnek):**
+    *   **Başlık 1:** Antalya Uzman Pedagog
+    *   **Başlık 2:** Çocuğunuz İçin En İyisi
+    *   **Açıklama:** Okul başarısı, dikkat eksikliği ve davranış sorunlarında uzman desteği. Oyun terapisi ile çözüm.
+
+---
+
+## 3. Konum ve Hedef Kitle Ayarları
+
+Projeniz yerel bir işletme. Reklam bütçenizi tüm Türkiye'ye harcamamalısınız.
+
+1. **Konum:** Antalya (İl geneli) SEÇMEYİN. Bunun yerine "Gelişmiş Yer Hedefleme" kullanın:
+   - **Hedef:** Antalya Muratpaşa (Merkez) + 10-15 km yarıçap.
+   - Konyaaltı, Lara, Kepez bölgelerini kapsadığından emin olun.
+   - *Hariç Tutulacaklar:* Alanya, Kaş gibi merkeze çok uzak ilçeleri hariç tutun (gelmeleri zor olduğu için bütçe israfı olur).
+2. **Dil:** Türkçe (Telefon dili İngilizce olan Türkleri kaçırmamak için İngilizce'yi de ekleyebilirsiniz).
+3. **Reklam Zamanlaması:** Telefonları açabileceğiniz saatlere reklam verin (Örn: 09:00 - 20:00). Gece 3'te gelen aramayı açamayacaksanız reklamı o saatte kapatın veya sadece form doldurmaya yönlendirin.
+
+---
+
+## 4. Reklam Uzantıları (Ad Extensions) - ÇOK ÖNEMLİ
+
+Reklamınızın kapladığı alanı artırır ve tıklama oranını (CTR) yükseltir.
+
+1. **Telefon Uzantısı:** İşletme telefonunuzu (0540 325 15 25) ekleyin. Mobilde "Ara" butonu olarak çıkar.
+2. **Yer Uzantısı:** "Google Benim İşletmem" (Google Maps) hesabınızı bağlayın. İnsanların "Yol Tarifi" almasını sağlar.
+3. **Site Bağlantısı (Sitelink) Uzantıları:**
+   - "Online Randevu" -> İletişim sayfasına
+   - "Çift Terapisi" -> İlgili hizmet sayfasına
+   - "Hakkımızda" -> Ekip sayfasına
+4. **Açıklama (Callout) Uzantıları:**
+   - "Ücretsiz Ön Görüşme"
+   - "Gizlilik Garantisi"
+   - "Akşam Seansları"
+
+---
+
+## 5. Bütçe ve Teklif Stratejisi
+
+*   **Başlangıç Bütçesi:** Günlük bütçenizi belirleyin (Örn: 300-500 TL).
+*   **Teklif Stratejisi:**
+    *   **İlk 2 Hafta:** "Tıklamaları En Üst Düzeye Çıkar" (Maksimum TBM sınırı koyarak, örn: 15 TL). Bu, sitenize trafik çekip veri toplamanızı sağlar.
+    *   **2. Haftadan Sonra:** Dönüşümler (telefon aramaları) gelmeye başladığında stratejiyi "Dönüşümleri En Üst Düzeye Çıkar" olarak değiştirin. Google, sizi arama ihtimali en yüksek kişilere reklam gösterecektir.
+
+## 6. Negatif Anahtar Kelimeler (Bütçe Dostu)
+
+Paranızın boşa gitmemesi için bu kelimeleri "Negatif Anahtar Kelime" listesine ekleyin:
+*   "ücretsiz psikolog" (Devlet hastanesi arayanlar size gelmesin)
+*   "devlet hastanesi"
+*   "iş ilanı"
+*   "stajyer"
+*   "maaşları"
+*   "nedir" (Bilgi arayanlar, hizmet alacaklar değil)
+*   "kitap", "pdf"
+
+## Özet: Yapılacaklar Listesi
+
+1.  [ ] Google Tag Manager kurulumunu yapın ve sitedeki telefon/WhatsApp butonlarını "Dönüşüm" olarak tanımlayın.
+2.  [ ] Google Ads hesabında yukarıdaki 3 farklı kampanyayı oluşturun.
+3.  [ ] `lp/antalya-psikolog` sayfasını ana reklam iniş sayfası olarak kullanın.
+4.  [ ] Konum hedeflemesini Muratpaşa merkezli yarıçap olarak ayarlayın.
+5.  [ ] Negatif anahtar kelimeleri en baştan girin.
+
+Bu strateji, `Antalya Arges Psikoloji` markanızın dijitalde büyümesi için en optimize yoldur. Bol kazançlar dilerim!
