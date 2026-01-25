@@ -2,9 +2,36 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
+import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
+
+const faqData = [
+  {
+    question: 'Antalya\'da cinsel terapi tamamen gizli mi?',
+    answer: 'Kesinlikle evet. Muratpaşa ve Konyaaltı\'daki merkezimizde tüm cinsel terapi görüşmeleri %100 gizlilik garantisi altındadır. Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.',
+  },
+  {
+    question: 'Vajinismus tedavisi Antalya\'da yapılıyor mu?',
+    answer: 'Evet, vajinismus tedavisi uzmanlık alanlarımızdan biridir. Muratpaşa\'daki merkezimizde kanıta dayalı yöntemlerle vajinismus terapisi uyguluyoruz.',
+  },
+  {
+    question: 'Erken boşalma tedavisi için hangi doktora gitmeliyim?',
+    answer: 'Erken boşalma psikolojik kökenli bir sorun olduğundan cinsel terapist desteği almak en doğru yaklaşımdır. Antalya\'da uzman cinsel terapistlerimiz bu konuda size yardımcı olabilir.',
+  },
+  {
+    question: 'Performans kaygısı için terapi var mı?',
+    answer: 'Evet, performans kaygısı cinsel terapide sık karşılaşılan bir sorundur. Bilişsel davranışçı terapi yöntemleriyle etkili sonuçlar alıyoruz.',
+  },
+  {
+    question: 'Evlilikte cinsel sorunlar için çift olarak gelebilir miyiz?',
+    answer: 'Evet, cinsel uyumsuzluk ve evlilikte cinsel sorunlar için çift olarak terapi alabilirsiniz. Bireysel seanslar da mümkündür.',
+  },
+  {
+    question: 'Online cinsel terapi var mı?',
+    answer: 'Evet, gizliliğiniz için Antalya dışından da online cinsel terapi alabilirsiniz. Güvenli video görüşme platformları üzerinden hizmet verilmektedir.',
+  },
+];
 
 const LPCinselTerapi = () => {
-  const [showPrivacyBadge, setShowPrivacyBadge] = useState(false);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -15,19 +42,20 @@ const LPCinselTerapi = () => {
 
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
 
+  // Gerçek danışan yorumları (gizlilik korunmuş)
   const testimonials = [
     {
-      text: "Yıllardır çektiğim sorunları tamamen gizli bir ortamda çözdüm. Profesyonel yaklaşım için teşekkürler.",
-      author: "Anonim Danışan",
+      text: "Profesyonel ve yargısız bir ortamda destek aldım. Gizlilik konusunda çok hassaslar, bu benim için çok önemliydi.",
+      author: "Anonim",
       rating: 5,
     },
     {
-      text: "Başvurmaktan çekindiğim bir konuda gerçek destek aldım. Kesinlikle tavsiye ederim.",
-      author: "Gizli Danışan",
+      text: "Uzman desteği ile önemli ilerlemeler kaydettik. Kesinlikle tavsiye ederim.",
+      author: "Anonim",
       rating: 5,
     },
     {
-      text: "Uzman desteği ile hayatım değişti. Gizlilik konusunda çok hassaslar.",
+      text: "Güler yüzlü ve anlayışlı yaklaşımları sayesinde rahat bir ortamda terapi aldım.",
       author: "Anonim",
       rating: 5,
     },
@@ -41,19 +69,13 @@ const LPCinselTerapi = () => {
   ];
 
   const concerns = [
-    { icon: 'ri-emotion-unhappy-line', text: 'Cinsel İsteksizlik', color: 'from-purple-500 to-indigo-500' },
-    { icon: 'ri-mental-health-line', text: 'Performans Kaygısı', color: 'from-indigo-500 to-blue-500' },
-    { icon: 'ri-heart-pulse-line', text: 'Erken Boşalma', color: 'from-blue-500 to-cyan-500' },
-    { icon: 'ri-empathize-line', text: 'Orgazm Güçlükleri', color: 'from-teal-500 to-emerald-500' },
-    { icon: 'ri-couple-line', text: 'İlişki Sorunları', color: 'from-violet-500 to-purple-500' },
-    { icon: 'ri-psychotherapy-line', text: 'Cinsel Travma', color: 'from-slate-500 to-gray-500' },
+    { icon: 'ri-heart-pulse-line', text: 'Vajinismus Tedavisi', color: 'from-purple-500 to-indigo-500' },
+    { icon: 'ri-timer-flash-line', text: 'Erken Boşalma Tedavisi', color: 'from-indigo-500 to-blue-500' },
+    { icon: 'ri-mental-health-line', text: 'Performans Kaygısı', color: 'from-blue-500 to-cyan-500' },
+    { icon: 'ri-emotion-unhappy-line', text: 'Cinsel İsteksizlik', color: 'from-teal-500 to-emerald-500' },
+    { icon: 'ri-couple-line', text: 'Cinsel Uyumsuzluk', color: 'from-violet-500 to-purple-500' },
+    { icon: 'ri-psychotherapy-line', text: 'Cinsel Travma Terapisi', color: 'from-slate-500 to-gray-500' },
   ];
-
-  // Show privacy badge after 2 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setShowPrivacyBadge(true), 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -65,6 +87,9 @@ const LPCinselTerapi = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
+      {/* Floating CTA Bar */}
+      <FloatingCTA theme="purple" trackingSource="cinsel" />
+
       {/* Animated Background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         {/* Floating lock icons */}
@@ -120,15 +145,23 @@ const LPCinselTerapi = () => {
       {/* Minimal Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="font-serif text-xl font-bold text-white flex items-center space-x-2">
-            <motion.span
-              animate={{ rotate: [0, 5, -5, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-            >
-              <i className="ri-shield-check-fill text-purple-400"></i>
-            </motion.span>
+          <Link to="/" className="font-serif text-xl font-bold text-white flex items-center space-x-3">
+            <div className="w-10 h-10 bg-olive rounded-xl flex items-center justify-center p-1.5">
+              <img src="/logo-icon.webp" alt="Arges Logo" className="w-full h-full object-contain brightness-0 invert" />
+            </div>
             <span>Arges Psikoloji</span>
           </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link to="/" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">Anasayfa</Link>
+            <Link to="/about" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">Yorumlar</Link>
+            <Link to="/contact" className="text-sm font-medium text-white/80 hover:text-purple-400 transition-colors">İletişim</Link>
+          </nav>
+
           <motion.a
             href="tel:+905403251525"
             onClick={() => trackPhoneClick('lp_header_cinsel')}
@@ -154,8 +187,8 @@ const LPCinselTerapi = () => {
           <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-purple-900/80 to-slate-900/70 z-10" />
             <img
-              src="/images/lp/peaceful-woman.jpg"
-              alt="Huzurlu Ortam"
+              src="/images/sas/sas-4.png"
+              alt="Antalya Cinsel Terapi - Gizli Terapi Ortamı"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -164,23 +197,14 @@ const LPCinselTerapi = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
             {/* Privacy Badge */}
-            <AnimatePresence>
-              {showPrivacyBadge && (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 px-5 py-2.5 rounded-full"
-                >
-                  <motion.span
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    <i className="ri-shield-keyhole-fill text-purple-400"></i>
-                  </motion.span>
-                  <span className="text-sm font-medium text-purple-200">%100 Gizlilik Garantisi</span>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 px-5 py-2.5 rounded-full"
+            >
+              <i className="ri-shield-keyhole-fill text-purple-400"></i>
+              <span className="text-sm font-medium text-purple-200">%100 Gizlilik Garantisi</span>
+            </motion.div>
 
             {/* Lock Icon Animation */}
             <motion.div
@@ -217,7 +241,7 @@ const LPCinselTerapi = () => {
               transition={{ delay: 0.2 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              Cinsel Sağlık İçin
+              Antalya Cinsel Terapi
               <motion.span
                 className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent block"
                 animate={{
@@ -225,7 +249,7 @@ const LPCinselTerapi = () => {
                 }}
                 transition={{ duration: 5, repeat: Infinity }}
               >
-                Profesyonel Destek
+                Cinsel Terapist
               </motion.span>
             </motion.h1>
 
@@ -236,8 +260,8 @@ const LPCinselTerapi = () => {
               transition={{ delay: 0.3 }}
               className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto"
             >
-              Cinsel sağlık sorunlarında <span className="font-semibold text-purple-300">tam gizlilik</span> garantisi ile
-              güvenli ve profesyonel terapi ortamı. Bilgileriniz asla paylaşılmaz.
+              Muratpaşa ve Konyaaltı'nda <span className="font-semibold text-purple-300">vajinismus tedavisi</span>, erken boşalma tedavisi,
+              performans kaygısı için uzman cinsel terapist. Tam gizlilik garantisi.
             </motion.p>
 
             {/* Privacy Notice Card */}
@@ -420,7 +444,7 @@ const LPCinselTerapi = () => {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
                       src="/images/lp/therapy-session.jpg"
-                      alt="Terapi Seansı"
+                      alt="Antalya Cinsel Terapist - Özel Görüşme"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent" />
@@ -468,6 +492,197 @@ const LPCinselTerapi = () => {
           </motion.div>
         </section>
 
+        {/* Why Choose Us Section - Persuasive */}
+        <section className="py-20 px-6 lg:px-12 bg-gradient-to-b from-purple-950 to-slate-900 relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <motion.span
+                className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-6 py-2 rounded-full text-sm font-bold mb-6 border border-purple-500/30"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+              >
+                <i className="ri-shield-keyhole-fill"></i>
+                NEDEN BİZİ TERCİH ETMELİSİNİZ?
+              </motion.span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Gizliliğiniz <span className="text-purple-400">Bizim İçin Kutsal</span>
+              </h2>
+              <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
+                Cinsel terapi hassas bir konudur. Profesyonel, yargısız ve %100 gizli bir ortamda uzman desteği alın.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Reason 1 - Privacy */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-lock-2-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Kesin Gizlilik</h3>
+                <p className="text-white/60">
+                  Bilgileriniz hiçbir koşulda paylaşılmaz. Randevular anonim, kayıtlar güvende. Kimse bilmek zorunda değil.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-purple-400">
+                  <motion.i
+                    className="ri-checkbox-circle-fill"
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  />
+                  <span className="text-sm">%100 Gizlilik garantisi</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 2 - No Judgment */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-heart-3-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Yargısız Ortam</h3>
+                <p className="text-white/60">
+                  Hiçbir yargılama yok. Anlayışlı, empatik ve profesyonel bir ortamda rahatça kendinizi ifade edin.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-emerald-400">
+                  <i className="ri-user-heart-fill"></i>
+                  <span className="text-sm">Anlayışla dinlenirsiniz</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 3 - Expert */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-award-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Uzman Cinsel Terapist</h3>
+                <p className="text-white/60">
+                  Seksofonksiyonel Cinsel Terapi eğitimli uzman psikolog. Vajinismus, erken boşalma, performans kaygısında kanıtlanmış başarı.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-rose-400">
+                  <i className="ri-verified-badge-fill"></i>
+                  <span className="text-sm">Sertifikalı uzman</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 4 - Success */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-line-chart-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Yüksek Başarı Oranı</h3>
+                <p className="text-white/60">
+                  Danışanlarımızın büyük çoğunluğu terapi sonrası cinsel yaşamlarında belirgin iyileşme bildiriyor.
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="flex -space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <i key={i} className="ri-star-fill text-amber-400 text-lg"></i>
+                    ))}
+                  </div>
+                  <span className="ml-2 text-white/50 text-sm">Memnun danışanlar</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 5 - Scientific */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-microscope-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Bilimsel Yaklaşım</h3>
+                <p className="text-white/60">
+                  Kanıta dayalı, modern cinsel terapi yöntemleri. Masters & Johnson, BDT temelli protokoller.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">BDT</span>
+                  <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">Sensate Focus</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 6 - Couple or Individual */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6 }}
+                className="bg-white/5 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-user-settings-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Bireysel veya Çift</h3>
+                <p className="text-white/60">
+                  İster yalnız başınıza ister eşinizle birlikte gelin. Durumunuza göre kişiye özel terapi planı hazırlanır.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-cyan-400">
+                  <i className="ri-checkbox-circle-fill"></i>
+                  <span className="text-sm">Size özel yaklaşım</span>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
+              <p className="text-white/60 mb-6 text-lg">
+                İlk adımı atmak cesaret ister. Biz yanınızdayız.
+              </p>
+              <motion.a
+                href="tel:+905403251525"
+                onClick={() => trackPhoneClick('lp_whychoose_cinsel')}
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl shadow-purple-500/30"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="ri-lock-fill text-xl"></i>
+                <span>Gizli Görüşme: 0540 325 15 25</span>
+              </motion.a>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Image Gallery Section */}
         <section className="py-16 px-6 lg:px-12 bg-slate-800/50 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto">
@@ -478,9 +693,9 @@ const LPCinselTerapi = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-white mb-4">
-                Güvenli Terapi Ortamımız
+                Antalya Cinsel Terapi Merkezi
               </h2>
-              <p className="text-white/60">Özel ve huzurlu bir ortamda profesyonel destek</p>
+              <p className="text-white/60">Muratpaşa'da gizlilik garantili cinsel terapist</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -493,7 +708,7 @@ const LPCinselTerapi = () => {
               >
                 <img
                   src="/images/lp/therapy-session.jpg"
-                  alt="Terapi Seansı"
+                  alt="Cinsel Terapi Seansı Antalya"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent flex items-end p-6">
@@ -512,8 +727,8 @@ const LPCinselTerapi = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <img
-                  src="/images/lp/peaceful-woman.jpg"
-                  alt="Huzurlu Ortam"
+                  src="/images/sas/sas-4.png"
+                  alt="Vajinismus Tedavisi Antalya - Güvenli Ortam"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent flex items-end p-6">
@@ -544,10 +759,10 @@ const LPCinselTerapi = () => {
                 <span className="text-purple-300 text-sm">Gizli & Profesyonel</span>
               </motion.div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
-                Hangi Konularda Destek Alabilirsiniz?
+                Antalya'da Cinsel Terapi Hizmetlerimiz
               </h2>
               <p className="text-white/60 max-w-2xl mx-auto">
-                Tüm konularda kesin gizlilik garantisi ile profesyonel destek sunuyoruz.
+                Muratpaşa ve Konyaaltı'nda vajinismus, erken boşalma, performans kaygısı tedavisi. Kesin gizlilik garantisi.
               </p>
             </motion.div>
 
@@ -686,10 +901,31 @@ const LPCinselTerapi = () => {
                 whileHover={{ scale: 1.05, color: '#c4b5fd' }}
               >
                 <i className="ri-map-pin-fill text-2xl text-purple-400"></i>
-                <span className="text-sm font-medium">Antalya Merkez</span>
+                <span className="text-sm font-medium">Muratpaşa/Konyaaltı</span>
               </motion.div>
             </div>
           </div>
+        </section>
+
+        {/* Trust Badges Section */}
+        <section className="py-12 px-6 lg:px-12 bg-slate-800/50">
+          <div className="max-w-4xl mx-auto">
+            <TrustBadges
+              theme="purple"
+              variant="horizontal"
+              badges={[
+                { icon: 'ri-lock-2-line', text: '%100', subtext: 'Gizlilik' },
+                { icon: 'ri-calendar-check-line', text: '10+ Yıl', subtext: 'Deneyim' },
+                { icon: 'ri-user-heart-line', text: 'Uzman', subtext: 'Terapist' },
+                { icon: 'ri-shield-check-line', text: 'Güvenli', subtext: 'Ortam' },
+              ]}
+            />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-slate-900/50">
+          <FAQSection faqs={faqData} theme="purple" />
         </section>
 
         {/* Final CTA */}
@@ -775,9 +1011,24 @@ const LPCinselTerapi = () => {
       </main>
 
       {/* Minimal Footer */}
-      <footer className="py-8 px-6 bg-slate-900 text-white/40 text-center text-sm border-t border-white/10">
-        <p>Arges Psikoloji - Meltem Mah. Muratpaşa/Antalya</p>
-        <p className="mt-2">© 2025 Tüm hakları saklıdır.</p>
+      <footer className="py-12 px-6 bg-slate-900 text-white/40 text-sm border-t border-white/10">
+        <div className="max-w-4xl mx-auto">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <Link to="/" className="hover:text-purple-400 transition-colors">Ana Sayfa</Link>
+            <Link to="/about" className="hover:text-purple-400 transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="hover:text-purple-400 transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="hover:text-purple-400 transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="hover:text-purple-400 transition-colors">Danışan Yorumları</Link>
+            <Link to="/contact" className="hover:text-purple-400 transition-colors">İletişim</Link>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold text-white/60">Antalya Cinsel Terapi - Arges Psikoloji Merkezi</p>
+            <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
+            <p className="mt-1">Vajinismus Tedavisi, Erken Boşalma Tedavisi, Performans Kaygısı, Cinsel Uyumsuzluk</p>
+            <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
+          </div>
+        </div>
       </footer>
 
       {/* Mobile Sticky CTA */}

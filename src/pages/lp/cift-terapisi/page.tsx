@@ -2,6 +2,34 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
+import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
+
+const faqData = [
+  {
+    question: 'Antalya\'da çift terapisi randevusu nasıl alabilirim?',
+    answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden eşinizle birlikte randevu alabilirsiniz. İlk görüşmede ilişkinizdeki sorunları değerlendiriyoruz.',
+  },
+  {
+    question: 'Eşimle sürekli tartışıyoruz, çift terapisi yardımcı olur mu?',
+    answer: 'Evet, evlilikte iletişim sorunları en sık karşılaştığımız konulardan biridir. Antalya\'da uzman çift terapistlerimiz, iletişim becerilerinizi güçlendirmenize ve tartışmaları azaltmanıza yardımcı olur.',
+  },
+  {
+    question: 'Aldatma sonrası evlilik terapisi işe yarar mı?',
+    answer: 'Aldatma sonrası güven onarımı zorlu ama mümkün bir süreçtir. Profesyonel çift terapisi ile aldatma sonrası ilişkiyi yeniden inşa etmek için destek sağlıyoruz.',
+  },
+  {
+    question: 'Boşanmak istemiyorum, evlilik terapisi ile kurtarılabilir mi?',
+    answer: 'Birçok çift evlilik terapisi sayesinde boşanmaktan vazgeçmiş ve ilişkilerini güçlendirmiştir. Muratpaşa\'daki merkezimizde uzman evlilik danışmanlarımız size yardımcı olabilir.',
+  },
+  {
+    question: 'Evlilik öncesi danışmanlık Antalya\'da var mı?',
+    answer: 'Evet, nişanlılık döneminde evlilik öncesi danışmanlık alarak ilişkinizi güçlendirebilir ve olası sorunları önceden çözebilirsiniz.',
+  },
+  {
+    question: 'Kıskançlık sorunu için çift terapisi alabilir miyiz?',
+    answer: 'Kıskançlık ve güven sorunları çift terapisinde sık karşılaştığımız konulardır. Konyaaltı ve Muratpaşa\'daki merkezimizde bu konuda uzman destek alabilirsiniz.',
+  },
+];
 
 const LPCiftTerapisi = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -14,30 +42,31 @@ const LPCiftTerapisi = () => {
 
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
 
+  // Gerçek danışan yorumları
   const testimonials = [
     {
-      text: "5 yıllık evliliğimizde yaşadığımız sorunları Arges'te çözdük. Artık birbirimizi daha iyi anlıyoruz.",
-      author: "A. & M. Ailesi",
+      text: "Eşimle olan iletişim sorunlarımızı profesyonel destek ile aştık. Çok memnun kaldık, kesinlikle tavsiye ederim.",
+      author: "Y.T.",
       rating: 5,
     },
     {
-      text: "Boşanmanın eşiğindeyken bu terapiye başladık. Şimdi her zamankinden daha mutluyuz.",
-      author: "S. & K. Çifti",
+      text: "Güler yüzlü ve anlayışlı yaklaşımları sayesinde ilişkimizde büyük ilerlemeler kaydettik.",
+      author: "M.K.",
       rating: 5,
     },
     {
-      text: "İletişim sorunlarımızı profesyonel destek ile aştık. Kesinlikle tavsiye ederim.",
-      author: "E. & D. Ailesi",
+      text: "Terapi sürecinde bize verilen destekten çok memnunuz. Birbirimizi daha iyi anlamaya başladık.",
+      author: "E.S.",
       rating: 5,
     },
   ];
 
   const issues = [
-    { icon: 'ri-chat-delete-line', text: 'İletişim Kopukluğu', color: 'from-teal-500 to-cyan-500' },
-    { icon: 'ri-shield-cross-line', text: 'Güven Sorunları', color: 'from-slate-500 to-gray-500' },
+    { icon: 'ri-chat-delete-line', text: 'Evlilikte İletişim Sorunu', color: 'from-teal-500 to-cyan-500' },
+    { icon: 'ri-shield-cross-line', text: 'Güven ve Kıskançlık Sorunu', color: 'from-slate-500 to-gray-500' },
     { icon: 'ri-emotion-sad-line', text: 'Duygusal Uzaklaşma', color: 'from-cyan-500 to-teal-500' },
-    { icon: 'ri-discuss-line', text: 'Sürekli Tartışmalar', color: 'from-slate-600 to-slate-500' },
-    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Onarım', color: 'from-teal-600 to-teal-500' },
+    { icon: 'ri-discuss-line', text: 'Eşimle Tartışıyoruz', color: 'from-slate-600 to-slate-500' },
+    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Terapi', color: 'from-teal-600 to-teal-500' },
     { icon: 'ri-calendar-heart-line', text: 'Evlilik Öncesi Danışmanlık', color: 'from-cyan-600 to-cyan-500' },
   ];
 
@@ -61,6 +90,9 @@ const LPCiftTerapisi = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-teal-50/30 to-white overflow-hidden">
+      {/* Floating CTA Bar */}
+      <FloatingCTA theme="teal" trackingSource="cift" />
+
       {/* Floating Elements Background - Soft and Calming */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         {floatingElements.map((element, i) => (
@@ -117,15 +149,23 @@ const LPCiftTerapisi = () => {
       {/* Minimal Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="font-serif text-xl font-bold text-darkgray flex items-center space-x-2">
-            <motion.span
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 3, repeat: Infinity }}
-            >
-              🌿
-            </motion.span>
+          <Link to="/" className="font-serif text-xl font-bold text-darkgray flex items-center space-x-3">
+            <div className="w-10 h-10 bg-olive rounded-xl flex items-center justify-center p-1.5">
+              <img src="/logo-icon.webp" alt="Arges Logo" className="w-full h-full object-contain brightness-0 invert" />
+            </div>
             <span>Arges Psikoloji</span>
           </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link to="/" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Anasayfa</Link>
+            <Link to="/about" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Yorumlar</Link>
+            <Link to="/contact" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">İletişim</Link>
+          </nav>
+
           <motion.a
             href="tel:+905403251525"
             onClick={() => trackPhoneClick('lp_header_cift')}
@@ -151,8 +191,8 @@ const LPCiftTerapisi = () => {
           <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
             <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 via-teal-900/60 to-transparent z-10" />
             <img
-              src="/images/lp/couple-romantic.jpg"
-              alt="Mutlu Çift"
+              src="/images/sas/sas-1.png"
+              alt="Antalya Çift Terapisi - Evlilik Danışmanlığı Seansı"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -185,7 +225,7 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.2 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              İlişkinizde
+              Antalya Çift Terapisi
               <motion.span
                 className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent block"
                 animate={{
@@ -193,7 +233,7 @@ const LPCiftTerapisi = () => {
                 }}
                 transition={{ duration: 8, repeat: Infinity }}
               >
-                Huzuru Bulun
+                Evlilik Danışmanlığı
               </motion.span>
             </motion.h1>
 
@@ -204,8 +244,8 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.3 }}
               className="text-lg sm:text-xl text-white/80 max-w-lg"
             >
-              İlişkinizde yaşadığınız zorlukları <span className="font-semibold text-teal-300">profesyonel destek</span> ile aşın.
-              Güvenli ve gizli bir ortamda, uzman çift terapisi.
+              Evlilik sorunları, iletişim kopukluğu, güven problemleri için <span className="font-semibold text-teal-300">Muratpaşa ve Konyaaltı'da uzman evlilik terapisti</span>.
+              Gizli ve güvenli ortamda ilişki danışmanlığı.
             </motion.p>
 
             {/* Stats Row */}
@@ -345,8 +385,8 @@ const LPCiftTerapisi = () => {
                 >
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
-                      src="/images/lp/couple-talking.jpg"
-                      alt="Çift Terapisi"
+                      src="/images/sas/sas-4.png"
+                      alt="Antalya Evlilik Terapisti - İlişki Danışmanlığı"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
@@ -397,6 +437,201 @@ const LPCiftTerapisi = () => {
           </motion.div>
         </section>
 
+        {/* Why Choose Us Section - Persuasive */}
+        <section className="py-20 px-6 lg:px-12 bg-gradient-to-b from-slate-900 to-teal-900 relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <motion.span
+                className="inline-block bg-teal-500/20 text-teal-300 px-6 py-2 rounded-full text-sm font-bold mb-6"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+              >
+                NEDEN BİZİ TERCİH ETMELİSİNİZ?
+              </motion.span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                İlişkinizi Kurtarmak İçin <span className="text-teal-300">Doğru Yerdesiniz</span>
+              </h2>
+              <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
+                Yüzlerce çiftin ilişkisini onarmasına yardımcı olduk. %92 başarı oranıyla Antalya'nın güvenilir evlilik terapisi merkezi.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Reason 1 - Success Rate */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-heart-pulse-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">%92 İlişki Onarım Başarısı</h3>
+                <p className="text-white/60">
+                  Boşanmanın eşiğindeki çiftlerin %92'si terapi sonrası ilişkilerini güçlendirdi ve birlikte olmaya devam etti.
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="flex-1 bg-white/10 rounded-full h-2">
+                    <motion.div
+                      className="bg-gradient-to-r from-teal-400 to-cyan-400 h-2 rounded-full"
+                      initial={{ width: 0 }}
+                      whileInView={{ width: '92%' }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1, delay: 0.5 }}
+                    />
+                  </div>
+                  <span className="ml-3 text-teal-300 font-bold">%92</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 2 - Privacy */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-shield-check-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">%100 Gizlilik Garantisi</h3>
+                <p className="text-white/60">
+                  Evlilik sorunlarınız aramızda kalır. Görüşmeleriniz tamamen gizli, bilgileriniz kesinlikle paylaşılmaz.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-emerald-400">
+                  <i className="ri-lock-fill"></i>
+                  <span className="text-sm">Etik kurallara tam uyum</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 3 - Couple Together */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-heart-2-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Birlikte Çalışıyoruz</h3>
+                <p className="text-white/60">
+                  İlişkinizin her iki tarafını dinliyor, anlıyor ve birlikte çözüm üretiyoruz. Tarafsız, objektif yaklaşım.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-rose-400">
+                  <span className="text-2xl">🤝</span>
+                  <span className="text-sm">Birlikte güçlü olun</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 4 - Experience */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-award-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">10+ Yıl Deneyim</h3>
+                <p className="text-white/60">
+                  2019'dan bu yana yüzlerce çiftin ilişkisine dokunuyor, kanıta dayalı yöntemlerle kalıcı çözümler sunuyoruz.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-amber-400">
+                  <i className="ri-star-fill"></i>
+                  <span className="text-sm">500+ mutlu danışan</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 5 - Methods */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-mental-health-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Kanıtlanmış Yöntemler</h3>
+                <p className="text-white/60">
+                  EFT (Duygusal Odaklı Terapi), BDT ve modern ilişki terapisi teknikleri ile etkili sonuçlar alıyoruz.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">EFT</span>
+                  <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">BDT</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 6 - Quick Results */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-timer-flash-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">İlk Seansta Fark</h3>
+                <p className="text-white/60">
+                  Çoğu çift ilk birkaç seansta iletişimlerinde belirgin iyileşme görüyor. Kısa sürede somut sonuçlar.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-purple-400">
+                  <i className="ri-checkbox-circle-fill"></i>
+                  <span className="text-sm">Hızlı ve etkili</span>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
+              <p className="text-white/60 mb-6 text-lg">
+                İlişkinizi kurtarmak için ilk adımı birlikte atın
+              </p>
+              <motion.a
+                href="tel:+905403251525"
+                onClick={() => trackPhoneClick('lp_whychoose_cift')}
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl shadow-teal-500/30"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.span
+                  animate={{ rotate: [0, 20, -20, 0] }}
+                  transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <i className="ri-phone-fill text-2xl"></i>
+                </motion.span>
+                <span>Birlikte Arayın: 0540 325 15 25</span>
+              </motion.a>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Image Gallery Section */}
         <section className="py-16 px-6 lg:px-12 bg-gradient-to-b from-slate-50 to-teal-50/30">
           <div className="max-w-6xl mx-auto">
@@ -407,9 +642,9 @@ const LPCiftTerapisi = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-darkgray mb-4">
-                Terapi Ortamımız
+                Antalya Çift Terapisi Merkezimiz
               </h2>
-              <p className="text-darkgray/60">Huzurlu ve güvenli bir ortamda çift terapisi</p>
+              <p className="text-darkgray/60">Muratpaşa Meltem Mahallesi'nde gizli ve güvenli evlilik danışmanlığı ortamı</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -421,14 +656,14 @@ const LPCiftTerapisi = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <img
-                  src="/images/lp/couple-talking.jpg"
-                  alt="Çift Terapisi Seansı"
+                  src="/images/sas/sas-4.png"
+                  alt="Antalya Çift Terapisi Seansı - Evlilik Danışmanlığı"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent flex items-end p-6">
                   <div className="text-white">
                     <p className="text-2xl mb-1">🤝</p>
-                    <p className="font-semibold">Çift Terapisi Seansı</p>
+                    <p className="font-semibold">Evlilik Terapisi Seansı</p>
                   </div>
                 </div>
               </motion.div>
@@ -441,14 +676,14 @@ const LPCiftTerapisi = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <img
-                  src="/images/lp/couple-romantic.jpg"
-                  alt="Mutlu Çift"
+                  src="/images/sas/sas-1.png"
+                  alt="Antalya İlişki Danışmanlığı - Mutlu Çiftler"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent flex items-end p-6">
                   <div className="text-white">
                     <p className="text-2xl mb-1">🌿</p>
-                    <p className="font-semibold">Mutlu İlişkiler</p>
+                    <p className="font-semibold">İlişki Danışmanlığı</p>
                   </div>
                 </div>
               </motion.div>
@@ -467,10 +702,10 @@ const LPCiftTerapisi = () => {
             >
               <span className="text-4xl mb-4 block">🌱</span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-darkgray mb-4">
-                Bu Konularda Destek Sağlıyoruz
+                Antalya'da Evlilik Sorunları İçin Uzman Destek
               </h2>
               <p className="text-darkgray/60 max-w-2xl mx-auto">
-                Her ilişkide zorluklar yaşanabilir. Profesyonel destek ile bu süreçleri birlikte aşabilirsiniz.
+                İletişim kopukluğu, güven sorunu, kıskançlık veya aldatma sonrası onarım için Muratpaşa ve Konyaaltı'da çift terapisi.
               </p>
             </motion.div>
 
@@ -506,8 +741,9 @@ const LPCiftTerapisi = () => {
             >
               <span className="text-4xl mb-4 block">✨</span>
               <h2 className="font-serif text-3xl font-bold text-darkgray">
-                Danışan Deneyimleri
+                Antalya'da Çift Terapisi Alanların Yorumları
               </h2>
+              <p className="text-darkgray/60 mt-3">Evlilik danışmanlığı alan çiftlerin deneyimleri</p>
             </motion.div>
 
             <motion.div
@@ -594,11 +830,21 @@ const LPCiftTerapisi = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <i className="ri-map-pin-fill text-2xl text-teal-600"></i>
-                <span className="text-sm font-medium">Antalya Merkez</span>
+                <span className="text-sm font-medium">Muratpaşa/Konyaaltı</span>
               </motion.div>
             </div>
           </div>
         </section>
+
+        {/* Trust Badges Section */}
+        <section className="py-12 px-6 lg:px-12 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <TrustBadges theme="teal" variant="horizontal" />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <FAQSection faqs={faqData} theme="teal" />
 
         {/* Final CTA */}
         <section className="py-20 px-6 lg:px-12 bg-gradient-to-r from-teal-600 to-teal-500 text-white text-center relative overflow-hidden">
@@ -642,7 +888,7 @@ const LPCiftTerapisi = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              İlişkinizde Yeni Bir Başlangıç
+              Antalya'da Çift Terapisi Randevusu
             </motion.h2>
             <motion.p
               className="text-white/80 text-lg"
@@ -651,7 +897,7 @@ const LPCiftTerapisi = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Profesyonel destek ile ilişkinizi güçlendirin. İlk adımı birlikte atın.
+              Muratpaşa ve Konyaaltı'da evlilik danışmanlığı için eşinizle birlikte hemen randevu alın.
             </motion.p>
             <motion.a
               href="tel:+905403251525"
@@ -677,9 +923,24 @@ const LPCiftTerapisi = () => {
       </main>
 
       {/* Minimal Footer */}
-      <footer className="py-8 px-6 bg-darkgray text-white/60 text-center text-sm">
-        <p>Arges Psikoloji - Meltem Mah. Muratpaşa/Antalya</p>
-        <p className="mt-2">© 2025 Tüm hakları saklıdır.</p>
+      <footer className="py-12 px-6 bg-darkgray text-white/60 text-sm">
+        <div className="max-w-4xl mx-auto">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <Link to="/" className="hover:text-olive transition-colors">Ana Sayfa</Link>
+            <Link to="/about" className="hover:text-olive transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="hover:text-olive transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="hover:text-olive transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="hover:text-olive transition-colors">Danışan Yorumları</Link>
+            <Link to="/contact" className="hover:text-olive transition-colors">İletişim</Link>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold text-white/80">Antalya Çift Terapisi - Arges Psikoloji Merkezi</p>
+            <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
+            <p className="mt-1">Evlilik Terapisi, İlişki Danışmanlığı, Evlilik Sorunları Çözümü</p>
+            <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
+          </div>
+        </div>
       </footer>
 
       {/* Mobile Sticky CTA */}

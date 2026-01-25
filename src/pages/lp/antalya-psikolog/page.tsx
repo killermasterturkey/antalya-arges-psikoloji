@@ -2,11 +2,37 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
+import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
+
+const faqData = [
+  {
+    question: 'Antalya\'da psikolog randevusu nasıl alabilirim?',
+    answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden kolayca randevu alabilirsiniz. İlk görüşmede ihtiyaçlarınızı belirliyor ve size en uygun terapi yaklaşımını öneriyoruz.',
+  },
+  {
+    question: 'Antalya\'da depresyon tedavisi yapıyor musunuz?',
+    answer: 'Evet, depresyon tedavisi en önemli uzmanlık alanlarımızdan biridir. Bilişsel davranışçı terapi ve gerektiğinde EMDR gibi kanıta dayalı yöntemlerle depresyon tedavisi uyguluyoruz.',
+  },
+  {
+    question: 'Kaygı bozukluğu ve panik atak için terapi veriyor musunuz?',
+    answer: 'Anksiyete, kaygı bozukluğu ve panik atak tedavisi konusunda uzmanız. Konyaaltı ve Muratpaşa\'daki merkezimizde bilişsel davranışçı terapi ile etkili sonuçlar alıyoruz.',
+  },
+  {
+    question: 'Online terapi hizmeti var mı?',
+    answer: 'Evet, Antalya dışından da danışanlarımıza online terapi hizmeti sunuyoruz. Zoom veya Google Meet üzerinden yüz yüze seanslarla aynı kalitede hizmet alabilirsiniz.',
+  },
+  {
+    question: 'Psikolog seansları gizli mi?',
+    answer: 'Kesinlikle. Tüm psikolojik danışmanlık görüşmeleri etik kurallar ve yasal düzenlemeler çerçevesinde tamamen gizli tutulmaktadır. Bilgileriniz üçüncü kişilerle paylaşılmaz.',
+  },
+  {
+    question: 'Antalya\'da stres yönetimi için kimden yardım alabilirim?',
+    answer: 'Merkezimizde stres yönetimi, öfke kontrolü ve yaşam koçluğu hizmetleri sunuyoruz. Muratpaşa Meltem Mahallesi\'ndeki merkezimize randevu alarak uzman psikologlarımızla görüşebilirsiniz.',
+  },
+];
 
 const LPAntalyaPsikolog = () => {
-  const [timeLeft, setTimeLeft] = useState({ hours: 2, minutes: 30, seconds: 0 });
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [showUrgency, setShowUrgency] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -18,55 +44,43 @@ const LPAntalyaPsikolog = () => {
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
+  // Gerçek danışan yorumları
   const testimonials = [
     {
-      text: "Arges Psikoloji'de aldığım terapi hayatımı değiştirdi. Artık kendimi çok daha iyi hissediyorum.",
-      author: "Ayşe K.",
-      role: "Bireysel Terapi Danışanı",
+      text: "Zorlayıcı bir dönemde gitmiştik. Kendisine tavsiye ile ulaşmıştık. 6 seans kadar devam ettik. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm.",
+      author: "S.T.",
+      role: "Çocuk Terapisi",
       rating: 5,
     },
     {
-      text: "Profesyonel ve anlayışlı yaklaşımları sayesinde zor bir dönemimi atlattım. Herkese tavsiye ederim.",
-      author: "Mehmet Y.",
-      role: "EMDR Terapi Danışanı",
+      text: "Gayet güler yüzlü, samimi ve sıcak bir psikolog. Bize verdiği güven duygusu sayesinde sıkılmadan çekinmeden her şeyi anlatabiliyorsunuz. Çok memnun kaldık.",
+      author: "A.N.",
+      role: "Çocuk Terapisi",
       rating: 5,
     },
     {
-      text: "10 yıldır çektiğim kaygı bozukluğunda ilk kez gerçek bir ilerleme kaydettim.",
-      author: "Zeynep A.",
-      role: "Bireysel Terapi Danışanı",
+      text: "Süreç boyunca her daim yanımızda oldular. Güler yüzlü ve gayet samimi bir ortamdı. Bu kurumu başkalarına tavsiye ederim.",
+      author: "N.K.",
+      role: "Bireysel Terapi",
       rating: 5,
     },
   ];
 
   const services = [
-    { icon: 'ri-user-heart-line', title: 'Bireysel Terapi', desc: 'Kişisel gelişim ve iyileşme', color: 'from-blue-500 to-cyan-500' },
-    { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', desc: 'Aile içi iletişim', color: 'from-green-500 to-emerald-500' },
-    { icon: 'ri-heart-2-line', title: 'Çift Terapisi', desc: 'İlişki sorunları', color: 'from-rose-500 to-pink-500' },
-    { icon: 'ri-mental-health-line', title: 'EMDR Terapi', desc: 'Travma tedavisi', color: 'from-purple-500 to-indigo-500' },
-    { icon: 'ri-gamepad-line', title: 'Çocuk Terapisi', desc: 'Oyun terapisi', color: 'from-amber-500 to-orange-500' },
-    { icon: 'ri-user-star-line', title: 'Ergen Danışmanlığı', desc: 'Gençlik sorunları', color: 'from-teal-500 to-cyan-500' },
+    { icon: 'ri-user-heart-line', title: 'Bireysel Terapi', desc: 'Depresyon, anksiyete, stres tedavisi', color: 'from-blue-500 to-cyan-500' },
+    { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', desc: 'Aile içi iletişim sorunları', color: 'from-green-500 to-emerald-500' },
+    { icon: 'ri-heart-2-line', title: 'Çift Terapisi', desc: 'Evlilik ve ilişki danışmanlığı', color: 'from-rose-500 to-pink-500' },
+    { icon: 'ri-mental-health-line', title: 'EMDR Terapi', desc: 'Travma ve panik atak tedavisi', color: 'from-purple-500 to-indigo-500' },
+    { icon: 'ri-gamepad-line', title: 'Çocuk Psikoloğu', desc: 'Oyun terapisi uzmanı', color: 'from-amber-500 to-orange-500' },
+    { icon: 'ri-user-star-line', title: 'Ergen Psikoloğu', desc: 'Ergenlik dönemi desteği', color: 'from-teal-500 to-cyan-500' },
   ];
 
   const stats = [
-    { value: '1000+', label: 'Mutlu Danışan', icon: 'ri-user-smile-line' },
-    { value: '10+', label: 'Yıl Deneyim', icon: 'ri-calendar-check-line' },
-    { value: '%98', label: 'Memnuniyet', icon: 'ri-star-line' },
-    { value: '24s', label: 'Randevu', icon: 'ri-time-line' },
+    { value: '500+', label: 'Mutlu Danışan', icon: 'ri-user-smile-line' },
+    { value: '4.9', label: 'Puan', icon: 'ri-star-fill' },
+    { value: '%98', label: 'Memnuniyet', icon: 'ri-thumb-up-line' },
+    { value: '3', label: 'Uzman Psikolog', icon: 'ri-team-line' },
   ];
-
-  // Countdown timer
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
-        if (prev.minutes > 0) return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        if (prev.hours > 0) return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        return { hours: 2, minutes: 30, seconds: 0 };
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -76,14 +90,11 @@ const LPAntalyaPsikolog = () => {
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  // Show urgency after delay
-  useEffect(() => {
-    const timer = setTimeout(() => setShowUrgency(true), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="min-h-screen bg-cream overflow-hidden">
+      {/* Floating CTA Bar */}
+      <FloatingCTA theme="olive" trackingSource="psikolog" />
+
       {/* Floating Header */}
       <motion.header
         className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg"
@@ -92,23 +103,31 @@ const LPAntalyaPsikolog = () => {
         transition={{ type: "spring", stiffness: 100 }}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="font-serif text-xl font-bold text-darkgray flex items-center space-x-2">
-            <motion.div
-              className="w-10 h-10 bg-gradient-to-br from-olive to-green-600 rounded-xl flex items-center justify-center"
-              whileHover={{ rotate: 10, scale: 1.1 }}
-            >
-              <i className="ri-mental-health-fill text-white text-xl"></i>
-            </motion.div>
+          <Link to="/" className="font-serif text-xl font-bold text-darkgray flex items-center space-x-3">
+            <div className="w-10 h-10 bg-olive rounded-xl flex items-center justify-center p-1.5">
+              <img src="/logo-icon.webp" alt="Arges Logo" className="w-full h-full object-contain brightness-0 invert" />
+            </div>
             <span>Arges Psikoloji</span>
           </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link to="/" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Anasayfa</Link>
+            <Link to="/about" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">Yorumlar</Link>
+            <Link to="/contact" className="text-sm font-medium text-darkgray hover:text-olive transition-colors">İletişim</Link>
+          </nav>
+
           <div className="flex items-center space-x-4">
             <motion.a
               href="https://wa.me/905403251525"
-              className="hidden sm:flex items-center space-x-2 text-[#25D366] hover:text-[#128C7E] font-medium"
+              className="hidden md:flex items-center space-x-2 text-[#25D366] hover:text-[#128C7E] font-medium"
               whileHover={{ scale: 1.05 }}
             >
               <i className="ri-whatsapp-fill text-xl"></i>
-              <span>WhatsApp</span>
+              <span className="hidden xl:inline">WhatsApp</span>
             </motion.a>
             <motion.a
               href="tel:+905403251525"
@@ -139,8 +158,8 @@ const LPAntalyaPsikolog = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-darkgray/90 via-darkgray/70 to-transparent z-10" />
             <motion.img
-              src="/images/lp/therapy-room-bright.jpg"
-              alt="Terapi Odası"
+              src="/images/sas/sas-1.png"
+              alt="Antalya Psikolog - Bireysel Terapi Seansı"
               className="w-full h-full object-cover"
               initial={{ scale: 1.1 }}
               animate={{ scale: imageLoaded ? 1 : 1.1 }}
@@ -179,24 +198,6 @@ const LPAntalyaPsikolog = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-8">
-                {/* Urgency Badge */}
-                <AnimatePresence>
-                  {showUrgency && (
-                    <motion.div
-                      initial={{ opacity: 0, x: -50 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      className="inline-flex items-center space-x-3 bg-gradient-to-r from-red-500 to-orange-500 text-white px-5 py-2.5 rounded-full shadow-lg"
-                    >
-                      <motion.span
-                        animate={{ scale: [1, 1.3, 1] }}
-                        transition={{ duration: 1, repeat: Infinity }}
-                        className="w-3 h-3 bg-white rounded-full"
-                      />
-                      <span className="text-sm font-semibold">Bugün {3} kişi randevu aldı!</span>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
                 {/* Main Heading */}
                 <motion.h1
                   initial={{ opacity: 0, y: 50 }}
@@ -204,13 +205,13 @@ const LPAntalyaPsikolog = () => {
                   transition={{ delay: 0.2 }}
                   className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
                 >
-                  Antalya'nın
+                  Antalya Psikolog
                   <motion.span
                     className="block text-transparent bg-clip-text bg-gradient-to-r from-olive to-green-400"
                     animate={{ backgroundPosition: ['0%', '100%', '0%'] }}
                     transition={{ duration: 5, repeat: Infinity }}
                   >
-                    Uzman Psikoloğu
+                    Muratpaşa & Konyaaltı
                   </motion.span>
                 </motion.h1>
 
@@ -221,37 +222,9 @@ const LPAntalyaPsikolog = () => {
                   transition={{ delay: 0.3 }}
                   className="text-xl text-white/80 max-w-lg"
                 >
-                  Profesyonel psikolojik danışmanlık ile hayatınızı dönüştürün.
-                  <span className="font-semibold text-olive"> İlk görüşme ücretsiz.</span>
+                  Depresyon, anksiyete, kaygı bozukluğu ve panik atak tedavisinde uzman psikolog kadrosu.
+                  <span className="font-semibold text-olive"> Hemen randevu alın.</span>
                 </motion.p>
-
-                {/* Countdown Timer */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="bg-white/10 backdrop-blur-md rounded-2xl p-5 inline-block"
-                >
-                  <p className="text-white/70 text-sm mb-2">Kampanya bitimine kalan süre:</p>
-                  <div className="flex space-x-4">
-                    {[
-                      { value: timeLeft.hours, label: 'Saat' },
-                      { value: timeLeft.minutes, label: 'Dakika' },
-                      { value: timeLeft.seconds, label: 'Saniye' },
-                    ].map((item, i) => (
-                      <div key={i} className="text-center">
-                        <motion.div
-                          className="bg-gradient-to-br from-olive to-green-600 text-white text-2xl sm:text-3xl font-bold w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
-                          animate={{ scale: item.label === 'Saniye' ? [1, 1.05, 1] : 1 }}
-                          transition={{ duration: 1, repeat: Infinity }}
-                        >
-                          {String(item.value).padStart(2, '0')}
-                        </motion.div>
-                        <p className="text-white/60 text-xs mt-1">{item.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
 
                 {/* CTA Buttons */}
                 <motion.div
@@ -308,11 +281,11 @@ const LPAntalyaPsikolog = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-white/70">
                     <i className="ri-award-fill text-olive text-xl"></i>
-                    <span className="text-sm">Uzman Kadro</span>
+                    <span className="text-sm">10+ Yıl Deneyim</span>
                   </div>
                   <div className="flex items-center space-x-2 text-white/70">
                     <i className="ri-map-pin-fill text-olive text-xl"></i>
-                    <span className="text-sm">Antalya Merkez</span>
+                    <span className="text-sm">Muratpaşa/Konyaaltı</span>
                   </div>
                 </motion.div>
               </div>
@@ -331,8 +304,8 @@ const LPAntalyaPsikolog = () => {
                 >
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
-                      src="/images/lp/therapy-room-cozy.jpg"
-                      alt="Terapi Odası"
+                      src="/images/services/psikolog-hero.png"
+                      alt="Antalya Uzman Psikolog - Psikolojik Danışmanlık"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-darkgray/60 to-transparent" />
@@ -398,6 +371,197 @@ const LPAntalyaPsikolog = () => {
           </motion.div>
         </section>
 
+        {/* Why Choose Us Section - Persuasive */}
+        <section className="py-20 px-6 lg:px-12 bg-gradient-to-b from-darkgray to-slate-900 relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <motion.span
+                className="inline-block bg-olive/20 text-olive px-6 py-2 rounded-full text-sm font-bold mb-6"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+              >
+                NEDEN BİZİ TERCİH ETMELİSİNİZ?
+              </motion.span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Antalya'da <span className="text-olive">500+ Danışan</span> Bize Güvendi
+              </h2>
+              <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
+                2019'dan bu yana yüzlerce kişinin hayatına dokunuyor, bilimsel yöntemlerle kalıcı çözümler sunuyoruz.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Reason 1 - Social Proof */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-olive to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-user-star-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">%98 Memnuniyet Oranı</h3>
+                <p className="text-white/60">
+                  500+ danışanımızın %98'i terapi sürecinden memnun ayrıldı. Google'da 4.9 yıldız puanımız var.
+                </p>
+                <div className="flex items-center mt-4 text-amber-400">
+                  {[...Array(5)].map((_, i) => (
+                    <i key={i} className="ri-star-fill text-lg"></i>
+                  ))}
+                  <span className="text-white/50 ml-2 text-sm">4.9/5</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 2 - Expertise */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-mental-health-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Bilimsel Yöntemler</h3>
+                <p className="text-white/60">
+                  BDT, EMDR, Şema Terapi gibi kanıta dayalı, uluslararası standartlarda terapi yöntemleri uyguluyoruz.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">EMDR</span>
+                  <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">BDT</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">Şema Terapi</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 3 - Team */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-team-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">3 Uzman Psikolog</h3>
+                <p className="text-white/60">
+                  Her biri kendi alanında uzmanlaşmış, sürekli eğitim alan ve süpervizyon altında çalışan profesyonel kadro.
+                </p>
+                <div className="flex -space-x-3 mt-4">
+                  <div className="w-10 h-10 rounded-full bg-olive flex items-center justify-center text-white text-sm font-bold border-2 border-slate-900">ND</div>
+                  <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm font-bold border-2 border-slate-900">NÜ</div>
+                  <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center text-white text-sm font-bold border-2 border-slate-900">BD</div>
+                </div>
+              </motion.div>
+
+              {/* Reason 4 - Privacy */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-shield-check-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">%100 Gizlilik Garantisi</h3>
+                <p className="text-white/60">
+                  Tüm görüşmeler kesinlikle gizli tutulur. Bilgileriniz hiçbir koşulda üçüncü kişilerle paylaşılmaz.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-emerald-400">
+                  <i className="ri-lock-fill"></i>
+                  <span className="text-sm">Etik kurallara tam uyum</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 5 - Personalized */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-user-settings-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Kişiye Özel Terapi</h3>
+                <p className="text-white/60">
+                  Hazır kalıplar değil, sizin ihtiyaçlarınıza göre özel olarak hazırlanan bireysel terapi planları uyguluyoruz.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-amber-400">
+                  <i className="ri-checkbox-circle-fill"></i>
+                  <span className="text-sm">Size özel yaklaşım</span>
+                </div>
+              </motion.div>
+
+              {/* Reason 6 - Easy Access */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6 }}
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all group"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <i className="ri-video-chat-fill text-3xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Online & Yüz Yüze</h3>
+                <p className="text-white/60">
+                  İster merkezimizde yüz yüze, ister evinizden online terapi alın. Esnek randevu seçenekleri sunuyoruz.
+                </p>
+                <div className="flex items-center gap-2 mt-4 text-cyan-400">
+                  <i className="ri-calendar-check-fill"></i>
+                  <span className="text-sm">Hızlı randevu imkanı</span>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-16"
+            >
+              <p className="text-white/60 mb-6 text-lg">
+                Siz de hayatınızı değiştirmek için ilk adımı atın
+              </p>
+              <motion.a
+                href="tel:+905403251525"
+                onClick={() => trackPhoneClick('lp_whychoose_psikolog')}
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-olive to-green-500 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl shadow-olive/30"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.span
+                  animate={{ rotate: [0, 20, -20, 0] }}
+                  transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <i className="ri-phone-fill text-2xl"></i>
+                </motion.span>
+                <span>Hemen Arayın: 0540 325 15 25</span>
+              </motion.a>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Stats Section */}
         <section className="py-16 px-6 lg:px-12 bg-white">
           <div className="max-w-6xl mx-auto">
@@ -443,11 +607,14 @@ const LPAntalyaPsikolog = () => {
               className="text-center mb-16"
             >
               <span className="inline-block bg-olive/10 text-olive px-4 py-2 rounded-full text-sm font-medium mb-4">
-                Hizmetlerimiz
+                Antalya Psikolojik Danışmanlık
               </span>
               <h2 className="font-serif text-4xl font-bold text-darkgray">
-                Uzman Kadromuzla Yanınızdayız
+                Muratpaşa ve Konyaaltı'da Uzman Psikolog Hizmetleri
               </h2>
+              <p className="text-darkgray/60 mt-4 max-w-2xl mx-auto">
+                Depresyon tedavisi, anksiyete, kaygı bozukluğu, panik atak, stres yönetimi ve daha fazlası için profesyonel destek
+              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -490,16 +657,16 @@ const LPAntalyaPsikolog = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-darkgray mb-4">
-                Terapi Ortamımız
+                Antalya Psikoloji Merkezimiz
               </h2>
-              <p className="text-darkgray/60">Huzurlu ve güvenli bir ortamda terapi</p>
+              <p className="text-darkgray/60">Muratpaşa Meltem Mahallesi'nde huzurlu ve güvenli terapi ortamı</p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { src: '/images/lp/therapy-room-bright.jpg', title: 'Ana Terapi Odası' },
-                { src: '/images/lp/modern-office.jpg', title: 'Modern Ofis' },
-                { src: '/images/lp/therapy-session.jpg', title: 'Terapi Seansı' },
+                { src: '/images/sas/sas-1.png', title: 'Antalya Bireysel Terapi Seansı' },
+                { src: '/images/sas/sas-4.png', title: 'Stres Yönetimi ve Meditasyon' },
+                { src: '/images/sas/sas-5.png', title: 'Psikolojik Danışmanlık Ortamı' },
               ].map((img, i) => (
                 <motion.div
                   key={i}
@@ -534,8 +701,9 @@ const LPAntalyaPsikolog = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-darkgray">
-                Danışanlarımız Ne Diyor?
+                Antalya'da Psikolog Arayanların Yorumları
               </h2>
+              <p className="text-darkgray/60 mt-4">Muratpaşa ve Konyaaltı'dan danışanlarımızın deneyimleri</p>
             </motion.div>
 
             <motion.div
@@ -597,6 +765,16 @@ const LPAntalyaPsikolog = () => {
           </div>
         </section>
 
+        {/* Trust Badges Section */}
+        <section className="py-12 px-6 lg:px-12 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <TrustBadges theme="olive" variant="horizontal" />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <FAQSection faqs={faqData} theme="olive" />
+
         {/* Final CTA Section */}
         <section className="py-24 px-6 lg:px-12 bg-gradient-to-r from-olive to-green-600 relative overflow-hidden">
           {/* Animated Background */}
@@ -638,7 +816,7 @@ const LPAntalyaPsikolog = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Değişim İçin İlk Adımı Atın
+              Antalya'da Uzman Psikolog Randevusu
             </motion.h2>
 
             <motion.p
@@ -648,7 +826,7 @@ const LPAntalyaPsikolog = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Ücretsiz ön görüşme ile başlayın. Uzman psikologlarımız sizi dinlemek için hazır.
+              Muratpaşa ve Konyaaltı'da depresyon, kaygı, panik atak tedavisi için hemen randevu alın.
             </motion.p>
 
             <motion.div
@@ -690,9 +868,24 @@ const LPAntalyaPsikolog = () => {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-darkgray text-white/60 text-center text-sm">
-        <p>Arges Psikoloji - Meltem Mah. Muratpaşa/Antalya</p>
-        <p className="mt-2">© 2025 Tüm hakları saklıdır.</p>
+      <footer className="py-12 px-6 bg-darkgray text-white/60 text-sm">
+        <div className="max-w-4xl mx-auto">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <Link to="/" className="hover:text-olive transition-colors">Ana Sayfa</Link>
+            <Link to="/about" className="hover:text-olive transition-colors">Hakkımızda</Link>
+            <Link to="/services" className="hover:text-olive transition-colors">Hizmetlerimiz</Link>
+            <Link to="/team" className="hover:text-olive transition-colors">Ekibimiz</Link>
+            <Link to="/testimonials" className="hover:text-olive transition-colors">Danışan Yorumları</Link>
+            <Link to="/contact" className="hover:text-olive transition-colors">İletişim</Link>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold text-white/80">Antalya Psikolog - Arges Psikoloji Merkezi</p>
+            <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
+            <p className="mt-1">Depresyon, Anksiyete, Kaygı Bozukluğu, Panik Atak Tedavisi</p>
+            <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
+          </div>
+        </div>
       </footer>
 
       {/* Mobile Sticky CTA */}
