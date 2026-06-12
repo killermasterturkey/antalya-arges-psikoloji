@@ -6,28 +6,28 @@ import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
 
 const faqData = [
   {
-    question: 'Antalya\'da çift terapisi randevusu nasıl alabilirim?',
+    question: 'Antalya\'da çift danışmanlığı randevusu nasıl alabilirim?',
     answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden eşinizle birlikte randevu alabilirsiniz. İlk görüşmede ilişkinizdeki sorunları değerlendiriyoruz.',
   },
   {
-    question: 'Eşimle sürekli tartışıyoruz, çift terapisi yardımcı olur mu?',
-    answer: 'Evet, evlilikte iletişim sorunları en sık karşılaştığımız konulardan biridir. Antalya\'da uzman çift terapistlerimiz, iletişim becerilerinizi güçlendirmenize ve tartışmaları azaltmanıza yardımcı olur.',
+    question: 'Eşimle sürekli tartışıyoruz, çift danışmanlığı yardımcı olur mu?',
+    answer: 'Evet, evlilikte iletişim sorunları en sık karşılaştığımız konulardan biridir. Antalya\'da deneyimli psikologlarımız, iletişim becerilerinizi güçlendirmenize ve tartışmaları azaltmanıza yardımcı olur.',
   },
   {
-    question: 'Aldatma sonrası evlilik terapisi işe yarar mı?',
-    answer: 'Aldatma sonrası güven onarımı zorlu ama mümkün bir süreçtir. Profesyonel çift terapisi ile aldatma sonrası ilişkiyi yeniden inşa etmek için destek sağlıyoruz.',
+    question: 'Aldatma sonrası evlilik danışmanlığı işe yarar mı?',
+    answer: 'Aldatma sonrası güven onarımı zorlu ama mümkün bir süreçtir. Profesyonel çift danışmanlığı ile aldatma sonrası ilişkiyi yeniden inşa etmek için destek sağlıyoruz.',
   },
   {
-    question: 'Boşanmak istemiyorum, evlilik terapisi ile kurtarılabilir mi?',
-    answer: 'Birçok çift evlilik terapisi sayesinde boşanmaktan vazgeçmiş ve ilişkilerini güçlendirmiştir. Muratpaşa\'daki merkezimizde uzman evlilik danışmanlarımız size yardımcı olabilir.',
+    question: 'Boşanmak istemiyorum, evlilik danışmanlığı ile kurtarılabilir mi?',
+    answer: 'Birçok çift evlilik danışmanlığı sayesinde boşanmaktan vazgeçmiş ve ilişkilerini güçlendirmiştir. Muratpaşa\'daki merkezimizde deneyimli psikologlarımız size yardımcı olabilir.',
   },
   {
     question: 'Evlilik öncesi danışmanlık Antalya\'da var mı?',
     answer: 'Evet, nişanlılık döneminde evlilik öncesi danışmanlık alarak ilişkinizi güçlendirebilir ve olası sorunları önceden çözebilirsiniz.',
   },
   {
-    question: 'Kıskançlık sorunu için çift terapisi alabilir miyiz?',
-    answer: 'Kıskançlık ve güven sorunları çift terapisinde sık karşılaştığımız konulardır. Konyaaltı ve Muratpaşa\'daki merkezimizde bu konuda uzman destek alabilirsiniz.',
+    question: 'Kıskançlık sorunu için çift danışmanlığı alabilir miyiz?',
+    answer: 'Kıskançlık ve güven sorunları çift danışmanlığında sık karşılaştığımız konulardır. Konyaaltı ve Muratpaşa\'daki merkezimizde bu konuda psikolog desteği alabilirsiniz.',
   },
 ];
 
@@ -55,7 +55,7 @@ const LPCiftTerapisi = () => {
       rating: 5,
     },
     {
-      text: "Terapi sürecinde bize verilen destekten çok memnunuz. Birbirimizi daha iyi anlamaya başladık.",
+      text: "Danışmanlık sürecinde bize verilen destekten çok memnunuz. Birbirimizi daha iyi anlamaya başladık.",
       author: "E.S.",
       rating: 5,
     },
@@ -66,13 +66,13 @@ const LPCiftTerapisi = () => {
     { icon: 'ri-shield-cross-line', text: 'Güven ve Kıskançlık Sorunu', color: 'from-slate-500 to-gray-500' },
     { icon: 'ri-emotion-sad-line', text: 'Duygusal Uzaklaşma', color: 'from-cyan-500 to-teal-500' },
     { icon: 'ri-discuss-line', text: 'Eşimle Tartışıyoruz', color: 'from-slate-600 to-slate-500' },
-    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Terapi', color: 'from-teal-600 to-teal-500' },
+    { icon: 'ri-heart-add-line', text: 'Aldatma Sonrası Danışmanlık', color: 'from-teal-600 to-teal-500' },
     { icon: 'ri-calendar-heart-line', text: 'Evlilik Öncesi Danışmanlık', color: 'from-cyan-600 to-cyan-500' },
   ];
 
   const benefits = [
     { icon: 'ri-lock-line', text: 'Tam Gizlilik', desc: 'Görüşmeler gizli tutulur' },
-    { icon: 'ri-heart-2-line', text: 'Uzman Terapi', desc: '10+ yıl deneyim' },
+    { icon: 'ri-heart-2-line', text: 'Deneyimli Psikolog', desc: '10+ yıl deneyim' },
     { icon: 'ri-team-line', text: 'Birlikte Çözüm', desc: 'İkiniz için özel program' },
     { icon: 'ri-refresh-line', text: 'İlişki Onarımı', desc: 'Kanıtlanmış yöntemler' },
   ];
@@ -192,7 +192,7 @@ const LPCiftTerapisi = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 via-teal-900/60 to-transparent z-10" />
             <img
               src="/images/sas/sas-1.png"
-              alt="Antalya Çift Terapisi - Evlilik Danışmanlığı Seansı"
+              alt="Antalya Çift Danışmanlığı - Evlilik Danışmanlığı Seansı"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -225,7 +225,7 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.2 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              Antalya Çift Terapisi
+              Antalya Çift Danışmanlığı
               <motion.span
                 className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent block"
                 animate={{
@@ -244,7 +244,7 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.3 }}
               className="text-lg sm:text-xl text-white/80 max-w-lg"
             >
-              Evlilik sorunları, iletişim kopukluğu, güven problemleri için <span className="font-semibold text-teal-300">Muratpaşa ve Konyaaltı'da uzman evlilik terapisti</span>.
+              Evlilik sorunları, iletişim kopukluğu, güven problemleri için <span className="font-semibold text-teal-300">Muratpaşa ve Konyaaltı'da deneyimli psikolog</span>.
               Gizli ve güvenli ortamda ilişki danışmanlığı.
             </motion.p>
 
@@ -330,7 +330,7 @@ const LPCiftTerapisi = () => {
               transition={{ delay: 0.5 }}
             >
               <motion.a
-                href="https://wa.me/905403251525?text=Merhaba,%20çift%20terapisi%20için%20randevu%20almak%20istiyoruz."
+                href="https://wa.me/905403251525?text=Merhaba,%20çift%20danışmanlığı%20için%20randevu%20almak%20istiyoruz."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick('lp_hero_cift')}
@@ -386,7 +386,7 @@ const LPCiftTerapisi = () => {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
                       src="/images/sas/sas-4.png"
-                      alt="Antalya Evlilik Terapisti - İlişki Danışmanlığı"
+                      alt="Antalya Evlilik Psikoloğu - İlişki Danışmanlığı"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
@@ -463,7 +463,7 @@ const LPCiftTerapisi = () => {
                 İlişkinizi Kurtarmak İçin <span className="text-teal-300">Doğru Yerdesiniz</span>
               </h2>
               <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
-                Yüzlerce çiftin ilişkisini onarmasına yardımcı olduk. %92 başarı oranıyla Antalya'nın güvenilir evlilik terapisi merkezi.
+                Yüzlerce çiftin ilişkisini onarmasına yardımcı olduk. %92 başarı oranıyla Antalya'nın güvenilir evlilik danışmanlığı merkezi.
               </p>
             </motion.div>
 
@@ -481,7 +481,7 @@ const LPCiftTerapisi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">%92 İlişki Onarım Başarısı</h3>
                 <p className="text-white/60">
-                  Boşanmanın eşiğindeki çiftlerin %92'si terapi sonrası ilişkilerini güçlendirdi ve birlikte olmaya devam etti.
+                  Boşanmanın eşiğindeki çiftlerin %92'si danışmanlık sonrası ilişkilerini güçlendirdi ve birlikte olmaya devam etti.
                 </p>
                 <div className="flex items-center mt-4">
                   <div className="flex-1 bg-white/10 rounded-full h-2">
@@ -573,7 +573,7 @@ const LPCiftTerapisi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Kanıtlanmış Yöntemler</h3>
                 <p className="text-white/60">
-                  EFT (Duygusal Odaklı Terapi), BDT ve modern ilişki terapisi teknikleri ile etkili sonuçlar alıyoruz.
+                  EFT, BDT ve modern ilişki danışmanlığı teknikleri ile etkili sonuçlar alıyoruz.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">EFT</span>
@@ -642,7 +642,7 @@ const LPCiftTerapisi = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-darkgray mb-4">
-                Antalya Çift Terapisi Merkezimiz
+                Antalya Çift Danışmanlığı Merkezimiz
               </h2>
               <p className="text-darkgray/60">Muratpaşa Meltem Mahallesi'nde gizli ve güvenli evlilik danışmanlığı ortamı</p>
             </motion.div>
@@ -657,13 +657,13 @@ const LPCiftTerapisi = () => {
               >
                 <img
                   src="/images/sas/sas-4.png"
-                  alt="Antalya Çift Terapisi Seansı - Evlilik Danışmanlığı"
+                  alt="Antalya Çift Danışmanlığı Seansı - Evlilik Danışmanlığı"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent flex items-end p-6">
                   <div className="text-white">
                     <p className="text-2xl mb-1">🤝</p>
-                    <p className="font-semibold">Evlilik Terapisi Seansı</p>
+                    <p className="font-semibold">Evlilik Danışmanlığı Seansı</p>
                   </div>
                 </div>
               </motion.div>
@@ -702,10 +702,10 @@ const LPCiftTerapisi = () => {
             >
               <span className="text-4xl mb-4 block">🌱</span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-darkgray mb-4">
-                Antalya'da Evlilik Sorunları İçin Uzman Destek
+                Antalya'da Evlilik Sorunları İçin Psikolog Desteği
               </h2>
               <p className="text-darkgray/60 max-w-2xl mx-auto">
-                İletişim kopukluğu, güven sorunu, kıskançlık veya aldatma sonrası onarım için Muratpaşa ve Konyaaltı'da çift terapisi.
+                İletişim kopukluğu, güven sorunu, kıskançlık veya aldatma sonrası onarım için Muratpaşa ve Konyaaltı'da çift danışmanlığı.
               </p>
             </motion.div>
 
@@ -741,7 +741,7 @@ const LPCiftTerapisi = () => {
             >
               <span className="text-4xl mb-4 block">✨</span>
               <h2 className="font-serif text-3xl font-bold text-darkgray">
-                Antalya'da Çift Terapisi Alanların Yorumları
+                Antalya'da Çift Danışmanlığı Alanların Yorumları
               </h2>
               <p className="text-darkgray/60 mt-3">Evlilik danışmanlığı alan çiftlerin deneyimleri</p>
             </motion.div>
@@ -823,7 +823,7 @@ const LPCiftTerapisi = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <i className="ri-award-fill text-2xl text-teal-600"></i>
-                <span className="text-sm font-medium">Uzman Psikologlar</span>
+                <span className="text-sm font-medium">Psikolog Kadrosu</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-darkgray/60"
@@ -888,7 +888,7 @@ const LPCiftTerapisi = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Antalya'da Çift Terapisi Randevusu
+              Antalya'da Çift Danışmanlığı Randevusu
             </motion.h2>
             <motion.p
               className="text-white/80 text-lg"
@@ -935,9 +935,9 @@ const LPCiftTerapisi = () => {
             <Link to="/contact" className="hover:text-olive transition-colors">İletişim</Link>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-white/80">Antalya Çift Terapisi - Arges Psikoloji Merkezi</p>
+            <p className="font-semibold text-white/80">Antalya Çift Danışmanlığı - Arges Psikoloji Merkezi</p>
             <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
-            <p className="mt-1">Evlilik Terapisi, İlişki Danışmanlığı, Evlilik Sorunları Çözümü</p>
+            <p className="mt-1">Evlilik Danışmanlığı, İlişki Danışmanlığı, Evlilik Sorunları Çözümü</p>
             <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
           </div>
         </div>

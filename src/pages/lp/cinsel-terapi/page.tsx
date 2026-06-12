@@ -6,28 +6,28 @@ import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
 
 const faqData = [
   {
-    question: 'Antalya\'da cinsel terapi tamamen gizli mi?',
-    answer: 'Kesinlikle evet. Muratpaşa ve Konyaaltı\'daki merkezimizde tüm cinsel terapi görüşmeleri %100 gizlilik garantisi altındadır. Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.',
+    question: 'Antalya\'da cinsel danışmanlık tamamen gizli mi?',
+    answer: 'Kesinlikle evet. Muratpaşa ve Konyaaltı\'daki merkezimizde tüm cinsel danışmanlık görüşmeleri %100 gizlilik garantisi altındadır. Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.',
   },
   {
     question: 'Vajinismus tedavisi Antalya\'da yapılıyor mu?',
-    answer: 'Evet, vajinismus tedavisi uzmanlık alanlarımızdan biridir. Muratpaşa\'daki merkezimizde kanıta dayalı yöntemlerle vajinismus terapisi uyguluyoruz.',
+    answer: 'Evet, vajinismus tedavisi çalışma alanlarımızdan biridir. Muratpaşa\'daki merkezimizde kanıta dayalı yöntemlerle vajinismus danışmanlığı uyguluyoruz.',
   },
   {
     question: 'Erken boşalma tedavisi için hangi doktora gitmeliyim?',
-    answer: 'Erken boşalma psikolojik kökenli bir sorun olduğundan cinsel terapist desteği almak en doğru yaklaşımdır. Antalya\'da uzman cinsel terapistlerimiz bu konuda size yardımcı olabilir.',
+    answer: 'Erken boşalma psikolojik kökenli bir sorun olduğundan psikolog desteği almak en doğru yaklaşımdır. Antalya\'da deneyimli psikologlarımız bu konuda size yardımcı olabilir.',
   },
   {
-    question: 'Performans kaygısı için terapi var mı?',
-    answer: 'Evet, performans kaygısı cinsel terapide sık karşılaşılan bir sorundur. Bilişsel davranışçı terapi yöntemleriyle etkili sonuçlar alıyoruz.',
+    question: 'Performans kaygısı için danışmanlık var mı?',
+    answer: 'Evet, performans kaygısı cinsel danışmanlıkta sık karşılaşılan bir sorundur. Bilişsel davranışçı yöntemlerle etkili sonuçlar alıyoruz.',
   },
   {
     question: 'Evlilikte cinsel sorunlar için çift olarak gelebilir miyiz?',
-    answer: 'Evet, cinsel uyumsuzluk ve evlilikte cinsel sorunlar için çift olarak terapi alabilirsiniz. Bireysel seanslar da mümkündür.',
+    answer: 'Evet, cinsel uyumsuzluk ve evlilikte cinsel sorunlar için çift olarak danışmanlık alabilirsiniz. Bireysel seanslar da mümkündür.',
   },
   {
-    question: 'Online cinsel terapi var mı?',
-    answer: 'Evet, gizliliğiniz için Antalya dışından da online cinsel terapi alabilirsiniz. Güvenli video görüşme platformları üzerinden hizmet verilmektedir.',
+    question: 'Online cinsel danışmanlık var mı?',
+    answer: 'Evet, gizliliğiniz için Antalya dışından da online cinsel danışmanlık alabilirsiniz. Güvenli video görüşme platformları üzerinden hizmet verilmektedir.',
   },
 ];
 
@@ -50,12 +50,12 @@ const LPCinselTerapi = () => {
       rating: 5,
     },
     {
-      text: "Uzman desteği ile önemli ilerlemeler kaydettik. Kesinlikle tavsiye ederim.",
+      text: "Psikolog desteği ile önemli ilerlemeler kaydettik. Kesinlikle tavsiye ederim.",
       author: "Anonim",
       rating: 5,
     },
     {
-      text: "Güler yüzlü ve anlayışlı yaklaşımları sayesinde rahat bir ortamda terapi aldım.",
+      text: "Güler yüzlü ve anlayışlı yaklaşımları sayesinde rahat bir ortamda danışmanlık aldım.",
       author: "Anonim",
       rating: 5,
     },
@@ -63,9 +63,9 @@ const LPCinselTerapi = () => {
 
   const benefits = [
     { icon: 'ri-lock-line', text: 'Kesin Gizlilik', desc: 'Bilgileriniz asla paylaşılmaz' },
-    { icon: 'ri-shield-check-line', text: 'Profesyonel Yaklaşım', desc: 'Uzman terapist kadrosu' },
+    { icon: 'ri-shield-check-line', text: 'Profesyonel Yaklaşım', desc: 'Deneyimli psikolog kadrosu' },
     { icon: 'ri-user-heart-line', text: 'Yargısız Ortam', desc: 'Anlayışla dinlenirsiniz' },
-    { icon: 'ri-door-closed-line', text: 'Özel Görüşme', desc: 'Birebir terapi seansları' },
+    { icon: 'ri-door-closed-line', text: 'Özel Görüşme', desc: 'Birebir danışmanlık seansları' },
   ];
 
   const concerns = [
@@ -74,7 +74,7 @@ const LPCinselTerapi = () => {
     { icon: 'ri-mental-health-line', text: 'Performans Kaygısı', color: 'from-blue-500 to-cyan-500' },
     { icon: 'ri-emotion-unhappy-line', text: 'Cinsel İsteksizlik', color: 'from-teal-500 to-emerald-500' },
     { icon: 'ri-couple-line', text: 'Cinsel Uyumsuzluk', color: 'from-violet-500 to-purple-500' },
-    { icon: 'ri-psychotherapy-line', text: 'Cinsel Travma Terapisi', color: 'from-slate-500 to-gray-500' },
+    { icon: 'ri-psychotherapy-line', text: 'Cinsel Travma Danışmanlığı', color: 'from-slate-500 to-gray-500' },
   ];
 
   // Auto-rotate testimonials
@@ -188,7 +188,7 @@ const LPCinselTerapi = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-purple-900/80 to-slate-900/70 z-10" />
             <img
               src="/images/sas/sas-4.png"
-              alt="Antalya Cinsel Terapi - Gizli Terapi Ortamı"
+              alt="Antalya Cinsel Danışmanlık - Gizli Görüşme Ortamı"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -241,7 +241,7 @@ const LPCinselTerapi = () => {
               transition={{ delay: 0.2 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              Antalya Cinsel Terapi
+              Antalya Cinsel Danışmanlık
               <motion.span
                 className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent block"
                 animate={{
@@ -249,7 +249,7 @@ const LPCinselTerapi = () => {
                 }}
                 transition={{ duration: 5, repeat: Infinity }}
               >
-                Cinsel Terapist
+                Deneyimli Psikolog
               </motion.span>
             </motion.h1>
 
@@ -261,7 +261,7 @@ const LPCinselTerapi = () => {
               className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto"
             >
               Muratpaşa ve Konyaaltı'nda <span className="font-semibold text-purple-300">vajinismus tedavisi</span>, erken boşalma tedavisi,
-              performans kaygısı için uzman cinsel terapist. Tam gizlilik garantisi.
+              performans kaygısı için deneyimli psikolog. Tam gizlilik garantisi.
             </motion.p>
 
             {/* Privacy Notice Card */}
@@ -336,9 +336,9 @@ const LPCinselTerapi = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.7 }}
                 >
-                  Uzman
+                  Deneyimli
                 </motion.p>
-                <p className="text-sm text-white/60">Terapist</p>
+                <p className="text-sm text-white/60">Psikolog</p>
               </motion.div>
             </motion.div>
 
@@ -388,7 +388,7 @@ const LPCinselTerapi = () => {
               transition={{ delay: 0.5 }}
             >
               <motion.a
-                href="https://wa.me/905403251525?text=Merhaba,%20cinsel%20terapi%20hakkında%20bilgi%20almak%20istiyorum."
+                href="https://wa.me/905403251525?text=Merhaba,%20cinsel%20danışmanlık%20hakkında%20bilgi%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick('lp_hero_cinsel')}
@@ -444,7 +444,7 @@ const LPCinselTerapi = () => {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
                       src="/images/lp/therapy-session.jpg"
-                      alt="Antalya Cinsel Terapist - Özel Görüşme"
+                      alt="Antalya Cinsel Danışmanlık - Özel Görüşme"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent" />
@@ -519,7 +519,7 @@ const LPCinselTerapi = () => {
                 Gizliliğiniz <span className="text-purple-400">Bizim İçin Kutsal</span>
               </h2>
               <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
-                Cinsel terapi hassas bir konudur. Profesyonel, yargısız ve %100 gizli bir ortamda uzman desteği alın.
+                Cinsel danışmanlık hassas bir konudur. Profesyonel, yargısız ve %100 gizli bir ortamda psikolog desteği alın.
               </p>
             </motion.div>
 
@@ -581,13 +581,13 @@ const LPCinselTerapi = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <i className="ri-award-fill text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Uzman Cinsel Terapist</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Deneyimli Psikolog</h3>
                 <p className="text-white/60">
-                  Seksofonksiyonel Cinsel Terapi eğitimli uzman psikolog. Vajinismus, erken boşalma, performans kaygısında kanıtlanmış başarı.
+                  Cinsel danışmanlık alanında eğitimli psikolog. Vajinismus, erken boşalma, performans kaygısında kanıtlanmış başarı.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-rose-400">
                   <i className="ri-verified-badge-fill"></i>
-                  <span className="text-sm">Sertifikalı uzman</span>
+                  <span className="text-sm">Sertifikalı psikolog</span>
                 </div>
               </motion.div>
 
@@ -604,7 +604,7 @@ const LPCinselTerapi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Yüksek Başarı Oranı</h3>
                 <p className="text-white/60">
-                  Danışanlarımızın büyük çoğunluğu terapi sonrası cinsel yaşamlarında belirgin iyileşme bildiriyor.
+                  Danışanlarımızın büyük çoğunluğu danışmanlık sonrası cinsel yaşamlarında belirgin iyileşme bildiriyor.
                 </p>
                 <div className="flex items-center mt-4">
                   <div className="flex -space-x-1">
@@ -629,7 +629,7 @@ const LPCinselTerapi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Bilimsel Yaklaşım</h3>
                 <p className="text-white/60">
-                  Kanıta dayalı, modern cinsel terapi yöntemleri. Masters & Johnson, BDT temelli protokoller.
+                  Kanıta dayalı, modern cinsel danışmanlık yöntemleri. Masters & Johnson, BDT temelli protokoller.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">BDT</span>
@@ -650,7 +650,7 @@ const LPCinselTerapi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Bireysel veya Çift</h3>
                 <p className="text-white/60">
-                  İster yalnız başınıza ister eşinizle birlikte gelin. Durumunuza göre kişiye özel terapi planı hazırlanır.
+                  İster yalnız başınıza ister eşinizle birlikte gelin. Durumunuza göre kişiye özel danışmanlık planı hazırlanır.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-cyan-400">
                   <i className="ri-checkbox-circle-fill"></i>
@@ -693,9 +693,9 @@ const LPCinselTerapi = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-white mb-4">
-                Antalya Cinsel Terapi Merkezi
+                Antalya Cinsel Danışmanlık Merkezi
               </h2>
-              <p className="text-white/60">Muratpaşa'da gizlilik garantili cinsel terapist</p>
+              <p className="text-white/60">Muratpaşa'da gizlilik garantili cinsel danışmanlık</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -708,7 +708,7 @@ const LPCinselTerapi = () => {
               >
                 <img
                   src="/images/lp/therapy-session.jpg"
-                  alt="Cinsel Terapi Seansı Antalya"
+                  alt="Cinsel Danışmanlık Seansı Antalya"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent flex items-end p-6">
@@ -759,7 +759,7 @@ const LPCinselTerapi = () => {
                 <span className="text-purple-300 text-sm">Gizli & Profesyonel</span>
               </motion.div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
-                Antalya'da Cinsel Terapi Hizmetlerimiz
+                Antalya'da Cinsel Danışmanlık Hizmetlerimiz
               </h2>
               <p className="text-white/60 max-w-2xl mx-auto">
                 Muratpaşa ve Konyaaltı'nda vajinismus, erken boşalma, performans kaygısı tedavisi. Kesin gizlilik garantisi.
@@ -894,7 +894,7 @@ const LPCinselTerapi = () => {
                 whileHover={{ scale: 1.05, color: '#c4b5fd' }}
               >
                 <i className="ri-heart-pulse-fill text-2xl text-purple-400"></i>
-                <span className="text-sm font-medium">Uzman Terapist</span>
+                <span className="text-sm font-medium">Deneyimli Psikolog</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-white/70"
@@ -916,7 +916,7 @@ const LPCinselTerapi = () => {
               badges={[
                 { icon: 'ri-lock-2-line', text: '%100', subtext: 'Gizlilik' },
                 { icon: 'ri-calendar-check-line', text: '10+ Yıl', subtext: 'Deneyim' },
-                { icon: 'ri-user-heart-line', text: 'Uzman', subtext: 'Terapist' },
+                { icon: 'ri-user-heart-line', text: 'Deneyimli', subtext: 'Psikolog' },
                 { icon: 'ri-shield-check-line', text: 'Güvenli', subtext: 'Ortam' },
               ]}
             />
@@ -1023,7 +1023,7 @@ const LPCinselTerapi = () => {
             <Link to="/contact" className="hover:text-purple-400 transition-colors">İletişim</Link>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-white/60">Antalya Cinsel Terapi - Arges Psikoloji Merkezi</p>
+            <p className="font-semibold text-white/60">Antalya Cinsel Danışmanlık - Arges Psikoloji Merkezi</p>
             <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
             <p className="mt-1">Vajinismus Tedavisi, Erken Boşalma Tedavisi, Performans Kaygısı, Cinsel Uyumsuzluk</p>
             <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>

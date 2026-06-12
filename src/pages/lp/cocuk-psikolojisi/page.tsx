@@ -10,20 +10,20 @@ const faqData = [
     answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden 0540 325 15 25 numarasını arayarak çocuk psikoloğu randevusu alabilirsiniz.',
   },
   {
-    question: 'Antalya\'da oyun terapisi yapılıyor mu?',
-    answer: 'Evet, Muratpaşa\'daki merkezimizde uzman çocuk psikologlarımız tarafından oyun terapisi uygulanmaktadır. Oyun odamız özel materyallerle donatılmıştır.',
+    question: 'Antalya\'da oyunla danışmanlık yapılıyor mu?',
+    answer: 'Evet, Muratpaşa\'daki merkezimizde çocuk psikologlarımız tarafından oyunla danışmanlık uygulanmaktadır. Oyun odamız özel materyallerle donatılmıştır.',
   },
   {
     question: 'Çocuğumda dikkat eksikliği (DEHB) var, yardımcı olabilir misiniz?',
-    answer: 'Evet, dikkat eksikliği ve hiperaktivite (DEHB) uzmanlık alanlarımızdan biridir. Antalya\'da uzman çocuk psikologlarımız bu konuda size yardımcı olabilir.',
+    answer: 'Evet, dikkat eksikliği ve hiperaktivite (DEHB) çalışma alanlarımızdan biridir. Antalya\'da çocuk psikologlarımız bu konuda size yardımcı olabilir.',
   },
   {
     question: 'Çocuğumun davranış sorunları için ne yapmalıyım?',
-    answer: 'Öfke nöbetleri, saldırganlık, inatçılık gibi davranış sorunları için çocuk psikoloğu desteği almak önemlidir. Merkezimizde bu konuda uzman terapistlerimiz bulunmaktadır.',
+    answer: 'Öfke nöbetleri, saldırganlık, inatçılık gibi davranış sorunları için çocuk psikoloğu desteği almak önemlidir. Merkezimizde bu konuda deneyimli psikologlarımız bulunmaktadır.',
   },
   {
     question: 'Pedagog ve çocuk psikoloğu arasındaki fark nedir?',
-    answer: 'Çocuk psikoloğu duygusal ve davranışsal sorunlarda terapi uygularken, pedagog eğitim ve gelişim odaklı çalışır. Merkezimizde her iki alanda da uzman kadromuz bulunmaktadır.',
+    answer: 'Çocuk psikoloğu duygusal ve davranışsal sorunlarda danışmanlık uygularken, pedagog eğitim ve gelişim odaklı çalışır. Merkezimizde her iki alanda da psikolog kadromuz bulunmaktadır.',
   },
   {
     question: 'Ebeveyn olarak sürece dahil oluyor muyum?',
@@ -53,7 +53,7 @@ const LPCocukPsikolojisi = () => {
     {
       name: 'H.Y.',
       child: '3.5 yaşında oğlu',
-      text: 'Deneyimsel Oyun Terapisi ile 4 ay gibi kısa sürede oğlum yaşadığı travmaların etkisinden kurtulup daha sakin, mutlu bir çocuğa dönüştü.',
+      text: 'Oyunla danışmanlık ile 4 ay gibi kısa sürede oğlum yaşadığı travmaların etkisinden kurtulup daha sakin, mutlu bir çocuğa dönüştü.',
       rating: 5
     },
     {
@@ -69,7 +69,7 @@ const LPCocukPsikolojisi = () => {
     { icon: 'ri-emotion-unhappy-line', title: 'Davranış Sorunları', desc: 'Öfke nöbetleri, saldırganlık, inatçılık', color: 'from-red-400 to-rose-500' },
     { icon: 'ri-ghost-line', title: 'Çocuklarda Korku ve Kaygı', desc: 'Ayrılık kaygısı, gece korkuları', color: 'from-purple-400 to-violet-500' },
     { icon: 'ri-emotion-sad-line', title: 'Okul Uyum Sorunu', desc: 'Arkadaşlık, sosyal güçlükler', color: 'from-green-400 to-emerald-500' },
-    { icon: 'ri-gamepad-line', title: 'Oyun Terapisi', desc: 'Duygusal ifade ve gelişim', color: 'from-pink-400 to-rose-500' },
+    { icon: 'ri-gamepad-line', title: 'Oyunla Danışmanlık', desc: 'Duygusal ifade ve gelişim', color: 'from-pink-400 to-rose-500' },
     { icon: 'ri-parent-line', title: 'Boşanma Sonrası Destek', desc: 'Aile içi değişimlere uyum', color: 'from-amber-400 to-orange-500' },
   ];
 
@@ -77,7 +77,7 @@ const LPCocukPsikolojisi = () => {
     { value: '500+', label: 'Mutlu Danışan', icon: '😊' },
     { value: '4.9', label: 'Puan', icon: '⭐' },
     { value: '%98', label: 'Memnuniyet', icon: '🎯' },
-    { value: '🎮', label: 'Oyun Terapisi', icon: '' },
+    { value: '🎮', label: 'Oyunla Danışmanlık', icon: '' },
   ];
 
   // Floating emojis
@@ -191,7 +191,7 @@ const LPCocukPsikolojisi = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-pink-900/60 to-transparent z-10" />
             <img
               src="/images/services/pedagog-hero.png"
-              alt="Antalya Çocuk Psikoloğu - Oyun Terapisi"
+              alt="Antalya Çocuk Psikoloğu - Oyunla Danışmanlık"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -228,7 +228,7 @@ const LPCocukPsikolojisi = () => {
                     animate={{ backgroundPosition: ['0%', '100%', '0%'] }}
                     transition={{ duration: 5, repeat: Infinity }}
                   >
-                    Oyun Terapisi
+                    Oyunla Danışmanlık
                   </motion.span>
                 </motion.h1>
 
@@ -240,7 +240,7 @@ const LPCocukPsikolojisi = () => {
                   className="text-xl text-white/80 max-w-lg"
                 >
                   Muratpaşa ve Konyaaltı'nda dikkat eksikliği (DEHB), davranış sorunları, korku ve kaygı için
-                  <span className="font-semibold text-pink-300"> uzman çocuk psikoloğu.</span>
+                  <span className="font-semibold text-pink-300"> çocuk psikoloğu.</span>
                 </motion.p>
 
                 {/* Stats Row */}
@@ -315,7 +315,7 @@ const LPCocukPsikolojisi = () => {
                 >
                   <div className="flex items-center space-x-2 text-white/70">
                     <span className="text-xl">🎮</span>
-                    <span className="text-sm">Oyun Terapisi</span>
+                    <span className="text-sm">Oyunla Danışmanlık</span>
                   </div>
                   <div className="flex items-center space-x-2 text-white/70">
                     <span className="text-xl">👨‍👩‍👧</span>
@@ -323,7 +323,7 @@ const LPCocukPsikolojisi = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-white/70">
                     <span className="text-xl">🏆</span>
-                    <span className="text-sm">Uzman Kadro</span>
+                    <span className="text-sm">Psikolog Kadrosu</span>
                   </div>
                 </motion.div>
               </div>
@@ -343,7 +343,7 @@ const LPCocukPsikolojisi = () => {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
                       src="/images/team/busra-demirbas.png"
-                      alt="Antalya Çocuk Terapisti - Uzman Psikolog"
+                      alt="Antalya Çocuk Psikoloğu"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
@@ -377,7 +377,7 @@ const LPCocukPsikolojisi = () => {
                     transition={{ duration: 4, repeat: Infinity }}
                   >
                     <p className="text-2xl">🧸</p>
-                    <p className="text-xs">Oyun Terapisi</p>
+                    <p className="text-xs">Oyunla Danışmanlık</p>
                   </motion.div>
 
                   <motion.div
@@ -445,7 +445,7 @@ const LPCocukPsikolojisi = () => {
                 Çocuğunuzun <span className="text-pink-300">Mutluluğu</span> Bizim Önceliğimiz
               </h2>
               <p className="text-white/70 mt-6 text-lg max-w-2xl mx-auto">
-                500+ çocuğun hayatına dokunduk. Oyun terapisi ile çocukların dünyasına girip, onları anlıyoruz.
+                500+ çocuğun hayatına dokunduk. Oyunla danışmanlık ile çocukların dünyasına girip, onları anlıyoruz.
               </p>
             </motion.div>
 
@@ -461,13 +461,13 @@ const LPCocukPsikolojisi = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <span className="text-3xl">🎮</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Oyun Terapisi Uzmanlığı</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Oyunla Danışmanlık Deneyimi</h3>
                 <p className="text-white/60">
-                  Deneyimsel Oyun Terapisi ile çocukların dilini konuşuyoruz. Oyun odamız özel materyallerle donatıldı.
+                  Oyunla danışmanlık ile çocukların dilini konuşuyoruz. Oyun odamız özel materyallerle donatıldı.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-pink-400">
                   <i className="ri-gamepad-fill"></i>
-                  <span className="text-sm">Çocuk dostu terapi</span>
+                  <span className="text-sm">Çocuk dostu danışmanlık</span>
                 </div>
               </motion.div>
 
@@ -524,14 +524,14 @@ const LPCocukPsikolojisi = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <i className="ri-award-fill text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Uzman Çocuk Psikologları</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Çocuk Psikologları</h3>
                 <p className="text-white/60">
-                  Çocuk ve ergen psikolojisinde uzmanlaşmış, EMDR ve BDT sertifikalı profesyonel kadro.
+                  Çocuk ve ergen psikolojisinde deneyimli, BDT sertifikalı profesyonel kadro.
                 </p>
                 <div className="flex -space-x-2 mt-4">
                   <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold border-2 border-purple-900">NÜ</div>
                   <div className="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center text-white text-xs font-bold border-2 border-purple-900">BD</div>
-                  <span className="ml-3 text-white/50 text-sm">2 uzman</span>
+                  <span className="ml-3 text-white/50 text-sm">2 psikolog</span>
                 </div>
               </motion.div>
 
@@ -548,7 +548,7 @@ const LPCocukPsikolojisi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">%98 Memnuniyet</h3>
                 <p className="text-white/60">
-                  500+ ailenin güvenini kazandık. Ebeveynlerimizin %98'i terapi sürecinden memnun ayrıldı.
+                  500+ ailenin güvenini kazandık. Ebeveynlerimizin %98'i danışmanlık sürecinden memnun ayrıldı.
                 </p>
                 <div className="flex items-center mt-4 text-amber-400">
                   {[...Array(5)].map((_, i) => (
@@ -629,7 +629,7 @@ const LPCocukPsikolojisi = () => {
                 Antalya'da Çocuk Psikolojisi Hizmetlerimiz
               </h2>
               <p className="text-darkgray/60 max-w-2xl mx-auto">
-                Muratpaşa ve Konyaaltı'nda dikkat eksikliği, davranış sorunları, korku ve kaygı için uzman çocuk psikoloğu
+                Muratpaşa ve Konyaaltı'nda dikkat eksikliği, davranış sorunları, korku ve kaygı için çocuk psikoloğu
               </p>
             </motion.div>
 
@@ -665,9 +665,9 @@ const LPCocukPsikolojisi = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl font-bold text-darkgray mb-4">
-                Antalya Oyun Terapisi Merkezi
+                Antalya Oyunla Danışmanlık Merkezi
               </h2>
-              <p className="text-darkgray/60">Muratpaşa'da çocuklar için özel tasarlanmış terapi alanları</p>
+              <p className="text-darkgray/60">Muratpaşa'da çocuklar için özel tasarlanmış görüşme alanları</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -680,13 +680,13 @@ const LPCocukPsikolojisi = () => {
               >
                 <img
                   src="/images/services/pedagog-hero.png"
-                  alt="Antalya Oyun Terapisi - Çocuk Psikolog"
+                  alt="Antalya Oyunla Danışmanlık - Çocuk Psikoloğu"
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent flex items-end p-6">
                   <div className="text-white">
                     <p className="text-2xl mb-1">🎮</p>
-                    <p className="font-semibold">Oyun Terapisi Odası</p>
+                    <p className="font-semibold">Oyun Odası</p>
                   </div>
                 </div>
               </motion.div>
@@ -797,7 +797,7 @@ const LPCocukPsikolojisi = () => {
               theme="pink"
               variant="horizontal"
               badges={[
-                { icon: 'ri-gamepad-line', text: 'Oyun', subtext: 'Terapisi' },
+                { icon: 'ri-gamepad-line', text: 'Oyunla', subtext: 'Danışmanlık' },
                 { icon: 'ri-calendar-check-line', text: '10+ Yıl', subtext: 'Deneyim' },
                 { icon: 'ri-user-smile-line', text: '500+', subtext: 'Mutlu Çocuk' },
                 { icon: 'ri-map-pin-line', text: 'Muratpaşa', subtext: 'Konyaaltı' },
@@ -867,7 +867,7 @@ const LPCocukPsikolojisi = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Hemen randevu alın. Uzman çocuk psikologlarımız yanınızda.
+              Hemen randevu alın. Çocuk psikologlarımız yanınızda.
             </motion.p>
 
             <motion.div
@@ -923,7 +923,7 @@ const LPCocukPsikolojisi = () => {
           <div className="text-center">
             <p className="font-semibold text-white/80">Antalya Çocuk Psikoloğu - Arges Psikoloji Merkezi</p>
             <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
-            <p className="mt-1">Oyun Terapisi, Dikkat Eksikliği (DEHB), Davranış Sorunları, Çocuk Terapisti</p>
+            <p className="mt-1">Oyunla Danışmanlık, Dikkat Eksikliği (DEHB), Davranış Sorunları, Çocuk Psikoloğu</p>
             <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
           </div>
         </div>

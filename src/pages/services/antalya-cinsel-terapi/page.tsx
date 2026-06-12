@@ -21,7 +21,7 @@ const AntalyaCinselTerapiPage = () => {
     {
       id: 3,
       name: 'Aysel C.',
-      text: '4 sene önce geçirdiğim vajinal mantar rahatsızlığından sonra cinsel hayatımızda sorunlar ortaya çıktı. Yıllarca bir çözüm aradım. Gittiğim kadın doğum doktorları herhangi bir sorun olmadığını söylüyordu. Ancak cinsel ilişki sırasında aşırı kaygılanıyordum ve vajinamda yoğun bir ağrı oluyordu. Bir kadın doğum doktorunun tavsiyesi üzerine cinsel terapist araştırmaya başlamıştım ve Deniz hanımı buldum. Seanslara eşimle birlikte katıldık. Birkaç seansta fark edilir değişimler oldu. Şu an hiçbir sorun yaşamıyoruz. Gönül rahatlığı ile kendisine başvurabilirsiniz.',
+      text: '4 sene önce geçirdiğim vajinal mantar rahatsızlığından sonra cinsel hayatımızda sorunlar ortaya çıktı. Yıllarca bir çözüm aradım. Gittiğim kadın doğum doktorları herhangi bir sorun olmadığını söylüyordu. Ancak cinsel ilişki sırasında aşırı kaygılanıyordum ve vajinamda yoğun bir ağrı oluyordu. Bir kadın doğum doktorunun tavsiyesi üzerine bu alanda çalışan bir psikolog araştırmaya başlamıştım ve Deniz hanımı buldum. Seanslara eşimle birlikte katıldık. Birkaç seansta fark edilir değişimler oldu. Şu an hiçbir sorun yaşamıyoruz. Gönül rahatlığı ile kendisine başvurabilirsiniz.',
     },
     {
       id: 4,
@@ -31,7 +31,7 @@ const AntalyaCinselTerapiPage = () => {
     {
       id: 5,
       name: 'Hilmi H.',
-      text: 'Nur Deniz Hanım ile çift terapisi olarak seanslarımıza başladık. İyi gitmeyen bir ilişkimiz vardı ve sürekli tartışan bir çifttik ve cinsel hayatımızda yolunda gitmiyordu. Aslında cinsel sorunların çift hayatımızı etkilediği ortaya çıktı. Seanslarımızı cinsel terapi üzerine yoğunlaştırdık. Var olan erken boşalma sorunuma çözüm bulunca cinsel hayatımızda düzelmeler başladı. Bu da çift ilişkimizin de düzelmesine neden oldu hem çift terapisi hem de cinsel terapi konusunda kendisini tavsiye ederim. Teşekkürler Nur Deniz hocam.',
+      text: 'Nur Deniz Hanım ile çift danışmanlığı olarak seanslarımıza başladık. İyi gitmeyen bir ilişkimiz vardı ve sürekli tartışan bir çifttik ve cinsel hayatımızda yolunda gitmiyordu. Aslında cinsel sorunların çift hayatımızı etkilediği ortaya çıktı. Seanslarımızı cinsel danışmanlık üzerine yoğunlaştırdık. Var olan erken boşalma sorunuma çözüm bulunca cinsel hayatımızda düzelmeler başladı. Bu da çift ilişkimizin de düzelmesine neden oldu hem çift danışmanlığı hem de cinsel danışmanlık konusunda kendisini tavsiye ederim. Teşekkürler Nur Deniz hocam.',
     },
   ];
 
@@ -160,7 +160,7 @@ const AntalyaCinselTerapiPage = () => {
                 Gerçek Başarı Hikayeleri
               </h2>
               <p className="font-sans text-lg text-darkgray/60 max-w-2xl mx-auto">
-                Cinsel terapi sürecinden geçen danışanlarımızın samimi paylaşımları
+                Cinsel danışmanlık sürecinden geçen danışanlarımızın samimi paylaşımları
               </p>
             </motion.div>
 
@@ -219,7 +219,7 @@ const AntalyaCinselTerapiPage = () => {
                       <div className="flex items-center space-x-3">
                         <span className="hidden sm:inline-flex items-center px-3 py-1.5 rounded-full bg-olive/10 text-olive text-xs font-medium">
                           <i className="ri-heart-pulse-line mr-1.5"></i>
-                          Cinsel Terapi
+                          Cinsel Danışmanlık
                         </span>
                         <div className={`w-10 h-10 rounded-full bg-cream flex items-center justify-center transition-all duration-300 ${
                           expandedId === testimonial.id ? 'bg-olive text-white rotate-180' : 'text-darkgray/50 group-hover:bg-olive/10 group-hover:text-olive'

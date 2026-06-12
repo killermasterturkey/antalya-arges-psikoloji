@@ -7,19 +7,19 @@ import { FloatingCTA, TrustBadges, FAQSection } from '../../../components/lp';
 const faqData = [
   {
     question: 'Antalya\'da psikolog randevusu nasıl alabilirim?',
-    answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden kolayca randevu alabilirsiniz. İlk görüşmede ihtiyaçlarınızı belirliyor ve size en uygun terapi yaklaşımını öneriyoruz.',
+    answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden kolayca randevu alabilirsiniz. İlk görüşmede ihtiyaçlarınızı belirliyor ve size en uygun danışmanlık yaklaşımını öneriyoruz.',
   },
   {
     question: 'Antalya\'da depresyon tedavisi yapıyor musunuz?',
-    answer: 'Evet, depresyon tedavisi en önemli uzmanlık alanlarımızdan biridir. Bilişsel davranışçı terapi ve gerektiğinde EMDR gibi kanıta dayalı yöntemlerle depresyon tedavisi uyguluyoruz.',
+    answer: 'Evet, depresyon tedavisi en önemli çalışma alanlarımızdan biridir. Bilişsel davranışçı yaklaşım gibi kanıta dayalı yöntemlerle depresyon tedavisi uyguluyoruz.',
   },
   {
-    question: 'Kaygı bozukluğu ve panik atak için terapi veriyor musunuz?',
-    answer: 'Anksiyete, kaygı bozukluğu ve panik atak tedavisi konusunda uzmanız. Konyaaltı ve Muratpaşa\'daki merkezimizde bilişsel davranışçı terapi ile etkili sonuçlar alıyoruz.',
+    question: 'Kaygı bozukluğu ve panik atak için danışmanlık veriyor musunuz?',
+    answer: 'Anksiyete, kaygı bozukluğu ve panik atak tedavisi konusunda deneyimliyiz. Konyaaltı ve Muratpaşa\'daki merkezimizde bilişsel davranışçı yaklaşımla etkili sonuçlar alıyoruz.',
   },
   {
-    question: 'Online terapi hizmeti var mı?',
-    answer: 'Evet, Antalya dışından da danışanlarımıza online terapi hizmeti sunuyoruz. Zoom veya Google Meet üzerinden yüz yüze seanslarla aynı kalitede hizmet alabilirsiniz.',
+    question: 'Online danışmanlık hizmeti var mı?',
+    answer: 'Evet, Antalya dışından da danışanlarımıza online danışmanlık hizmeti sunuyoruz. Zoom veya Google Meet üzerinden yüz yüze seanslarla aynı kalitede hizmet alabilirsiniz.',
   },
   {
     question: 'Psikolog seansları gizli mi?',
@@ -27,7 +27,7 @@ const faqData = [
   },
   {
     question: 'Antalya\'da stres yönetimi için kimden yardım alabilirim?',
-    answer: 'Merkezimizde stres yönetimi, öfke kontrolü ve yaşam koçluğu hizmetleri sunuyoruz. Muratpaşa Meltem Mahallesi\'ndeki merkezimize randevu alarak uzman psikologlarımızla görüşebilirsiniz.',
+    answer: 'Merkezimizde stres yönetimi, öfke kontrolü ve yaşam koçluğu hizmetleri sunuyoruz. Muratpaşa Meltem Mahallesi\'ndeki merkezimize randevu alarak psikologlarımızla görüşebilirsiniz.',
   },
 ];
 
@@ -49,29 +49,29 @@ const LPAntalyaPsikolog = () => {
     {
       text: "Zorlayıcı bir dönemde gitmiştik. Kendisine tavsiye ile ulaşmıştık. 6 seans kadar devam ettik. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm.",
       author: "S.T.",
-      role: "Çocuk Terapisi",
+      role: "Çocuk Danışmanlığı",
       rating: 5,
     },
     {
       text: "Gayet güler yüzlü, samimi ve sıcak bir psikolog. Bize verdiği güven duygusu sayesinde sıkılmadan çekinmeden her şeyi anlatabiliyorsunuz. Çok memnun kaldık.",
       author: "A.N.",
-      role: "Çocuk Terapisi",
+      role: "Çocuk Danışmanlığı",
       rating: 5,
     },
     {
       text: "Süreç boyunca her daim yanımızda oldular. Güler yüzlü ve gayet samimi bir ortamdı. Bu kurumu başkalarına tavsiye ederim.",
       author: "N.K.",
-      role: "Bireysel Terapi",
+      role: "Bireysel Danışmanlık",
       rating: 5,
     },
   ];
 
   const services = [
-    { icon: 'ri-user-heart-line', title: 'Bireysel Terapi', desc: 'Depresyon, anksiyete, stres tedavisi', color: 'from-blue-500 to-cyan-500' },
+    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', desc: 'Depresyon, anksiyete, stres tedavisi', color: 'from-blue-500 to-cyan-500' },
     { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', desc: 'Aile içi iletişim sorunları', color: 'from-green-500 to-emerald-500' },
-    { icon: 'ri-heart-2-line', title: 'Çift Terapisi', desc: 'Evlilik ve ilişki danışmanlığı', color: 'from-rose-500 to-pink-500' },
-    { icon: 'ri-mental-health-line', title: 'EMDR Terapi', desc: 'Travma ve panik atak tedavisi', color: 'from-purple-500 to-indigo-500' },
-    { icon: 'ri-gamepad-line', title: 'Çocuk Psikoloğu', desc: 'Oyun terapisi uzmanı', color: 'from-amber-500 to-orange-500' },
+    { icon: 'ri-heart-2-line', title: 'Çift Danışmanlığı', desc: 'Evlilik ve ilişki danışmanlığı', color: 'from-rose-500 to-pink-500' },
+    { icon: 'ri-mental-health-line', title: 'Cinsel Danışmanlık', desc: 'Gizlilik garantili profesyonel destek', color: 'from-purple-500 to-indigo-500' },
+    { icon: 'ri-gamepad-line', title: 'Çocuk Psikoloğu', desc: 'Oyunla danışmanlık desteği', color: 'from-amber-500 to-orange-500' },
     { icon: 'ri-user-star-line', title: 'Ergen Psikoloğu', desc: 'Ergenlik dönemi desteği', color: 'from-teal-500 to-cyan-500' },
   ];
 
@@ -79,7 +79,7 @@ const LPAntalyaPsikolog = () => {
     { value: '500+', label: 'Mutlu Danışan', icon: 'ri-user-smile-line' },
     { value: '4.9', label: 'Puan', icon: 'ri-star-fill' },
     { value: '%98', label: 'Memnuniyet', icon: 'ri-thumb-up-line' },
-    { value: '3', label: 'Uzman Psikolog', icon: 'ri-team-line' },
+    { value: '3', label: 'Psikolog', icon: 'ri-team-line' },
   ];
 
   // Auto-rotate testimonials
@@ -159,7 +159,7 @@ const LPAntalyaPsikolog = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-darkgray/90 via-darkgray/70 to-transparent z-10" />
             <motion.img
               src="/images/sas/sas-1.png"
-              alt="Antalya Psikolog - Bireysel Terapi Seansı"
+              alt="Antalya Psikolog - Bireysel Danışmanlık Seansı"
               className="w-full h-full object-cover"
               initial={{ scale: 1.1 }}
               animate={{ scale: imageLoaded ? 1 : 1.1 }}
@@ -222,7 +222,7 @@ const LPAntalyaPsikolog = () => {
                   transition={{ delay: 0.3 }}
                   className="text-xl text-white/80 max-w-lg"
                 >
-                  Depresyon, anksiyete, kaygı bozukluğu ve panik atak tedavisinde uzman psikolog kadrosu.
+                  Depresyon, anksiyete, kaygı bozukluğu ve panik atak tedavisinde psikolog kadrosu.
                   <span className="font-semibold text-olive"> Hemen randevu alın.</span>
                 </motion.p>
 
@@ -305,7 +305,7 @@ const LPAntalyaPsikolog = () => {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img
                       src="/images/services/psikolog-hero.png"
-                      alt="Antalya Uzman Psikolog - Psikolojik Danışmanlık"
+                      alt="Antalya Psikolog - Psikolojik Danışmanlık"
                       className="w-full h-[500px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-darkgray/60 to-transparent" />
@@ -415,7 +415,7 @@ const LPAntalyaPsikolog = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">%98 Memnuniyet Oranı</h3>
                 <p className="text-white/60">
-                  500+ danışanımızın %98'i terapi sürecinden memnun ayrıldı. Google'da 4.9 yıldız puanımız var.
+                  500+ danışanımızın %98'i danışmanlık sürecinden memnun ayrıldı. Google'da 4.9 yıldız puanımız var.
                 </p>
                 <div className="flex items-center mt-4 text-amber-400">
                   {[...Array(5)].map((_, i) => (
@@ -438,12 +438,12 @@ const LPAntalyaPsikolog = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Bilimsel Yöntemler</h3>
                 <p className="text-white/60">
-                  BDT, EMDR, Şema Terapi gibi kanıta dayalı, uluslararası standartlarda terapi yöntemleri uyguluyoruz.
+                  BDT ve şema çalışması gibi kanıta dayalı, uluslararası standartlarda yöntemler uyguluyoruz.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">EMDR</span>
-                  <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">BDT</span>
-                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">Şema Terapi</span>
+                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">BDT</span>
+                  <span className="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">Çözüm Odaklı</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">Şema Çalışması</span>
                 </div>
               </motion.div>
 
@@ -458,9 +458,9 @@ const LPAntalyaPsikolog = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <i className="ri-team-fill text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">3 Uzman Psikolog</h3>
+                <h3 className="text-xl font-bold text-white mb-3">3 Psikolog</h3>
                 <p className="text-white/60">
-                  Her biri kendi alanında uzmanlaşmış, sürekli eğitim alan ve süpervizyon altında çalışan profesyonel kadro.
+                  Her biri kendi alanında deneyimli, sürekli eğitim alan ve süpervizyon altında çalışan profesyonel kadro.
                 </p>
                 <div className="flex -space-x-3 mt-4">
                   <div className="w-10 h-10 rounded-full bg-olive flex items-center justify-center text-white text-sm font-bold border-2 border-slate-900">ND</div>
@@ -501,9 +501,9 @@ const LPAntalyaPsikolog = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <i className="ri-user-settings-fill text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Kişiye Özel Terapi</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Kişiye Özel Danışmanlık</h3>
                 <p className="text-white/60">
-                  Hazır kalıplar değil, sizin ihtiyaçlarınıza göre özel olarak hazırlanan bireysel terapi planları uyguluyoruz.
+                  Hazır kalıplar değil, sizin ihtiyaçlarınıza göre özel olarak hazırlanan bireysel danışmanlık planları uyguluyoruz.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-amber-400">
                   <i className="ri-checkbox-circle-fill"></i>
@@ -524,7 +524,7 @@ const LPAntalyaPsikolog = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Online & Yüz Yüze</h3>
                 <p className="text-white/60">
-                  İster merkezimizde yüz yüze, ister evinizden online terapi alın. Esnek randevu seçenekleri sunuyoruz.
+                  İster merkezimizde yüz yüze, ister evinizden online danışmanlık alın. Esnek randevu seçenekleri sunuyoruz.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-cyan-400">
                   <i className="ri-calendar-check-fill"></i>
@@ -610,7 +610,7 @@ const LPAntalyaPsikolog = () => {
                 Antalya Psikolojik Danışmanlık
               </span>
               <h2 className="font-serif text-4xl font-bold text-darkgray">
-                Muratpaşa ve Konyaaltı'da Uzman Psikolog Hizmetleri
+                Muratpaşa ve Konyaaltı'da Psikolog Hizmetleri
               </h2>
               <p className="text-darkgray/60 mt-4 max-w-2xl mx-auto">
                 Depresyon tedavisi, anksiyete, kaygı bozukluğu, panik atak, stres yönetimi ve daha fazlası için profesyonel destek
@@ -659,12 +659,12 @@ const LPAntalyaPsikolog = () => {
               <h2 className="font-serif text-4xl font-bold text-darkgray mb-4">
                 Antalya Psikoloji Merkezimiz
               </h2>
-              <p className="text-darkgray/60">Muratpaşa Meltem Mahallesi'nde huzurlu ve güvenli terapi ortamı</p>
+              <p className="text-darkgray/60">Muratpaşa Meltem Mahallesi'nde huzurlu ve güvenli danışmanlık ortamı</p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { src: '/images/sas/sas-1.png', title: 'Antalya Bireysel Terapi Seansı' },
+                { src: '/images/sas/sas-1.png', title: 'Antalya Bireysel Danışmanlık Seansı' },
                 { src: '/images/sas/sas-4.png', title: 'Stres Yönetimi ve Meditasyon' },
                 { src: '/images/sas/sas-5.png', title: 'Psikolojik Danışmanlık Ortamı' },
               ].map((img, i) => (
@@ -816,7 +816,7 @@ const LPAntalyaPsikolog = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Antalya'da Uzman Psikolog Randevusu
+              Antalya'da Psikolog Randevusu
             </motion.h2>
 
             <motion.p
