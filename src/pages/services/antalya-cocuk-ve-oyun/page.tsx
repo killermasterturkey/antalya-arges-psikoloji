@@ -31,18 +31,18 @@ const AntalyaCocukVeOyunPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-bear-smile-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Çocuk Terapisi</span>
+                  <span className="font-sans text-sm text-darkgray">Çocuk Danışmanlığı</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Çocuk ve Oyun Terapisi
+                  Çocuk ve Oyunla Danışmanlık
                 </h1>
 
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
                   Çocuğunuzun Dünyasını Anlamak İçin Buradayız
                 </p>
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  Çocuğunuz zaman zaman zorluklarla karşılaşabilir. Bu süreçte; güvenilir, uzman ve oyuna dayalı bir destek almak, çocuğunuzun duygusal ve davranışsal gelişimini güçlendirir. Arges Psikoloji olarak çocuğunuzun gelişimini destekliyoruz.
+                  Çocuğunuz zaman zaman zorluklarla karşılaşabilir. Bu süreçte; güvenilir ve oyuna dayalı bir destek almak, çocuğunuzun duygusal ve davranışsal gelişimini güçlendirir. Arges Psikoloji olarak çocuğunuzun gelişimini destekliyoruz.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -67,7 +67,7 @@ const AntalyaCocukVeOyunPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=1000&fit=crop&q=80"
-                    alt="Çocuk ve Oyun Terapisi - Oyun Yoluyla İyileşme"
+                    alt="Çocuk ve Oyunla Danışmanlık - Oyun Yoluyla İyileşme"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -126,7 +126,7 @@ const AntalyaCocukVeOyunPage = () => {
                 Çocuğunuzun Mutluluğu İçin
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Uzman çocuk psikologlarımız ile çocuğunuzun duygusal sağlığını destekleyin.
+                Çocuk psikologlarımız ile çocuğunuzun duygusal sağlığını destekleyin.
               </p>
               <a
                 href="https://wa.me/905403251525"

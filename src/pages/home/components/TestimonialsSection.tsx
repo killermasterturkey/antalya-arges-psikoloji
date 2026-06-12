@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
     {
       rating: 5,
       title: 'Hayatımı Değiştirdi',
-      text: 'Arges Psikoloji ile başladığım terapi süreci hayatıma yeni bir anlam kattı. Uzman psikologum sayesinde kendimi daha iyi tanıdım ve sorunlarımla başa çıkmayı öğrendim.',
+      text: 'Arges Psikoloji ile başladığım danışmanlık süreci hayatıma yeni bir anlam kattı. Psikologum sayesinde kendimi daha iyi tanıdım ve sorunlarımla başa çıkmayı öğrendim.',
       name: 'Elif K.',
       info: '32 yaşında, İstanbul',
       avatar: 'https://ui-avatars.com/api/?name=Elif+K&background=8A9A5B&color=fff',
@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     {
       rating: 5,
       title: 'Profesyonel ve Güvenilir',
-      text: 'Çift terapisi almaya başladığımızda ilişkimiz çok zordu. Şimdi eşimle daha sağlıklı iletişim kuruyoruz ve birbirimizi daha iyi anlıyoruz. Teşekkürler Arges Psikoloji.',
+      text: 'Çift danışmanlığı almaya başladığımızda ilişkimiz çok zordu. Şimdi eşimle daha sağlıklı iletişim kuruyoruz ve birbirimizi daha iyi anlıyoruz. Teşekkürler Arges Psikoloji.',
       name: 'Ahmet ve Zehra Y.',
       info: 'Evli çift, Ankara',
       avatar: 'https://ui-avatars.com/api/?name=Ahmet+Y&background=C8B560&color=fff',
@@ -28,8 +28,8 @@ const TestimonialsSection = () => {
     },
     {
       rating: 5,
-      title: 'EMDR Terapisi Mucizevi',
-      text: 'Yıllardır taşıdığım travmalardan EMDR terapisi ile kurtuldum. İlk seanstan sonra bile fark ettim. Artık geçmişim beni esir almıyor.',
+      title: 'Hayatım Değişti',
+      text: 'Yıllardır taşıdığım travmalardan aldığım danışmanlık desteği ile kurtuldum. İlk seanstan sonra bile fark ettim. Artık geçmişim beni esir almıyor.',
       name: 'Can T.',
       info: '28 yaşında, Bursa',
       avatar: 'https://ui-avatars.com/api/?name=Can+T&background=C8B560&color=fff',
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
     {
       rating: 5,
       title: 'Güvenli ve Rahat Ortam',
-      text: 'İlk kez terapiye gittiğimde çok gergindim. Ama psikologumun sıcak yaklaşımı ve ofisteki rahat ortam sayesinde kendimi güvende hissettim. Her seans sonrası daha hafif hissediyorum.',
+      text: 'İlk kez psikoloğa gittiğimde çok gergindim. Ama psikologumun sıcak yaklaşımı ve ofisteki rahat ortam sayesinde kendimi güvende hissettim. Her seans sonrası daha hafif hissediyorum.',
       name: 'Deniz S.',
       info: '25 yaşında, Antalya',
       avatar: 'https://ui-avatars.com/api/?name=Deniz+S&background=8A9A5B&color=fff',

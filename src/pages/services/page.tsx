@@ -9,7 +9,7 @@ const ServicesPage = () => {
   const services = [
     {
       icon: 'ri-user-line',
-      title: 'Bireysel Terapi',
+      title: 'Bireysel Danışmanlık',
       description: 'Depresyon, anksiyete, stres yönetimi, öfke kontrolü, travma, düşük benlik saygısı ve kişisel gelişim konularında profesyonel destek.',
       suitable: 'Yetişkinler için',
       process: 'Haftalık 50 dakikalık seanslar',
@@ -18,7 +18,7 @@ const ServicesPage = () => {
     },
     {
       icon: 'ri-heart-2-line',
-      title: 'Çift Terapisi',
+      title: 'Çift Danışmanlığı',
       description: 'İletişim sorunları, güven problemleri, cinsel uyumsuzluk, boşanma süreci ve ilişki dinamiklerinin güçlendirilmesi.',
       suitable: 'Evli veya birlikte olan çiftler',
       process: 'Haftalık 60 dakikalık seanslar',
@@ -27,7 +27,7 @@ const ServicesPage = () => {
     },
     {
       icon: 'ri-team-line',
-      title: 'Aile Terapisi',
+      title: 'Aile Danışmanlığı',
       description: 'Aile içi iletişim sorunları, ebeveyn-çocuk ilişkisi, kardeş çatışmaları ve aile dinamiklerinin iyileştirilmesi.',
       suitable: 'Tüm aile bireyleri',
       process: 'Haftalık 60-75 dakikalık seanslar',
@@ -39,7 +39,7 @@ const ServicesPage = () => {
       title: 'Çocuk Psikolojisi',
       description: 'Davranış sorunları, okul başarısızlığı, dikkat eksikliği, kaygı bozuklukları, uyku sorunları ve sosyal uyum problemleri.',
       suitable: '3-12 yaş arası çocuklar',
-      process: 'Oyun terapisi ve aile görüşmeleri',
+      process: 'Oyunla danışmanlık ve aile görüşmeleri',
       color: 'bg-gold/20',
       link: '/services/child-psychology',
     },
@@ -53,20 +53,11 @@ const ServicesPage = () => {
       link: '/services',
     },
     {
-      icon: 'ri-brain-line',
-      title: 'EMDR Terapisi',
-      description: 'Travma sonrası stres bozukluğu, fobiler, panik atak, kayıp ve yas süreçleri için etkili göz hareketleri ile duyarsızlaştırma ve yeniden işleme terapisi.',
-      suitable: 'Travma yaşamış bireyler',
-      process: '8-12 seanslık terapi programı',
-      color: 'bg-gold/20',
-      link: '/services',
-    },
-    {
       icon: 'ri-heart-pulse-line',
-      title: 'Cinsel Terapi',
+      title: 'Cinsel Danışmanlık',
       description: 'Cinsel işlev bozuklukları, cinsel isteksizlik, erken boşalma, vajinismus ve cinsel kimlik konularında profesyonel destek.',
       suitable: 'Bireyler ve çiftler',
-      process: 'Kişiye özel terapi planı',
+      process: 'Kişiye özel danışmanlık planı',
       color: 'bg-olive/20',
       link: '/services',
     },
@@ -197,7 +188,7 @@ const ServicesPage = () => {
                 Hangi Hizmeti Seçeceğinizden Emin Değil Misiniz?
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Uzman psikologlarımız size en uygun terapi yöntemini belirlemek için ücretsiz ön görüşme yapabilir.
+                Psikologlarımız size en uygun danışmanlık yöntemini belirlemek için ücretsiz ön görüşme yapabilir.
               </p>
               <a
                 href="tel:+905403251525"

@@ -18,12 +18,12 @@ const IndividualTherapyPage = () => {
     {
       step: '1',
       title: 'İlk Görüşme',
-      description: 'Tanışma, ihtiyaçlarınızın belirlenmesi ve terapi planının oluşturulması.',
+      description: 'Tanışma, ihtiyaçlarınızın belirlenmesi ve danışmanlık planının oluşturulması.',
     },
     {
       step: '2',
-      title: 'Terapi Süreci',
-      description: 'Haftalık seanslarla düzenli takip ve terapötik müdahaleler.',
+      title: 'Danışmanlık Süreci',
+      description: 'Haftalık seanslarla düzenli takip ve profesyonel destek çalışmaları.',
     },
     {
       step: '3',
@@ -33,29 +33,29 @@ const IndividualTherapyPage = () => {
     {
       step: '4',
       title: 'Sonlandırma',
-      description: 'Hedeflere ulaşıldığında terapi sürecinin sağlıklı bir şekilde sonlandırılması.',
+      description: 'Hedeflere ulaşıldığında danışmanlık sürecinin sağlıklı bir şekilde sonlandırılması.',
     },
   ];
 
   const approaches = [
     {
       icon: 'ri-brain-line',
-      name: 'Bilişsel Davranışçı Terapi',
+      name: 'Bilişsel Davranışçı Yaklaşım',
       description: 'Düşünce ve davranış kalıplarını değiştirme',
     },
     {
       icon: 'ri-heart-pulse-line',
-      name: 'Psikanalitik Terapi',
+      name: 'Psikanalitik Yaklaşım',
       description: 'Bilinçdışı süreçleri anlama ve çözümleme',
     },
     {
       icon: 'ri-user-heart-line',
-      name: 'Hümanistik Terapi',
+      name: 'Hümanistik Yaklaşım',
       description: 'Kişisel potansiyeli ortaya çıkarma',
     },
     {
       icon: 'ri-emotion-line',
-      name: 'Şema Terapi',
+      name: 'Şema Yaklaşımı',
       description: 'Erken dönem şemaları ile çalışma',
     },
   ];
@@ -84,7 +84,7 @@ const IndividualTherapyPage = () => {
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Bireysel Terapi
+                  Bireysel Danışmanlık
                 </h1>
 
                 <p className="font-sans text-xl text-darkgray/70 leading-relaxed">
@@ -120,7 +120,7 @@ const IndividualTherapyPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://readdy.ai/api/search-image?query=peaceful%20individual%20therapy%20session%20in%20modern%20minimalist%20counseling%20room%20with%20comfortable%20seating%20natural%20light%20flowing%20through%20large%20windows%20indoor%20plants%20creating%20calming%20atmosphere%20professional%20psychologist%20and%20client%20in%20supportive%20conversation%20warm%20neutral%20tones%20emphasizing%20trust%20and%20personal%20growth&width=800&height=1000&seq=individual-therapy-hero&orientation=portrait"
-                    alt="Bireysel Terapi"
+                    alt="Bireysel Danışmanlık"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -152,13 +152,13 @@ const IndividualTherapyPage = () => {
                 className="space-y-6"
               >
                 <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                  Bireysel Terapi Nedir?
+                  Bireysel Danışmanlık Nedir?
                 </h2>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Bireysel terapi, kişinin duygusal, psikolojik ve davranışsal sorunlarıyla başa çıkmasına yardımcı olan, bire bir gerçekleştirilen profesyonel bir destek sürecidir.
+                  Bireysel danışmanlık, kişinin duygusal, psikolojik ve davranışsal sorunlarıyla başa çıkmasına yardımcı olan, bire bir gerçekleştirilen profesyonel bir destek sürecidir.
                 </p>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Bu süreçte, güvenli ve gizli bir ortamda, uzman bir psikolog eşliğinde kendinizi keşfeder, duygularınızı anlamlandırır ve yaşam kalitenizi artıracak stratejiler geliştirirsiniz.
+                  Bu süreçte, güvenli ve gizli bir ortamda, deneyimli bir psikolog eşliğinde kendinizi keşfeder, duygularınızı anlamlandırır ve yaşam kalitenizi artıracak stratejiler geliştirirsiniz.
                 </p>
                 <div className="grid grid-cols-2 gap-4 pt-4">
                   <div className="bg-cream rounded-2xl p-6 space-y-2">
@@ -185,7 +185,7 @@ const IndividualTherapyPage = () => {
               >
                 <img
                   src="https://readdy.ai/api/search-image?query=serene%20therapy%20consultation%20room%20with%20comfortable%20armchairs%20soft%20cushions%20warm%20ambient%20lighting%20bookshelves%20with%20psychology%20books%20potted%20plants%20on%20side%20tables%20creating%20safe%20confidential%20space%20for%20personal%20growth%20and%20emotional%20healing%20neutral%20calming%20color%20palette&width=800&height=1000&seq=therapy-room-ambiance&orientation=portrait"
-                  alt="Terapi Ortamı"
+                  alt="Danışmanlık Ortamı"
                   className="w-full h-full object-cover object-top"
                 />
               </motion.div>
@@ -204,10 +204,10 @@ const IndividualTherapyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Bireysel Terapinin Faydaları
+                Bireysel Danışmanlığın Faydaları
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Düzenli terapi seansları ile hayatınızda olumlu değişimler yaşayabilirsiniz.
+                Düzenli danışmanlık seansları ile hayatınızda olumlu değişimler yaşayabilirsiniz.
               </p>
             </motion.div>
 
@@ -243,10 +243,10 @@ const IndividualTherapyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Terapi Süreci Nasıl İşler?
+                Danışmanlık Süreci Nasıl İşler?
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Bireysel terapi sürecinde size özel bir yol haritası oluşturuyoruz.
+                Bireysel danışmanlık sürecinde size özel bir yol haritası oluşturuyoruz.
               </p>
             </motion.div>
 
@@ -291,10 +291,10 @@ const IndividualTherapyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Kullandığımız Terapi Yaklaşımları
+                Kullandığımız Danışmanlık Yaklaşımları
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                İhtiyaçlarınıza göre farklı terapi yöntemlerini entegre ederek size özel bir tedavi planı oluşturuyoruz.
+                İhtiyaçlarınıza göre farklı danışmanlık yöntemlerini entegre ederek size özel bir destek planı oluşturuyoruz.
               </p>
             </motion.div>
 
@@ -333,7 +333,7 @@ const IndividualTherapyPage = () => {
                 Kendinize Yatırım Yapın
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Daha mutlu ve sağlıklı bir yaşam için ilk adımı bugün atın. Uzman psikologlarımız sizinle birlikte bu yolculukta yanınızda.
+                Daha mutlu ve sağlıklı bir yaşam için ilk adımı bugün atın. Psikologlarımız sizinle birlikte bu yolculukta yanınızda.
               </p>
               <a
                 href="https://wa.me/905403251525"

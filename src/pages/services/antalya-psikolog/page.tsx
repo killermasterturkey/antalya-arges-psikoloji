@@ -7,19 +7,19 @@ import { Link } from 'react-router-dom';
 
 const AntalyaPsikologPage = () => {
   const services = [
-    { icon: 'ri-user-heart-line', title: 'Bireysel Terapi', description: 'Depresyon, anksiyete, travma ve kişisel gelişim odaklı bireysel destek.' },
-    { icon: 'ri-parent-line', title: 'Aile Terapisi', description: 'Aile içi iletişim sorunları ve ilişkilerin güçlendirilmesi.' },
-    { icon: 'ri-heart-2-line', title: 'Çift Terapisi', description: 'İlişki problemleri, iletişim güçlükleri ve evlilik danışmanlığı.' },
+    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', description: 'Depresyon, anksiyete, travma ve kişisel gelişim odaklı bireysel destek.' },
+    { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', description: 'Aile içi iletişim sorunları ve ilişkilerin güçlendirilmesi.' },
+    { icon: 'ri-heart-2-line', title: 'Çift Danışmanlığı', description: 'İlişki problemleri, iletişim güçlükleri ve evlilik danışmanlığı.' },
     { icon: 'ri-mental-health-line', title: 'Çocuk Psikolojisi', description: 'Çocuklarda davranış problemleri, okul uyumu ve gelişimsel destek.' },
   ];
 
   const reasons = [
     'Antalya merkezde kolay ulaşım',
-    'Uzman ve deneyimli psikolog kadrosu',
+    'Deneyimli psikolog kadrosu',
     'Gizlilik ve mahremiyet garantisi',
-    'Kişiselleştirilmiş terapi yaklaşımları',
+    'Kişiselleştirilmiş danışmanlık yaklaşımları',
     'Esnek randevu saatleri',
-    'Online terapi seçeneği',
+    'Online danışmanlık seçeneği',
   ];
 
   return (
@@ -52,7 +52,7 @@ const AntalyaPsikologPage = () => {
                   Antalya'da Güvenilir Psikolog Hizmeti
                 </p>
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  Arges Psikoloji olarak Antalya'da bireysel psikolojik danışmanlık hizmeti sunuyoruz. Uzman psikologlarımız, bilimsel temelli yöntemlerle size destek olmak için burada.
+                  Arges Psikoloji olarak Antalya'da bireysel psikolojik danışmanlık hizmeti sunuyoruz. Psikologlarımız, bilimsel temelli yöntemlerle size destek olmak için burada.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">

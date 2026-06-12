@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ServicesPreview = () => {
   const services = [
-    { icon: 'ri-heart-2-line', name: 'Çift Terapisi' },
-    { icon: 'ri-brain-line', name: 'EMDR' },
+    { icon: 'ri-heart-2-line', name: 'Çift Danışmanlığı' },
+    { icon: 'ri-parent-line', name: 'Aile Danışmanlığı' },
     { icon: 'ri-bear-smile-line', name: 'Çocuk Psikolojisi' },
     { icon: 'ri-user-smile-line', name: 'Ergen Danışmanlığı' },
   ];
@@ -49,7 +49,7 @@ const ServicesPreview = () => {
             </h2>
 
             <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-              Bireysel terapi, çift terapisi, çocuk ve ergen psikolojisi, EMDR ve daha fazlası ile yanınızdayız. Her danışanımıza özel, bilimsel ve etik yaklaşımlarla destek sunuyoruz.
+              Bireysel danışmanlık, çift danışmanlığı, çocuk ve ergen psikolojisi ve daha fazlası ile yanınızdayız. Her danışanımıza özel, bilimsel ve etik yaklaşımlarla destek sunuyoruz.
             </p>
 
             <Link

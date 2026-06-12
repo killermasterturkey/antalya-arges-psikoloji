@@ -31,11 +31,11 @@ const AntalyaErgenTerapisiPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-user-star-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Ergen Terapisi</span>
+                  <span className="font-sans text-sm text-darkgray">Ergen Danışmanlığı</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Antalya Ergen Terapisi
+                  Antalya Ergen Psikoloğu
                 </h1>
 
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
@@ -67,7 +67,7 @@ const AntalyaErgenTerapisiPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&h=1000&fit=crop&q=80"
-                    alt="Ergen Terapisi - Gençlik Döneminde Profesyonel Destek"
+                    alt="Ergen Danışmanlığı - Gençlik Döneminde Profesyonel Destek"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -104,7 +104,7 @@ const AntalyaErgenTerapisiPage = () => {
         <section className="py-20 px-6 lg:px-12 bg-cream">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Ergenler İçin Profesyonel Destek</h2>
-            <p className="font-sans text-lg text-darkgray/70 mb-8">Uzman ergen psikologlarımız ile gencinizin sağlıklı gelişimini destekleyin.</p>
+            <p className="font-sans text-lg text-darkgray/70 mb-8">Ergen psikologlarımız ile gencinizin sağlıklı gelişimini destekleyin.</p>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

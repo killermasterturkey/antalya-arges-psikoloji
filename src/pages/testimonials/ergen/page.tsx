@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsErgenPage = () => {
   const testimonials = [
-    { initials: 'A.D.', rating: 5, text: 'Nezihi Hocaya Google üzerinden ulaştım. 17 yaşımdayım. Depresyondaydım sürece başladığımda. 8 seans kadar kendisine devam ettim. Kendisinden memnun kaldım. Bazı nedenlerden ötürü süreci yarıda bırakmak zorunda kaldım. Kendisini öneriyorum etrafımda ihtiyaç duyanlara. Bana çok yardımcı oldu. Empatisi güler yüzü ve her konuda gösterdiği şefkati bana çok iyi geldi. Ayrıca sürecin sonrasında görüş formu iletmesi de hoşuma giden durumlardan biriydi. Başarılarının devamını dilerim.', service: 'Ergen Terapisi' },
+    { initials: 'A.D.', rating: 5, text: 'Nezihi Hocaya Google üzerinden ulaştım. 17 yaşımdayım. Depresyondaydım sürece başladığımda. 8 seans kadar kendisine devam ettim. Kendisinden memnun kaldım. Bazı nedenlerden ötürü süreci yarıda bırakmak zorunda kaldım. Kendisini öneriyorum etrafımda ihtiyaç duyanlara. Bana çok yardımcı oldu. Empatisi güler yüzü ve her konuda gösterdiği şefkati bana çok iyi geldi. Ayrıca sürecin sonrasında görüş formu iletmesi de hoşuma giden durumlardan biriydi. Başarılarının devamını dilerim.', service: 'Ergen Danışmanlığı' },
   ];
 
   return (

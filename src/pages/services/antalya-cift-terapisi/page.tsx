@@ -30,18 +30,18 @@ const AntalyaCiftTerapisiPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-heart-2-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Çift Terapisi</span>
+                  <span className="font-sans text-sm text-darkgray">Çift Danışmanlığı</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Antalya Çift Terapisi
+                  Antalya Çift Danışmanlığı
                 </h1>
 
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
                   İlişkinizi Güçlendirmek İçin Profesyonel Destek
                 </p>
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  Romantik ilişkiler, hayatımızın en önemli parçalarından biridir. Ancak zaman içinde iletişim kopuklukları, güven sorunları veya farklı beklentiler ilişkide zorluklara yol açabilir. Çift terapisi; bu sorunların çözümünde profesyonel bir rehberlik sunar.
+                  Romantik ilişkiler, hayatımızın en önemli parçalarından biridir. Ancak zaman içinde iletişim kopuklukları, güven sorunları veya farklı beklentiler ilişkide zorluklara yol açabilir. Çift danışmanlığı; bu sorunların çözümünde profesyonel bir rehberlik sunar.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -66,7 +66,7 @@ const AntalyaCiftTerapisiPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=1000&fit=crop&q=80"
-                    alt="Çift Terapisi - İlişkinizi Güçlendirin"
+                    alt="Çift Danışmanlığı - İlişkinizi Güçlendirin"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -103,7 +103,7 @@ const AntalyaCiftTerapisiPage = () => {
         <section className="py-20 px-6 lg:px-12 bg-cream">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">İlişkinizi Güçlendirelim</h2>
-            <p className="font-sans text-lg text-darkgray/70 mb-8">Uzman çift terapistimiz ile ilişkinizi yeniden inşa edin.</p>
+            <p className="font-sans text-lg text-darkgray/70 mb-8">Psikologlarımız ile ilişkinizi yeniden inşa edin.</p>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

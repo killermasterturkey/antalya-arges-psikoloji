@@ -61,18 +61,18 @@ const AntalyaCinselTerapiPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-heart-pulse-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Cinsel Terapi</span>
+                  <span className="font-sans text-sm text-darkgray">Cinsel Danışmanlık</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Antalya Cinsel Terapi
+                  Antalya Cinsel Danışmanlık
                 </h1>
 
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
                   Cinsel Sağlık İçin Güvenli ve Profesyonel Destek
                 </p>
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  Cinsel sorunlar, bireylerin yaşam kalitesini ve ilişkilerini doğrudan etkileyebilir. Konuşulması zor gibi görünse de, profesyonel destek bu süreçte çok önemlidir. Arges Psikoloji olarak gizlilik ve güven ortamında uzman desteği sunuyoruz.
+                  Cinsel sorunlar, bireylerin yaşam kalitesini ve ilişkilerini doğrudan etkileyebilir. Konuşulması zor gibi görünse de, profesyonel destek bu süreçte çok önemlidir. Arges Psikoloji olarak gizlilik ve güven ortamında psikolog desteği sunuyoruz.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -97,7 +97,7 @@ const AntalyaCinselTerapiPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1000&fit=crop&q=80"
-                    alt="Cinsel Terapi - Gizlilik Garantili Profesyonel Destek"
+                    alt="Cinsel Danışmanlık - Gizlilik Garantili Profesyonel Destek"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -133,8 +133,8 @@ const AntalyaCinselTerapiPage = () => {
 
         <section className="py-20 px-6 lg:px-12 bg-cream">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Profesyonel Cinsel Terapi</h2>
-            <p className="font-sans text-lg text-darkgray/70 mb-8">Uzman cinsel terapistimiz ile yaşam kalitenizi artırın.</p>
+            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Profesyonel Cinsel Danışmanlık</h2>
+            <p className="font-sans text-lg text-darkgray/70 mb-8">Psikologlarımız ile yaşam kalitenizi artırın.</p>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

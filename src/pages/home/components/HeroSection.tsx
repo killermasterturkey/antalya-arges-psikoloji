@@ -94,7 +94,7 @@ const HeroSection = () => {
             className="lg:col-span-2 space-y-6"
           >
             <p className="font-sans text-lg text-darkgray/80 leading-relaxed">
-              Antalya'da <strong>çocuk psikolojisi</strong>, <strong>ergen danışmanlığı</strong>, <strong>aile terapisi</strong> ve <strong>bireysel terapi</strong> hizmetleri. Uzman psikologlarımızla güvenli bir terapi deneyimi için hemen arayın.
+              Antalya'da <strong>çocuk psikolojisi</strong>, <strong>ergen danışmanlığı</strong>, <strong>aile danışmanlığı</strong> ve <strong>bireysel danışmanlık</strong> hizmetleri. Psikologlarımızla güvenli bir danışmanlık deneyimi için hemen arayın.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -122,7 +122,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-6 pt-4">
               <div className="flex items-center space-x-2">
                 <i className="ri-shield-check-fill text-olive text-xl"></i>
-                <span className="font-sans text-sm text-darkgray/70">Uzman Psikologlar</span>
+                <span className="font-sans text-sm text-darkgray/70">Deneyimli Psikologlar</span>
               </div>
               <div className="flex items-center space-x-2">
                 <i className="ri-user-heart-fill text-olive text-xl"></i>
@@ -145,7 +145,7 @@ const HeroSection = () => {
         >
           <img
             src="https://readdy.ai/api/search-image?query=peaceful%20therapy%20room%20with%20comfortable%20seating%2C%20natural%20light%20streaming%20through%20windows%2C%20indoor%20plants%2C%20warm%20and%20calming%20atmosphere%2C%20professional%20counseling%20space%20with%20soft%20neutral%20tones%20and%20minimalist%20design%2C%20creating%20sense%20of%20safety%20and%20tranquility&width=1400&height=600&seq=hero-therapy-room&orientation=landscape"
-            alt="Arges Psikoloji Terapi Ortamı"
+            alt="Arges Psikoloji Danışmanlık Ortamı"
             loading="lazy"
             decoding="async"
             className="w-full h-full object-cover object-top"

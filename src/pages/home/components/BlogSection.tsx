@@ -22,7 +22,7 @@ const BlogSection = () => {
             <span className="text-olive">Haberler</span>
           </h2>
           <p className="font-sans text-base text-darkgray/60 max-w-2xl mx-auto">
-            Ruh sagligi, psikoloji ve kisisel gelisim hakkinda guncel yazilar ve uzman gorusleri
+            Ruh sagligi, psikoloji ve kisisel gelisim hakkinda guncel yazilar ve psikolog gorusleri
           </p>
         </motion.div>
 

@@ -51,13 +51,6 @@
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://antalyaargespsikoloji.com/team/busra-demirbas</loc>
-    <lastmod>2025-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- Hızlı Randevu -->
   <url>
     <loc>https://antalyaargespsikoloji.com/hizli-randevu</loc>
@@ -185,13 +178,6 @@
   </url>
 
   <url>
-    <loc>https://antalyaargespsikoloji.com/services/antalya-emdr</loc>
-    <lastmod>2025-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://antalyaargespsikoloji.com/services/individual-therapy</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -221,13 +207,6 @@
 
   <url>
     <loc>https://antalyaargespsikoloji.com/services/adolescent-counseling</loc>
-    <lastmod>2025-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://antalyaargespsikoloji.com/services/emdr-therapy</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

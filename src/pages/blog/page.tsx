@@ -35,7 +35,7 @@ const BlogPage = () => {
                 <span className="text-olive">Haberler</span>
               </h1>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Ruh sağlığı, psikoloji ve kişisel gelişim hakkında güncel yazılar, uzman görüşleri ve bilimsel araştırmalar
+                Ruh sağlığı, psikoloji ve kişisel gelişim hakkında güncel yazılar, psikolog görüşleri ve bilimsel araştırmalar
               </p>
             </motion.div>
 

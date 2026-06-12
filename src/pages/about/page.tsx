@@ -8,8 +8,8 @@ const AboutPage = () => {
   const values = [
     {
       icon: 'ri-award-line',
-      title: 'Uzmanlık',
-      description: 'Bilimsel temelli, deneyimli uzman kadro ile hizmet sunuyoruz.',
+      title: 'Deneyim',
+      description: 'Bilimsel temelli, deneyimli psikolog kadrosu ile hizmet sunuyoruz.',
     },
     {
       icon: 'ri-shield-check-line',
@@ -19,7 +19,7 @@ const AboutPage = () => {
     {
       icon: 'ri-user-heart-line',
       title: 'Kişiye Özel',
-      description: 'Her danışana özel terapi yöntemi ve süreç planlaması yapılır.',
+      description: 'Her danışana özel danışmanlık yöntemi ve süreç planlaması yapılır.',
     },
     {
       icon: 'ri-calendar-check-line',
@@ -30,20 +30,16 @@ const AboutPage = () => {
 
   const approaches = [
     {
-      name: 'Şema Terapi',
+      name: 'Şema Yaklaşımı',
       description: 'Erken dönem yaşantılardan kaynaklanan kalıpları anlamaya ve dönüştürmeye yönelik',
     },
     {
-      name: 'Bilişsel Davranışçı Terapi (BDT)',
+      name: 'Bilişsel Davranışçı Yaklaşım (BDT)',
       description: 'Düşünce, duygu ve davranış arasındaki ilişkiyi anlamaya yönelik',
     },
     {
-      name: 'Deneyimsel Oyun Terapisi',
+      name: 'Deneyimsel Oyunla Danışmanlık',
       description: 'Çocukların oyun yoluyla duygularını ifade etmelerine yardımcı olan yaklaşım',
-    },
-    {
-      name: 'EMDR',
-      description: 'Travma ve stres kaynaklı sorunların tedavisinde etkili göz hareketleri tekniği',
     },
   ];
 
@@ -91,13 +87,13 @@ const AboutPage = () => {
                   İsmini, mitolojide "ışık tutan" anlamına gelen "Arges" kelimesinden alan Arges Psikoloji ruh sağlığı hizmeti vermek amacı ile Antalya'da kurulmuştur.
                 </p>
                 <p>
-                  Alanında uzman psikolog kadrosu ile faydası ve geçerliliği bilimsel olarak kanıtlanan tekniklerle; etik ilkeler çerçevesinde hizmet vermeyi amaçlamaktadır.
+                  Alanında deneyimli psikolog kadrosu ile faydası ve geçerliliği bilimsel olarak kanıtlanan tekniklerle; etik ilkeler çerçevesinde hizmet vermeyi amaçlamaktadır.
                 </p>
                 <p>
                   Psikologlarımız güvenli, destekleyici ve empatik bir yaklaşımla, farklı yaş gruplarından bireylerin kişisel büyümelerini desteklemek için çalışmaktadır.
                 </p>
                 <p>
-                  Psikoterapi süreci; uzun soluklu olmasının yanı sıra, kişiyi merkeze koyar ve kişiye kendi düşünce, duygu ve davranışlarının altında yatan nedenler ve örüntüler hakkında farkındalık yaratmayı amaçlar.
+                  Danışmanlık süreci; uzun soluklu olmasının yanı sıra, kişiyi merkeze koyar ve kişiye kendi düşünce, duygu ve davranışlarının altında yatan nedenler ve örüntüler hakkında farkındalık yaratmayı amaçlar.
                 </p>
               </div>
             </motion.div>
@@ -202,10 +198,10 @@ const AboutPage = () => {
               className="text-center mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray mb-4">
-                Terapi Yaklaşımlarımız
+                Danışmanlık Yaklaşımlarımız
               </h2>
               <p className="font-sans text-lg text-darkgray/60">
-                Bilimsel ve kanıta dayalı terapi yöntemleri
+                Bilimsel ve kanıta dayalı danışmanlık yöntemleri
               </p>
             </motion.div>
 

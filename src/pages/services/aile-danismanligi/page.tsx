@@ -30,7 +30,7 @@ const AileDanismanligiPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-home-heart-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Aile Terapisi</span>
+                  <span className="font-sans text-sm text-darkgray">Aile Danışmanlığı</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
@@ -66,7 +66,7 @@ const AileDanismanligiPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80"
-                    alt="Aile Danışmanlığı - Mutlu Aile Terapisi"
+                    alt="Aile Danışmanlığı - Mutlu Aile"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -125,7 +125,7 @@ const AileDanismanligiPage = () => {
                 Aileniz İçin Profesyonel Destek
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Uzman aile danışmanımız ile ailenizin uyumunu ve mutluluğunu artırın.
+                Aile danışmanımız ile ailenizin uyumunu ve mutluluğunu artırın.
               </p>
               <a
                 href="https://wa.me/905403251525"

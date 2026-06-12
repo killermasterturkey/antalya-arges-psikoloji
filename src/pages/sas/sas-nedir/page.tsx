@@ -188,7 +188,7 @@ const SasNedirPage = () => {
             >
               <div className="bg-cream rounded-3xl p-8 lg:p-12 space-y-6">
                 <p className="font-sans text-lg text-darkgray/80 leading-relaxed">
-                  Son yıllarda nöroplastisite alanında yapılan araştırmalar SAS Metodu'nun gelişmesine olanak sağlamıştır. SAS Metodu kurucuları ve uygulayıcıları önderliğinde İngiltere, Hollanda, Almanya, Polonya, KKTC ve Türkiye başta olmak üzere uzman kadrosu ile danışanlarına hizmet etmektedir.
+                  Son yıllarda nöroplastisite alanında yapılan araştırmalar SAS Metodu'nun gelişmesine olanak sağlamıştır. SAS Metodu kurucuları ve uygulayıcıları önderliğinde İngiltere, Hollanda, Almanya, Polonya, KKTC ve Türkiye başta olmak üzere deneyimli kadrosu ile danışanlarına hizmet etmektedir.
                 </p>
                 <p className="font-sans text-lg text-darkgray/80 leading-relaxed">
                   Danışan için uygulanan bu yöntem basit ve tamamen güvenlidir. Sadece her gün özel olarak hazırlanmış ses ve müzik programlarını kulaklıklar aracılığı ile dinleyerek, beynin sağlıklı bir işleyişe sahip olması mümkündür. Bu işleyiş birkaç hafta sürdüğünde beynin yeni, kalıcı, hızlı ve etkili bir alışkanlık edinmesi sağlanır.
@@ -255,7 +255,7 @@ const SasNedirPage = () => {
                   <div className="absolute -bottom-6 -right-6 bg-gold rounded-2xl p-6 shadow-xl">
                     <div className="text-center text-white">
                       <i className="ri-headphone-line text-4xl"></i>
-                      <p className="font-sans text-sm mt-2">Ses Tabanlı Terapi</p>
+                      <p className="font-sans text-sm mt-2">Ses Tabanlı Beyin Eğitimi</p>
                     </div>
                   </div>
                 </div>

@@ -18,7 +18,6 @@ const CoupleTherapyPage = lazy(() => import('../pages/services/couple-therapy/pa
 const ChildPsychologyPage = lazy(() => import('../pages/services/child-psychology/page'));
 const FamilyTherapyPage = lazy(() => import('../pages/services/family-therapy/page'));
 const AdolescentCounselingPage = lazy(() => import('../pages/services/adolescent-counseling/page'));
-const EMDRTherapyPage = lazy(() => import('../pages/services/emdr-therapy/page'));
 const SexualTherapyPage = lazy(() => import('../pages/services/sexual-therapy/page'));
 const CareerCounselingPage = lazy(() => import('../pages/services/career-counseling/page'));
 
@@ -30,7 +29,6 @@ const AntalyaCocukOyunPage = lazy(() => import('../pages/services/antalya-cocuk-
 const AntalyaErgenTerapisiPage = lazy(() => import('../pages/services/antalya-ergen-terapisi/page'));
 const AntalyaCiftTerapisiPage = lazy(() => import('../pages/services/antalya-cift-terapisi/page'));
 const AntalyaCinselTerapiPage = lazy(() => import('../pages/services/antalya-cinsel-terapi/page'));
-const AntalyaEmdrPage = lazy(() => import('../pages/services/antalya-emdr/page'));
 
 // Dikkat Gelistirme Sayfalari
 const DehbNedirPage = lazy(() => import('../pages/dikkat-gelistirme/dehb-nedir/page'));
@@ -55,7 +53,6 @@ const TestimonialsCinselTerapiPage = lazy(() => import('../pages/testimonials/ci
 // Ekip Uyeleri Bireysel Sayfalari
 const NurDenizYukselPage = lazy(() => import('../pages/team/nur-deniz-yuksel/page'));
 const NezhiUnalPage = lazy(() => import('../pages/team/nezihi-unal/page'));
-const BusraDemirbasPage = lazy(() => import('../pages/team/busra-demirbas/page'));
 
 // Hizli Randevu
 const HizliRandevuPage = lazy(() => import('../pages/hizli-randevu/page'));
@@ -134,10 +131,6 @@ const routes: RouteObject[] = [
     element: <AdolescentCounselingPage />,
   },
   {
-    path: '/services/emdr-therapy',
-    element: <EMDRTherapyPage />,
-  },
-  {
     path: '/services/sexual-therapy',
     element: <SexualTherapyPage />,
   },
@@ -174,10 +167,6 @@ const routes: RouteObject[] = [
   {
     path: '/services/antalya-cinsel-terapi',
     element: <AntalyaCinselTerapiPage />,
-  },
-  {
-    path: '/services/antalya-emdr',
-    element: <AntalyaEmdrPage />,
   },
 
   // Dikkat Gelistirme Sayfalari
@@ -250,10 +239,6 @@ const routes: RouteObject[] = [
   {
     path: '/team/nezihi-unal',
     element: <NezhiUnalPage />,
-  },
-  {
-    path: '/team/busra-demirbas',
-    element: <BusraDemirbasPage />,
   },
 
   // Landing Pages (Google Ads)

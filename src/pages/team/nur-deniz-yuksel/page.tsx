@@ -7,23 +7,22 @@ const NurDenizYukselPage = () => {
   const member = {
     name: 'Psk. Nur Deniz Yüksel',
     title: 'Psikolog',
-    specialties: ['Çift Terapisi', 'EMDR', 'Cinsel Terapi', 'Ergen', 'Bireysel Psikolojik Danışmanlık'],
+    specialties: ['Çift Danışmanlığı', 'Cinsel Danışmanlık', 'Ergen', 'Bireysel Psikolojik Danışmanlık'],
     education: 'Nuh Naci Yazgan Üniversitesi Psikoloji Bölümü (Tam Burslu, 2019)',
     experience: "2019'dan beri",
-    description: "Lisans eğitimi sürecinde Atatürk Üniversitesi Eğitim ve Araştırma Hastanesi, Manisa Ruh Sağlığı ve Hastalıkları Hastanesi, Manisa Toplum ve Ruh Sağlığı Merkezi gibi kurumlarda; bunun yanı sıra bazı özel danışmanlık merkezlerinde ve kreşlerde uzman psikologlar ve psikiyatristler eşliğinde stajlarını tamamlayarak, gerekli süpervizyonları ve eğitimleri almıştır. Meslek yaşantısında farklı psikolojik danışmanlık merkezlerinde ve kreşlerde çalışmıştır. Bu kurumlarda; bireysel psikolojik danışmanlık, çift ve aile psikolojik danışmanlığı, cinsel terapi alanlarında danışan kabul etmiştir. Psikoterapi sürecinde ağırlıklı olarak Şema Terapi, Bilişsel Davranışçı Terapi, EMDR Terapisi; cinsel terapi süreçlerinde Seksofonksiyonel Cinsel Terapi ekollerini kullanmaktadır. Halihazırda terapi eğitimlerine ve süpervizyonlara devam etmektedir.",
+    description: "Lisans eğitimi sürecinde Atatürk Üniversitesi Eğitim ve Araştırma Hastanesi, Manisa Ruh Sağlığı ve Hastalıkları Hastanesi, Manisa Toplum ve Ruh Sağlığı Merkezi gibi kurumlarda; bunun yanı sıra bazı özel danışmanlık merkezlerinde ve kreşlerde psikologlar ve psikiyatristler eşliğinde stajlarını tamamlayarak, gerekli süpervizyonları ve eğitimleri almıştır. Meslek yaşantısında farklı psikolojik danışmanlık merkezlerinde ve kreşlerde çalışmıştır. Bu kurumlarda; bireysel psikolojik danışmanlık, çift ve aile psikolojik danışmanlığı, cinsel danışmanlık alanlarında danışan kabul etmiştir. Danışmanlık sürecinde ağırlıklı olarak Şema ve Bilişsel Davranışçı yaklaşımları; cinsel danışmanlık süreçlerinde Seksofonksiyonel yaklaşımı kullanmaktadır. Halihazırda mesleki eğitimlerine ve süpervizyonlara devam etmektedir.",
     image: '/images/team/nur-deniz-yuksel.png',
     certificates: [
-      'Şema Terapi',
-      'Bilişsel Davranışçı Terapi',
-      'Seksofonksiyonel Cinsel Terapi',
-      'EMDR Eğitimi',
-      'Çocuk ve Ergenlerde Bilişsel Davranışçı Terapi',
+      'Şema Yaklaşımı',
+      'Bilişsel Davranışçı Yaklaşım',
+      'Seksofonksiyonel Yaklaşım',
+      'Çocuk ve Ergenlerde Bilişsel Davranışçı Yaklaşım',
       'Yetişkin Değerlendirmede Objektif-Projektif Testler',
-      'OKB Tedavisinde Bilişsel Davranışçı Terapi Yaklaşımı',
-      'Çift Terapisinde Evlilik Dışı İlişkileri Ele Alma',
+      'OKB Tedavisinde Bilişsel Davranışçı Yaklaşım',
+      'Çift Danışmanlığında Evlilik Dışı İlişkileri Ele Alma',
       'Travma Testleri Eğitimi',
       'Travma Sonrası Stres Bozukluğu Eğitimi',
-      'Çözüm Odaklı Aile Terapisi',
+      'Çözüm Odaklı Aile Danışmanlığı',
     ],
   };
 
@@ -97,7 +96,7 @@ const NurDenizYukselPage = () => {
 
                 <div className="space-y-3">
                   <p className="font-sans text-sm font-semibold text-darkgray/60 uppercase tracking-wide">
-                    Uzmanlık Alanları
+                    Çalışma Alanları
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {member.specialties.map((specialty, idx) => (

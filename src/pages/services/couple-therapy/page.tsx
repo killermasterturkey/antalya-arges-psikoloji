@@ -56,11 +56,11 @@ const CoupleTherapyPage = () => {
     {
       step: '2',
       title: 'Hedef Belirleme',
-      description: 'Çiftin ortak hedeflerini belirler ve terapi planını oluştururuz.',
+      description: 'Çiftin ortak hedeflerini belirler ve danışmanlık planını oluştururuz.',
     },
     {
       step: '3',
-      title: 'Terapi Seansları',
+      title: 'Danışmanlık Seansları',
       description: 'Haftalık seanslarla iletişim ve ilişki becerilerini geliştiririz.',
     },
     {
@@ -94,7 +94,7 @@ const CoupleTherapyPage = () => {
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Çift Terapisi
+                  Çift Danışmanlığı
                 </h1>
 
                 <p className="font-sans text-xl text-darkgray/70 leading-relaxed">
@@ -130,7 +130,7 @@ const CoupleTherapyPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="https://readdy.ai/api/search-image?query=loving%20couple%20sitting%20together%20in%20bright%20modern%20therapy%20office%20holding%20hands%20showing%20connection%20and%20hope%20comfortable%20couch%20with%20soft%20pillows%20natural%20daylight%20through%20windows%20indoor%20plants%20creating%20warm%20supportive%20atmosphere%20for%20relationship%20counseling%20neutral%20calming%20tones&width=800&height=1000&seq=couple-therapy-hero&orientation=portrait"
-                    alt="Çift Terapisi"
+                    alt="Çift Danışmanlığı"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -164,7 +164,7 @@ const CoupleTherapyPage = () => {
                 Hangi Sorunlarda Yardımcı Oluyoruz?
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Çift terapisi, ilişkinizde yaşadığınız birçok zorluğun üstesinden gelmenize yardımcı olabilir.
+                Çift danışmanlığı, ilişkinizde yaşadığınız birçok zorluğun üstesinden gelmenize yardımcı olabilir.
               </p>
             </motion.div>
 
@@ -203,7 +203,7 @@ const CoupleTherapyPage = () => {
               >
                 <img
                   src="https://readdy.ai/api/search-image?query=couple%20in%20therapy%20session%20sitting%20face%20to%20face%20engaged%20in%20meaningful%20conversation%20with%20professional%20therapist%20facilitating%20communication%20modern%20counseling%20room%20with%20comfortable%20seating%20soft%20natural%20lighting%20creating%20safe%20space%20for%20emotional%20expression%20and%20healing%20neutral%20warm%20color%20palette&width=800&height=1000&seq=couple-therapy-session&orientation=portrait"
-                  alt="Çift Terapisi Seansı"
+                  alt="Çift Danışmanlığı Seansı"
                   className="w-full h-full object-cover object-top"
                 />
               </motion.div>
@@ -216,10 +216,10 @@ const CoupleTherapyPage = () => {
                 className="space-y-6"
               >
                 <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                  Çift Terapisi Nasıl Çalışır?
+                  Çift Danışmanlığı Nasıl Çalışır?
                 </h2>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Çift terapisi, ilişkinizdeki sorunları anlamak ve çözmek için güvenli bir alan sağlar. Terapist, tarafsız bir gözlemci olarak her iki partnerin de duygularını ve ihtiyaçlarını anlamaya çalışır.
+                  Çift danışmanlığı, ilişkinizdeki sorunları anlamak ve çözmek için güvenli bir alan sağlar. Psikolog, tarafsız bir gözlemci olarak her iki partnerin de duygularını ve ihtiyaçlarını anlamaya çalışır.
                 </p>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
                   Seanslar sırasında, iletişim becerilerinizi geliştirmenize, birbirinizi daha iyi anlamanıza ve ilişkinizi güçlendirecek stratejiler geliştirmenize yardımcı oluruz.
@@ -227,7 +227,7 @@ const CoupleTherapyPage = () => {
                 <div className="bg-white rounded-2xl p-6 space-y-4">
                   <h3 className="font-serif text-xl font-bold text-darkgray">Önemli Not</h3>
                   <p className="font-sans text-base text-darkgray/70">
-                    Çift terapisi, ilişkinizi kurtarmak kadar, gerektiğinde sağlıklı bir şekilde ayrılmanıza da yardımcı olabilir. Amacımız, her iki partnerin de en sağlıklı kararı almasını desteklemektir.
+                    Çift danışmanlığı, ilişkinizi kurtarmak kadar, gerektiğinde sağlıklı bir şekilde ayrılmanıza da yardımcı olabilir. Amacımız, her iki partnerin de en sağlıklı kararı almasını desteklemektir.
                   </p>
                 </div>
               </motion.div>
@@ -246,7 +246,7 @@ const CoupleTherapyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Çift Terapisinin Faydaları
+                Çift Danışmanlığının Faydaları
               </h2>
             </motion.div>
 
@@ -282,7 +282,7 @@ const CoupleTherapyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Terapi Süreci
+                Danışmanlık Süreci
               </h2>
             </motion.div>
 
@@ -329,7 +329,7 @@ const CoupleTherapyPage = () => {
                 İlişkinize Yatırım Yapın
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Daha sağlıklı ve mutlu bir ilişki için profesyonel destek alın. Uzman terapistlerimiz sizinle birlikte.
+                Daha sağlıklı ve mutlu bir ilişki için profesyonel destek alın. Psikologlarımız sizinle birlikte.
               </p>
               <a
                 href="https://wa.me/905403251525"

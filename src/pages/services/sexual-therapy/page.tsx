@@ -73,7 +73,7 @@ const SexualTherapyPage = () => {
   const approaches = [
     {
       icon: 'ri-mind-map',
-      title: 'Bilişsel Davranışçı Terapi',
+      title: 'Bilişsel Davranışçı Yaklaşım',
       description: 'Cinsel işlev bozukluklarına yol açan düşünce ve davranış kalıplarının değiştirilmesi'
     },
     {
@@ -83,7 +83,7 @@ const SexualTherapyPage = () => {
     },
     {
       icon: 'ri-team-line',
-      title: 'Çift Terapisi',
+      title: 'Çift Danışmanlığı',
       description: 'İlişki dinamiklerinin ve cinsel uyumun iyileştirilmesi'
     },
     {
@@ -118,14 +118,14 @@ const SexualTherapyPage = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="inline-block px-4 py-2 bg-gold/10 rounded-full mb-6">
-                <span className="text-gold text-sm font-medium">Cinsel Terapi</span>
+                <span className="text-gold text-sm font-medium">Cinsel Danışmanlık</span>
               </div>
               <h1 className="font-serif text-5xl lg:text-6xl text-charcoal mb-6 leading-tight">
                 Sağlıklı Cinsel Yaşam
               </h1>
               <p className="text-lg text-charcoal/70 mb-8 leading-relaxed">
-                Cinsel terapi, cinsel sağlık sorunlarının çözümüne yardımcı olan profesyonel
-                bir psikoterapi yaklaşımıdır. Bireysel veya çift olarak alınabilir. Cinsel
+                Cinsel danışmanlık, cinsel sağlık sorunlarının çözümüne yardımcı olan
+                profesyonel bir destek sürecidir. Bireysel veya çift olarak alınabilir. Cinsel
                 yaşamınızla ilgili endişelerinizi güvenli ve gizli bir ortamda paylaşabilir,
                 sağlıklı bir cinsel yaşam için destek alabilirsiniz.
               </p>
@@ -148,7 +148,7 @@ const SexualTherapyPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://readdy.ai/api/search-image?query=intimate%20couple%20holding%20hands%20sitting%20together%20in%20peaceful%20therapy%20room%20soft%20warm%20lighting%20comfortable%20atmosphere%20modern%20minimalist%20interior%20emotional%20connection%20trust%20and%20support%20professional%20counseling%20setting%20serene%20environment%20pastel%20neutral%20colors&width=600&height=700&seq=sexual001&orientation=portrait"
-                  alt="Cinsel Terapi"
+                  alt="Cinsel Danışmanlık"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-olive/20 to-transparent"></div>
@@ -173,7 +173,7 @@ const SexualTherapyPage = () => {
               Hangi Sorunlarda Yardımcı Oluruz?
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Cinsel terapi, çeşitli cinsel sağlık sorunlarında destek sağlar
+              Cinsel danışmanlık, çeşitli cinsel sağlık sorunlarında destek sağlar
             </p>
           </motion.div>
 
@@ -208,7 +208,7 @@ const SexualTherapyPage = () => {
               Kullandığımız Yaklaşımlar
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Bilimsel temelli ve etkili terapi yöntemleri
+              Bilimsel temelli ve etkili danışmanlık yöntemleri
             </p>
           </motion.div>
 
@@ -243,10 +243,10 @@ const SexualTherapyPage = () => {
             className="text-center mb-16"
           >
             <h2 className="font-serif text-4xl text-charcoal mb-4">
-              Terapi Süreci
+              Danışmanlık Süreci
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Cinsel terapi süreci, ihtiyaçlarınıza göre kişiselleştirilir
+              Cinsel danışmanlık süreci, ihtiyaçlarınıza göre kişiselleştirilir
             </p>
           </motion.div>
 
@@ -285,10 +285,10 @@ const SexualTherapyPage = () => {
             className="text-center mb-16"
           >
             <h2 className="font-serif text-4xl text-charcoal mb-4">
-              Cinsel Terapinin Faydaları
+              Cinsel Danışmanlığın Faydaları
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Cinsel terapi, yaşam kalitenizi artırır
+              Cinsel danışmanlık, yaşam kalitenizi artırır
             </p>
           </motion.div>
 
@@ -329,7 +329,7 @@ const SexualTherapyPage = () => {
               Gizlilik ve Güvenlik
             </h2>
             <p className="text-charcoal/60 leading-relaxed mb-6">
-              Cinsel terapi seanslarınız tamamen gizlidir. Paylaştığınız tüm bilgiler
+              Cinsel danışmanlık seanslarınız tamamen gizlidir. Paylaştığınız tüm bilgiler
               profesyonel etik kurallar çerçevesinde korunur. Rahat ve güvenli bir ortamda,
               yargılanmadan endişelerinizi paylaşabilirsiniz.
             </p>
@@ -356,8 +356,8 @@ const SexualTherapyPage = () => {
               Sağlıklı Cinsel Yaşam İçin İlk Adımı Atın
             </h2>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-              Cinsel terapi ile ilgili sorularınız için bizimle iletişime geçin.
-              Uzman terapistlerimiz size yardımcı olmak için burada.
+              Cinsel danışmanlık ile ilgili sorularınız için bizimle iletişime geçin.
+              Psikologlarımız size yardımcı olmak için burada.
             </p>
             <button className="px-8 py-4 bg-white text-olive rounded-lg hover:bg-cream transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
               Hemen Randevu Alın

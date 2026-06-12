@@ -5,18 +5,13 @@ const TeamSection = () => {
   const team = [
     {
       name: 'Psk. Nur Deniz Yüksel',
-      specialty: 'Bireysel Terapi, Çift Terapisi, Cinsel Terapi, EMDR',
+      specialty: 'Bireysel Danışmanlık, Çift Danışmanlığı, Cinsel Danışmanlık',
       image: '/images/team/nur-deniz-yuksel.png',
     },
     {
       name: 'Psk. Nezihi Ünal',
-      specialty: 'Çocuk ve Ergen Terapisi, Oyun Terapisi, EMDR',
+      specialty: 'Çocuk ve Ergen Danışmanlığı, Oyunla Danışmanlık',
       image: '/images/team/nezihi-unal.png',
-    },
-    {
-      name: 'Psk. Büşra Demirbaş',
-      specialty: 'Çocuk, Ergen ve Yetişkin Terapisi, Bilişsel Davranışçı Terapi',
-      image: '/images/team/busra-demirbas.png',
     },
   ];
 
@@ -32,7 +27,7 @@ const TeamSection = () => {
           className="text-center mb-12 space-y-6"
         >
           <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-            Uzman Ekibimiz
+            Psikolog Ekibimiz
           </h2>
           <p className="font-sans text-lg text-darkgray/60">
             Alanında deneyimli psikologlarımızla tanışın
@@ -47,7 +42,7 @@ const TeamSection = () => {
         </motion.div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <motion.div
               key={index}

@@ -49,8 +49,8 @@ const SasLifePage = () => {
 
   const rehabilitationServices = [
     'Fizik Tedavi (hareket, denge ve koordinasyon gibi)',
-    'Konuşma Terapisi',
-    'İş ve Uğraş Terapisi (bireyin kendi temel ihtiyaçlarını yeniden öğrenmesi)',
+    'Konuşma Danışmanlığı',
+    'İş ve Uğraş Danışmanlığı (bireyin kendi temel ihtiyaçlarını yeniden öğrenmesi)',
   ];
 
   return (

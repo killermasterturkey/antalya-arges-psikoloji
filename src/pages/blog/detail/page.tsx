@@ -208,7 +208,7 @@ const BlogDetailPage = () => {
                 Profesyonel Destek Almak Ister misiniz?
               </h2>
               <p className="font-sans text-base text-darkgray/70 mb-8 max-w-2xl mx-auto">
-                Uzman psikologlarimizla gorusmek ve size ozel terapi plani olusturmak icin hemen randevu alin
+                Psikologlarimizla gorusmek ve size ozel danismanlik plani olusturmak icin hemen randevu alin
               </p>
               <Link
                 to="/contact"

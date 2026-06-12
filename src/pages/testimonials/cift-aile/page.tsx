@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsCiftAilePage = () => {
   const testimonials = [
-    { initials: 'A&E', rating: 5, text: 'Deniz Hanım\'dan evliliğimiz hakkında destek aldık. Eşim ilk etapta terapiye gitme konusunda isteksizdi ama Deniz Hanım\'ın yaklaşımı onu rahatlatınca istekle gitmeye başladı. Nur Deniz Hanım\'la birlikte sorunlarımızı etkili bir biçimde çözdük ve seanslarla çözmeye devam ediyoruz. Çok güler yüzlü, samimi ve işinde çok başarılı biri. İnsana güven veriyor ve sıkıntınızı rahatça paylaşabiliyorsunuz. Kesinlikle tavsiye ederim. Eşimle paylaşamadığım birçok sorunu orada daha rahat bir biçimde dile getirebildim. Kendisine çok teşekkür ederim.', service: 'Çift Terapisi' },
+    { initials: 'A&E', rating: 5, text: 'Deniz Hanım\'dan evliliğimiz hakkında destek aldık. Eşim ilk etapta danışmanlığa gitme konusunda isteksizdi ama Deniz Hanım\'ın yaklaşımı onu rahatlatınca istekle gitmeye başladı. Nur Deniz Hanım\'la birlikte sorunlarımızı etkili bir biçimde çözdük ve seanslarla çözmeye devam ediyoruz. Çok güler yüzlü, samimi ve işinde çok başarılı biri. İnsana güven veriyor ve sıkıntınızı rahatça paylaşabiliyorsunuz. Kesinlikle tavsiye ederim. Eşimle paylaşamadığım birçok sorunu orada daha rahat bir biçimde dile getirebildim. Kendisine çok teşekkür ederim.', service: 'Çift Danışmanlığı' },
   ];
 
   return (
@@ -24,10 +24,10 @@ const TestimonialsCiftAilePage = () => {
             >
               <div className="inline-flex items-center space-x-2 bg-olive/10 px-6 py-3 rounded-full">
                 <i className="ri-heart-2-line text-olive text-xl"></i>
-                <span className="font-sans text-sm font-medium text-darkgray">Çift & Aile Terapisi</span>
+                <span className="font-sans text-sm font-medium text-darkgray">Çift & Aile Danışmanlığı</span>
               </div>
               <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray">
-                Çift ve Aile Terapisi Yorumları
+                Çift ve Aile Danışmanlığı Yorumları
               </h1>
             </motion.div>
 
@@ -63,7 +63,7 @@ const TestimonialsCiftAilePage = () => {
 
         <section className="py-20 px-6 lg:px-12 bg-white">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Çift/Aile Terapisi İçin Randevu Alın</h2>
+            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Çift/Aile Danışmanlığı İçin Randevu Alın</h2>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

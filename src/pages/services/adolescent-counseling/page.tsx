@@ -327,7 +327,7 @@ const AdolescentCounselingPage = () => {
             </h2>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Ergen danışmanlığı ile ilgili sorularınız için bizimle iletişime geçin.
-              Uzman psikologlarımız size ve ergeninize yardımcı olmak için burada.
+              Psikologlarımız size ve ergeninize yardımcı olmak için burada.
             </p>
             <button className="px-8 py-4 bg-white text-olive rounded-lg hover:bg-cream transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
               Hemen Randevu Alın

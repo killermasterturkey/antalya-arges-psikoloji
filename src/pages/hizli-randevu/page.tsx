@@ -58,13 +58,12 @@ const HizliRandevuPage = () => {
   };
 
   const services = [
-    { value: 'individual', label: 'Bireysel Terapi' },
-    { value: 'couple', label: 'Çift Terapisi' },
-    { value: 'family', label: 'Aile Terapisi' },
+    { value: 'individual', label: 'Bireysel Danışmanlık' },
+    { value: 'couple', label: 'Çift Danışmanlığı' },
+    { value: 'family', label: 'Aile Danışmanlığı' },
     { value: 'child', label: 'Çocuk Psikolojisi' },
     { value: 'teen', label: 'Ergen Danışmanlığı' },
-    { value: 'emdr', label: 'EMDR Terapisi' },
-    { value: 'sexual', label: 'Cinsel Terapi' },
+    { value: 'sexual', label: 'Cinsel Danışmanlık' },
   ];
 
   const contactInfo = [
@@ -98,7 +97,7 @@ const HizliRandevuPage = () => {
                 Hazır mısınız? Sizin için buradayız.
               </p>
               <p className="font-sans text-base text-darkgray/60 max-w-3xl mx-auto">
-                Hayat bazen ağır gelir. Yanınızda sizi anlayan, dinleyen ve eşlik eden bir uzman olsun istersiniz. Arges Psikoloji olarak, ilk adımı sizin adınıza kolaylaştırıyoruz.
+                Hayat bazen ağır gelir. Yanınızda sizi anlayan, dinleyen ve eşlik eden bir psikolog olsun istersiniz. Arges Psikoloji olarak, ilk adımı sizin adınıza kolaylaştırıyoruz.
               </p>
             </motion.div>
 

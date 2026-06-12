@@ -113,7 +113,7 @@ const DehbNedirPage = () => {
         <section className="py-20 px-6 lg:px-12 bg-cream">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">DEHB Değerlendirmesi İçin</h2>
-            <p className="font-sans text-lg text-darkgray/70 mb-8">Uzman kadromuz ile DEHB değerlendirmesi ve tedavi planı oluşturun.</p>
+            <p className="font-sans text-lg text-darkgray/70 mb-8">Psikolog kadromuz ile DEHB değerlendirmesi ve tedavi planı oluşturun.</p>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

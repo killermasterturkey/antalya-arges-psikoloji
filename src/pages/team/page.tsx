@@ -8,29 +8,20 @@ const TeamPage = () => {
     {
       name: 'Psk. Nur Deniz Yüksel',
       title: 'Psikolog',
-      specialties: ['Bireysel Terapi', 'Çift Terapisi', 'Cinsel Terapi', 'EMDR', 'Şema Terapi', 'Bilişsel Terapi'],
+      specialties: ['Bireysel Danışmanlık', 'Çift Danışmanlığı', 'Cinsel Danışmanlık', 'Şema Yaklaşımı', 'Bilişsel Davranışçı Yaklaşım'],
       education: 'Nuh Naci Yazgan Üniversitesi Psikoloji Bölümü',
       experience: '2019\'dan beri',
-      description: 'Psikoterapi sürecinde ağırlıklı olarak Şema Terapi, Bilişsel Davranışçı Terapi, EMDR Terapisi; cinsel terapi süreçlerinde Seksofonksiyonel Cinsel Terapi ekollerini kullanmaktadır. Halihazırda terapi eğitimlerine ve süpervizyonlara devam etmektedir.',
+      description: 'Danışmanlık sürecinde ağırlıklı olarak Şema ve Bilişsel Davranışçı yaklaşımları; cinsel danışmanlık süreçlerinde Seksofonksiyonel yaklaşımı kullanmaktadır. Halihazırda mesleki eğitimlerine ve süpervizyonlara devam etmektedir.',
       image: '/images/team/nur-deniz-yuksel.png',
     },
     {
       name: 'Psk. Nezihi Ünal',
       title: 'Psikolog',
-      specialties: ['Çocuk Terapisi', 'Ergen Terapisi', 'Oyun Terapisi', 'EMDR', 'Dikkat Geliştirme Programları'],
+      specialties: ['Çocuk Danışmanlığı', 'Ergen Danışmanlığı', 'Oyunla Danışmanlık', 'Dikkat Geliştirme Programları'],
       education: 'Nuh Naci Yazgan Üniversitesi Psikoloji Bölümü',
       experience: '2019\'dan beri',
-      description: 'Psikoterapi sürecinde yoğun olarak Deneyimsel Oyun Terapisi, Çocuk ve Ergenlerde Bilişsel Davranışçı Terapi, Çocuk ve Ergenlerde EMDR Terapisi ekollerini kullanmaktadır. İhtiyaç duyulması halinde dikkat geliştirme programları da uygulamaktadır.',
+      description: 'Danışmanlık sürecinde yoğun olarak deneyimsel oyun çalışmaları ile çocuk ve ergenlerde Bilişsel Davranışçı yaklaşımı kullanmaktadır. İhtiyaç duyulması halinde dikkat geliştirme programları da uygulamaktadır.',
       image: '/images/team/nezihi-unal.png',
-    },
-    {
-      name: 'Psk. Büşra Demirbaş',
-      title: 'Psikolog',
-      specialties: ['Çocuk Terapisi', 'Çocuk Merkezli Terapi'],
-      education: 'Akdeniz Üniversitesi Psikoloji Bölümü (Onur Derecesi)',
-      experience: 'Aktif olarak çalışmakta',
-      description: 'Bilişsel Davranışçı Terapi eğitim sürecini Prof. Dr. Hakan Türkçapar ile tamamlamıştır. Çocuk Merkezli Oyun Terapisi eğitimini Klinik Psikolog Mehmet Teber ile almıştır. MOXO Dikkat Testi ve Attentioner Dikkat Geliştirme Uygulayıcı sertifikalarına sahiptir.',
-      image: '/images/team/busra-demirbas.png',
     },
   ];
 
@@ -57,7 +48,7 @@ const TeamPage = () => {
               <div className="inline-flex items-center space-x-2 bg-olive/10 px-6 py-3 rounded-full mb-4">
                 <i className="ri-team-fill text-olive text-xl"></i>
                 <span className="font-sans text-sm font-medium text-darkgray">
-                  Uzman Kadromuz
+                  Psikolog Kadromuz
                 </span>
               </div>
               <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray">
@@ -67,7 +58,7 @@ const TeamPage = () => {
                 Sizin için Buradayız
               </p>
               <p className="font-sans text-base text-darkgray/60 max-w-4xl mx-auto leading-relaxed">
-                Arges Psikoloji, psikoloji biliminin etik ilkelerine bağlı, akademik donanıma sahip ve alanında uzmanlaşmış profesyonellerden oluşan bir ekip ile hizmet sunar. Her bir uzmanımız; danışanlarımızın ihtiyaçlarını bilimsel temelli yöntemlerle değerlendirmekte, güvenilir ve etkili çözümler üretmektedir.
+                Arges Psikoloji, psikoloji biliminin etik ilkelerine bağlı, akademik donanıma sahip ve alanında deneyimli profesyonellerden oluşan bir ekip ile hizmet sunar. Her bir psikoloğumuz; danışanlarımızın ihtiyaçlarını bilimsel temelli yöntemlerle değerlendirmekte, güvenilir ve etkili çözümler üretmektedir.
               </p>
             </motion.div>
           </div>
@@ -76,7 +67,7 @@ const TeamPage = () => {
         {/* Team Grid */}
         <section className="pb-20 px-6 lg:px-12">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {team.map((member, index) => (
                 <motion.div
                   key={index}
@@ -141,7 +132,7 @@ const TeamPage = () => {
                     {/* Specialties */}
                     <div className="space-y-3">
                       <p className="font-sans text-xs font-semibold text-darkgray/60 uppercase tracking-wide">
-                        Uzmanlık Alanları
+                        Çalışma Alanları
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {member.specialties.map((specialty, idx) => (
@@ -204,12 +195,12 @@ const TeamPage = () => {
                 {
                   icon: 'ri-book-open-line',
                   title: 'Bilimsellik',
-                  description: 'Kanıta dayalı terapi yöntemleri kullanarak profesyonel destek sunuyoruz.',
+                  description: 'Kanıta dayalı yöntemler kullanarak profesyonel destek sunuyoruz.',
                 },
                 {
                   icon: 'ri-user-heart-line',
                   title: 'Kişiye Özel',
-                  description: 'Her danışanımıza özel terapi planları oluşturarak bireysel ihtiyaçlara cevap veriyoruz.',
+                  description: 'Her danışanımıza özel danışmanlık planları oluşturarak bireysel ihtiyaçlara cevap veriyoruz.',
                 },
               ].map((value, index) => (
                 <motion.div
@@ -248,10 +239,10 @@ const TeamPage = () => {
                 <i className="ri-calendar-check-line text-4xl text-olive"></i>
               </div>
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray mb-6">
-                Hangi Uzmanımızla Görüşmek İstersiniz?
+                Hangi Psikoloğumuzla Görüşmek İstersiniz?
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Size en uygun uzmanı belirlemek için bizimle iletişime geçin. İlk görüşmenizi ücretsiz yapabilirsiniz.
+                Size en uygun psikoloğu belirlemek için bizimle iletişime geçin. İlk görüşmenizi ücretsiz yapabilirsiniz.
               </p>
               <a
                 href="tel:+905403251525"

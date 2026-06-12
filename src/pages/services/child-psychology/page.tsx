@@ -41,12 +41,12 @@ const ChildPsychologyPage = () => {
   const playTherapy = [
     {
       icon: 'ri-palette-line',
-      title: 'Sanat Terapisi',
+      title: 'Sanatla Çalışma',
       description: 'Resim, boyama ve yaratıcı aktivitelerle duygusal ifade',
     },
     {
       icon: 'ri-gamepad-line',
-      title: 'Oyun Terapisi',
+      title: 'Oyunla Danışmanlık',
       description: 'Oyuncaklar ve oyunlar aracılığıyla iletişim',
     },
     {
@@ -56,7 +56,7 @@ const ChildPsychologyPage = () => {
     },
     {
       icon: 'ri-music-line',
-      title: 'Müzik Terapisi',
+      title: 'Müzikle Çalışma',
       description: 'Müzik ve ritim ile duygusal düzenleme',
     },
   ];
@@ -202,10 +202,10 @@ const ChildPsychologyPage = () => {
                 className="space-y-6"
               >
                 <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                  Oyun Terapisi ile Çalışıyoruz
+                  Oyunla Danışmanlık Yöntemiyle Çalışıyoruz
                 </h2>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Çocuklar duygularını kelimelerle ifade etmekte zorlanabilirler. Oyun terapisi, çocukların doğal iletişim dili olan oyun aracılığıyla kendilerini ifade etmelerine olanak tanır.
+                  Çocuklar duygularını kelimelerle ifade etmekte zorlanabilirler. Oyunla danışmanlık, çocukların doğal iletişim dili olan oyun aracılığıyla kendilerini ifade etmelerine olanak tanır.
                 </p>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
                   Oyuncaklar, sanat malzemeleri ve yaratıcı aktiviteler kullanarak çocuğunuzun iç dünyasını anlar ve duygusal iyileşmeyi destekleriz.
@@ -233,7 +233,7 @@ const ChildPsychologyPage = () => {
               >
                 <img
                   src="https://readdy.ai/api/search-image?query=child%20engaged%20in%20play%20therapy%20with%20colorful%20building%20blocks%20art%20materials%20puppets%20in%20bright%20therapy%20room%20psychologist%20sitting%20on%20floor%20interacting%20with%20child%20creating%20safe%20space%20for%20emotional%20expression%20through%20play%20natural%20lighting%20warm%20inviting%20atmosphere%20neutral%20background&width=800&height=1000&seq=play-therapy-session&orientation=portrait"
-                  alt="Oyun Terapisi"
+                  alt="Oyunla Danışmanlık"
                   className="w-full h-full object-cover object-top"
                 />
               </motion.div>
@@ -270,7 +270,7 @@ const ChildPsychologyPage = () => {
                   Ebeveyn Rehberliği
                 </h2>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Çocuk terapisinin başarısı için aile desteği çok önemlidir. Ebeveynlerle düzenli görüşmeler yaparak çocuğunuzun gelişimini desteklemeniz için stratejiler geliştiriyoruz.
+                  Çocuk danışmanlığının başarısı için aile desteği çok önemlidir. Ebeveynlerle düzenli görüşmeler yaparak çocuğunuzun gelişimini desteklemeniz için stratejiler geliştiriyoruz.
                 </p>
 
                 <div className="space-y-3">
@@ -306,7 +306,7 @@ const ChildPsychologyPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Terapi Süreci Nasıl İşler?
+                Danışmanlık Süreci Nasıl İşler?
               </h2>
             </motion.div>
 
@@ -353,9 +353,9 @@ const ChildPsychologyPage = () => {
                 <div className="w-16 h-16 bg-olive rounded-2xl flex items-center justify-center">
                   <span className="font-serif text-3xl font-bold text-white">3</span>
                 </div>
-                <h3 className="font-serif text-xl font-bold text-darkgray">Terapi Seansları</h3>
+                <h3 className="font-serif text-xl font-bold text-darkgray">Danışmanlık Seansları</h3>
                 <p className="font-sans text-sm text-darkgray/70 leading-relaxed">
-                  Haftalık oyun terapisi seansları ve düzenli ebeveyn görüşmeleri ile terapi sürecini yürütürüz.
+                  Haftalık oyunla danışmanlık seansları ve düzenli ebeveyn görüşmeleri ile süreci yürütürüz.
                 </p>
               </motion.div>
             </div>
@@ -375,7 +375,7 @@ const ChildPsychologyPage = () => {
                 Çocuğunuzun Mutluluğu İçin
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Çocuğunuzun duygusal ve davranışsal sorunlarında profesyonel destek alın. Uzman çocuk psikologlarımız sizinle birlikte.
+                Çocuğunuzun duygusal ve davranışsal sorunlarında profesyonel destek alın. Çocuk psikologlarımız sizinle birlikte.
               </p>
               <a
                 href="https://wa.me/905403251525"

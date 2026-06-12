@@ -58,7 +58,7 @@ const FamilyTherapyPage = () => {
     },
     {
       step: '04',
-      title: 'Terapi Süreci',
+      title: 'Danışmanlık Süreci',
       description: 'Düzenli seanslarla aile dinamiklerinin iyileştirilmesi'
     },
     {
@@ -70,19 +70,19 @@ const FamilyTherapyPage = () => {
 
   const approaches = [
     {
-      name: 'Sistemik Aile Terapisi',
+      name: 'Sistemik Aile Danışmanlığı',
       description: 'Aileyi bir sistem olarak ele alır ve etkileşimleri inceler'
     },
     {
-      name: 'Yapısal Aile Terapisi',
+      name: 'Yapısal Aile Danışmanlığı',
       description: 'Aile yapısını ve hiyerarşisini düzenlemeye odaklanır'
     },
     {
-      name: 'Stratejik Aile Terapisi',
+      name: 'Stratejik Aile Danışmanlığı',
       description: 'Sorun odaklı, çözüm merkezli yaklaşım kullanır'
     },
     {
-      name: 'Anlatı Terapisi',
+      name: 'Anlatı Yaklaşımı',
       description: 'Ailenin hikayesini yeniden yapılandırır'
     }
   ];
@@ -103,13 +103,13 @@ const FamilyTherapyPage = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="inline-block px-4 py-2 bg-gold/10 rounded-full mb-6">
-                <span className="text-gold text-sm font-medium">Aile Terapisi</span>
+                <span className="text-gold text-sm font-medium">Aile Danışmanlığı</span>
               </div>
               <h1 className="font-serif text-5xl lg:text-6xl text-charcoal mb-6 leading-tight">
                 Ailenizi Bir Araya Getirin
               </h1>
               <p className="text-lg text-charcoal/70 mb-8 leading-relaxed">
-                Aile terapisi, aile bireylerinin birbirleriyle olan ilişkilerini iyileştirmeyi,
+                Aile danışmanlığı, aile bireylerinin birbirleriyle olan ilişkilerini iyileştirmeyi,
                 sağlıklı iletişim kurmayı ve aile içi sorunları çözmeyi amaçlar. Ailenizi daha
                 güçlü ve mutlu bir birim haline getirmek için yanınızdayız.
               </p>
@@ -132,7 +132,7 @@ const FamilyTherapyPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://readdy.ai/api/search-image?query=warm%20happy%20family%20sitting%20together%20in%20cozy%20living%20room%20having%20meaningful%20conversation%20soft%20natural%20lighting%20peaceful%20atmosphere%20modern%20interior%20design%20emotional%20connection%20between%20family%20members%20comfortable%20home%20environment%20therapeutic%20setting%20pastel%20tones&width=600&height=700&seq=family001&orientation=portrait"
-                  alt="Aile Terapisi"
+                  alt="Aile Danışmanlığı"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-olive/20 to-transparent"></div>
@@ -157,7 +157,7 @@ const FamilyTherapyPage = () => {
               Hangi Durumlarda Yardımcı Oluruz?
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Aile terapisi, birçok farklı durumda ailelere destek sağlar
+              Aile danışmanlığı, birçok farklı durumda ailelere destek sağlar
             </p>
           </motion.div>
 
@@ -189,10 +189,10 @@ const FamilyTherapyPage = () => {
             className="text-center mb-16"
           >
             <h2 className="font-serif text-4xl text-charcoal mb-4">
-              Aile Terapisinin Faydaları
+              Aile Danışmanlığının Faydaları
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Aile terapisi, tüm aile bireylerinin yaşam kalitesini artırır
+              Aile danışmanlığı, tüm aile bireylerinin yaşam kalitesini artırır
             </p>
           </motion.div>
 
@@ -227,10 +227,10 @@ const FamilyTherapyPage = () => {
             className="text-center mb-16"
           >
             <h2 className="font-serif text-4xl text-charcoal mb-4">
-              Terapi Süreci Nasıl İşler?
+              Danışmanlık Süreci Nasıl İşler?
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Aile terapisi süreci, ailenizin ihtiyaçlarına göre şekillenir
+              Aile danışmanlığı süreci, ailenizin ihtiyaçlarına göre şekillenir
             </p>
           </motion.div>
 
@@ -272,7 +272,7 @@ const FamilyTherapyPage = () => {
               Kullandığımız Yaklaşımlar
             </h2>
             <p className="text-charcoal/60 max-w-2xl mx-auto">
-              Bilimsel temelli ve kanıtlanmış terapi yöntemleri
+              Bilimsel temelli ve kanıtlanmış danışmanlık yöntemleri
             </p>
           </motion.div>
 
@@ -306,8 +306,8 @@ const FamilyTherapyPage = () => {
               Aileniz İçin İlk Adımı Atın
             </h2>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-              Aile terapisi ile ilgili sorularınız için bizimle iletişime geçin.
-              Uzman psikologlarımız size yardımcı olmak için burada.
+              Aile danışmanlığı ile ilgili sorularınız için bizimle iletişime geçin.
+              Psikologlarımız size yardımcı olmak için burada.
             </p>
             <button className="px-8 py-4 bg-white text-olive rounded-lg hover:bg-cream transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
               Hemen Randevu Alın

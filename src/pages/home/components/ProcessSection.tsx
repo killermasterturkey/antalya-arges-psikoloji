@@ -12,14 +12,14 @@ const ProcessSection = () => {
     {
       icon: 'ri-calendar-check-line',
       title: 'Bilgi & Randevu',
-      description: 'Destek almak istediğiniz konuya göre en uygun uzman belirlenir. Uygunluk durumunuza göre ilk görüşme planlanır ve size özel bir randevu oluşturulur.',
+      description: 'Destek almak istediğiniz konuya göre en uygun psikolog belirlenir. Uygunluk durumunuza göre ilk görüşme planlanır ve size özel bir randevu oluşturulur.',
       color: 'bg-gold/20',
       buttonStyle: 'bg-white text-darkgray border-2 border-darkgray',
     },
     {
       icon: 'ri-heart-pulse-line',
       title: 'Destek Süreci',
-      description: 'Belirlenen uzmanla yapılan görüşmeler, gizlilik ve güven ilkesiyle yürütülür. Seanslar boyunca ihtiyacınıza yönelik bilimsel temelli yöntemler uygulanır.',
+      description: 'Belirlenen psikologla yapılan görüşmeler, gizlilik ve güven ilkesiyle yürütülür. Seanslar boyunca ihtiyacınıza yönelik bilimsel temelli yöntemler uygulanır.',
       color: 'bg-cream',
       buttonStyle: 'bg-white text-darkgray border-2 border-darkgray',
     },

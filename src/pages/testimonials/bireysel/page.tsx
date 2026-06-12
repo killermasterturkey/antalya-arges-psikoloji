@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsBireyselPage = () => {
   const testimonials = [
-    { initials: 'M.K.', rating: 5, text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 seans görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi. Her şeyden çok memnun kaldım.', service: 'Bireysel Terapi' },
+    { initials: 'M.K.', rating: 5, text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 seans görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi. Her şeyden çok memnun kaldım.', service: 'Bireysel Danışmanlık' },
   ];
 
   return (
@@ -24,10 +24,10 @@ const TestimonialsBireyselPage = () => {
             >
               <div className="inline-flex items-center space-x-2 bg-olive/10 px-6 py-3 rounded-full">
                 <i className="ri-user-heart-line text-olive text-xl"></i>
-                <span className="font-sans text-sm font-medium text-darkgray">Bireysel Terapi</span>
+                <span className="font-sans text-sm font-medium text-darkgray">Bireysel Danışmanlık</span>
               </div>
               <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray">
-                Bireysel Terapi Yorumları
+                Bireysel Danışmanlık Yorumları
               </h1>
             </motion.div>
 
@@ -63,7 +63,7 @@ const TestimonialsBireyselPage = () => {
 
         <section className="py-20 px-6 lg:px-12 bg-white">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Bireysel Terapi İçin Randevu Alın</h2>
+            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Bireysel Danışmanlık İçin Randevu Alın</h2>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>
               <span>WhatsApp ile Randevu</span>

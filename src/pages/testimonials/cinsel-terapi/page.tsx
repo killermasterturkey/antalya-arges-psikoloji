@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsCinselTerapiPage = () => {
   const testimonials = [
-    { initials: 'Anonim', rating: 5, text: 'Cinsel terapi sürecimiz tamamen gizlilik prensibiyle yürütüldü. Seksofonksiyonel Cinsel Terapi eğitimi almış uzmanlarla çalışmak bize güven verdi. Yargılamayan ve destekleyici yaklaşım sayesinde sorunlarımızı rahatça paylaşabildik.', service: 'Cinsel Terapi' },
+    { initials: 'Anonim', rating: 5, text: 'Cinsel danışmanlık sürecimiz tamamen gizlilik prensibiyle yürütüldü. Bu alanda eğitim almış psikologlarla çalışmak bize güven verdi. Yargılamayan ve destekleyici yaklaşım sayesinde sorunlarımızı rahatça paylaşabildik.', service: 'Cinsel Danışmanlık' },
   ];
 
   return (
@@ -24,10 +24,10 @@ const TestimonialsCinselTerapiPage = () => {
             >
               <div className="inline-flex items-center space-x-2 bg-olive/10 px-6 py-3 rounded-full">
                 <i className="ri-shield-check-line text-olive text-xl"></i>
-                <span className="font-sans text-sm font-medium text-darkgray">Cinsel Terapi</span>
+                <span className="font-sans text-sm font-medium text-darkgray">Cinsel Danışmanlık</span>
               </div>
               <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray">
-                Cinsel Terapi Yorumları
+                Cinsel Danışmanlık Yorumları
               </h1>
               <p className="font-sans text-lg text-darkgray/60">Tüm yorumlar gizlilik ilkesiyle korunmaktadır.</p>
             </motion.div>
@@ -64,7 +64,7 @@ const TestimonialsCinselTerapiPage = () => {
 
         <section className="py-20 px-6 lg:px-12 bg-white">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Cinsel Terapi İçin Randevu Alın</h2>
+            <h2 className="font-serif text-4xl font-bold text-darkgray mb-6">Cinsel Danışmanlık İçin Randevu Alın</h2>
             <p className="font-sans text-darkgray/70 mb-8">Tüm görüşmeler tam gizlilik içinde gerçekleştirilir.</p>
             <a href="https://wa.me/905403251525" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-darkgray text-white px-8 py-4 rounded-full hover:bg-olive transition-all duration-300">
               <i className="ri-whatsapp-line"></i>

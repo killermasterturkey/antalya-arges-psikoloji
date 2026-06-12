@@ -9,7 +9,7 @@ const WhyArgesSection = () => {
     {
       icon: 'ri-heart-3-line',
       title: 'Empatiyle Yaklaşım',
-      description: 'Tüm uzmanlarımız, sizi anlayışla karşılayarak güvenli ve destekleyici bir ortam sunar.',
+      description: 'Tüm psikologlarımız, sizi anlayışla karşılayarak güvenli ve destekleyici bir ortam sunar.',
       color: 'text-olive',
     },
     {
@@ -20,8 +20,8 @@ const WhyArgesSection = () => {
     },
     {
       icon: 'ri-user-star-line',
-      title: 'Uzman Kadro',
-      description: 'İhtiyacınıza en uygun uzmanla eşleştiriliyor, sürece güvenle başlıyorsunuz.',
+      title: 'Psikolog Kadrosu',
+      description: 'İhtiyacınıza en uygun psikologla eşleştiriliyor, sürece güvenle başlıyorsunuz.',
       color: 'text-olive',
     },
     {

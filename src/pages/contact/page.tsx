@@ -242,13 +242,12 @@ const ContactPage = () => {
                       className="w-full px-4 py-3 bg-cream border border-darkgray/10 rounded-xl font-sans text-sm text-darkgray focus:outline-none focus:border-olive transition-colors duration-200 cursor-pointer"
                     >
                       <option value="">Seçiniz</option>
-                      <option value="individual">Bireysel Terapi</option>
-                      <option value="couple">Çift Terapisi</option>
-                      <option value="family">Aile Terapisi</option>
+                      <option value="individual">Bireysel Danışmanlık</option>
+                      <option value="couple">Çift Danışmanlığı</option>
+                      <option value="family">Aile Danışmanlığı</option>
                       <option value="child">Çocuk Psikolojisi</option>
                       <option value="teen">Ergen Danışmanlığı</option>
-                      <option value="emdr">EMDR Terapisi</option>
-                      <option value="sexual">Cinsel Terapi</option>
+                      <option value="sexual">Cinsel Danışmanlık</option>
                       <option value="career">Kariyer Danışmanlığı</option>
                     </select>
                   </div>
