@@ -77,7 +77,9 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    // 5270: ProjectDashboard port haritasında bu projeye ayrıldı (3000 default'u
+    // başka projelerle çakışmasın diye terk edildi).
+    port: 5270,
     host: "0.0.0.0",
   },
 });
