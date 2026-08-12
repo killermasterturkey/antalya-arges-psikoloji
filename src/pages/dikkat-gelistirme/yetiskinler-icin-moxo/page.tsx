@@ -8,7 +8,7 @@ const YetiskinlerIcinMoxoPage = () => {
     { icon: 'ri-user-line', title: 'Yetişkin Odaklı', description: 'Yetişkin dikkat profili için optimize edilmiş.' },
     { icon: 'ri-timer-line', title: '20 Dakika', description: 'Hızlı ve etkili test süreci.' },
     { icon: 'ri-file-chart-line', title: 'Profesyonel Rapor', description: 'İş ve akademik yaşam için analiz.' },
-    { icon: 'ri-verified-badge-line', title: 'Bilimsel', description: 'Klinik araştırmalarla desteklenmiş.' },
+    { icon: 'ri-verified-badge-line', title: 'Bilimsel', description: 'Bilimsel araştırmalarla desteklenmiş.' },
   ];
 
   return (

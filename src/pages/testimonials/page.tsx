@@ -25,7 +25,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Kızım beş yaşındaydı ve tuvalet problemi ile gitmiştik. Bizim için sürekli tuvaletini etrafa yapması çok zordu. Aile olarak çok yıpranmıştık. Kendisine ilk olarak anne baba görüşmesi yapmak için gittik. Ne gerek vardı desek de en önemli kısım anne baba görüşmesiymiş aslında onu fark ettik süreçte. Danışmanlık sürecinde bizi hiç yalnız bırakmadı. Kızım zaten çok seviyordu kendisini gün sayardı hep. Seanslardan sonra yaptığı telefon görüşmeleri ise hem bize hem çocuğumuza çok iyi geldi. Kesinlikle öneririm kendisini.',
+      text: 'Kızım beş yaşındaydı ve tuvalet problemi ile gitmiştik. Bizim için sürekli tuvaletini etrafa yapması çok zordu. Aile olarak çok yıpranmıştık. Kendisine ilk olarak anne baba görüşmesi yapmak için gittik. Ne gerek vardı desek de en önemli kısım anne baba görüşmesiymiş aslında onu fark ettik süreçte. Danışmanlık sürecinde bizi hiç yalnız bırakmadı. Kızım zaten çok seviyordu kendisini gün sayardı hep. Görüşmelerden sonra yaptığı telefon konuşmaları ise hem bize hem çocuğumuza çok iyi geldi. Kesinlikle öneririm kendisini.',
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Zorlayıcı bir dönemde gitmiştik Nezihi Hocaya. Kendisine tavsiye ile ulaşmıştık. 6 seans kadar devam ettik. Kızımın babası tarafından kafası karıştırılıyordu. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm kendisini. Kendisi ile iletişime geçmekte zorlanmadık.',
+      text: 'Zorlayıcı bir dönemde gitmiştik Nezihi Hocaya. Kendisine tavsiye ile ulaşmıştık. 6 görüşme kadar devam ettik. Kızımın babası tarafından kafası karıştırılıyordu. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm kendisini. Kendisi ile iletişime geçmekte zorlanmadık.',
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Nezihi Hocamı Google üzerinden araştırarak buldum. Dokuz seanstan fazla gitmişizdir. Kızımda anlam veremediğim bazı tekrarlı davranışları vardı ve kardeşine karşı tutumu beni kaygılandırıyordu. Sürecimizden çok memnun kaldık. Kızım büyük bir sevinçle gidiyordu çünkü Nezihi Hocayı çok seviyordu. Kızımda büyük bir iz bıraktı. Onu hiç unutmayacak. Daha iyi olabilirdi diyebileceğim bir şey yok çünkü her şey çok çok güzeldi.',
+      text: 'Nezihi Hocamı Google üzerinden araştırarak buldum. Dokuz görüşmeden fazla gitmişizdir. Kızımda anlam veremediğim bazı tekrarlı davranışları vardı ve kardeşine karşı tutumu beni kaygılandırıyordu. Sürecimizden çok memnun kaldık. Kızım büyük bir sevinçle gidiyordu çünkü Nezihi Hocayı çok seviyordu. Kızımda büyük bir iz bıraktı. Onu hiç unutmayacak. Daha iyi olabilirdi diyebileceğim bir şey yok çünkü her şey çok çok güzeldi.',
     },
     {
       id: 4,
@@ -97,7 +97,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Beş yaşındaki oğlumun öfke nöbetleri ve korkuları vardı. Korkuları gün geçtikçe artmaya ve daha şiddetli olmaya başlamıştı. Okulda da birkaç problem yaşadıktan sonra internette araştırmaya başladım ve Psikolog Nezihi Ünal\'ı tercih ettim. Kesinlikle doğru bir tercih yaptığımı ilk seanstan sonra anladım. Çok kısa bir sürede oğlumdaki değişiklikler muhteşemdi. Nezihi Ünal size çok teşekkür ediyoruz, iyi ki sizi tanımışız.',
+      text: 'Beş yaşındaki oğlumun öfke nöbetleri ve korkuları vardı. Korkuları gün geçtikçe artmaya ve daha şiddetli olmaya başlamıştı. Okulda da birkaç problem yaşadıktan sonra internette araştırmaya başladım ve Psikolog Nezihi Ünal\'ı tercih ettim. Kesinlikle doğru bir tercih yaptığımı ilk görüşmeden sonra anladım. Çok kısa bir sürede oğlumdaki değişiklikler muhteşemdi. Nezihi Ünal size çok teşekkür ediyoruz, iyi ki sizi tanımışız.',
     },
     {
       id: 11,
@@ -113,7 +113,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Psikoloğumuza internet aracılığıyla ulaştım. 5 yaşındaki kızım için alt ıslatma ve parmak emme şikâyetlerimiz için başvurduk. Yaptığımız ilk görüşmede bu davranışlarının sebeplerini ve çocuğumuzda problem oluşturabilecek noktaları öğrendik. Farkında olmadan bu davranışları desteklediğimiz davranışlar ve doğru bildiğimiz yanlışlar varmış. Seanslarımız hala devam ediyor ve olumlu gidişatı görebiliyoruz. Bir baba olarak benzer problem yaşayan ailelere psikolojik destek almalarını öneriyorum.',
+      text: 'Psikoloğumuza internet aracılığıyla ulaştım. 5 yaşındaki kızım için alt ıslatma ve parmak emme şikâyetlerimiz için başvurduk. Yaptığımız ilk görüşmede bu davranışlarının sebeplerini ve çocuğumuzda problem oluşturabilecek noktaları öğrendik. Farkında olmadan bu davranışları desteklediğimiz davranışlar ve doğru bildiğimiz yanlışlar varmış. Görüşmelerimiz hala devam ediyor ve olumlu gidişatı görebiliyoruz. Bir baba olarak benzer problem yaşayan ailelere psikolojik destek almalarını öneriyorum.',
     },
     {
       id: 13,
@@ -129,7 +129,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Eşimle birkaç ay önce boşandık ve 9 yaşında bir kızımız var. Kızımızın içine kapanık olması, kendi yaşıtlarıyla bile oynayamaması, ders başarısının düşmesi, okulda sosyalleşememesi gibi problemleri vardı. Son zamanlarda tırnak yeme, tek başına uyuyamama, geceleri ağlayarak uyanma gibi sorunlar da başlamıştı. İlk seanstan beri çocuğuma ve bize çok olumlu ve samimi yaklaştı. Yaptığı testler, uyguladığı oyunla danışmanlık seansları sonrasında bizim küçük dünyamızda harika değişimler olmaya başladı. Kendisine çok şey borçluyum.',
+      text: 'Eşimle birkaç ay önce boşandık ve 9 yaşında bir kızımız var. Kızımızın içine kapanık olması, kendi yaşıtlarıyla bile oynayamaması, ders başarısının düşmesi, okulda sosyalleşememesi gibi problemleri vardı. Son zamanlarda tırnak yeme, tek başına uyuyamama, geceleri ağlayarak uyanma gibi sorunlar da başlamıştı. İlk görüşmeden beri çocuğuma ve bize çok olumlu ve samimi yaklaştı. Yaptığı testler, uyguladığı oyunla danışmanlık görüşmeleri sonrasında bizim küçük dünyamızda harika değişimler olmaya başladı. Kendisine çok şey borçluyum.',
     },
     {
       id: 15,
@@ -137,7 +137,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Yaklaşık 10 aydır oğlumun okul fobisini yenmeye çalışıyorduk. Sınıfta geçirdiği kaza ile bu sorun iyice büyüdü. Her gün okula giderken neredeyse okul kelimesini duyunca ağlama krizleri başlamıştı. Bir yerden sonra artık şımarıklık yaptığını düşünmeye başladık. Kendisi çocuğun dilinden çok iyi anlıyor ve bize de onu öğretti. Oğlumun amacı bize eziyet etmek değilmiş, biz tabloyu yanlış okuyormuşuz. Takıldığınız, sıkıştığınız yerde destek alabileceğiniz güler yüzlü, samimi bir insan.',
+      text: 'Yaklaşık 10 aydır oğlumun okul korkusunu yenmeye çalışıyorduk. Sınıfta geçirdiği kaza ile bu sorun iyice büyüdü. Her gün okula giderken neredeyse okul kelimesini duyunca ağlama krizleri başlamıştı. Bir yerden sonra artık şımarıklık yaptığını düşünmeye başladık. Kendisi çocuğun dilinden çok iyi anlıyor ve bize de onu öğretti. Oğlumun amacı bize eziyet etmek değilmiş, biz tabloyu yanlış okuyormuşuz. Takıldığınız, sıkıştığınız yerde destek alabileceğiniz güler yüzlü, samimi bir insan.',
     },
     {
       id: 16,
@@ -153,7 +153,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Kızım 5 yaşında ve anasınıfı öğrencisi. Bir süre önce olur olmadık şeylerden korkmaya başlamıştı. İlerleyen günlerde arkadaşlarına vurmaya ve öğretmenine sorunlar yaşatmaya başladı. Okuldaki öğretmenimizin yönlendirmesiyle bir pedagoga gitmeye karar verdik. Kısa sürede faydasını görmeye başladık. Kızımla oynadıkları oyunlar bize kısa sürede ilaç gibi geldi. Psikoloğumuzun güler yüzü, cana yakınlığı, samimiyeti, bize güven vermesi, her şeyden önce kızımızın kalbine dokunuşu bizi çok mutlu etti.',
+      text: 'Kızım 5 yaşında ve anasınıfı öğrencisi. Bir süre önce olur olmadık şeylerden korkmaya başlamıştı. İlerleyen günlerde arkadaşlarına vurmaya ve öğretmenine sorunlar yaşatmaya başladı. Okuldaki öğretmenimizin yönlendirmesiyle bir çocuk psikoloğuna gitmeye karar verdik. Kısa sürede faydasını görmeye başladık. Kızımla oynadıkları oyunlar bize kısa sürede ilaç gibi geldi. Psikoloğumuzun güler yüzü, cana yakınlığı, samimiyeti, bize güven vermesi, her şeyden önce kızımızın kalbine dokunuşu bizi çok mutlu etti.',
     },
     {
       id: 18,
@@ -169,7 +169,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Nezihi Hoca ile internette yaptığım araştırmalar sonucunda iletişime geçtim. Oğlumun bir süredir devam eden takıntılı davranışları vardı. Okuldaki rehberlik öğretmeni bir psikologla görüşmemizi önerdi. İlk seansta hem bizimle hem oğlumuzla görüştü. Danışmanlık sürecine başladık. Şu an ilk başladığımız duruma göre çok fazla ilerleme kaydettik. Birçok takıntısı azaldı. Deniz Hanım oğlumuzla alakalı çok özverili ve sevecen davrandı. Teşekkür ederiz.',
+      text: 'Nezihi Hoca ile internette yaptığım araştırmalar sonucunda iletişime geçtim. Oğlumun bir süredir devam eden takıntılı davranışları vardı. Okuldaki rehberlik öğretmeni bir psikologla görüşmemizi önerdi. İlk görüşmede hem bizimle hem oğlumuzla görüştü. Danışmanlık sürecine başladık. Şu an ilk başladığımız duruma göre çok fazla ilerleme kaydettik. Birçok takıntısı azaldı. Deniz Hanım oğlumuzla alakalı çok özverili ve sevecen davrandı. Teşekkür ederiz.',
     },
     {
       id: 20,
@@ -185,7 +185,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Oyunla Danışmanlık',
       rating: 5,
-      text: '7 yaşındaki kızım her şeyi ağlayarak istiyordu. Sürekli mutsuz ve her şeye mızmızlanan bir çocuktu. Taşınmamız, okulunun değişmesi gibi olaylardan sonra bunlar daha da arttı. Çocuklarla çok güzel iletişim kurabilen, onları tedirgin etmeden korkutmadan yaklaşan, mesleğinde oldukça başarılı olduğunu düşündüğümüz bir psikolog. İlk birkaç seans yenemeyiz gibi geldi ama bittiğinde her şey normal bir hal aldı. Yemek problemimiz de birlikte yaptığımız çalışmalarla büyük ölçüde çözüldü. Bu süreçte bize verdiği destek ve cesaret için kendisine çok teşekkür ediyoruz.',
+      text: '7 yaşındaki kızım her şeyi ağlayarak istiyordu. Sürekli mutsuz ve her şeye mızmızlanan bir çocuktu. Taşınmamız, okulunun değişmesi gibi olaylardan sonra bunlar daha da arttı. Çocuklarla çok güzel iletişim kurabilen, onları tedirgin etmeden korkutmadan yaklaşan, mesleğinde oldukça başarılı olduğunu düşündüğümüz bir psikolog. İlk birkaç görüşme yenemeyiz gibi geldi ama bittiğinde her şey normal bir hal aldı. Yemek problemimiz de birlikte yaptığımız çalışmalarla büyük ölçüde çözüldü. Bu süreçte bize verdiği destek ve cesaret için kendisine çok teşekkür ediyoruz.',
     },
     {
       id: 22,
@@ -217,7 +217,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Çocuk Danışmanlığı',
       rating: 5,
-      text: 'Eşimle anlaşamadık ve boşanma sürecine girdik. 9 yaşındaki kızım için bu süreç çok zorlu geçti elbette. Velayet davası da işin içine girince var olan endişesi iyice arttı. Ne yapacağımızı bilemedik. Önce bir psikiyatriste götürdük ama ilaç tedavisi işe yaramadı. Psikiyatristimizin yönlendirmesi ile Nezihi Hocam\'dan danışmanlık desteği almaya karar verdik. Seanslara devam ederken bile kızımdaki kaygı düzeyinin azalışı ve sürecin gidişatı bizi çok memnun etti. Her zaman hiç tereddütsüz herhangi bir problem olursa gideceğim kişidir kendisi.',
+      text: 'Eşimle anlaşamadık ve boşanma sürecine girdik. 9 yaşındaki kızım için bu süreç çok zorlu geçti elbette. Velayet davası da işin içine girince var olan endişesi iyice arttı. Ne yapacağımızı bilemedik. Önce bir psikiyatriste götürdük ama ilaç tedavisi işe yaramadı. Psikiyatristimizin yönlendirmesi ile Nezihi Hocam\'dan danışmanlık desteği almaya karar verdik. Görüşmelere devam ederken bile kızımdaki kaygı düzeyinin azalışı ve sürecin gidişatı bizi çok memnun etti. Her zaman hiç tereddütsüz herhangi bir problem olursa gideceğim kişidir kendisi.',
     },
     {
       id: 26,
@@ -233,7 +233,7 @@ const TestimonialsPage = () => {
       category: 'child',
       service: 'Oyunla Danışmanlık',
       rating: 5,
-      text: 'Bir sene önce doğum yaptım. Doğumdan sonra 4,5 yaşındaki oğlumla sıkıntı yaşamaya başladık. Bana karşı çok agresif olmaya, saldırgan ve hırçın bir tutum sergilemeye başladı. İlk seansta karşımda sempatik ve işini severek yapan bir insan görmek beni çok mutlu etti. Bize oyunla danışmanlıktan bahsetti ve başladık. Oğlumun psikoloğumuza karşı tavırlarıydı. Oğlum her seansa isteyerek, seve seve gitti. Sonuçtan çok memnun kaldık. İhtiyacı olan herkese tavsiye ederim.',
+      text: 'Bir sene önce doğum yaptım. Doğumdan sonra 4,5 yaşındaki oğlumla sıkıntı yaşamaya başladık. Bana karşı çok agresif olmaya, saldırgan ve hırçın bir tutum sergilemeye başladı. İlk görüşmede karşımda sempatik ve işini severek yapan bir insan görmek beni çok mutlu etti. Bize oyunla danışmanlıktan bahsetti ve başladık. Oğlumun psikoloğumuza karşı tavırlarıydı. Oğlum her görüşmeye isteyerek, seve seve gitti. Sonuçtan çok memnun kaldık. İhtiyacı olan herkese tavsiye ederim.',
     },
     {
       id: 28,
@@ -267,7 +267,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Nezihi Hocaya Google üzerinden ulaştım. 17 yaşımdayım. Depresyondaydım sürece başladığımda. 8 seans kadar kendisine devam ettim. Kendisinden memnun kaldım. Kendisini öneriyorum etrafımda ihtiyaç duyanlara. Bana çok yardımcı oldu. Empatisi güler yüzü ve her konuda gösterdiği şefkati bana çok iyi geldi.',
+      text: 'Nezihi Hocaya Google üzerinden ulaştım. 17 yaşımdayım. Çok zor bir dönemdeydim sürece başladığımda. 8 görüşme kadar kendisine devam ettim. Kendisinden memnun kaldım. Kendisini öneriyorum etrafımda ihtiyaç duyanlara. Bana çok yardımcı oldu. Empatisi güler yüzü ve her konuda gösterdiği şefkati bana çok iyi geldi.',
     },
     {
       id: 32,
@@ -291,7 +291,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Kendisine tavsiye ile ulaşmıştım. Sorun yaşadığım kısım anksiyete ile ilgiliydi. Dışarıya dahi çıkamıyordum. Artık dayanamaz hale gelmiştim ve bir denemekte fayda var dedim. Danışmanlık almaya karar verdim. Sürecim bazı nedenlerden dolayı kısa sürse de etkisi oldu. Kendisini tavsiye ederim.',
+      text: 'Kendisine tavsiye ile ulaşmıştım. Sorun yaşadığım kısım yoğun kaygılarımdı. Dışarıya dahi çıkamıyordum. Artık dayanamaz hale gelmiştim ve bir denemekte fayda var dedim. Danışmanlık almaya karar verdim. Sürecim bazı nedenlerden dolayı kısa sürse de etkisi oldu. Kendisini tavsiye ederim.',
     },
     {
       id: 35,
@@ -299,7 +299,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Topluma girememek, kalp çarpıntısı, gece titremeleri, mide bulantısı, baş ağrısı, arkadaş ortamına girmekte zorlanıyordum. Ailemle etkinliklere katılamıyordum. Annemin önerisi sayesinde destek almaya karar verdim. 6 seans sürdü. Süreç gayet güzel ilerledi. Sorunlarımı bir bir ortadan yok etti. Danışmanlık sürecinden memnun kaldım. Herkese tavsiye ediyorum.',
+      text: 'Topluma girememek, kalp çarpıntısı, gece titremeleri, mide bulantısı, baş ağrısı, arkadaş ortamına girmekte zorlanıyordum. Ailemle etkinliklere katılamıyordum. Annemin önerisi sayesinde destek almaya karar verdim. 6 görüşme sürdü. Süreç gayet güzel ilerledi. Sorunlarımı bir bir ortadan yok etti. Danışmanlık sürecinden memnun kaldım. Herkese tavsiye ediyorum.',
     },
     {
       id: 36,
@@ -323,7 +323,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Oğlumun rehber öğretmeni yönlendirdiği için gitmiştik. Öğretmeni sınıfta derse dikkatini veremediğini, odak problemi yaşadığını söylemişti. İlaç tedavisine ek olarak danışmanlığa da başladık. Çok güzel ilerleme kaydettik. Seanslara halen devam ediyoruz ve şu an durumumuzdan gayet memnunum. Aynı şekilde oğlum da memnun. Etrafımda sorun yaşayan anne babalara da tavsiye ediyorum.',
+      text: 'Oğlumun rehber öğretmeni yönlendirdiği için gitmiştik. Öğretmeni sınıfta derse dikkatini veremediğini, odak problemi yaşadığını söylemişti. İlaç tedavisine ek olarak danışmanlığa da başladık. Çok güzel ilerleme kaydettik. Görüşmelere halen devam ediyoruz ve şu an durumumuzdan gayet memnunum. Aynı şekilde oğlum da memnun. Etrafımda sorun yaşayan anne babalara da tavsiye ediyorum.',
     },
     {
       id: 39,
@@ -331,7 +331,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Sınav kaygım için psikoloğa gitmek istedim. Ne yapsam bu konunun üstesinden gelemedim. Benim için korkunç bir hal almaya başlamıştı. Sınav aklıma gelince bile nefesim daralıyordu, kalp atışlarım hızlanıyordu. Nezihi Ünal\'a gitmeye karar verdim. Güler yüzlülüğü, empatisi ve detaylı açıklamaları ile seanslarımızdan çok verim aldım. Birlikte yaptığımız çalışmalarla artık kaygılarımı kabulleniyorum, kontrol edebiliyorum. Benzer sorunları yaşayan insanlara tavsiye ederim.',
+      text: 'Sınav kaygım için psikoloğa gitmek istedim. Ne yapsam bu konunun üstesinden gelemedim. Benim için korkunç bir hal almaya başlamıştı. Sınav aklıma gelince bile nefesim daralıyordu, kalp atışlarım hızlanıyordu. Nezihi Ünal\'a gitmeye karar verdim. Güler yüzlülüğü, empatisi ve detaylı açıklamaları ile görüşmelerimizden çok verim aldım. Birlikte yaptığımız çalışmalarla artık kaygılarımı kabulleniyorum, kontrol edebiliyorum. Benzer sorunları yaşayan insanlara tavsiye ederim.',
     },
     {
       id: 40,
@@ -363,7 +363,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: 'Görev yerimiz dolayısıyla ilçede yaşıyoruz. Oğlum şehir merkezinde güzel bir lise kazandı. Ancak eve geldikçe fark etmeye başladık ki oğlum içine kapanmaya başladı. Meğer sosyal fobisi varmış ve bu fobi onu gündelik hayatında çok etkilemeye başlamış. Bize nasıl yaklaşmamız gerektiği yönünde destek sağlarken oğlumla birlikte çalışmaya başladılar. Şimdi kalabalıkta daha rahat ve ders ortamında daha aktif. Her şey için teşekkürler.',
+      text: 'Görev yerimiz dolayısıyla ilçede yaşıyoruz. Oğlum şehir merkezinde güzel bir lise kazandı. Ancak eve geldikçe fark etmeye başladık ki oğlum içine kapanmaya başladı. Meğer sosyal ortamlarda yoğun çekingenlik yaşıyormuş ve bu durum onu gündelik hayatında çok etkilemeye başlamış. Bize nasıl yaklaşmamız gerektiği yönünde destek sağlarken oğlumla birlikte çalışmaya başladılar. Şimdi kalabalıkta daha rahat ve ders ortamında daha aktif. Her şey için teşekkürler.',
     },
     {
       id: 44,
@@ -379,7 +379,7 @@ const TestimonialsPage = () => {
       category: 'teen',
       service: 'Ergen Danışmanlığı',
       rating: 5,
-      text: '17 yaşındayım ve lise son öğrencisiyim. Bu sene üniversite sınavına hazırlanıyorum. Kendimi bildim bileli dikkat sorunum hep vardı. Aileme ne kadar zorlandığımı anlattım ve destek almak istediğimi söyledim. Detaylı şekilde konuştuktan sonra bana danışmanlık sürecinden bahsetti. Seanslarda hem dikkat eksikliğimi hem de sınav stresimi çalışmaya başladık. Çalışmaların yanı sıra benimle konuşması, beni anladığını hissettirmesi kendime olan güvenimi yeniden kazanmamı sağladı. Her şey için çok teşekkür ederim.',
+      text: '17 yaşındayım ve lise son öğrencisiyim. Bu sene üniversite sınavına hazırlanıyorum. Kendimi bildim bileli dikkat sorunum hep vardı. Aileme ne kadar zorlandığımı anlattım ve destek almak istediğimi söyledim. Detaylı şekilde konuştuktan sonra bana danışmanlık sürecinden bahsetti. Görüşmelerde hem dikkat sorunumu hem de sınav stresimi çalışmaya başladık. Çalışmaların yanı sıra benimle konuşması, beni anladığını hissettirmesi kendime olan güvenimi yeniden kazanmamı sağladı. Her şey için çok teşekkür ederim.',
     },
     {
       id: 46,
@@ -397,7 +397,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 seans görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi.',
+      text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 kez görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi.',
     },
     {
       id: 48,
@@ -413,7 +413,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Ben Deniz Hanım\'a OKB nedeni ile başvurdum. Pandemi sürecinden çok etkilenmiştim. Dışarı çıkamayacağım ve hareket edemeyeceğim kadar etkilendim. Daha sonra Deniz Hanım\'la çalışmaya başladık. Kendisi her zaman çok anlayışlı oldu. Bu hastalığı atlatabileceğim konusunda bana güven verdi. Seanslarım halen devam ediyor ama büyük oranda eski takıntılarımı aşmış durumdayım. Kendisi çok sabırlı, anlayışlı ve sakin düşünceli ince bir insan.',
+      text: 'Ben Deniz Hanım\'a takıntılarım nedeni ile başvurdum. Pandemi sürecinden çok etkilenmiştim. Dışarı çıkamayacağım ve hareket edemeyeceğim kadar etkilendim. Daha sonra Deniz Hanım\'la çalışmaya başladık. Kendisi her zaman çok anlayışlı oldu. Bu sorunu atlatabileceğim konusunda bana güven verdi. Görüşmelerim halen devam ediyor ama büyük oranda eski takıntılarımı aşmış durumdayım. Kendisi çok sabırlı, anlayışlı ve sakin düşünceli ince bir insan.',
     },
     {
       id: 50,
@@ -429,7 +429,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Bende panik atak var, bir de sınav süreci geçiriyorum. Hepsi tetikliyordu beni. Beni dinliyor, yardımcı oluyor. Danışan odaklı. Birlikte yaptığımız çalışmalardan çok memnun kaldım. Dinliyor, bana iyi geliyor. Süreci atlatmamda yardımcı oldu. Stresim biraz daha azaldı, kendimi daha iyi hissediyorum.',
+      text: 'Yoğun kaygı yaşıyordum, bir de sınav süreci geçiriyordum. Hepsi tetikliyordu beni. Beni dinliyor, yardımcı oluyor. Danışan odaklı. Birlikte yaptığımız çalışmalardan çok memnun kaldım. Dinliyor, bana iyi geliyor. Süreci atlatmamda yardımcı oldu. Stresim biraz daha azaldı, kendimi daha iyi hissediyorum.',
     },
     {
       id: 52,
@@ -469,7 +469,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: '23 yaşındayım ve hayatım boyunca farklı takıntılarım oldu. Bu sorunu erteledikçe daha da artarak ilerledi. Devamlı her yeri temiz tutmaya çalışıyordum. Bu bir süre sonra beni çok yıpratmaya başladı. Ne kendime ne işime ne de aileme zaman ayıramaz hale geldim. Nur Deniz Hanım ile danışmanlığa başladık. Hem seanstaki anlayışlı ve anlattıklarınızı saygıyla dinleyen yaklaşımı hem de kullandığı teknikler ile takıntılarım azalmaya başladı.',
+      text: '23 yaşındayım ve hayatım boyunca farklı takıntılarım oldu. Bu sorunu erteledikçe daha da artarak ilerledi. Devamlı her yeri temiz tutmaya çalışıyordum. Bu bir süre sonra beni çok yıpratmaya başladı. Ne kendime ne işime ne de aileme zaman ayıramaz hale geldim. Nur Deniz Hanım ile danışmanlığa başladık. Hem görüşmelerdeki anlayışlı ve anlattıklarınızı saygıyla dinleyen yaklaşımı hem de kullandığı teknikler ile takıntılarım azalmaya başladı.',
     },
     {
       id: 57,
@@ -477,7 +477,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Yaklaşık 4 ay önce eşimin beni defalarca aldattığını öğrendim. Benim için büyük bir yıkımdı. İlk birkaç hafta evden çıkmadım ve devamlı ağladım. Daha sağlıklı düşünebilmek için bir psikoloğa gitmeye karar verdim. Deniz Hanım ilk seansta oldukça güler yüzlü ve samimi bir şekilde karşıladı. Beni sabırla dinledi. Günlük hayatımın eski düzenine dönmesi için çok destekleyici ve motive edici konuşmalar yaptı. Deniz Hanımın bu süreçte üzerimdeki emeği çok büyüktür.',
+      text: 'Yaklaşık 4 ay önce eşimin beni defalarca aldattığını öğrendim. Benim için büyük bir yıkımdı. İlk birkaç hafta evden çıkmadım ve devamlı ağladım. Daha sağlıklı düşünebilmek için bir psikoloğa gitmeye karar verdim. Deniz Hanım ilk görüşmede oldukça güler yüzlü ve samimi bir şekilde karşıladı. Beni sabırla dinledi. Günlük hayatımın eski düzenine dönmesi için çok destekleyici ve motive edici konuşmalar yaptı. Deniz Hanımın bu süreçte üzerimdeki emeği çok büyüktür.',
     },
     {
       id: 58,
@@ -501,7 +501,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'İki buçuk sene önce bir uçak yolculuğu sırasında geçirdiğim ataktan sonra uçağa binemez oldum. Yakın zamanda işimi değiştirdim ve sık sık seyahat etmek zorunda kaldım. Nur Deniz hanıma giden bir arkadaşımın tavsiyesi üzerine kendisiyle görüştüm. Birkaç seans birlikte çalıştık ve süreç kendiliğinden hızlı bir şekilde ilerledi. Bu sorunun üstesinden gelmek bana büyük kolaylık sağladı. Teşekkürler hocam.',
+      text: 'İki buçuk sene önce bir uçak yolculuğu sırasında yaşadığım yoğun korkudan sonra uçağa binemez oldum. Yakın zamanda işimi değiştirdim ve sık sık seyahat etmek zorunda kaldım. Nur Deniz hanıma giden bir arkadaşımın tavsiyesi üzerine kendisiyle görüştüm. Birkaç görüşme birlikte çalıştık ve süreç kendiliğinden hızlı bir şekilde ilerledi. Bu sorunun üstesinden gelmek bana büyük kolaylık sağladı. Teşekkürler hocam.',
     },
     {
       id: 61,
@@ -509,7 +509,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Üniversitenin başlarında başlayan panik ataklarım için 3-4 yıl psikiyatriste gitmiştim. Mezun olduktan sonra işsiz kaldım ve bu dönem benim için daha da zorlayıcı olmaya başlamıştı. Bir yerden sonra ilaçlar da fayda etmedi ve psikoloğa gitmeye karar verdim. Çok iyi bir dinleyici ve güven verici bir psikolog. Onun sayesinde panik atağı yendim. Artık çok daha iyiyim.',
+      text: 'Üniversitenin başlarında başlayan yoğun kaygı sorunlarım için 3-4 yıl psikiyatriste gitmiştim. Mezun olduktan sonra işsiz kaldım ve bu dönem benim için daha da zorlayıcı olmaya başlamıştı. Bir yerden sonra ilaçlar da fayda etmedi ve psikoloğa gitmeye karar verdim. Çok iyi bir dinleyici ve güven verici bir psikolog. Onun sayesinde bu sorunu yendim. Artık çok daha iyiyim.',
     },
     {
       id: 62,
@@ -517,7 +517,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: '2 sene önce boğazıma bir cismin kaçması sonucu aşırı bir ölüm korkusu duymaya başladım. Devamlı boğazıma bir şeyler kaçacağından veya öleceğimden korkuyordum. Bir süre sonra artık dışarıya çıkamaz hale geldim. Uzun arayışlarım sonucu Deniz Hanımla seanslara başladık. Zamanla bendeki değişimi etrafımdaki herkes fark etmeye başladı. Ama en önemlisi ben o korkuları artık içimde hissetmiyorum. Deniz Hanımı gönül rahatlığıyla öneririm.',
+      text: '2 sene önce boğazıma bir cismin kaçması sonucu aşırı bir ölüm korkusu duymaya başladım. Devamlı boğazıma bir şeyler kaçacağından veya öleceğimden korkuyordum. Bir süre sonra artık dışarıya çıkamaz hale geldim. Uzun arayışlarım sonucu Deniz Hanımla görüşmelere başladık. Zamanla bendeki değişimi etrafımdaki herkes fark etmeye başladı. Ama en önemlisi ben o korkuları artık içimde hissetmiyorum. Deniz Hanımı gönül rahatlığıyla öneririm.',
     },
     {
       id: 63,
@@ -525,7 +525,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Hamile olduğum dönemde bazı sağlık problemlerim oldu. Bebeğimi kaybetme riskim vardı. Bu durum ilk başlarda beni rahatsız etmiyordu ancak zaman geçtikçe dikkat ettiğim şeyler artmaya başladı. Takıntılarım hem benim hem eşimin hem de çocuğumun hayatını engellemeye başlamıştı. Deniz hanımla seanslara başladıktan sonra depresyonun eşiğinden döndüm diyebilirim. Yaşadığım hayatın tadına vardım, artık çocuğuma, eşime ve en önemlisi kendime vakit ayırabiliyorum.',
+      text: 'Hamile olduğum dönemde bazı sağlık problemlerim oldu. Bebeğimi kaybetme riskim vardı. Bu durum ilk başlarda beni rahatsız etmiyordu ancak zaman geçtikçe dikkat ettiğim şeyler artmaya başladı. Takıntılarım hem benim hem eşimin hem de çocuğumun hayatını engellemeye başlamıştı. Deniz hanımla görüşmelere başladıktan sonra çok zor bir dönemin eşiğinden döndüm diyebilirim. Yaşadığım hayatın tadına vardım, artık çocuğuma, eşime ve en önemlisi kendime vakit ayırabiliyorum.',
     },
     {
       id: 64,
@@ -541,7 +541,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: 'Yaşadığım sorunlar kendini ifade etme konusunda yetersizlik, bir şeyleri başaramama korkusu ve güvensizlik duygusuydu. Danışmanlık süreci sayesinde sağladığım olumlu geri bildirimler açıkçası beni çok mutlu ediyor. Hala devam ediyorum ve daha huzurlu ve daha mutlu hissediyorum. Nur Deniz Hanımla yaptığımız seanslar hayata karşı daha güvenli durmamı sağladı. Kesinlikle herkese tavsiye ediyorum.',
+      text: 'Yaşadığım sorunlar kendini ifade etme konusunda yetersizlik, bir şeyleri başaramama korkusu ve güvensizlik duygusuydu. Danışmanlık süreci sayesinde sağladığım olumlu geri bildirimler açıkçası beni çok mutlu ediyor. Hala devam ediyorum ve daha huzurlu ve daha mutlu hissediyorum. Nur Deniz Hanımla yaptığımız görüşmeler hayata karşı daha güvenli durmamı sağladı. Kesinlikle herkese tavsiye ediyorum.',
     },
     {
       id: 66,
@@ -549,7 +549,7 @@ const TestimonialsPage = () => {
       category: 'individual',
       service: 'Bireysel Danışmanlık',
       rating: 5,
-      text: '24 yaşındayım ve anksiyete bozukluğunu 8 senedir yaşıyordum. Psikiyatriye gidip ilaçlar kullandım, birkaç psikologla görüştüm. Hiçbirinden fayda göremedim maalesef. Dışarı çıkmak istemiyordum, arkadaşlarımın, ailemin yanında mutlu değildim, sürekli korktuğum düşünceler aklımdaydı. Deniz Hanım\'ın sayesinde artık bunların hiçbirini yaşamıyorum. Deniz Hanım\'a sadece ben değil tüm ailem dua ediyor. Herkese öneriyorum, çok teşekkürler.',
+      text: '24 yaşındayım ve yoğun kaygı sorununu 8 senedir yaşıyordum. Psikiyatriye gidip ilaçlar kullandım, birkaç psikologla görüştüm. Hiçbirinden fayda göremedim maalesef. Dışarı çıkmak istemiyordum, arkadaşlarımın, ailemin yanında mutlu değildim, sürekli korktuğum düşünceler aklımdaydı. Deniz Hanım\'ın sayesinde artık bunların hiçbirini yaşamıyorum. Deniz Hanım\'a sadece ben değil tüm ailem dua ediyor. Herkese öneriyorum, çok teşekkürler.',
     },
 
     // ÇİFT DANIŞMANLIĞI
@@ -575,7 +575,7 @@ const TestimonialsPage = () => {
       category: 'couple',
       service: 'Çift Danışmanlığı',
       rating: 5,
-      text: 'Eşimle kısa bir süre önce severek evlendik. Evlenmeden önce ilişkimiz çok güzeldi. Evlendikten sonra kavgalarımız çok sıklaştı. Artık kavgaları uzatmamak için konuşmamaya başlamıştık. Ortak bir arkadaşımız bizim için randevu almış. Nur Deniz Hanım ikimizi de uzun uzun dinledi. Daha sonra konuştuğumuz konular üzerinden nerelerde takıldığımızı görmemizi sağladı. Bugün 4. seansımızı yaptık. Şimdiden farkı görebiliyoruz. Nur Deniz Hanım\'dan çok memnunuz.',
+      text: 'Eşimle kısa bir süre önce severek evlendik. Evlenmeden önce ilişkimiz çok güzeldi. Evlendikten sonra kavgalarımız çok sıklaştı. Artık kavgaları uzatmamak için konuşmamaya başlamıştık. Ortak bir arkadaşımız bizim için randevu almış. Nur Deniz Hanım ikimizi de uzun uzun dinledi. Daha sonra konuştuğumuz konular üzerinden nerelerde takıldığımızı görmemizi sağladı. Bugün 4. görüşmemizi yaptık. Şimdiden farkı görebiliyoruz. Nur Deniz Hanım\'dan çok memnunuz.',
     },
     {
       id: 70,
@@ -583,7 +583,7 @@ const TestimonialsPage = () => {
       category: 'couple',
       service: 'Çift Danışmanlığı',
       rating: 5,
-      text: 'Eşimle yaşadığım sorunlar için Deniz Hanıma başvurdum. Eşim gelmek istemediği için ilk seanslarımı kendim gittim ve bana iyi geldiğini görünce eşim de gelmek istedi. Her gittiğimiz seanstan yeni bir şey öğrenerek çıktık o kapıdan. Ben eşimi, eşim beni anlamaya başladı. Kendisinin ilgisinden, samimiyetinden, profesyonelliğinden dolayı çok teşekkür ederim.',
+      text: 'Eşimle yaşadığım sorunlar için Deniz Hanıma başvurdum. Eşim gelmek istemediği için ilk görüşmelerime kendim gittim ve bana iyi geldiğini görünce eşim de gelmek istedi. Her gittiğimiz görüşmeden yeni bir şey öğrenerek çıktık o kapıdan. Ben eşimi, eşim beni anlamaya başladı. Kendisinin ilgisinden, samimiyetinden, profesyonelliğinden dolayı çok teşekkür ederim.',
     },
     {
       id: 71,
@@ -591,7 +591,7 @@ const TestimonialsPage = () => {
       category: 'couple',
       service: 'Çift Danışmanlığı',
       rating: 5,
-      text: '13 senedir evliyiz. Son 3-4 yıldır kavgalarımız çok artmıştı. Her şeyden kavga eder olmuştuk. Son çare boşanmaya karar verdik. Ama ailelerimizin ısrarıyla davayı açmadan önce bir psikologla görüşelim dedik. Nur Hanım ikimizi de sırayla dinledi. Konuştukça aslında neden kavga ettiğimizi fark etmeye başladım. Nur Hanım bizi dinledikten sonra sorunlarımızı ve nedenlerini toparladı. Yıllar sonra ilk defa bir şeylere inandık eşimle. Başlayalı 4 seans oldu ancak şimdiden yol aldığımızı düşünüyorum.',
+      text: '13 senedir evliyiz. Son 3-4 yıldır kavgalarımız çok artmıştı. Her şeyden kavga eder olmuştuk. Son çare boşanmaya karar verdik. Ama ailelerimizin ısrarıyla davayı açmadan önce bir psikologla görüşelim dedik. Nur Hanım ikimizi de sırayla dinledi. Konuştukça aslında neden kavga ettiğimizi fark etmeye başladım. Nur Hanım bizi dinledikten sonra sorunlarımızı ve nedenlerini toparladı. Yıllar sonra ilk defa bir şeylere inandık eşimle. Başlayalı 4 görüşme oldu ancak şimdiden yol aldığımızı düşünüyorum.',
     },
     {
       id: 72,
@@ -607,7 +607,7 @@ const TestimonialsPage = () => {
       category: 'couple',
       service: 'Çift Danışmanlığı',
       rating: 5,
-      text: 'Yaklaşık 2 sene önce eşimle aramızda bir mesafe oluşmaya başladı. Zamanla birbirimizden uzaklaştığımızı fark ettim. Bunu düzeltmeye çalıştıkça daha da kötü bir hal aldı. Boşanmanın eşiğine geldiğimizi fark edince ailelerimiz Deniz Hanıma ulaşmışlar. Deniz Hanım ilk seansta her ikimizi de dinledi ve aramızdaki sorunlarla ilgili bazı şeyleri fark etmemizi sağladı. Şimdi seanslara bireysel devam ediyoruz. Sürecin sonunda her şeyin düzeleceğine olan inancım ve Deniz Hanıma olan güvenim tam.',
+      text: 'Yaklaşık 2 sene önce eşimle aramızda bir mesafe oluşmaya başladı. Zamanla birbirimizden uzaklaştığımızı fark ettim. Bunu düzeltmeye çalıştıkça daha da kötü bir hal aldı. Boşanmanın eşiğine geldiğimizi fark edince ailelerimiz Deniz Hanıma ulaşmışlar. Deniz Hanım ilk görüşmede her ikimizi de dinledi ve aramızdaki sorunlarla ilgili bazı şeyleri fark etmemizi sağladı. Şimdi görüşmelere bireysel devam ediyoruz. Sürecin sonunda her şeyin düzeleceğine olan inancım ve Deniz Hanıma olan güvenim tam.',
     },
     {
       id: 74,
@@ -625,7 +625,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: 'Son bir senedir ara ara devam eden erken boşalma problemlerim vardı. Bu sorundan dolayı pek çok partner değiştirmek zorunda kaldım. İlişkilerimde bu sorun yüzünden tartışmalar hatta ayrılıklar oluyordu. Gittiğim ürolog herhangi bir sorun olmadığını ve deneyimli bir psikologla görüşmemin faydalı olacağını söyledi. Seansa ilk gittiğimde oldukça gergindim. Ancak Nur Hanımın güven veren yaklaşımı ve mahremiyete verdiği önem beni rahatlattı. Seanslara devam ediyoruz ve şimdiden ilerlediğimizi fark edebiliyorum.',
+      text: 'Son bir senedir ara ara devam eden erken boşalma problemlerim vardı. Bu sorundan dolayı pek çok partner değiştirmek zorunda kaldım. İlişkilerimde bu sorun yüzünden tartışmalar hatta ayrılıklar oluyordu. Gittiğim ürolog herhangi bir sorun olmadığını ve deneyimli bir psikologla görüşmemin faydalı olacağını söyledi. Görüşmeye ilk gittiğimde oldukça gergindim. Ancak Nur Hanımın güven veren yaklaşımı ve mahremiyete verdiği önem beni rahatlattı. Görüşmelere devam ediyoruz ve şimdiden ilerlediğimizi fark edebiliyorum.',
     },
     {
       id: 76,
@@ -641,7 +641,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: 'Kendimi bildim bileli cinselliğe soğuk bakıyordum. Oğlum doğduktan sonra bu daha da arttı. Bir süre sonra eşim her konuşmada bu sorunla ilgili beni eleştirmeye başladı. Kendimi eksik ve suçlu hissediyordum. Bu sorunu araştırırken Deniz Hanımı buldum, sitedeki yorumlarını okudum ve seanslara başladık. Deniz Hanım hislerimi o kadar iyi anladı ki, eşime bu sorunla ilgili açıklamalar yaptı. Kendimi her anlamda çok daha iyi hissediyorum. Bu sorunu yaşayan tüm kadınlara tavsiyem bir an önce Deniz Hanım ile görüşmeleri.',
+      text: 'Kendimi bildim bileli cinselliğe soğuk bakıyordum. Oğlum doğduktan sonra bu daha da arttı. Bir süre sonra eşim her konuşmada bu sorunla ilgili beni eleştirmeye başladı. Kendimi eksik ve suçlu hissediyordum. Bu sorunu araştırırken Deniz Hanımı buldum, sitedeki yorumlarını okudum ve görüşmelere başladık. Deniz Hanım hislerimi o kadar iyi anladı ki, eşime bu sorunla ilgili açıklamalar yaptı. Kendimi her anlamda çok daha iyi hissediyorum. Bu sorunu yaşayan tüm kadınlara tavsiyem bir an önce Deniz Hanım ile görüşmeleri.',
     },
     {
       id: 78,
@@ -675,14 +675,14 @@ const TestimonialsPage = () => {
       rating: 5,
       text: 'Nur Deniz Hanım\'a bir süredir var olan cinsel sorunlarımız için başvurduk. İyi gitmeyen bir ilişkimiz vardı ve sürekli tartışan bir çifttik. Kendisi bize çift hayatının ve cinsel hayatın nasıl iç içe olduğunu oldukça net bir şekilde açıkladı. Sorunumuzu dinledikten sonra anlattığı şeyler kafamdaki tüm soruların cevabı gibiydi. Çift sorunlarımızı çözmeye başladıkça cinsel hayatımız da düzelmeye başladı. Hem çift danışmanlığı hem de cinsel danışmanlık konusunda kendisini tavsiye ederim. Teşekkürler.',
     },
-    // Yeni eklenen cinsel danışmanlık yorumları (antalya-cinsel-terapi sayfasından)
+    // Yeni eklenen cinsel danışmanlık yorumları
     {
       id: 82,
       name: 'Beyza D.',
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: 'Merhaba, ben Deniz hanıma buradaki yorumlar aracılığıyla geldim. Eşimle üç yıldır evliyiz, ancak üç yıldır benim vajinismus olmam nedeniyle bir ilişki yaşayamıyorduk. Başlarda bunun kendiliğinden geçeceğini düşündük. İlişkimiz ilerledikçe gerginliğimin azalacağını ve uygun bir cinsel hayatımızın olabileceğini düşünüyordum. Ancak zaman geçtikçe daha da zorlanmaya başladık. Evliliğimiz bana göre bir çıkmaza girmişti. İş yerindeki arkadaşlarımla bu durumu paylaşınca verdikleri tepki üzerine kendimi daha kötü hissetmeye başladım ve eşimle konuşmamız üzerine bir destek almaya karar verdik. Daha sonra Deniz hanımla tanışmış olduk. Seanslar sırasında eşim de ben de birçok şeyi fark ettik ve Deniz hanım bizi acele ettirmedi. Özellikle bu bana çok iyi geldi. Her şey yapabileceğim ölçü ve derecedeydi. Eşimle olan ilişkim ve iletişimim gün geçtikçe daha iyi hale geldi ve yaşadığımız sorunları ayıp, günah olmadan ya da böyle düşünmeden, hissetmeden konuşabiliyor olmamız bile benim için çok kıymetliydi. Bugün oturup bunları sizlerle paylaşma nedenim Deniz hanım benim ve eşimin hayatında sanki yepyeni bir pencere açtı. Tüm samimiyetimle çok memnun kaldığımı belirtmek isterim. Kendisine teşekkürlerimizi sunuyoruz.',
+      text: 'Merhaba, ben Deniz hanıma buradaki yorumlar aracılığıyla geldim. Eşimle üç yıldır evliyiz, ancak üç yıldır yaşadığım istemsiz kasılmalar nedeniyle bir ilişki yaşayamıyorduk. Başlarda bunun kendiliğinden geçeceğini düşündük. İlişkimiz ilerledikçe gerginliğimin azalacağını ve uygun bir cinsel hayatımızın olabileceğini düşünüyordum. Ancak zaman geçtikçe daha da zorlanmaya başladık. Evliliğimiz bana göre bir çıkmaza girmişti. İş yerindeki arkadaşlarımla bu durumu paylaşınca verdikleri tepki üzerine kendimi daha kötü hissetmeye başladım ve eşimle konuşmamız üzerine bir destek almaya karar verdik. Daha sonra Deniz hanımla tanışmış olduk. Görüşmeler sırasında eşim de ben de birçok şeyi fark ettik ve Deniz hanım bizi acele ettirmedi. Özellikle bu bana çok iyi geldi. Her şey yapabileceğim ölçü ve derecedeydi. Eşimle olan ilişkim ve iletişimim gün geçtikçe daha iyi hale geldi ve yaşadığımız sorunları ayıp, günah olmadan ya da böyle düşünmeden, hissetmeden konuşabiliyor olmamız bile benim için çok kıymetliydi. Bugün oturup bunları sizlerle paylaşma nedenim Deniz hanım benim ve eşimin hayatında sanki yepyeni bir pencere açtı. Tüm samimiyetimle çok memnun kaldığımı belirtmek isterim. Kendisine teşekkürlerimizi sunuyoruz.',
     },
     {
       id: 83,
@@ -690,7 +690,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: '1,5 yıl vajinismusu çekenlerden biriyim. Yaşadıklarım tarif bile edilemezdi. Ancak yaşayan biliyor vajinismusun ne denli insanı yıprattığını. Kendimi her şeyden soyutlamıştım evden dışarı çıkmak istemiyordum. Gitgide de kilo aldım bunu bile kafama takmıyordum. Dışarı çıktığımda ise bebeği olan birini gördüğümde bende bir anormallik var herkes normal ben hastayım güçsüz biriyim gibi düşünüyordum. İyice içime kapanmıştım, tamamen kendime olan güvenimi kaybetmiştim. Daha öncesinde 4 ayrı yere başvurdum. Ama hepsi de hüsranla sonuçlandı. İnternetten tedavi araştırmaya karar verdim ve Deniz Hanım\'ı buldum. Kendisi ile telefonla konuştuk. Son derece umutsuz olmama rağmen bir kez daha denemeye karar verdik. Kendisine çok teşekkür ediyorum ve herkese de tavsiye ediyorum. Allah herkesi doğru insanlar ile karşılaştırsın.',
+      text: '1,5 yıl istemsiz kasılma sorunu çekenlerden biriyim. Yaşadıklarım tarif bile edilemezdi. Ancak yaşayan biliyor bu sorunun ne denli insanı yıprattığını. Kendimi her şeyden soyutlamıştım evden dışarı çıkmak istemiyordum. Gitgide de kilo aldım bunu bile kafama takmıyordum. Dışarı çıktığımda ise bebeği olan birini gördüğümde bende bir anormallik var herkes normal ben hastayım güçsüz biriyim gibi düşünüyordum. İyice içime kapanmıştım, tamamen kendime olan güvenimi kaybetmiştim. Daha öncesinde 4 ayrı yere başvurdum. Ama hepsi de hüsranla sonuçlandı. İnternetten tedavi araştırmaya karar verdim ve Deniz Hanım\'ı buldum. Kendisi ile telefonla konuştuk. Son derece umutsuz olmama rağmen bir kez daha denemeye karar verdik. Kendisine çok teşekkür ediyorum ve herkese de tavsiye ediyorum. Allah herkesi doğru insanlar ile karşılaştırsın.',
     },
     {
       id: 84,
@@ -698,7 +698,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: '4 sene önce geçirdiğim vajinal mantar rahatsızlığından sonra cinsel hayatımızda sorunlar ortaya çıktı. Yıllarca bir çözüm aradım. Gittiğim kadın doğum doktorları herhangi bir sorun olmadığını söylüyordu. Ancak cinsel ilişki sırasında aşırı kaygılanıyordum ve vajinamda yoğun bir ağrı oluyordu. Bir kadın doğum doktorunun tavsiyesi üzerine deneyimli bir psikolog araştırmaya başlamıştım ve Deniz hanımı buldum. Seanslara eşimle birlikte katıldık. Birkaç seansta fark edilir değişimler oldu. Şu an hiçbir sorun yaşamıyoruz. Gönül rahatlığı ile kendisine başvurabilirsiniz.',
+      text: '4 sene önce geçirdiğim vajinal mantar rahatsızlığından sonra cinsel hayatımızda sorunlar ortaya çıktı. Yıllarca bir çözüm aradım. Gittiğim kadın doğum doktorları herhangi bir sorun olmadığını söylüyordu. Ancak cinsel ilişki sırasında aşırı kaygılanıyordum ve vajinamda yoğun bir ağrı oluyordu. Bir kadın doğum doktorunun tavsiyesi üzerine deneyimli bir psikolog araştırmaya başlamıştım ve Deniz hanımı buldum. Görüşmelere eşimle birlikte katıldık. Birkaç görüşmede fark edilir değişimler oldu. Şu an hiçbir sorun yaşamıyoruz. Gönül rahatlığı ile kendisine başvurabilirsiniz.',
     },
     {
       id: 85,
@@ -706,7 +706,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: 'Üniversite mezunu olmamıza rağmen şu ana kadar vajinismus diye bir şey duymamıştık. Gerek web sitesindeki güven verici bilgiler, gerekse daha sonra Nur Deniz Hanım\'la konuşarak aldığımız sıcak mesajlar sonucunda randevu alarak tedavilerimize başladık. Tedavilerde basit bir takım egzersizler veriliyor ve sizden uygulamanız bekleniyor. Aslında son derece basit ve kolay uygulamalar bunlar. En çok korktuğum şey ise canımın yanmasıydı. Korkumun ne kadar yersiz olduğunu tedaviye başladıktan sonra anladım. Birkaç seanstan sonra korkularınız ve kasılmalarınız tamamen azalıp kayboluyor. Şu anda eşimle mükemmel bir cinsel hayatımız var ve artık çocuk sahibi olmak istiyorum. Tüm yardımlarınız için çok ama çok teşekkür ederim.',
+      text: 'Üniversite mezunu olmamıza rağmen şu ana kadar böyle bir sorunun varlığını bile duymamıştık. Gerek web sitesindeki güven verici bilgiler, gerekse daha sonra Nur Deniz Hanım\'la konuşarak aldığımız sıcak mesajlar sonucunda randevu alarak tedavilerimize başladık. Tedavilerde basit bir takım egzersizler veriliyor ve sizden uygulamanız bekleniyor. Aslında son derece basit ve kolay uygulamalar bunlar. En çok korktuğum şey ise canımın yanmasıydı. Korkumun ne kadar yersiz olduğunu tedaviye başladıktan sonra anladım. Birkaç görüşmeden sonra korkularınız ve kasılmalarınız tamamen azalıp kayboluyor. Şu anda eşimle mükemmel bir cinsel hayatımız var ve artık çocuk sahibi olmak istiyorum. Tüm yardımlarınız için çok ama çok teşekkür ederim.',
     },
     {
       id: 86,
@@ -714,7 +714,7 @@ const TestimonialsPage = () => {
       category: 'sexual',
       service: 'Cinsel Danışmanlık',
       rating: 5,
-      text: 'Nur Deniz Hanım ile çift danışmanlığı seanslarımıza başladık. İyi gitmeyen bir ilişkimiz vardı ve sürekli tartışan bir çifttik ve cinsel hayatımızda yolunda gitmiyordu. Aslında cinsel sorunların çift hayatımızı etkilediği ortaya çıktı. Seanslarımızı cinsel danışmanlık üzerine yoğunlaştırdık. Var olan erken boşalma sorunuma çözüm bulunca cinsel hayatımızda düzelmeler başladı. Bu da çift ilişkimizin de düzelmesine neden oldu hem çift danışmanlığı hem de cinsel danışmanlık konusunda kendisini tavsiye ederim. Teşekkürler Nur Deniz hocam.',
+      text: 'Nur Deniz Hanım ile çift danışmanlığı görüşmelerimize başladık. İyi gitmeyen bir ilişkimiz vardı ve sürekli tartışan bir çifttik ve cinsel hayatımızda yolunda gitmiyordu. Aslında cinsel sorunların çift hayatımızı etkilediği ortaya çıktı. Görüşmelerimizi cinsel danışmanlık üzerine yoğunlaştırdık. Var olan erken boşalma sorunuma çözüm bulunca cinsel hayatımızda düzelmeler başladı. Bu da çift ilişkimizin de düzelmesine neden oldu hem çift danışmanlığı hem de cinsel danışmanlık konusunda kendisini tavsiye ederim. Teşekkürler Nur Deniz hocam.',
     },
   ];
 

@@ -192,7 +192,7 @@ const LPCiftTerapisi = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 via-teal-900/60 to-transparent z-10" />
             <img
               src="/images/sas/sas-1.png"
-              alt="Antalya Çift Danışmanlığı - Evlilik Danışmanlığı Seansı"
+              alt="Antalya Çift Danışmanlığı - Evlilik Danışmanlığı Görüşmesi"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -592,9 +592,9 @@ const LPCiftTerapisi = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <i className="ri-timer-flash-fill text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">İlk Seansta Fark</h3>
+                <h3 className="text-xl font-bold text-white mb-3">İlk Görüşmede Fark</h3>
                 <p className="text-white/60">
-                  Çoğu çift ilk birkaç seansta iletişimlerinde belirgin iyileşme görüyor. Kısa sürede somut sonuçlar.
+                  Çoğu çift ilk birkaç görüşmede iletişimlerinde belirgin iyileşme görüyor. Kısa sürede somut sonuçlar.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-purple-400">
                   <i className="ri-checkbox-circle-fill"></i>
@@ -657,13 +657,13 @@ const LPCiftTerapisi = () => {
               >
                 <img
                   src="/images/sas/sas-4.png"
-                  alt="Antalya Çift Danışmanlığı Seansı - Evlilik Danışmanlığı"
+                  alt="Antalya Çift Danışmanlığı Görüşmesi - Evlilik Danışmanlığı"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent flex items-end p-6">
                   <div className="text-white">
                     <p className="text-2xl mb-1">🤝</p>
-                    <p className="font-semibold">Evlilik Danışmanlığı Seansı</p>
+                    <p className="font-semibold">Evlilik Danışmanlığı Görüşmesi</p>
                   </div>
                 </div>
               </motion.div>

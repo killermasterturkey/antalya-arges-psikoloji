@@ -19,7 +19,7 @@ const ProcessSection = () => {
     {
       icon: 'ri-heart-pulse-line',
       title: 'Destek Süreci',
-      description: 'Belirlenen psikologla yapılan görüşmeler, gizlilik ve güven ilkesiyle yürütülür. Seanslar boyunca ihtiyacınıza yönelik bilimsel temelli yöntemler uygulanır.',
+      description: 'Belirlenen psikologla yapılan görüşmeler, gizlilik ve güven ilkesiyle yürütülür. Görüşmeler boyunca ihtiyacınıza yönelik bilimsel temelli yöntemler uygulanır.',
       color: 'bg-cream',
       buttonStyle: 'bg-white text-darkgray border-2 border-darkgray',
     },

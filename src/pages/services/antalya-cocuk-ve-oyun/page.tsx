@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
 import CallBanner from '../../../components/feature/CallBanner';
-import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const AntalyaCocukVeOyunPage = () => {
   const therapyAreas = [
     { icon: 'ri-emotion-unhappy-line', title: 'Davranış Bozuklukları', description: 'Öfke patlamaları, saldırganlık ve inatçılık.' },
-    { icon: 'ri-heart-pulse-line', title: 'Kaygı ve Korkular', description: 'Ayrılık kaygısı, karanlık korkusu ve fobiler.' },
+    { icon: 'ri-heart-pulse-line', title: 'Kaygı ve Korkular', description: 'Ayrılık kaygısı, karanlık korkusu ve diğer korkular.' },
     { icon: 'ri-mental-health-line', title: 'Travma ve Yas', description: 'Kayıp ve travmatik olaylar sonrası destek.' },
     { icon: 'ri-focus-3-line', title: 'Dikkat Eksikliği', description: 'Konsantrasyon güçlüğü ve hiperaktivite.' },
   ];

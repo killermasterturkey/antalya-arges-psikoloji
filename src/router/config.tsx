@@ -36,13 +36,6 @@ const CocuklarIcinMoxoPage = lazy(() => import('../pages/dikkat-gelistirme/cocuk
 const YetiskinlerIcinMoxoPage = lazy(() => import('../pages/dikkat-gelistirme/yetiskinler-icin-moxo/page'));
 const BbmpPage = lazy(() => import('../pages/dikkat-gelistirme/bbmp/page'));
 
-// SAS Metodu Sayfalari
-const SasNedirPage = lazy(() => import('../pages/sas/sas-nedir/page'));
-const SasSmartPage = lazy(() => import('../pages/sas/sas-smart/page'));
-const SasLifePage = lazy(() => import('../pages/sas/sas-life/page'));
-const SasBoostPage = lazy(() => import('../pages/sas/sas-boost/page'));
-const SasBalancePage = lazy(() => import('../pages/sas/sas-balance/page'));
-
 // Danisan Yorumlari Alt Sayfalari
 const TestimonialsCocukPage = lazy(() => import('../pages/testimonials/cocuk/page'));
 const TestimonialsErgenPage = lazy(() => import('../pages/testimonials/ergen/page'));
@@ -185,28 +178,6 @@ const routes: RouteObject[] = [
   {
     path: '/dikkat-gelistirme/bbmp',
     element: <BbmpPage />,
-  },
-
-  // SAS Metodu Sayfalari
-  {
-    path: '/sas/sas-nedir',
-    element: <SasNedirPage />,
-  },
-  {
-    path: '/sas/sas-smart',
-    element: <SasSmartPage />,
-  },
-  {
-    path: '/sas/sas-life',
-    element: <SasLifePage />,
-  },
-  {
-    path: '/sas/sas-boost',
-    element: <SasBoostPage />,
-  },
-  {
-    path: '/sas/sas-balance',
-    element: <SasBalancePage />,
   },
 
   // Danisan Yorumlari Alt Sayfalari

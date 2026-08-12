@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Header from '../../components/feature/Header';
 import Footer from '../../components/feature/Footer';
 import CallBanner from '../../components/feature/CallBanner';
-import WhatsAppButton from '../../components/feature/WhatsAppButton';
 import { trackPhoneClick, trackWhatsAppClick } from '../../utils/analytics';
 
 const ContactPage = () => {

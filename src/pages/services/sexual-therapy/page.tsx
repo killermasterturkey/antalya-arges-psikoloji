@@ -32,7 +32,7 @@ const SexualTherapyPage = () => {
     'Erektil disfonksiyon',
     'Erken boşalma',
     'Orgazm sorunları',
-    'Vajinismus',
+    'Cinsellikte istemsiz kasılmalar',
     'Disparoni (ağrılı cinsel ilişki)',
     'Cinsel kaygı ve performans baskısı',
     'Cinsel kimlik ve yönelim sorunları',
@@ -329,7 +329,7 @@ const SexualTherapyPage = () => {
               Gizlilik ve Güvenlik
             </h2>
             <p className="text-charcoal/60 leading-relaxed mb-6">
-              Cinsel danışmanlık seanslarınız tamamen gizlidir. Paylaştığınız tüm bilgiler
+              Cinsel danışmanlık görüşmeleriniz tamamen gizlidir. Paylaştığınız tüm bilgiler
               profesyonel etik kurallar çerçevesinde korunur. Rahat ve güvenli bir ortamda,
               yargılanmadan endişelerinizi paylaşabilirsiniz.
             </p>

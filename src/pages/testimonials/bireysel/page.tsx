@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsBireyselPage = () => {
   const testimonials = [
-    { initials: 'M.K.', rating: 5, text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 seans görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi. Her şeyden çok memnun kaldım.', service: 'Bireysel Danışmanlık' },
+    { initials: 'M.K.', rating: 5, text: 'Deniz Hanım\'a sosyal medya üzerinde ulaştım. Ortalama 8 kez görüştük. İlişkimle alakalı kıskançlığım beni zorluyordu ve her şeyi gereğinden fazla sorguluyordum. Artık bazı durumların bana ve hayatıma zarar verdiğini fark edip destek almaya başladım. Danışmanlık sürecim çok güzel ilerledi ve çok güzel sonuçlar aldım. Benim için çok güzel bir deneyimdi. Deniz Hanım\'ın ilgisi ve anlayışı daha da güzeldi. Her şeyden çok memnun kaldım.', service: 'Bireysel Danışmanlık' },
   ];
 
   return (

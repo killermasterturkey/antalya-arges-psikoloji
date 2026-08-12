@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const IndividualTherapyPage = () => {
   const benefits = [
-    'Depresyon ve anksiyete belirtilerinin azalması',
+    'Kaygı ve duygusal zorlanma belirtilerinin azalması',
     'Stres yönetimi becerilerinin gelişmesi',
     'Öfke kontrolü ve duygusal düzenleme',
     'Benlik saygısının artması',
@@ -23,7 +23,7 @@ const IndividualTherapyPage = () => {
     {
       step: '2',
       title: 'Danışmanlık Süreci',
-      description: 'Haftalık seanslarla düzenli takip ve profesyonel destek çalışmaları.',
+      description: 'Haftalık görüşmelerle düzenli takip ve profesyonel destek çalışmaları.',
     },
     {
       step: '3',
@@ -130,7 +130,7 @@ const IndividualTherapyPage = () => {
                       <i className="ri-time-line text-2xl text-olive"></i>
                     </div>
                     <div>
-                      <p className="font-sans text-sm text-darkgray/60">Seans Süresi</p>
+                      <p className="font-sans text-sm text-darkgray/60">Görüşme Süresi</p>
                       <p className="font-sans text-lg font-bold text-darkgray">50 Dakika</p>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ const IndividualTherapyPage = () => {
                 Bireysel Danışmanlığın Faydaları
               </h2>
               <p className="font-sans text-lg text-darkgray/70 max-w-3xl mx-auto">
-                Düzenli danışmanlık seansları ile hayatınızda olumlu değişimler yaşayabilirsiniz.
+                Düzenli danışmanlık görüşmeleri ile hayatınızda olumlu değişimler yaşayabilirsiniz.
               </p>
             </motion.div>
 

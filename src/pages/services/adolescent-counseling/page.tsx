@@ -34,7 +34,7 @@ const AdolescentCounselingPage = () => {
     'Sosyal medya bağımlılığı',
     'Özgüven eksikliği',
     'Aile içi çatışmalar',
-    'Kaygı ve depresyon',
+    'Kaygı ve duygusal zorlanmalar',
     'Öfke kontrolü sorunları',
     'Kimlik karmaşası',
     'Madde kullanımı riski',
@@ -61,7 +61,7 @@ const AdolescentCounselingPage = () => {
     {
       step: '04',
       title: 'Danışmanlık Süreci',
-      description: 'Bireysel seanslar ve gerektiğinde aile görüşmeleri'
+      description: 'Bireysel görüşmeler ve gerektiğinde aile görüşmeleri'
     },
     {
       step: '05',

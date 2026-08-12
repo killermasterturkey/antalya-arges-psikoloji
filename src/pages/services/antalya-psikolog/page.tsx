@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
 import CallBanner from '../../../components/feature/CallBanner';
-import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 import { Link } from 'react-router-dom';
 
 const AntalyaPsikologPage = () => {
   const services = [
-    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', description: 'Depresyon, anksiyete, travma ve kişisel gelişim odaklı bireysel destek.' },
+    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', description: 'Kaygılar, duygusal zorlanmalar, travma ve kişisel gelişim odaklı bireysel destek.' },
     { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', description: 'Aile içi iletişim sorunları ve ilişkilerin güçlendirilmesi.' },
     { icon: 'ri-heart-2-line', title: 'Çift Danışmanlığı', description: 'İlişki problemleri, iletişim güçlükleri ve evlilik danışmanlığı.' },
     { icon: 'ri-mental-health-line', title: 'Çocuk Psikolojisi', description: 'Çocuklarda davranış problemleri, okul uyumu ve gelişimsel destek.' },

@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
     {
       rating: 5,
       title: 'Hayatım Değişti',
-      text: 'Yıllardır taşıdığım travmalardan aldığım danışmanlık desteği ile kurtuldum. İlk seanstan sonra bile fark ettim. Artık geçmişim beni esir almıyor.',
+      text: 'Yıllardır taşıdığım travmalardan aldığım danışmanlık desteği ile kurtuldum. İlk görüşmeden sonra bile fark ettim. Artık geçmişim beni esir almıyor.',
       name: 'Can T.',
       info: '28 yaşında, Bursa',
       avatar: 'https://ui-avatars.com/api/?name=Can+T&background=C8B560&color=fff',
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
     {
       rating: 5,
       title: 'Güvenli ve Rahat Ortam',
-      text: 'İlk kez psikoloğa gittiğimde çok gergindim. Ama psikologumun sıcak yaklaşımı ve ofisteki rahat ortam sayesinde kendimi güvende hissettim. Her seans sonrası daha hafif hissediyorum.',
+      text: 'İlk kez psikoloğa gittiğimde çok gergindim. Ama psikologumun sıcak yaklaşımı ve ofisteki rahat ortam sayesinde kendimi güvende hissettim. Her görüşme sonrası daha hafif hissediyorum.',
       name: 'Deniz S.',
       info: '25 yaşında, Antalya',
       avatar: 'https://ui-avatars.com/api/?name=Deniz+S&background=8A9A5B&color=fff',

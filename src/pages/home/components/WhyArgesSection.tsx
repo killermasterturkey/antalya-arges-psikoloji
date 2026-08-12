@@ -33,7 +33,7 @@ const WhyArgesSection = () => {
     {
       icon: 'ri-video-chat-line',
       title: 'Esnek Seçenekler',
-      description: 'Online ve yüz yüze esnek seans seçenekleri ile süreç boyunca aktif takip ve destek.',
+      description: 'Online ve yüz yüze esnek görüşme seçenekleri ile süreç boyunca aktif takip ve destek.',
       color: 'text-olive',
     },
   ];

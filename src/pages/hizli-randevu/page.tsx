@@ -49,7 +49,7 @@ const HizliRandevuPage = () => {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     }
 

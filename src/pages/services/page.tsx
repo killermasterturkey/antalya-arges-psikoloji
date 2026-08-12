@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import Header from '../../components/feature/Header';
 import Footer from '../../components/feature/Footer';
 import CallBanner from '../../components/feature/CallBanner';
-import WhatsAppButton from '../../components/feature/WhatsAppButton';
 import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
@@ -10,9 +9,9 @@ const ServicesPage = () => {
     {
       icon: 'ri-user-line',
       title: 'Bireysel Danışmanlık',
-      description: 'Depresyon, anksiyete, stres yönetimi, öfke kontrolü, travma, düşük benlik saygısı ve kişisel gelişim konularında profesyonel destek.',
+      description: 'Kaygılar, duygusal zorlanmalar, stres yönetimi, öfke kontrolü, travma, düşük benlik saygısı ve kişisel gelişim konularında profesyonel destek.',
       suitable: 'Yetişkinler için',
-      process: 'Haftalık 50 dakikalık seanslar',
+      process: 'Haftalık 50 dakikalık görüşmeler',
       color: 'bg-olive/20',
       link: '/services/individual-therapy',
     },
@@ -21,7 +20,7 @@ const ServicesPage = () => {
       title: 'Çift Danışmanlığı',
       description: 'İletişim sorunları, güven problemleri, cinsel uyumsuzluk, boşanma süreci ve ilişki dinamiklerinin güçlendirilmesi.',
       suitable: 'Evli veya birlikte olan çiftler',
-      process: 'Haftalık 60 dakikalık seanslar',
+      process: 'Haftalık 60 dakikalık görüşmeler',
       color: 'bg-gold/20',
       link: '/services/couple-therapy',
     },
@@ -30,7 +29,7 @@ const ServicesPage = () => {
       title: 'Aile Danışmanlığı',
       description: 'Aile içi iletişim sorunları, ebeveyn-çocuk ilişkisi, kardeş çatışmaları ve aile dinamiklerinin iyileştirilmesi.',
       suitable: 'Tüm aile bireyleri',
-      process: 'Haftalık 60-75 dakikalık seanslar',
+      process: 'Haftalık 60-75 dakikalık görüşmeler',
       color: 'bg-olive/20',
       link: '/services',
     },
@@ -46,16 +45,16 @@ const ServicesPage = () => {
     {
       icon: 'ri-user-smile-line',
       title: 'Ergen Danışmanlığı',
-      description: 'Kimlik gelişimi, akran ilişkileri, okul sorunları, madde kullanımı, depresyon ve kaygı bozuklukları.',
+      description: 'Kimlik gelişimi, akran ilişkileri, okul sorunları, madde kullanımı ve yoğun kaygılar.',
       suitable: '13-18 yaş arası ergenler',
-      process: 'Haftalık 50 dakikalık seanslar',
+      process: 'Haftalık 50 dakikalık görüşmeler',
       color: 'bg-olive/20',
       link: '/services',
     },
     {
       icon: 'ri-heart-pulse-line',
       title: 'Cinsel Danışmanlık',
-      description: 'Cinsel işlev bozuklukları, cinsel isteksizlik, erken boşalma, vajinismus ve cinsel kimlik konularında profesyonel destek.',
+      description: 'Cinsel isteksizlik, erken boşalma, istemsiz kasılmalar ve cinsel kimlik konularında profesyonel destek.',
       suitable: 'Bireyler ve çiftler',
       process: 'Kişiye özel danışmanlık planı',
       color: 'bg-olive/20',
@@ -66,7 +65,7 @@ const ServicesPage = () => {
       title: 'Kariyer Danışmanlığı',
       description: 'Meslek seçimi, kariyer değişimi, iş stresi, tükenmişlik sendromu ve iş-yaşam dengesi konularında rehberlik.',
       suitable: 'Çalışanlar ve öğrenciler',
-      process: 'Değerlendirme ve yönlendirme seansları',
+      process: 'Değerlendirme ve yönlendirme görüşmeleri',
       color: 'bg-gold/20',
       link: '/services',
     },

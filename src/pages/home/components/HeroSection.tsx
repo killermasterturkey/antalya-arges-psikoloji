@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { trackPhoneClick, trackWhatsAppClick } from '../../../utils/analytics';
 
 const HeroSection = () => {

@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
 import WhatsAppButton from '../../../components/feature/WhatsAppButton';
-import { Link } from 'react-router-dom';
 
 const AntalyaPedagogPage = () => {
   const services = [
@@ -31,18 +30,18 @@ const AntalyaPedagogPage = () => {
               >
                 <div className="inline-flex items-center space-x-2 bg-white border border-darkgray/20 px-4 py-2 rounded-full">
                   <i className="ri-graduation-cap-line text-olive"></i>
-                  <span className="font-sans text-sm text-darkgray">Pedagog</span>
+                  <span className="font-sans text-sm text-darkgray">Çocuk Psikoloğu</span>
                 </div>
 
                 <h1 className="font-serif text-5xl lg:text-7xl font-bold text-darkgray leading-tight">
-                  Antalya Pedagog
+                  Antalya Çocuk Psikoloğu
                 </h1>
 
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed mb-2">
                   Çocuğunuzun Eğitim Sürecinde Yanınızdayız
                 </p>
                 <p className="font-sans text-base text-darkgray/60 leading-relaxed">
-                  Pedagog; çocukların bilişsel, duygusal, sosyal ve eğitimsel gelişimini destekleyen, öğrenme güçlüklerinde rehberlik eden ve ebeveynlere yol gösteren profesyoneldir. Çocuğunuzun potansiyelini keşfetmesine yardımcı oluyoruz.
+                  Çocuk psikoloğu; çocukların bilişsel, duygusal, sosyal ve eğitimsel gelişimini destekleyen, öğrenme güçlüklerinde rehberlik eden ve ebeveynlere yol gösteren profesyoneldir. Çocuğunuzun potansiyelini keşfetmesine yardımcı oluyoruz.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -67,7 +66,7 @@ const AntalyaPedagogPage = () => {
                 <div className="w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="/images/services/pedagog-hero.png"
-                    alt="Antalya Pedagog - Çocuk Eğitim ve Gelişim Desteği"
+                    alt="Antalya Çocuk Psikoloğu - Çocuk Eğitim ve Gelişim Desteği"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
@@ -88,7 +87,7 @@ const AntalyaPedagogPage = () => {
               className="text-center space-y-4 mb-12"
             >
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-darkgray">
-                Pedagog Hizmetlerimiz
+                Eğitim ve Gelişim Hizmetlerimiz
               </h2>
             </motion.div>
 
@@ -126,7 +125,7 @@ const AntalyaPedagogPage = () => {
                 Çocuğunuzun Geleceği İçin
               </h2>
               <p className="font-sans text-lg text-darkgray/70 mb-8">
-                Pedagog desteği ile çocuğunuzun potansiyelini ortaya çıkarın.
+                Çocuk psikoloğu desteği ile çocuğunuzun potansiyelini ortaya çıkarın.
               </p>
               <a
                 href="https://wa.me/905403251525"

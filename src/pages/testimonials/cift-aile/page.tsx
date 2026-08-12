@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsCiftAilePage = () => {
   const testimonials = [
-    { initials: 'A&E', rating: 5, text: 'Deniz Hanım\'dan evliliğimiz hakkında destek aldık. Eşim ilk etapta danışmanlığa gitme konusunda isteksizdi ama Deniz Hanım\'ın yaklaşımı onu rahatlatınca istekle gitmeye başladı. Nur Deniz Hanım\'la birlikte sorunlarımızı etkili bir biçimde çözdük ve seanslarla çözmeye devam ediyoruz. Çok güler yüzlü, samimi ve işinde çok başarılı biri. İnsana güven veriyor ve sıkıntınızı rahatça paylaşabiliyorsunuz. Kesinlikle tavsiye ederim. Eşimle paylaşamadığım birçok sorunu orada daha rahat bir biçimde dile getirebildim. Kendisine çok teşekkür ederim.', service: 'Çift Danışmanlığı' },
+    { initials: 'A&E', rating: 5, text: 'Deniz Hanım\'dan evliliğimiz hakkında destek aldık. Eşim ilk etapta danışmanlığa gitme konusunda isteksizdi ama Deniz Hanım\'ın yaklaşımı onu rahatlatınca istekle gitmeye başladı. Nur Deniz Hanım\'la birlikte sorunlarımızı etkili bir biçimde çözdük ve görüşmelerle çözmeye devam ediyoruz. Çok güler yüzlü, samimi ve işinde çok başarılı biri. İnsana güven veriyor ve sıkıntınızı rahatça paylaşabiliyorsunuz. Kesinlikle tavsiye ederim. Eşimle paylaşamadığım birçok sorunu orada daha rahat bir biçimde dile getirebildim. Kendisine çok teşekkür ederim.', service: 'Çift Danışmanlığı' },
   ];
 
   return (

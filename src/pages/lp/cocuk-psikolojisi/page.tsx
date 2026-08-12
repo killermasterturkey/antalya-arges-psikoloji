@@ -22,8 +22,8 @@ const faqData = [
     answer: 'Öfke nöbetleri, saldırganlık, inatçılık gibi davranış sorunları için çocuk psikoloğu desteği almak önemlidir. Merkezimizde bu konuda deneyimli psikologlarımız bulunmaktadır.',
   },
   {
-    question: 'Pedagog ve çocuk psikoloğu arasındaki fark nedir?',
-    answer: 'Çocuk psikoloğu duygusal ve davranışsal sorunlarda danışmanlık uygularken, pedagog eğitim ve gelişim odaklı çalışır. Merkezimizde her iki alanda da psikolog kadromuz bulunmaktadır.',
+    question: 'Çocuk psikoloğu hangi konularda destek verir?',
+    answer: 'Çocuk psikoloğu duygusal ve davranışsal sorunlarda danışmanlık uygular; eğitim ve gelişim odaklı konularda da destek sağlar. Merkezimizde her iki alanda da deneyimli psikolog kadromuz bulunmaktadır.',
   },
   {
     question: 'Ebeveyn olarak sürece dahil oluyor muyum?',

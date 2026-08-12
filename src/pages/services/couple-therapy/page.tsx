@@ -60,8 +60,8 @@ const CoupleTherapyPage = () => {
     },
     {
       step: '3',
-      title: 'Danışmanlık Seansları',
-      description: 'Haftalık seanslarla iletişim ve ilişki becerilerini geliştiririz.',
+      title: 'Danışmanlık Görüşmeleri',
+      description: 'Haftalık görüşmelerle iletişim ve ilişki becerilerini geliştiririz.',
     },
     {
       step: '4',
@@ -140,7 +140,7 @@ const CoupleTherapyPage = () => {
                       <i className="ri-time-line text-2xl text-gold"></i>
                     </div>
                     <div>
-                      <p className="font-sans text-sm text-darkgray/60">Seans Süresi</p>
+                      <p className="font-sans text-sm text-darkgray/60">Görüşme Süresi</p>
                       <p className="font-sans text-lg font-bold text-darkgray">60 Dakika</p>
                     </div>
                   </div>
@@ -203,7 +203,7 @@ const CoupleTherapyPage = () => {
               >
                 <img
                   src="https://readdy.ai/api/search-image?query=couple%20in%20therapy%20session%20sitting%20face%20to%20face%20engaged%20in%20meaningful%20conversation%20with%20professional%20therapist%20facilitating%20communication%20modern%20counseling%20room%20with%20comfortable%20seating%20soft%20natural%20lighting%20creating%20safe%20space%20for%20emotional%20expression%20and%20healing%20neutral%20warm%20color%20palette&width=800&height=1000&seq=couple-therapy-session&orientation=portrait"
-                  alt="Çift Danışmanlığı Seansı"
+                  alt="Çift Danışmanlığı Görüşmesi"
                   className="w-full h-full object-cover object-top"
                 />
               </motion.div>
@@ -222,7 +222,7 @@ const CoupleTherapyPage = () => {
                   Çift danışmanlığı, ilişkinizdeki sorunları anlamak ve çözmek için güvenli bir alan sağlar. Psikolog, tarafsız bir gözlemci olarak her iki partnerin de duygularını ve ihtiyaçlarını anlamaya çalışır.
                 </p>
                 <p className="font-sans text-lg text-darkgray/70 leading-relaxed">
-                  Seanslar sırasında, iletişim becerilerinizi geliştirmenize, birbirinizi daha iyi anlamanıza ve ilişkinizi güçlendirecek stratejiler geliştirmenize yardımcı oluruz.
+                  Görüşmeler sırasında, iletişim becerilerinizi geliştirmenize, birbirinizi daha iyi anlamanıza ve ilişkinizi güçlendirecek stratejiler geliştirmenize yardımcı oluruz.
                 </p>
                 <div className="bg-white rounded-2xl p-6 space-y-4">
                   <h3 className="font-serif text-xl font-bold text-darkgray">Önemli Not</h3>

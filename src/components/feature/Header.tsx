@@ -26,17 +26,12 @@ const Header = () => {
 
   const services = [
     { name: 'Antalya Psikolog', icon: 'ri-mental-health-line', path: '/services/antalya-psikolog', desc: 'Profesyonel psikolojik destek' },
-    { name: 'Antalya Pedagog', icon: 'ri-graduation-cap-line', path: '/services/antalya-pedagog', desc: 'Eğitim ve gelişim danışmanlığı' },
+    { name: 'Antalya Çocuk Psikoloğu', icon: 'ri-graduation-cap-line', path: '/services/antalya-pedagog', desc: 'Eğitim ve gelişim danışmanlığı' },
     { name: 'Aile Danışmanlığı', icon: 'ri-home-heart-line', path: '/services/aile-danismanligi', desc: 'Aile içi iletişim ve uyum' },
     { name: 'Çocuk ve Oyunla Danışmanlık', icon: 'ri-bear-smile-line', path: '/services/antalya-cocuk-ve-oyun', desc: 'Çocuklara özel danışmanlık' },
     { name: 'Ergen Danışmanlığı', icon: 'ri-user-smile-line', path: '/services/antalya-ergen-terapisi', desc: 'Ergenlik dönemi desteği' },
     { name: 'Çift Danışmanlığı', icon: 'ri-heart-2-line', path: '/services/antalya-cift-terapisi', desc: 'İlişki ve evlilik danışmanlığı' },
     { name: 'Cinsel Danışmanlık', icon: 'ri-hearts-line', path: '/services/antalya-cinsel-terapi', desc: 'Cinsel sağlık danışmanlığı' },
-    { name: 'SAS Nedir?', icon: 'ri-lightbulb-line', path: '/sas/sas-nedir', desc: 'SAS metodunu keşfet' },
-    { name: 'SAS Smart', icon: 'ri-rocket-line', path: '/sas/sas-smart', desc: 'Akıllı öğrenme teknikleri' },
-    { name: 'SAS Life', icon: 'ri-heart-pulse-line', path: '/sas/sas-life', desc: 'Yaşam kalitesi artırma' },
-    { name: 'SAS Boost', icon: 'ri-flashlight-line', path: '/sas/sas-boost', desc: 'Performans geliştirme' },
-    { name: 'SAS Balance', icon: 'ri-scales-line', path: '/sas/sas-balance', desc: 'Denge ve uyum' },
   ];
 
   const dikkatGelistirme = [

@@ -24,7 +24,7 @@ const ChildPsychologyPage = () => {
     {
       icon: 'ri-heart-pulse-line',
       title: 'Kaygı Bozuklukları',
-      description: 'Ayrılık kaygısı, sosyal kaygı, fobiler',
+      description: 'Ayrılık kaygısı, sosyal kaygı ve korkular',
     },
     {
       icon: 'ri-moon-line',
@@ -353,9 +353,9 @@ const ChildPsychologyPage = () => {
                 <div className="w-16 h-16 bg-olive rounded-2xl flex items-center justify-center">
                   <span className="font-serif text-3xl font-bold text-white">3</span>
                 </div>
-                <h3 className="font-serif text-xl font-bold text-darkgray">Danışmanlık Seansları</h3>
+                <h3 className="font-serif text-xl font-bold text-darkgray">Danışmanlık Görüşmeleri</h3>
                 <p className="font-sans text-sm text-darkgray/70 leading-relaxed">
-                  Haftalık oyunla danışmanlık seansları ve düzenli ebeveyn görüşmeleri ile süreci yürütürüz.
+                  Haftalık oyunla danışmanlık görüşmeleri ve düzenli ebeveyn görüşmeleri ile süreci yürütürüz.
                 </p>
               </motion.div>
             </div>

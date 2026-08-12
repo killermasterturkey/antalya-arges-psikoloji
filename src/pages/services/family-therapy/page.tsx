@@ -59,7 +59,7 @@ const FamilyTherapyPage = () => {
     {
       step: '04',
       title: 'Danışmanlık Süreci',
-      description: 'Düzenli seanslarla aile dinamiklerinin iyileştirilmesi'
+      description: 'Düzenli görüşmelerle aile dinamiklerinin iyileştirilmesi'
     },
     {
       step: '05',

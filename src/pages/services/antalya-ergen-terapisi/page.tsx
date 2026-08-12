@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 import Header from '../../../components/feature/Header';
 import Footer from '../../../components/feature/Footer';
 import CallBanner from '../../../components/feature/CallBanner';
-import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const AntalyaErgenTerapisiPage = () => {
   const topics = [
     { icon: 'ri-user-search-line', title: 'Kimlik Arayışı', description: 'Ergenlik döneminde kimlik ve benlik gelişimi.' },
-    { icon: 'ri-emotion-sad-line', title: 'Depresyon', description: 'Ergen depresyonu ve duygu durum bozuklukları.' },
+    { icon: 'ri-emotion-sad-line', title: 'Duygusal Zorlanmalar', description: 'Ergenlerde yoğun üzüntü ve duygusal iniş çıkışlar.' },
     { icon: 'ri-team-line', title: 'Sosyal Sorunlar', description: 'Akran ilişkileri ve sosyal kaygı.' },
     { icon: 'ri-book-2-line', title: 'Akademik Stres', description: 'Okul başarısı ve sınav kaygısı.' },
   ];

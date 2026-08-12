@@ -10,19 +10,19 @@ const faqData = [
     answer: 'Muratpaşa ve Konyaaltı bölgelerinde hizmet veren merkezimizden telefonla veya WhatsApp üzerinden kolayca randevu alabilirsiniz. İlk görüşmede ihtiyaçlarınızı belirliyor ve size en uygun danışmanlık yaklaşımını öneriyoruz.',
   },
   {
-    question: 'Antalya\'da depresyon tedavisi yapıyor musunuz?',
-    answer: 'Evet, depresyon tedavisi en önemli çalışma alanlarımızdan biridir. Bilişsel davranışçı yaklaşım gibi kanıta dayalı yöntemlerle depresyon tedavisi uyguluyoruz.',
+    question: 'Antalya\'da duygusal zorlanmalar için destek veriyor musunuz?',
+    answer: 'Evet, yoğun üzüntü ve isteksizlik gibi duygusal zorlanmalar en önemli çalışma alanlarımızdan biridir. Bilişsel davranışçı yaklaşım gibi kanıta dayalı yöntemlerle destek sağlıyoruz.',
   },
   {
-    question: 'Kaygı bozukluğu ve panik atak için danışmanlık veriyor musunuz?',
-    answer: 'Anksiyete, kaygı bozukluğu ve panik atak tedavisi konusunda deneyimliyiz. Konyaaltı ve Muratpaşa\'daki merkezimizde bilişsel davranışçı yaklaşımla etkili sonuçlar alıyoruz.',
+    question: 'Yoğun kaygılar için danışmanlık veriyor musunuz?',
+    answer: 'Yoğun kaygılarla çalışma konusunda deneyimliyiz. Konyaaltı ve Muratpaşa\'daki merkezimizde bilişsel davranışçı yaklaşımla etkili sonuçlar alıyoruz.',
   },
   {
     question: 'Online danışmanlık hizmeti var mı?',
-    answer: 'Evet, Antalya dışından da danışanlarımıza online danışmanlık hizmeti sunuyoruz. Zoom veya Google Meet üzerinden yüz yüze seanslarla aynı kalitede hizmet alabilirsiniz.',
+    answer: 'Evet, Antalya dışından da danışanlarımıza online danışmanlık hizmeti sunuyoruz. Zoom veya Google Meet üzerinden yüz yüze görüşmelerle aynı kalitede hizmet alabilirsiniz.',
   },
   {
-    question: 'Psikolog seansları gizli mi?',
+    question: 'Psikolog görüşmeleri gizli mi?',
     answer: 'Kesinlikle. Tüm psikolojik danışmanlık görüşmeleri etik kurallar ve yasal düzenlemeler çerçevesinde tamamen gizli tutulmaktadır. Bilgileriniz üçüncü kişilerle paylaşılmaz.',
   },
   {
@@ -47,7 +47,7 @@ const LPAntalyaPsikolog = () => {
   // Gerçek danışan yorumları
   const testimonials = [
     {
-      text: "Zorlayıcı bir dönemde gitmiştik. Kendisine tavsiye ile ulaşmıştık. 6 seans kadar devam ettik. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm.",
+      text: "Zorlayıcı bir dönemde gitmiştik. Kendisine tavsiye ile ulaşmıştık. 6 görüşme kadar devam ettik. Yaklaşımından ve sürecimizden çok memnun kaldık. Kesinlikle öneririm.",
       author: "S.T.",
       role: "Çocuk Danışmanlığı",
       rating: 5,
@@ -67,7 +67,7 @@ const LPAntalyaPsikolog = () => {
   ];
 
   const services = [
-    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', desc: 'Depresyon, anksiyete, stres tedavisi', color: 'from-blue-500 to-cyan-500' },
+    { icon: 'ri-user-heart-line', title: 'Bireysel Danışmanlık', desc: 'Kaygı, stres ve duygusal zorlanmalar', color: 'from-blue-500 to-cyan-500' },
     { icon: 'ri-parent-line', title: 'Aile Danışmanlığı', desc: 'Aile içi iletişim sorunları', color: 'from-green-500 to-emerald-500' },
     { icon: 'ri-heart-2-line', title: 'Çift Danışmanlığı', desc: 'Evlilik ve ilişki danışmanlığı', color: 'from-rose-500 to-pink-500' },
     { icon: 'ri-mental-health-line', title: 'Cinsel Danışmanlık', desc: 'Gizlilik garantili profesyonel destek', color: 'from-purple-500 to-indigo-500' },
@@ -159,7 +159,7 @@ const LPAntalyaPsikolog = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-darkgray/90 via-darkgray/70 to-transparent z-10" />
             <motion.img
               src="/images/sas/sas-1.png"
-              alt="Antalya Psikolog - Bireysel Danışmanlık Seansı"
+              alt="Antalya Psikolog - Bireysel Danışmanlık Görüşmesi"
               className="w-full h-full object-cover"
               initial={{ scale: 1.1 }}
               animate={{ scale: imageLoaded ? 1 : 1.1 }}
@@ -222,7 +222,7 @@ const LPAntalyaPsikolog = () => {
                   transition={{ delay: 0.3 }}
                   className="text-xl text-white/80 max-w-lg"
                 >
-                  Depresyon, anksiyete, kaygı bozukluğu ve panik atak tedavisinde psikolog kadrosu.
+                  Kaygılar ve duygusal zorlanmalar konusunda deneyimli psikolog kadrosu.
                   <span className="font-semibold text-olive"> Hemen randevu alın.</span>
                 </motion.p>
 
@@ -613,7 +613,7 @@ const LPAntalyaPsikolog = () => {
                 Muratpaşa ve Konyaaltı'da Psikolog Hizmetleri
               </h2>
               <p className="text-darkgray/60 mt-4 max-w-2xl mx-auto">
-                Depresyon tedavisi, anksiyete, kaygı bozukluğu, panik atak, stres yönetimi ve daha fazlası için profesyonel destek
+                Kaygılar, duygusal zorlanmalar, stres yönetimi ve daha fazlası için profesyonel destek
               </p>
             </motion.div>
 
@@ -664,7 +664,7 @@ const LPAntalyaPsikolog = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { src: '/images/sas/sas-1.png', title: 'Antalya Bireysel Danışmanlık Seansı' },
+                { src: '/images/sas/sas-1.png', title: 'Antalya Bireysel Danışmanlık Görüşmesi' },
                 { src: '/images/sas/sas-4.png', title: 'Stres Yönetimi ve Meditasyon' },
                 { src: '/images/sas/sas-5.png', title: 'Psikolojik Danışmanlık Ortamı' },
               ].map((img, i) => (
@@ -826,7 +826,7 @@ const LPAntalyaPsikolog = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Muratpaşa ve Konyaaltı'da depresyon, kaygı, panik atak tedavisi için hemen randevu alın.
+              Muratpaşa ve Konyaaltı'da kaygılar ve duygusal zorlanmalar için hemen randevu alın.
             </motion.p>
 
             <motion.div
@@ -882,7 +882,7 @@ const LPAntalyaPsikolog = () => {
           <div className="text-center">
             <p className="font-semibold text-white/80">Antalya Psikolog - Arges Psikoloji Merkezi</p>
             <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
-            <p className="mt-1">Depresyon, Anksiyete, Kaygı Bozukluğu, Panik Atak Tedavisi</p>
+            <p className="mt-1">Kaygı, Stres ve Duygusal Zorlanmalarda Profesyonel Destek</p>
             <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
           </div>
         </div>

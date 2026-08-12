@@ -5,7 +5,7 @@ import WhatsAppButton from '../../../components/feature/WhatsAppButton';
 
 const TestimonialsCocukPage = () => {
   const testimonials = [
-    { initials: 'E.A.', rating: 5, text: 'Kızım beş yaşındaydı ve tuvalet problemi ile gitmiştik. Bizim için sürekli tuvaletini etrafa yapması çok zordu. Aile olarak çok yıpranmıştık. Kendisine ilk olarak anne baba görüşmesi yapmak için gittik. Ne gerek vardı desek de en önemli kısım anne baba görüşmesiymiş aslında onu fark ettik süreçte. Danışmanlık sürecinde bizi hiç yalnız bırakmadı. Kızım zaten çok seviyordu kendisini gün sayardı hep. Seanslardan sonra yaptığı telefon görüşmeleri ise hem bize hem çocuğumuza çok iyi geldi. Kesinlikle öneririm kendisini. Güler yüzü için de ayrıca teşekkürler.', service: 'Çocuk Psikolojisi' },
+    { initials: 'E.A.', rating: 5, text: 'Kızım beş yaşındaydı ve tuvalet problemi ile gitmiştik. Bizim için sürekli tuvaletini etrafa yapması çok zordu. Aile olarak çok yıpranmıştık. Kendisine ilk olarak anne baba görüşmesi yapmak için gittik. Ne gerek vardı desek de en önemli kısım anne baba görüşmesiymiş aslında onu fark ettik süreçte. Danışmanlık sürecinde bizi hiç yalnız bırakmadı. Kızım zaten çok seviyordu kendisini gün sayardı hep. Görüşmelerden sonra yaptığı telefon konuşmaları ise hem bize hem çocuğumuza çok iyi geldi. Kesinlikle öneririm kendisini. Güler yüzü için de ayrıca teşekkürler.', service: 'Çocuk Psikolojisi' },
   ];
 
   return (

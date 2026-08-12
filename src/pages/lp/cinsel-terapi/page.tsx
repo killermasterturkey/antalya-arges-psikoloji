@@ -10,8 +10,8 @@ const faqData = [
     answer: 'Kesinlikle evet. Muratpaşa ve Konyaaltı\'daki merkezimizde tüm cinsel danışmanlık görüşmeleri %100 gizlilik garantisi altındadır. Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.',
   },
   {
-    question: 'Vajinismus tedavisi Antalya\'da yapılıyor mu?',
-    answer: 'Evet, vajinismus tedavisi çalışma alanlarımızdan biridir. Muratpaşa\'daki merkezimizde kanıta dayalı yöntemlerle vajinismus danışmanlığı uyguluyoruz.',
+    question: 'Cinsellikte istemsiz kasılmalar için Antalya\'da destek alabilir miyim?',
+    answer: 'Evet, cinsellikte istemsiz kasılma sorunu çalışma alanlarımızdan biridir. Muratpaşa\'daki merkezimizde kanıta dayalı yöntemlerle danışmanlık uyguluyoruz.',
   },
   {
     question: 'Erken boşalma tedavisi için hangi doktora gitmeliyim?',
@@ -23,7 +23,7 @@ const faqData = [
   },
   {
     question: 'Evlilikte cinsel sorunlar için çift olarak gelebilir miyiz?',
-    answer: 'Evet, cinsel uyumsuzluk ve evlilikte cinsel sorunlar için çift olarak danışmanlık alabilirsiniz. Bireysel seanslar da mümkündür.',
+    answer: 'Evet, cinsel uyumsuzluk ve evlilikte cinsel sorunlar için çift olarak danışmanlık alabilirsiniz. Bireysel görüşmeler de mümkündür.',
   },
   {
     question: 'Online cinsel danışmanlık var mı?',
@@ -65,11 +65,11 @@ const LPCinselTerapi = () => {
     { icon: 'ri-lock-line', text: 'Kesin Gizlilik', desc: 'Bilgileriniz asla paylaşılmaz' },
     { icon: 'ri-shield-check-line', text: 'Profesyonel Yaklaşım', desc: 'Deneyimli psikolog kadrosu' },
     { icon: 'ri-user-heart-line', text: 'Yargısız Ortam', desc: 'Anlayışla dinlenirsiniz' },
-    { icon: 'ri-door-closed-line', text: 'Özel Görüşme', desc: 'Birebir danışmanlık seansları' },
+    { icon: 'ri-door-closed-line', text: 'Özel Görüşme', desc: 'Birebir danışmanlık görüşmeleri' },
   ];
 
   const concerns = [
-    { icon: 'ri-heart-pulse-line', text: 'Vajinismus Tedavisi', color: 'from-purple-500 to-indigo-500' },
+    { icon: 'ri-heart-pulse-line', text: 'İstemsiz Kasılmalarda Destek', color: 'from-purple-500 to-indigo-500' },
     { icon: 'ri-timer-flash-line', text: 'Erken Boşalma Tedavisi', color: 'from-indigo-500 to-blue-500' },
     { icon: 'ri-mental-health-line', text: 'Performans Kaygısı', color: 'from-blue-500 to-cyan-500' },
     { icon: 'ri-emotion-unhappy-line', text: 'Cinsel İsteksizlik', color: 'from-teal-500 to-emerald-500' },
@@ -260,7 +260,7 @@ const LPCinselTerapi = () => {
               transition={{ delay: 0.3 }}
               className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto"
             >
-              Muratpaşa ve Konyaaltı'nda <span className="font-semibold text-purple-300">vajinismus tedavisi</span>, erken boşalma tedavisi,
+              Muratpaşa ve Konyaaltı'nda <span className="font-semibold text-purple-300">istemsiz kasılmalar</span>, erken boşalma ve
               performans kaygısı için deneyimli psikolog. Tam gizlilik garantisi.
             </motion.p>
 
@@ -583,7 +583,7 @@ const LPCinselTerapi = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Deneyimli Psikolog</h3>
                 <p className="text-white/60">
-                  Cinsel danışmanlık alanında eğitimli psikolog. Vajinismus, erken boşalma, performans kaygısında kanıtlanmış başarı.
+                  Cinsel danışmanlık alanında eğitimli psikolog. İstemsiz kasılmalar, erken boşalma ve performans kaygısında kanıtlanmış başarı.
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-rose-400">
                   <i className="ri-verified-badge-fill"></i>
@@ -708,7 +708,7 @@ const LPCinselTerapi = () => {
               >
                 <img
                   src="/images/lp/therapy-session.jpg"
-                  alt="Cinsel Danışmanlık Seansı Antalya"
+                  alt="Cinsel Danışmanlık Görüşmesi Antalya"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent flex items-end p-6">
@@ -728,7 +728,7 @@ const LPCinselTerapi = () => {
               >
                 <img
                   src="/images/sas/sas-4.png"
-                  alt="Vajinismus Tedavisi Antalya - Güvenli Ortam"
+                  alt="Cinsel Danışmanlık Antalya - Güvenli Ortam"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent flex items-end p-6">
@@ -762,7 +762,7 @@ const LPCinselTerapi = () => {
                 Antalya'da Cinsel Danışmanlık Hizmetlerimiz
               </h2>
               <p className="text-white/60 max-w-2xl mx-auto">
-                Muratpaşa ve Konyaaltı'nda vajinismus, erken boşalma, performans kaygısı tedavisi. Kesin gizlilik garantisi.
+                Muratpaşa ve Konyaaltı'nda istemsiz kasılmalar, erken boşalma ve performans kaygısı için destek. Kesin gizlilik garantisi.
               </p>
             </motion.div>
 
@@ -1025,7 +1025,7 @@ const LPCinselTerapi = () => {
           <div className="text-center">
             <p className="font-semibold text-white/60">Antalya Cinsel Danışmanlık - Arges Psikoloji Merkezi</p>
             <p className="mt-1">Meltem Mah. Muratpaşa/Antalya | Konyaaltı Bölgesine Yakın</p>
-            <p className="mt-1">Vajinismus Tedavisi, Erken Boşalma Tedavisi, Performans Kaygısı, Cinsel Uyumsuzluk</p>
+            <p className="mt-1">İstemsiz Kasılmalar, Erken Boşalma, Performans Kaygısı, Cinsel Uyumsuzluk</p>
             <p className="mt-4">© 2025 Tüm hakları saklıdır.</p>
           </div>
         </div>

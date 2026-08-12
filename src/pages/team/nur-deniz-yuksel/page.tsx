@@ -18,7 +18,7 @@ const NurDenizYukselPage = () => {
       'Seksofonksiyonel Yaklaşım',
       'Çocuk ve Ergenlerde Bilişsel Davranışçı Yaklaşım',
       'Yetişkin Değerlendirmede Objektif-Projektif Testler',
-      'OKB Tedavisinde Bilişsel Davranışçı Yaklaşım',
+      'Takıntı Sorunlarında Bilişsel Davranışçı Yaklaşım',
       'Çift Danışmanlığında Evlilik Dışı İlişkileri Ele Alma',
       'Travma Testleri Eğitimi',
       'Travma Sonrası Stres Bozukluğu Eğitimi',
