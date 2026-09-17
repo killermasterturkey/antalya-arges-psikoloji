@@ -62,8 +62,8 @@ const ContactPage = () => {
     {
       icon: 'ri-map-pin-line',
       title: 'Adres',
-      content: 'Meltem Mah. 3850. Sk. Belgen Sitesi D:7 Blok K:4 D:10 Muratpaşa/Antalya',
-      link: 'https://maps.google.com/?q=Meltem+Mah.+3850.+Sk.+Belgen+Sitesi+Muratpasa+Antalya',
+      content: 'Gürsu Mah. 305 Sk. Deniz Apt. No:1 Kat:1 Daire:1 Konyaaltı/ Antalya',
+      link: 'https://maps.google.com/?q=Gursu+Mah.+305+Sk.+Deniz+Apt.+Konyaalti+Antalya',
     },
     {
       icon: 'ri-time-line',
@@ -312,14 +312,14 @@ const ContactPage = () => {
                 {/* Map */}
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm w-full h-96">
                   <iframe
-                    src="https://maps.google.com/maps?q=Meltem+Mah.+3850.+Sk.+Belgen+Sitesi+Muratpa%C5%9Fa+Antalya&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Gursu+Mah.+305+Sk.+Deniz+Apt.+Konyaalti+Antalya&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Arges Psikoloji Konum - Meltem Mah. Muratpaşa/Antalya"
+                    title="Arges Psikoloji Konum - Gürsu Mah. Konyaaltı/Antalya"
                   ></iframe>
                 </div>
 

@@ -65,7 +65,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 font-sans text-sm text-darkgray/70">
                 <i className="ri-map-pin-line text-lg text-olive mt-0.5"></i>
-                <span>Meltem Mah. 3850. Sk. Belgen Sitesi D:7 Blok K:4 D:10 Muratpaşa/Antalya</span>
+                <span>Gürsu Mah. 305 Sk. Deniz Apt. No:1 Kat:1 Daire:1 Konyaaltı/ Antalya</span>
               </li>
               <li>
                 <a
